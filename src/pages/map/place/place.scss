@@ -1,0 +1,79 @@
+page-place {
+
+  ion-content {
+    background: linear-gradient(45deg, #00E5FF 0%, #4FC3F7 100%);
+    color: white !important;
+    font-family: Palanquin-Light, sans-serif;
+  }
+
+  h1 {
+    font-size: 8vw;
+  }
+  h2 {
+    font-size: 4vw;
+  }
+  h3 {
+    font-size: 10vw;
+  }
+  h4 {
+    font-size: 7vw;
+  }
+
+  img {
+    height: 20vh;
+  }
+
+  ion-grid, ion-grid ion-row {
+    height: 100% !important;
+
+    ion-col {
+      text-align: center;
+    }
+  }
+
+  /* Classification card */
+  .classification-card {
+    font-family: Palanquin-Light, sans-serif !important;
+    background: linear-gradient(45deg, #7C4DFF 0%, #B388FF 100%);
+    border-radius: 12px !important;
+    box-shadow: 0 15px 10px -12px rgba(124, 77, 255, 0.3) !important;
+
+    ion-card-header {
+      padding: 10px;
+      color: white;
+      background-color: rgba(255, 255, 255, 0.08) !important;
+      box-shadow: 0 2px 2px rgba(255, 255, 255, 0.02) !important;
+    }
+
+    ion-card-content ul {
+      list-style-type: none;
+      text-align: left;
+      margin: 13px 0 0 0;
+      font-size: 4vw !important;
+    }
+  }
+
+  ion-scroll{
+    font-size: 14px;
+    height: 100px;
+    white-space: nowrap;
+
+    .scroll-content {
+      padding: 0 16px !important;
+    }
+
+    #hourly-container {
+      display: inline-block;
+      list-style-type: none;
+      padding: 0;
+      margin-right: 12px;
+    }
+
+    img {
+      width: 12px;
+      height: 12px;
+      margin: 0;
+    }
+  }
+
+}

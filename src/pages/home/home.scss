@@ -1,0 +1,68 @@
+page-home {
+
+  ion-content {
+    background: linear-gradient(45deg, #00E5FF 0%, #4FC3F7 100%);
+    color: white !important;
+    font-family: Palanquin-Light, sans-serif;
+  }
+
+  #map-button ion-icon {
+    color: #00E676;
+  }
+  #favorite-button ion-icon {
+    color: #FF4081;
+  }
+  #about-button ion-icon {
+    color: #00B0FF;
+  }
+
+  ion-grid, ion-grid ion-row {
+    z-index: 1000;
+    height: 100% !important;
+
+    ion-col {
+      text-align: center;
+
+      h1 {
+        color: white;
+        font-size: 11vw;
+        font-family: Palanquin-Regular, sans-serif;
+      }
+
+      #buttons-container {
+        margin-top: 24px;
+        button {
+          display: block !important;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+
+
+  .wave {
+    opacity: 0.6;
+    position: absolute;
+    top: -100vw;
+    left: -30vw;
+    background: white;
+    width: 150vw;
+    height: 150vw;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    animation: drift 3000ms infinite linear;
+  }
+  .wave.-three {
+    animation: drift 5000ms infinite linear;
+  }
+  .wave.-two {
+    animation: drift 7000ms infinite linear;
+    opacity: .1;
+    background: white;
+  }
+  @keyframes drift {
+    from { transform: rotate(0deg); }
+    from { transform: rotate(360deg); }
+  }
+
+}

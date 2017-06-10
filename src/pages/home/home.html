@@ -1,0 +1,35 @@
+<ion-content padding no-bounce>
+
+  <ion-grid no-padding>
+    <ion-row align-items-center>
+      <ion-col>
+
+        <h1 padding>Svenska bad</h1>
+
+        <div id="buttons-container">
+          <button ion-button round icon-left color="lightFab" id="map-button" [navPush]="mapPage">
+            <ion-icon name="md-globe"></ion-icon>
+            Hitta badplats
+          </button>
+
+          <button ion-button round icon-left color="lightFab" id="favorite-button">
+            <ion-icon name="heart"></ion-icon>
+            Mina favoriter
+          </button>
+
+          <button ion-button round icon-left color="lightFab" id="about-button">
+            <ion-icon name="information-circle"></ion-icon>
+            Om appen
+          </button>
+        </div>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- Water animation waves -->
+  <div class='wave -one'></div>
+  <div class='wave -two'></div>
+  <div class='wave -three'></div>
+
+</ion-content>

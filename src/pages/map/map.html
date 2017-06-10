@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar color="header" [hideBackButton]="true">
+    <ion-buttons start>
+      <button ion-button icon-only color="lightFab" navPop>
+        <ion-icon name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Badplatser</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-right [navPush]="searchPage" [navParams]="places">
+        Sök
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- Google Map -->
+  <div id="map"></div>
+
+</ion-content>
