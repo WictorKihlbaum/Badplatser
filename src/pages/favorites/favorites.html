@@ -26,13 +26,13 @@
 
   <div *ngIf="favorites.length > 0">
     <ion-list>
-      <ion-item *ngFor="let favorite of favorites" (click)="onShowPlace(favorite)">
+      <ion-item *ngFor="let favorite of favorites">
 
-        <!-- Pusha allt till arrayen istället. -->
+        <span (click)="onShowPlace(favorite)">
+          {{ favorite.data['Badplats'] }}
+        </span>
 
-        {{ favorite }}
-
-        <button ion-button item-end icon-right clear>
+        <button ion-button item-end icon-right clear (click)="onDeleteFavorite(favorite)">
           Ta bort
           <ion-icon name="trash"></ion-icon>
         </button>

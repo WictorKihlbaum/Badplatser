@@ -67,7 +67,6 @@ export class MapPage implements OnInit {
   onShowPlace(placeData: any) {
     const placeModal = this.modalCtrl.create(PlacePage, placeData);
     placeModal.present();
-    //this.navCtrl.push(PlacePage, placeData);
   }
 
   async setCurrentCoordinates() {
