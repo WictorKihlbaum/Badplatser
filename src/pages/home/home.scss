@@ -1,7 +1,6 @@
 page-home {
 
   ion-content {
-    //background: linear-gradient(45deg, #00E5FF 0%, #4FC3F7 100%);
     background: linear-gradient(45deg, #2196f3 0%,#42a5f5 100%);
     color: white !important;
     font-family: Palanquin-Light, sans-serif;
@@ -40,7 +39,7 @@ page-home {
     }
   }
 
-
+  /* Wave animations */
   .wave {
     opacity: 0.6;
     position: absolute;

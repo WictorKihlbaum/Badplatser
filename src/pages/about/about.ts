@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
 
 @Component({
   selector: 'page-about',
@@ -7,6 +6,6 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class AboutPage {
 
-  constructor(private navCtrl: NavController, private navParams: NavParams) {}
+  constructor() {}
 
 }

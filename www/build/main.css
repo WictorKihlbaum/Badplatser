@@ -38257,6 +38257,10 @@ page-about ion-grid ion-col, page-about ion-grid ion-row ion-col {
   text-align: center;
 }
 
+page-home {
+  /* Wave animations */
+}
+
 page-home ion-content {
   background: linear-gradient(45deg, #2196f3 0%, #42a5f5 100%);
   color: white !important;
@@ -38357,7 +38361,7 @@ page-place {
 }
 
 page-place ion-content {
-  background: linear-gradient(45deg, #00E5FF 0%, #4FC3F7 100%);
+  background: linear-gradient(45deg, #2196f3 0%, #42a5f5 100%);
   color: white !important;
   font-family: Palanquin-Light, sans-serif;
 }
@@ -38409,6 +38413,7 @@ page-place .classification-card ion-card-content ul {
   text-align: left;
   margin: 13px 0 0 0;
   font-size: 4vw !important;
+  padding: 0;
 }
 
 page-place ion-scroll {
