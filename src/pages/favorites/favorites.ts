@@ -27,4 +27,8 @@ export class FavoritesPage {
     });
   }
 
+  onShowPlace(place: any) {
+    // You know what to do.
+  }
+
 }

@@ -16,10 +16,10 @@ export class HomePage {
 
 
   constructor() {
-    let favoritesStore = localforage.createInstance({ name: "badplatser", storeName: 'favorites' });
+    /*let favoritesStore = localforage.createInstance({ name: "badplatser", storeName: 'favorites' });
     favoritesStore.clear().then(() => {
       console.log('allt clear');
-    });
+    });*/
   }
 
 }
