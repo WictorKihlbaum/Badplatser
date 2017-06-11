@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { LoadingController, NavController, NavParams} from 'ionic-angular';
+import {LoadingController, NavController, NavParams, ToastController } from 'ionic-angular';
 import { WeatherService } from "../../../providers/weather-service";
+import * as localforage from "localforage";
+import { StatusBar } from "@ionic-native/status-bar";
 
 @Component({
   selector: 'page-place',
@@ -10,6 +12,8 @@ import { WeatherService } from "../../../providers/weather-service";
 export class PlacePage implements OnInit {
 
   private loader: any;
+  private favoritesStore: any;
+  private favoriteIsSaved: boolean = false;
 
   // Place data
   private placeName: string;
@@ -36,7 +40,12 @@ export class PlacePage implements OnInit {
     private navCtrl: NavController,
     private navParams: NavParams,
     private weatherService: WeatherService,
-    private loadingCtrl: LoadingController) {
+    private loadingCtrl: LoadingController,
+    private statusBar: StatusBar,
+    private toastCtrl: ToastController) {
+
+    this.setFavoritesStore();
+    this.checkIfFavoriteIsSaved();
 
     this.placeName = navParams.get('Badplats');
     this.latitude = navParams.get('Latitud');
@@ -55,6 +64,16 @@ export class PlacePage implements OnInit {
     this.showLoading('Hämtar väder...');
     await this.getWeatherData();
     this.loader.dismiss();
+  }
+
+  setFavoritesStore() {
+    this.favoritesStore = localforage.createInstance({ name: "badplatser", storeName: 'favorites' });
+  }
+
+  async checkIfFavoriteIsSaved() {
+    const key = this.navParams.get('Badplats');
+    const value = await this.favoritesStore.getItem(key);
+    if (value != null) this.favoriteIsSaved = true;
   }
 
   async getWeatherData() {
@@ -94,8 +113,31 @@ export class PlacePage implements OnInit {
     this.loader.present();
   }
 
-  saveToFavorites() {
-    console.log('Badplats har sparats till dina favoriter!');
+  async onSaveFavorite() {
+    try {
+      const key = this.placeName;
+      await this.favoritesStore.setItem(key, JSON.stringify(this.navParams));
+      this.favoriteIsSaved = true;
+      this.showToast('Badplats har lagts till mina favoriter!', 'success-toast');
+    }
+    catch (error) {
+      console.log(error);
+      this.showToast('Ett fel uppstod när badplats skulle sparas. Var god försök igen.', 'error-toast');
+    }
+  }
+
+  showToast(message: string, css: string) {
+    this.statusBar.hide();
+    const toast = this.toastCtrl.create({
+      message: message,
+      duration: 5000,
+      position: 'top',
+      cssClass: css
+    });
+    toast.onDidDismiss(() => {
+      this.statusBar.show();
+    });
+    toast.present();
   }
 
 }

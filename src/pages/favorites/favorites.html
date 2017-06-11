@@ -4,6 +4,29 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding no-bounce>
+
+  <ion-grid no-padding *ngIf="favorites.length == 0">
+    <ion-row align-items-center>
+      <ion-col>
+        Du har inga favoritbadplatser ännu!
+        <p>
+          Hitta badplatser och klicka på hjärtat i det övre högra
+          hörnet för att lägga till dem i din lista med favoriter.
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  <div *ngIf="favorites.length > 0">
+    <ion-list>
+      <ion-item *ngFor="let favorite of favorites">
+
+        {{ favorite }}
+
+      </ion-item>
+    </ion-list>
+  </div>
 
 </ion-content>

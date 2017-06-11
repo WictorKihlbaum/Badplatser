@@ -1,3 +1,14 @@
 page-favorites {
 
+  ion-grid, ion-grid ion-row {
+    height: 100% !important;
+    ion-col {
+      text-align: center;
+
+      p {
+        text-align: left;
+      }
+    }
+  }
+
 }

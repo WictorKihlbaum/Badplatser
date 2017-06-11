@@ -7,7 +7,9 @@
 
   <!-- Save to favorites button -->
   <ion-fab right top>
-    <button ion-fab mini color="heartFab" (click)="saveToFavorites()"><ion-icon name="heart"></ion-icon></button>
+    <button ion-fab mini color="heartFab" (click)="onSaveFavorite()" [disabled]="favoriteIsSaved">
+      <ion-icon name="heart"></ion-icon>
+    </button>
   </ion-fab>
 
   <ion-grid no-padding>

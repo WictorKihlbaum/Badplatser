@@ -38222,6 +38222,23 @@ ion-navbar.toolbar {
   src: url("../assets/fonts/Palanquin-Regular.ttf");
 }
 
+/* Toasts */
+.error-toast .toast-wrapper {
+  background-color: #FFEBEE;
+}
+
+.error-toast .toast-wrapper .toast-message, .error-toast .toast-wrapper .toast-button {
+  color: #F44336 !important;
+}
+
+.success-toast .toast-wrapper {
+  background-color: #E8F5E9;
+}
+
+.success-toast .toast-wrapper .toast-message, .success-toast .toast-wrapper .toast-button {
+  color: #4CAF50 !important;
+}
+
 /* Loading animation */
 .loading-animation .loading-wrapper .loading-content {
   color: #42A5F5;
@@ -38249,12 +38266,23 @@ page-about ion-content #about-text {
 }
 
 page-about ion-grid, page-about ion-grid ion-row {
-  z-index: 1000;
   height: 100% !important;
 }
 
 page-about ion-grid ion-col, page-about ion-grid ion-row ion-col {
   text-align: center;
+}
+
+page-favorites ion-grid, page-favorites ion-grid ion-row {
+  height: 100% !important;
+}
+
+page-favorites ion-grid ion-col, page-favorites ion-grid ion-row ion-col {
+  text-align: center;
+}
+
+page-favorites ion-grid ion-col p, page-favorites ion-grid ion-row ion-col p {
+  text-align: left;
 }
 
 page-home {
