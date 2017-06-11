@@ -38273,6 +38273,21 @@ page-about ion-grid ion-col, page-about ion-grid ion-row ion-col {
   text-align: center;
 }
 
+page-favorites ion-content {
+  background: linear-gradient(45deg, #2196f3 0%, #42a5f5 100%);
+  color: white !important;
+  font-family: Palanquin-Light, sans-serif;
+}
+
+page-favorites ion-item {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+page-favorites ion-item button {
+  color: white !important;
+}
+
 page-favorites ion-grid, page-favorites ion-grid ion-row {
   height: 100% !important;
 }
