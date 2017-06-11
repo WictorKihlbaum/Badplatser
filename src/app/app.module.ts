@@ -10,6 +10,7 @@ import { MapPage } from '../pages/map/map';
 import { PlacePage } from "../pages/map/place/place";
 import { HttpModule } from "@angular/http";
 import { SearchPage } from "../pages/search/search";
+import { AboutPage } from "../pages/about/about";
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SearchPage } from "../pages/search/search";
     HomePage,
     MapPage,
     PlacePage,
-    SearchPage
+    SearchPage,
+    AboutPage
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,8 @@ import { SearchPage } from "../pages/search/search";
     HomePage,
     MapPage,
     PlacePage,
-    SearchPage
+    SearchPage,
+    AboutPage
   ],
   providers: [
     StatusBar,

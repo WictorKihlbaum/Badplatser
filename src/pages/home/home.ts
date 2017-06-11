@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
 import { MapPage } from "../map/map";
-import { SearchPage } from "../search/search";
+import { AboutPage } from "../about/about";
 
 @Component({
   selector: 'page-home',
@@ -10,6 +9,7 @@ import { SearchPage } from "../search/search";
 export class HomePage {
 
   private mapPage: any = MapPage;
+  private aboutPage: any = AboutPage;
 
 
   constructor() {}

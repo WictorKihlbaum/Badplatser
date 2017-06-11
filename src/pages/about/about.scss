@@ -1,0 +1,29 @@
+page-about {
+
+  ion-content {
+    background: linear-gradient(45deg, #2196f3 0%, #42a5f5 100%);
+    color: white !important;
+    font-family: Palanquin-Light, sans-serif;
+
+    h1 {
+      font-family: Palanquin-Regular, sans-serif;
+      font-size: 8vw;
+    }
+
+    #about-text {
+      text-align: left;
+      line-height: 1.4;
+      font-size: 5vw;
+    }
+  }
+
+  ion-grid, ion-grid ion-row {
+    z-index: 1000;
+    height: 100% !important;
+
+    ion-col {
+      text-align: center;
+    }
+  }
+
+}
