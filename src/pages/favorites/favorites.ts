@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {ModalController, NavController, NavParams, ToastController } from 'ionic-angular';
 import * as localforage from "localforage";
-import { PlacePage } from "../map/place/place";
+import { PlacePage } from "../place/place";
 import { StatusBar } from "@ionic-native/status-bar";
 
 @Component({

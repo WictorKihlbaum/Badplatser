@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ModalController, NavController, NavParams, Searchbar } from 'ionic-angular';
-import { PlacePage } from "../map/place/place";
+import { PlacePage } from "../place/place";
 
 @Component({
   selector: 'page-search',

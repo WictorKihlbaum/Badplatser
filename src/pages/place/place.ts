@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {LoadingController, NavController, NavParams, ToastController } from 'ionic-angular';
-import { WeatherService } from "../../../providers/weather-service";
+import {LoadingController, NavParams, ToastController } from 'ionic-angular';
+import { WeatherService } from "../../providers/weather-service";
 import * as localforage from "localforage";
 import { StatusBar } from "@ionic-native/status-bar";
 import { InAppBrowser } from "@ionic-native/in-app-browser";
@@ -143,6 +143,10 @@ export class PlacePage implements OnInit {
 
   onVisitDarkSky() {
     this.iab.create('https://darksky.net/poweredby/', '_system');
+  }
+
+  onFindPlace() {
+    this.iab.create(`https://www.google.se/maps/place/${this.latitude}+${this.longitude}`, '_system');
   }
 
 }

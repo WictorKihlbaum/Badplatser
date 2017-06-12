@@ -7,7 +7,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { MapPage } from '../pages/map/map';
-import { PlacePage } from "../pages/map/place/place";
+import { PlacePage } from "../pages/place/place";
 import { HttpModule } from "@angular/http";
 import { SearchPage } from "../pages/search/search";
 import { AboutPage } from "../pages/about/about";

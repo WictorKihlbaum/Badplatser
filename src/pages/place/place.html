@@ -42,10 +42,16 @@
           </ion-card-content>
         </ion-card>
 
-        <img src="../../../assets/img/darksky-logo.png" class="darksky-img" (click)="onVisitDarkSky()" />
+        <button ion-button icon-left small round color="lightFab" (click)="onFindPlace()" id="find-place-button">
+          <ion-icon name="map"></ion-icon>
+          Hitta hit
+        </button>
 
       </ion-col>
     </ion-row>
   </ion-grid>
+
+  <!-- Absolute position -->
+  <img src="../../assets/img/darksky-logo.png" class="darksky-img" (click)="onVisitDarkSky()" />
 
 </ion-content>

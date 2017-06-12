@@ -5783,6 +5783,11 @@ ion-badge:empty {
   background-color: white;
 }
 
+.badge-ios-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
 .badge-ios-mainButton {
   color: #42A5F5;
   background-color: white;
@@ -5834,6 +5839,11 @@ ion-badge:empty {
   background-color: white;
 }
 
+.badge-md-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
 .badge-md-mainButton {
   color: #42A5F5;
   background-color: white;
@@ -5882,6 +5892,11 @@ ion-badge:empty {
 
 .badge-wp-heartFab {
   color: #FF4081;
+  background-color: white;
+}
+
+.badge-wp-mapButton {
+  color: #00BFA5;
   background-color: white;
 }
 
@@ -6377,6 +6392,40 @@ button[disabled],
 }
 
 .button-clear-ios-heartFab:hover:not(.disable-hover) {
+  color: white;
+}
+
+.button-ios-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.button-ios-mapButton.activated {
+  background-color: #ebebeb;
+}
+
+.button-outline-ios-mapButton {
+  border-color: white;
+  color: white;
+  background-color: transparent;
+}
+
+.button-outline-ios-mapButton.activated {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.button-clear-ios-mapButton {
+  border-color: transparent;
+  color: white;
+  background-color: transparent;
+}
+
+.button-clear-ios-mapButton.activated {
+  opacity: 0.4;
+}
+
+.button-clear-ios-mapButton:hover:not(.disable-hover) {
   color: white;
 }
 
@@ -6975,6 +7024,57 @@ button[disabled],
   color: white;
 }
 
+.button-md-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.button-md-mapButton:hover:not(.disable-hover) {
+  background-color: white;
+}
+
+.button-md-mapButton.activated {
+  background-color: #ebebeb;
+  opacity: 1;
+}
+
+.button-md-mapButton .button-effect {
+  background-color: #00BFA5;
+}
+
+.button-outline-md-mapButton {
+  border-color: #f2f2f2;
+  color: #f2f2f2;
+  background-color: transparent;
+}
+
+.button-outline-md-mapButton:hover:not(.disable-hover) {
+  background-color: rgba(158, 158, 158, 0.1);
+}
+
+.button-outline-md-mapButton.activated {
+  background-color: transparent;
+}
+
+.button-outline-md-mapButton .button-effect {
+  background-color: #f2f2f2;
+}
+
+.button-clear-md-mapButton {
+  border-color: transparent;
+  color: white;
+  background-color: transparent;
+}
+
+.button-clear-md-mapButton.activated {
+  background-color: rgba(158, 158, 158, 0.2);
+  box-shadow: none;
+}
+
+.button-clear-md-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
 .button-md-mainButton {
   color: #42A5F5;
   background-color: white;
@@ -7468,6 +7568,48 @@ button[disabled],
   color: white;
 }
 
+.button-wp-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.button-wp-mapButton:hover:not(.disable-hover) {
+  border-color: #ebebeb;
+  background-color: white;
+}
+
+.button-wp-mapButton.activated {
+  background-color: #ebebeb;
+}
+
+.button-outline-wp-mapButton {
+  border-color: #f2f2f2;
+  color: #f2f2f2;
+  background-color: transparent;
+}
+
+.button-outline-wp-mapButton:hover:not(.disable-hover) {
+  border-color: #f2f2f2;
+  background-color: rgba(158, 158, 158, 0.1);
+}
+
+.button-outline-wp-mapButton.activated {
+  background-color: rgba(242, 242, 242, 0.16);
+}
+
+.button-clear-wp-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.button-clear-wp-mapButton.activated {
+  background-color: rgba(158, 158, 158, 0.2);
+}
+
+.button-clear-wp-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
 .button-wp-mainButton {
   color: #42A5F5;
   background-color: white;
@@ -7713,6 +7855,13 @@ ion-card-content {
   color: white;
 }
 
+.card-ios-primary .text-ios-mapButton,
+.card-ios-primary .card-header-ios-mapButton,
+.card-ios-primary .card-title-ios-mapButton,
+.card-ios-primary .card-content-ios-mapButton {
+  color: white;
+}
+
 .card-ios-primary .text-ios-mainButton,
 .card-ios-primary .card-header-ios-mainButton,
 .card-ios-primary .card-title-ios-mainButton,
@@ -7795,6 +7944,13 @@ ion-card-content {
 .card-ios-secondary .card-header-ios-heartFab,
 .card-ios-secondary .card-title-ios-heartFab,
 .card-ios-secondary .card-content-ios-heartFab {
+  color: white;
+}
+
+.card-ios-secondary .text-ios-mapButton,
+.card-ios-secondary .card-header-ios-mapButton,
+.card-ios-secondary .card-title-ios-mapButton,
+.card-ios-secondary .card-content-ios-mapButton {
   color: white;
 }
 
@@ -7883,6 +8039,13 @@ ion-card-content {
   color: white;
 }
 
+.card-ios-danger .text-ios-mapButton,
+.card-ios-danger .card-header-ios-mapButton,
+.card-ios-danger .card-title-ios-mapButton,
+.card-ios-danger .card-content-ios-mapButton {
+  color: white;
+}
+
 .card-ios-danger .text-ios-mainButton,
 .card-ios-danger .card-header-ios-mainButton,
 .card-ios-danger .card-title-ios-mainButton,
@@ -7965,6 +8128,13 @@ ion-card-content {
 .card-ios-light .card-header-ios-heartFab,
 .card-ios-light .card-title-ios-heartFab,
 .card-ios-light .card-content-ios-heartFab {
+  color: white;
+}
+
+.card-ios-light .text-ios-mapButton,
+.card-ios-light .card-header-ios-mapButton,
+.card-ios-light .card-title-ios-mapButton,
+.card-ios-light .card-content-ios-mapButton {
   color: white;
 }
 
@@ -8053,6 +8223,13 @@ ion-card-content {
   color: white;
 }
 
+.card-ios-dark .text-ios-mapButton,
+.card-ios-dark .card-header-ios-mapButton,
+.card-ios-dark .card-title-ios-mapButton,
+.card-ios-dark .card-content-ios-mapButton {
+  color: white;
+}
+
 .card-ios-dark .text-ios-mainButton,
 .card-ios-dark .card-header-ios-mainButton,
 .card-ios-dark .card-title-ios-mainButton,
@@ -8135,6 +8312,13 @@ ion-card-content {
 .card-ios-header .card-header-ios-heartFab,
 .card-ios-header .card-title-ios-heartFab,
 .card-ios-header .card-content-ios-heartFab {
+  color: white;
+}
+
+.card-ios-header .text-ios-mapButton,
+.card-ios-header .card-header-ios-mapButton,
+.card-ios-header .card-title-ios-mapButton,
+.card-ios-header .card-content-ios-mapButton {
   color: white;
 }
 
@@ -8223,6 +8407,13 @@ ion-card-content {
   color: white;
 }
 
+.card-ios-lightFab .text-ios-mapButton,
+.card-ios-lightFab .card-header-ios-mapButton,
+.card-ios-lightFab .card-title-ios-mapButton,
+.card-ios-lightFab .card-content-ios-mapButton {
+  color: white;
+}
+
 .card-ios-lightFab .text-ios-mainButton,
 .card-ios-lightFab .card-header-ios-mainButton,
 .card-ios-lightFab .card-title-ios-mainButton,
@@ -8308,6 +8499,13 @@ ion-card-content {
   color: white;
 }
 
+.card-ios-heartFab .text-ios-mapButton,
+.card-ios-heartFab .card-header-ios-mapButton,
+.card-ios-heartFab .card-title-ios-mapButton,
+.card-ios-heartFab .card-content-ios-mapButton {
+  color: white;
+}
+
 .card-ios-heartFab .text-ios-mainButton,
 .card-ios-heartFab .card-header-ios-mainButton,
 .card-ios-heartFab .card-title-ios-mainButton,
@@ -8318,6 +8516,98 @@ ion-card-content {
 .card-header-ios-heartFab,
 .card-title-ios-heartFab,
 .card-content-ios-heartFab {
+  color: white;
+}
+
+.card-ios .text-ios-mapButton {
+  color: white;
+}
+
+.card-ios-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.card-ios-mapButton .card-header-ios,
+.card-ios-mapButton .card-title-ios,
+.card-ios-mapButton .card-content-ios,
+.card-ios-mapButton p {
+  color: #00BFA5;
+}
+
+.card-ios-mapButton .text-ios-primary,
+.card-ios-mapButton .card-header-ios-primary,
+.card-ios-mapButton .card-title-ios-primary,
+.card-ios-mapButton .card-content-ios-primary {
+  color: #488aff;
+}
+
+.card-ios-mapButton .text-ios-secondary,
+.card-ios-mapButton .card-header-ios-secondary,
+.card-ios-mapButton .card-title-ios-secondary,
+.card-ios-mapButton .card-content-ios-secondary {
+  color: #32db64;
+}
+
+.card-ios-mapButton .text-ios-danger,
+.card-ios-mapButton .card-header-ios-danger,
+.card-ios-mapButton .card-title-ios-danger,
+.card-ios-mapButton .card-content-ios-danger {
+  color: #f53d3d;
+}
+
+.card-ios-mapButton .text-ios-light,
+.card-ios-mapButton .card-header-ios-light,
+.card-ios-mapButton .card-title-ios-light,
+.card-ios-mapButton .card-content-ios-light {
+  color: #f4f4f4;
+}
+
+.card-ios-mapButton .text-ios-dark,
+.card-ios-mapButton .card-header-ios-dark,
+.card-ios-mapButton .card-title-ios-dark,
+.card-ios-mapButton .card-content-ios-dark {
+  color: #222;
+}
+
+.card-ios-mapButton .text-ios-header,
+.card-ios-mapButton .card-header-ios-header,
+.card-ios-mapButton .card-title-ios-header,
+.card-ios-mapButton .card-content-ios-header {
+  color: #42A5F5;
+}
+
+.card-ios-mapButton .text-ios-lightFab,
+.card-ios-mapButton .card-header-ios-lightFab,
+.card-ios-mapButton .card-title-ios-lightFab,
+.card-ios-mapButton .card-content-ios-lightFab {
+  color: white;
+}
+
+.card-ios-mapButton .text-ios-heartFab,
+.card-ios-mapButton .card-header-ios-heartFab,
+.card-ios-mapButton .card-title-ios-heartFab,
+.card-ios-mapButton .card-content-ios-heartFab {
+  color: white;
+}
+
+.card-ios-mapButton .text-ios-mapButton,
+.card-ios-mapButton .card-header-ios-mapButton,
+.card-ios-mapButton .card-title-ios-mapButton,
+.card-ios-mapButton .card-content-ios-mapButton {
+  color: white;
+}
+
+.card-ios-mapButton .text-ios-mainButton,
+.card-ios-mapButton .card-header-ios-mainButton,
+.card-ios-mapButton .card-title-ios-mainButton,
+.card-ios-mapButton .card-content-ios-mainButton {
+  color: white;
+}
+
+.card-header-ios-mapButton,
+.card-title-ios-mapButton,
+.card-content-ios-mapButton {
   color: white;
 }
 
@@ -8390,6 +8680,13 @@ ion-card-content {
 .card-ios-mainButton .card-header-ios-heartFab,
 .card-ios-mainButton .card-title-ios-heartFab,
 .card-ios-mainButton .card-content-ios-heartFab {
+  color: white;
+}
+
+.card-ios-mainButton .text-ios-mapButton,
+.card-ios-mainButton .card-header-ios-mapButton,
+.card-ios-mainButton .card-title-ios-mapButton,
+.card-ios-mainButton .card-content-ios-mapButton {
   color: white;
 }
 
@@ -8594,6 +8891,13 @@ ion-card-content {
   color: white;
 }
 
+.card-md-primary .text-md-mapButton,
+.card-md-primary .card-header-md-mapButton,
+.card-md-primary .card-title-md-mapButton,
+.card-md-primary .card-content-md-mapButton {
+  color: white;
+}
+
 .card-md-primary .text-md-mainButton,
 .card-md-primary .card-header-md-mainButton,
 .card-md-primary .card-title-md-mainButton,
@@ -8682,6 +8986,13 @@ ion-card-content {
 .card-md-secondary .card-header-md-heartFab,
 .card-md-secondary .card-title-md-heartFab,
 .card-md-secondary .card-content-md-heartFab {
+  color: white;
+}
+
+.card-md-secondary .text-md-mapButton,
+.card-md-secondary .card-header-md-mapButton,
+.card-md-secondary .card-title-md-mapButton,
+.card-md-secondary .card-content-md-mapButton {
   color: white;
 }
 
@@ -8776,6 +9087,13 @@ ion-card-content {
   color: white;
 }
 
+.card-md-danger .text-md-mapButton,
+.card-md-danger .card-header-md-mapButton,
+.card-md-danger .card-title-md-mapButton,
+.card-md-danger .card-content-md-mapButton {
+  color: white;
+}
+
 .card-md-danger .text-md-mainButton,
 .card-md-danger .card-header-md-mainButton,
 .card-md-danger .card-title-md-mainButton,
@@ -8864,6 +9182,13 @@ ion-card-content {
 .card-md-light .card-header-md-heartFab,
 .card-md-light .card-title-md-heartFab,
 .card-md-light .card-content-md-heartFab {
+  color: white;
+}
+
+.card-md-light .text-md-mapButton,
+.card-md-light .card-header-md-mapButton,
+.card-md-light .card-title-md-mapButton,
+.card-md-light .card-content-md-mapButton {
   color: white;
 }
 
@@ -8958,6 +9283,13 @@ ion-card-content {
   color: white;
 }
 
+.card-md-dark .text-md-mapButton,
+.card-md-dark .card-header-md-mapButton,
+.card-md-dark .card-title-md-mapButton,
+.card-md-dark .card-content-md-mapButton {
+  color: white;
+}
+
 .card-md-dark .text-md-mainButton,
 .card-md-dark .card-header-md-mainButton,
 .card-md-dark .card-title-md-mainButton,
@@ -9046,6 +9378,13 @@ ion-card-content {
 .card-md-header .card-header-md-heartFab,
 .card-md-header .card-title-md-heartFab,
 .card-md-header .card-content-md-heartFab {
+  color: white;
+}
+
+.card-md-header .text-md-mapButton,
+.card-md-header .card-header-md-mapButton,
+.card-md-header .card-title-md-mapButton,
+.card-md-header .card-content-md-mapButton {
   color: white;
 }
 
@@ -9140,6 +9479,13 @@ ion-card-content {
   color: white;
 }
 
+.card-md-lightFab .text-md-mapButton,
+.card-md-lightFab .card-header-md-mapButton,
+.card-md-lightFab .card-title-md-mapButton,
+.card-md-lightFab .card-content-md-mapButton {
+  color: white;
+}
+
 .card-md-lightFab .text-md-mainButton,
 .card-md-lightFab .card-header-md-mainButton,
 .card-md-lightFab .card-title-md-mainButton,
@@ -9231,6 +9577,13 @@ ion-card-content {
   color: white;
 }
 
+.card-md-heartFab .text-md-mapButton,
+.card-md-heartFab .card-header-md-mapButton,
+.card-md-heartFab .card-title-md-mapButton,
+.card-md-heartFab .card-content-md-mapButton {
+  color: white;
+}
+
 .card-md-heartFab .text-md-mainButton,
 .card-md-heartFab .card-header-md-mainButton,
 .card-md-heartFab .card-title-md-mainButton,
@@ -9241,6 +9594,104 @@ ion-card-content {
 .card-header-md-heartFab,
 .card-title-md-heartFab,
 .card-content-md-heartFab {
+  color: white;
+}
+
+.card-md .text-md-mapButton {
+  color: white;
+}
+
+.card-md-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.card-md-mapButton .card-header-md,
+.card-md-mapButton .card-title-md,
+.card-md-mapButton .card-content-md,
+.card-md-mapButton h1,
+.card-md-mapButton h2,
+.card-md-mapButton h3,
+.card-md-mapButton h4,
+.card-md-mapButton h5,
+.card-md-mapButton h6,
+.card-md-mapButton p {
+  color: #00BFA5;
+}
+
+.card-md-mapButton .text-md-primary,
+.card-md-mapButton .card-header-md-primary,
+.card-md-mapButton .card-title-md-primary,
+.card-md-mapButton .card-content-md-primary {
+  color: #488aff;
+}
+
+.card-md-mapButton .text-md-secondary,
+.card-md-mapButton .card-header-md-secondary,
+.card-md-mapButton .card-title-md-secondary,
+.card-md-mapButton .card-content-md-secondary {
+  color: #32db64;
+}
+
+.card-md-mapButton .text-md-danger,
+.card-md-mapButton .card-header-md-danger,
+.card-md-mapButton .card-title-md-danger,
+.card-md-mapButton .card-content-md-danger {
+  color: #f53d3d;
+}
+
+.card-md-mapButton .text-md-light,
+.card-md-mapButton .card-header-md-light,
+.card-md-mapButton .card-title-md-light,
+.card-md-mapButton .card-content-md-light {
+  color: #f4f4f4;
+}
+
+.card-md-mapButton .text-md-dark,
+.card-md-mapButton .card-header-md-dark,
+.card-md-mapButton .card-title-md-dark,
+.card-md-mapButton .card-content-md-dark {
+  color: #222;
+}
+
+.card-md-mapButton .text-md-header,
+.card-md-mapButton .card-header-md-header,
+.card-md-mapButton .card-title-md-header,
+.card-md-mapButton .card-content-md-header {
+  color: #42A5F5;
+}
+
+.card-md-mapButton .text-md-lightFab,
+.card-md-mapButton .card-header-md-lightFab,
+.card-md-mapButton .card-title-md-lightFab,
+.card-md-mapButton .card-content-md-lightFab {
+  color: white;
+}
+
+.card-md-mapButton .text-md-heartFab,
+.card-md-mapButton .card-header-md-heartFab,
+.card-md-mapButton .card-title-md-heartFab,
+.card-md-mapButton .card-content-md-heartFab {
+  color: white;
+}
+
+.card-md-mapButton .text-md-mapButton,
+.card-md-mapButton .card-header-md-mapButton,
+.card-md-mapButton .card-title-md-mapButton,
+.card-md-mapButton .card-content-md-mapButton {
+  color: white;
+}
+
+.card-md-mapButton .text-md-mainButton,
+.card-md-mapButton .card-header-md-mainButton,
+.card-md-mapButton .card-title-md-mainButton,
+.card-md-mapButton .card-content-md-mainButton {
+  color: white;
+}
+
+.card-header-md-mapButton,
+.card-title-md-mapButton,
+.card-content-md-mapButton {
   color: white;
 }
 
@@ -9319,6 +9770,13 @@ ion-card-content {
 .card-md-mainButton .card-header-md-heartFab,
 .card-md-mainButton .card-title-md-heartFab,
 .card-md-mainButton .card-content-md-heartFab {
+  color: white;
+}
+
+.card-md-mainButton .text-md-mapButton,
+.card-md-mainButton .card-header-md-mapButton,
+.card-md-mainButton .card-title-md-mapButton,
+.card-md-mainButton .card-content-md-mapButton {
   color: white;
 }
 
@@ -9523,6 +9981,13 @@ ion-card-content {
   color: white;
 }
 
+.card-wp-primary .text-wp-mapButton,
+.card-wp-primary .card-header-wp-mapButton,
+.card-wp-primary .card-title-wp-mapButton,
+.card-wp-primary .card-content-wp-mapButton {
+  color: white;
+}
+
 .card-wp-primary .text-wp-mainButton,
 .card-wp-primary .card-header-wp-mainButton,
 .card-wp-primary .card-title-wp-mainButton,
@@ -9611,6 +10076,13 @@ ion-card-content {
 .card-wp-secondary .card-header-wp-heartFab,
 .card-wp-secondary .card-title-wp-heartFab,
 .card-wp-secondary .card-content-wp-heartFab {
+  color: white;
+}
+
+.card-wp-secondary .text-wp-mapButton,
+.card-wp-secondary .card-header-wp-mapButton,
+.card-wp-secondary .card-title-wp-mapButton,
+.card-wp-secondary .card-content-wp-mapButton {
   color: white;
 }
 
@@ -9705,6 +10177,13 @@ ion-card-content {
   color: white;
 }
 
+.card-wp-danger .text-wp-mapButton,
+.card-wp-danger .card-header-wp-mapButton,
+.card-wp-danger .card-title-wp-mapButton,
+.card-wp-danger .card-content-wp-mapButton {
+  color: white;
+}
+
 .card-wp-danger .text-wp-mainButton,
 .card-wp-danger .card-header-wp-mainButton,
 .card-wp-danger .card-title-wp-mainButton,
@@ -9793,6 +10272,13 @@ ion-card-content {
 .card-wp-light .card-header-wp-heartFab,
 .card-wp-light .card-title-wp-heartFab,
 .card-wp-light .card-content-wp-heartFab {
+  color: white;
+}
+
+.card-wp-light .text-wp-mapButton,
+.card-wp-light .card-header-wp-mapButton,
+.card-wp-light .card-title-wp-mapButton,
+.card-wp-light .card-content-wp-mapButton {
   color: white;
 }
 
@@ -9887,6 +10373,13 @@ ion-card-content {
   color: white;
 }
 
+.card-wp-dark .text-wp-mapButton,
+.card-wp-dark .card-header-wp-mapButton,
+.card-wp-dark .card-title-wp-mapButton,
+.card-wp-dark .card-content-wp-mapButton {
+  color: white;
+}
+
 .card-wp-dark .text-wp-mainButton,
 .card-wp-dark .card-header-wp-mainButton,
 .card-wp-dark .card-title-wp-mainButton,
@@ -9975,6 +10468,13 @@ ion-card-content {
 .card-wp-header .card-header-wp-heartFab,
 .card-wp-header .card-title-wp-heartFab,
 .card-wp-header .card-content-wp-heartFab {
+  color: white;
+}
+
+.card-wp-header .text-wp-mapButton,
+.card-wp-header .card-header-wp-mapButton,
+.card-wp-header .card-title-wp-mapButton,
+.card-wp-header .card-content-wp-mapButton {
   color: white;
 }
 
@@ -10069,6 +10569,13 @@ ion-card-content {
   color: white;
 }
 
+.card-wp-lightFab .text-wp-mapButton,
+.card-wp-lightFab .card-header-wp-mapButton,
+.card-wp-lightFab .card-title-wp-mapButton,
+.card-wp-lightFab .card-content-wp-mapButton {
+  color: white;
+}
+
 .card-wp-lightFab .text-wp-mainButton,
 .card-wp-lightFab .card-header-wp-mainButton,
 .card-wp-lightFab .card-title-wp-mainButton,
@@ -10160,6 +10667,13 @@ ion-card-content {
   color: white;
 }
 
+.card-wp-heartFab .text-wp-mapButton,
+.card-wp-heartFab .card-header-wp-mapButton,
+.card-wp-heartFab .card-title-wp-mapButton,
+.card-wp-heartFab .card-content-wp-mapButton {
+  color: white;
+}
+
 .card-wp-heartFab .text-wp-mainButton,
 .card-wp-heartFab .card-header-wp-mainButton,
 .card-wp-heartFab .card-title-wp-mainButton,
@@ -10170,6 +10684,104 @@ ion-card-content {
 .card-header-wp-heartFab,
 .card-title-wp-heartFab,
 .card-content-wp-heartFab {
+  color: white;
+}
+
+.card-wp .text-wp-mapButton {
+  color: white;
+}
+
+.card-wp-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.card-wp-mapButton .card-header-wp,
+.card-wp-mapButton .card-title-wp,
+.card-wp-mapButton .card-content-wp,
+.card-wp-mapButton h1,
+.card-wp-mapButton h2,
+.card-wp-mapButton h3,
+.card-wp-mapButton h4,
+.card-wp-mapButton h5,
+.card-wp-mapButton h6,
+.card-wp-mapButton p {
+  color: #00BFA5;
+}
+
+.card-wp-mapButton .text-wp-primary,
+.card-wp-mapButton .card-header-wp-primary,
+.card-wp-mapButton .card-title-wp-primary,
+.card-wp-mapButton .card-content-wp-primary {
+  color: #488aff;
+}
+
+.card-wp-mapButton .text-wp-secondary,
+.card-wp-mapButton .card-header-wp-secondary,
+.card-wp-mapButton .card-title-wp-secondary,
+.card-wp-mapButton .card-content-wp-secondary {
+  color: #32db64;
+}
+
+.card-wp-mapButton .text-wp-danger,
+.card-wp-mapButton .card-header-wp-danger,
+.card-wp-mapButton .card-title-wp-danger,
+.card-wp-mapButton .card-content-wp-danger {
+  color: #f53d3d;
+}
+
+.card-wp-mapButton .text-wp-light,
+.card-wp-mapButton .card-header-wp-light,
+.card-wp-mapButton .card-title-wp-light,
+.card-wp-mapButton .card-content-wp-light {
+  color: #f4f4f4;
+}
+
+.card-wp-mapButton .text-wp-dark,
+.card-wp-mapButton .card-header-wp-dark,
+.card-wp-mapButton .card-title-wp-dark,
+.card-wp-mapButton .card-content-wp-dark {
+  color: #222;
+}
+
+.card-wp-mapButton .text-wp-header,
+.card-wp-mapButton .card-header-wp-header,
+.card-wp-mapButton .card-title-wp-header,
+.card-wp-mapButton .card-content-wp-header {
+  color: #42A5F5;
+}
+
+.card-wp-mapButton .text-wp-lightFab,
+.card-wp-mapButton .card-header-wp-lightFab,
+.card-wp-mapButton .card-title-wp-lightFab,
+.card-wp-mapButton .card-content-wp-lightFab {
+  color: white;
+}
+
+.card-wp-mapButton .text-wp-heartFab,
+.card-wp-mapButton .card-header-wp-heartFab,
+.card-wp-mapButton .card-title-wp-heartFab,
+.card-wp-mapButton .card-content-wp-heartFab {
+  color: white;
+}
+
+.card-wp-mapButton .text-wp-mapButton,
+.card-wp-mapButton .card-header-wp-mapButton,
+.card-wp-mapButton .card-title-wp-mapButton,
+.card-wp-mapButton .card-content-wp-mapButton {
+  color: white;
+}
+
+.card-wp-mapButton .text-wp-mainButton,
+.card-wp-mapButton .card-header-wp-mainButton,
+.card-wp-mapButton .card-title-wp-mainButton,
+.card-wp-mapButton .card-content-wp-mainButton {
+  color: white;
+}
+
+.card-header-wp-mapButton,
+.card-title-wp-mapButton,
+.card-content-wp-mapButton {
   color: white;
 }
 
@@ -10248,6 +10860,13 @@ ion-card-content {
 .card-wp-mainButton .card-header-wp-heartFab,
 .card-wp-mainButton .card-title-wp-heartFab,
 .card-wp-mainButton .card-content-wp-heartFab {
+  color: white;
+}
+
+.card-wp-mainButton .text-wp-mapButton,
+.card-wp-mainButton .card-header-wp-mapButton,
+.card-wp-mainButton .card-title-wp-mapButton,
+.card-wp-mainButton .card-content-wp-mapButton {
   color: white;
 }
 
@@ -10408,6 +11027,15 @@ ion-card-content {
 
 .checkbox-ios-heartFab .checkbox-checked .checkbox-inner {
   border-color: #FF4081;
+}
+
+.checkbox-ios-mapButton .checkbox-checked {
+  border-color: white;
+  background-color: white;
+}
+
+.checkbox-ios-mapButton .checkbox-checked .checkbox-inner {
+  border-color: #00BFA5;
 }
 
 .checkbox-ios-mainButton .checkbox-checked {
@@ -10577,6 +11205,15 @@ ion-card-content {
   border-color: #FF4081;
 }
 
+.checkbox-md-mapButton .checkbox-checked {
+  border-color: white;
+  background-color: white;
+}
+
+.checkbox-md-mapButton .checkbox-checked .checkbox-inner {
+  border-color: #00BFA5;
+}
+
 .checkbox-md-mainButton .checkbox-checked {
   border-color: white;
   background-color: white;
@@ -10741,6 +11378,15 @@ ion-card-content {
   border-color: #FF4081;
 }
 
+.checkbox-wp-mapButton .checkbox-checked {
+  border-color: white;
+  background-color: white;
+}
+
+.checkbox-wp-mapButton .checkbox-checked .checkbox-inner {
+  border-color: #00BFA5;
+}
+
 .checkbox-wp-mainButton .checkbox-checked {
   border-color: white;
   background-color: white;
@@ -10868,6 +11514,12 @@ ion-chip ion-avatar img {
   background-color: white;
 }
 
+.chip-ios-mapButton,
+.chip-ios .icon-ios-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
 .chip-ios-mainButton,
 .chip-ios .icon-ios-mainButton {
   color: #42A5F5;
@@ -10944,6 +11596,12 @@ ion-chip ion-avatar img {
 .chip-md-heartFab,
 .chip-md .icon-md-heartFab {
   color: #FF4081;
+  background-color: white;
+}
+
+.chip-md-mapButton,
+.chip-md .icon-md-mapButton {
+  color: #00BFA5;
   background-color: white;
 }
 
@@ -11027,6 +11685,12 @@ ion-chip ion-avatar img {
 .chip-wp-heartFab,
 .chip-wp .icon-wp-heartFab {
   color: #FF4081;
+  background-color: white;
+}
+
+.chip-wp-mapButton,
+.chip-wp .icon-wp-mapButton {
+  color: #00BFA5;
   background-color: white;
 }
 
@@ -11936,6 +12600,15 @@ ion-fab-list[side=right] {
   background-color: #ebebeb;
 }
 
+.fab-ios-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.fab-ios-mapButton.activated {
+  background-color: #ebebeb;
+}
+
 .fab-ios-mainButton {
   color: #42A5F5;
   background-color: white;
@@ -12077,6 +12750,19 @@ ion-fab-list[side=right] {
   background-color: #FF4081;
 }
 
+.fab-md-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.fab-md-mapButton.activated {
+  background-color: #ebebeb;
+}
+
+.fab-md-mapButton .button-effect {
+  background-color: #00BFA5;
+}
+
 .fab-md-mainButton {
   color: #42A5F5;
   background-color: white;
@@ -12180,6 +12866,15 @@ ion-fab-list[side=right] {
 }
 
 .fab-wp-heartFab.activated {
+  background-color: #ebebeb;
+}
+
+.fab-wp-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.fab-wp-mapButton.activated {
   background-color: #ebebeb;
 }
 
@@ -16149,6 +16844,10 @@ ion-icon[small] {
   color: white;
 }
 
+.icon-ios-mapButton {
+  color: white;
+}
+
 .icon-ios-mainButton {
   color: white;
 }
@@ -16185,6 +16884,10 @@ ion-icon[small] {
   color: white;
 }
 
+.icon-md-mapButton {
+  color: white;
+}
+
 .icon-md-mainButton {
   color: white;
 }
@@ -16218,6 +16921,10 @@ ion-icon[small] {
 }
 
 .icon-wp-heartFab {
+  color: white;
+}
+
+.icon-wp-mapButton {
   color: white;
 }
 
@@ -17446,6 +18153,26 @@ ion-item-group .item-wrapper:last-child .item-ios .item-inner {
   background-color: #ebebeb;
 }
 
+.item-ios .text-ios-mapButton {
+  color: white;
+}
+
+.item-ios-mapButton,
+.item-divider-ios-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.item-ios-mapButton p,
+.item-divider-ios-mapButton p {
+  color: #00BFA5;
+}
+
+.item-ios-mapButton.activated,
+.item-divider-ios-mapButton.activated {
+  background-color: #ebebeb;
+}
+
 .item-ios .text-ios-mainButton {
   color: white;
 }
@@ -17832,6 +18559,26 @@ ion-item-group .item-md .item-wrapper:last-child .item-inner {
 
 .item-md-heartFab.activated,
 .item-divider-md-heartFab.activated {
+  background-color: #ebebeb;
+}
+
+.item-md .text-md-mapButton {
+  color: white;
+}
+
+.item-md-mapButton,
+.item-divider-md-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.item-md-mapButton p,
+.item-divider-md-mapButton p {
+  color: #00BFA5;
+}
+
+.item-md-mapButton.activated,
+.item-divider-md-mapButton.activated {
   background-color: #ebebeb;
 }
 
@@ -18224,6 +18971,26 @@ ion-item-group .item-md .item-wrapper:last-child .item-inner {
   background-color: #ebebeb;
 }
 
+.item-wp .text-wp-mapButton {
+  color: white;
+}
+
+.item-wp-mapButton,
+.item-divider-wp-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.item-wp-mapButton p,
+.item-divider-wp-mapButton p {
+  color: #00BFA5;
+}
+
+.item-wp-mapButton.activated,
+.item-divider-wp-mapButton.activated {
+  background-color: #ebebeb;
+}
+
 .item-wp .text-wp-mainButton {
   color: white;
 }
@@ -18430,6 +19197,13 @@ ion-label[floating] {
   color: white;
 }
 
+.label-ios-mapButton,
+.item-input .label-ios-mapButton,
+.item-select .label-ios-mapButton,
+.item-datetime .label-ios-mapButton {
+  color: white;
+}
+
 .label-ios-mainButton,
 .item-input .label-ios-mainButton,
 .item-select .label-ios-mainButton,
@@ -18565,6 +19339,13 @@ ion-label[floating] {
   color: white;
 }
 
+.label-md-mapButton,
+.item-input .label-md-mapButton,
+.item-select .label-md-mapButton,
+.item-datetime .label-md-mapButton {
+  color: white;
+}
+
 .label-md-mainButton,
 .item-input .label-md-mainButton,
 .item-select .label-md-mainButton,
@@ -18691,6 +19472,13 @@ ion-label[floating] {
 .item-input .label-wp-heartFab,
 .item-select .label-wp-heartFab,
 .item-datetime .label-wp-heartFab {
+  color: white;
+}
+
+.label-wp-mapButton,
+.item-input .label-wp-mapButton,
+.item-select .label-wp-mapButton,
+.item-datetime .label-wp-mapButton {
   color: white;
 }
 
@@ -18887,6 +19675,11 @@ ion-list[inset] {
   background-color: white;
 }
 
+.list-header-ios-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
 .list-header-ios-mainButton {
   color: #42A5F5;
   background-color: white;
@@ -19054,6 +19847,11 @@ ion-list[inset] {
 
 .list-header-md-heartFab {
   color: #FF4081;
+  background-color: white;
+}
+
+.list-header-md-mapButton {
+  color: #00BFA5;
   background-color: white;
 }
 
@@ -19232,6 +20030,11 @@ ion-list[inset] {
 
 .list-header-wp-heartFab {
   color: #FF4081;
+  background-color: white;
+}
+
+.list-header-wp-mapButton {
+  color: #00BFA5;
   background-color: white;
 }
 
@@ -19649,6 +20452,10 @@ ion-modal {
   color: white;
 }
 
+.note-ios-mapButton {
+  color: white;
+}
+
 .note-ios-mainButton {
   color: white;
 }
@@ -19689,6 +20496,10 @@ ion-modal {
   color: white;
 }
 
+.note-md-mapButton {
+  color: white;
+}
+
 .note-md-mainButton {
   color: white;
 }
@@ -19726,6 +20537,10 @@ ion-modal {
 }
 
 .note-wp-heartFab {
+  color: white;
+}
+
+.note-wp-mapButton {
   color: white;
 }
 
@@ -20537,6 +21352,18 @@ ion-popover {
   border-color: white;
 }
 
+.item-radio-ios-mapButton.item-radio-checked ion-label {
+  color: white;
+}
+
+.radio-ios-mapButton .radio-checked {
+  color: white;
+}
+
+.radio-ios-mapButton .radio-checked .radio-inner {
+  border-color: white;
+}
+
 .item-radio-ios-mainButton.item-radio-checked ion-label {
   color: white;
 }
@@ -20743,6 +21570,18 @@ ion-popover {
   background-color: white;
 }
 
+.item-radio-md-mapButton.item-radio-checked ion-label {
+  color: white;
+}
+
+.radio-md-mapButton .radio-checked {
+  border-color: white;
+}
+
+.radio-md-mapButton .radio-inner {
+  background-color: white;
+}
+
 .item-radio-md-mainButton.item-radio-checked ion-label {
   color: white;
 }
@@ -20879,6 +21718,10 @@ ion-popover {
 }
 
 .radio-wp-heartFab .radio-checked {
+  border-color: white;
+}
+
+.radio-wp-mapButton .radio-checked {
   border-color: white;
 }
 
@@ -21131,6 +21974,11 @@ ion-range ion-icon {
 
 .range-ios-heartFab .range-bar-active,
 .range-ios-heartFab .range-tick-active {
+  background: white;
+}
+
+.range-ios-mapButton .range-bar-active,
+.range-ios-mapButton .range-tick-active {
   background: white;
 }
 
@@ -21504,6 +22352,24 @@ ion-range ion-icon {
   background: white;
 }
 
+.range-md-mapButton .range-md .range-knob-min.range-knob-min .range-knob {
+  border: 2px solid #bdbdbd;
+  background: #fff;
+}
+
+.range-md-mapButton .range-md .range-knob-min.range-knob-min .range-pin,
+.range-md-mapButton .range-md .range-knob-min.range-knob-min .range-pin::before {
+  color: #fff;
+  background: #bdbdbd;
+}
+
+.range-md-mapButton .range-bar-active,
+.range-md-mapButton .range-knob,
+.range-md-mapButton .range-pin,
+.range-md-mapButton .range-pin::before {
+  background: white;
+}
+
 .range-md-mainButton .range-md .range-knob-min.range-knob-min .range-knob {
   border: 2px solid #bdbdbd;
   background: #fff;
@@ -21724,6 +22590,13 @@ ion-range ion-icon {
 .range-wp-heartFab .range-tick-active,
 .range-wp-heartFab .range-knob,
 .range-wp-heartFab .range-pin {
+  background: white;
+}
+
+.range-wp-mapButton .range-bar-active,
+.range-wp-mapButton .range-tick-active,
+.range-wp-mapButton .range-knob,
+.range-wp-mapButton .range-pin {
   background: white;
 }
 
@@ -22379,6 +23252,44 @@ ion-searchbar {
   color: #42A5f5;
 }
 
+.searchbar-ios-mapButton .searchbar-ios-cancel {
+  color: white;
+}
+
+.searchbar-ios-mapButton .searchbar-ios-cancel:hover:not(.disable-hover) {
+  color: #ebebeb;
+}
+
+.toolbar-ios-mapButton .searchbar-ios .searchbar-search-icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2013%2013'><path%20fill='rgba(0,%20191,%20165,%200.5)'%20d='M5,1c2.2,0,4,1.8,4,4S7.2,9,5,9S1,7.2,1,5S2.8,1,5,1%20M5,0C2.2,0,0,2.2,0,5s2.2,5,5,5s5-2.2,5-5S7.8,0,5,0%20L5,0z'/><line%20stroke='rgba(0,%20191,%20165,%200.5)'%20stroke-miterlimit='10'%20x1='12.6'%20y1='12.6'%20x2='8.2'%20y2='8.2'/></svg>");
+}
+
+.toolbar-ios-mapButton .searchbar-ios .searchbar-input {
+  color: #00BFA5;
+  background: rgba(0, 191, 165, 0.08);
+}
+
+.toolbar-ios-mapButton .searchbar-ios .searchbar-input::-moz-placeholder {
+  color: rgba(0, 191, 165, 0.5);
+}
+
+.toolbar-ios-mapButton .searchbar-ios .searchbar-input:-ms-input-placeholder {
+  color: rgba(0, 191, 165, 0.5);
+}
+
+.toolbar-ios-mapButton .searchbar-ios .searchbar-input::-webkit-input-placeholder {
+  text-indent: 0;
+  color: rgba(0, 191, 165, 0.5);
+}
+
+.toolbar-ios-mapButton .searchbar-ios .searchbar-clear-icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'><path%20fill='rgba(0,%20191,%20165,%200.5)'%20d='M403.1,108.9c-81.2-81.2-212.9-81.2-294.2,0s-81.2,212.9,0,294.2c81.2,81.2,212.9,81.2,294.2,0S484.3,190.1,403.1,108.9z%20M352,340.2L340.2,352l-84.4-84.2l-84,83.8L160,339.8l84-83.8l-84-83.8l11.8-11.8l84,83.8l84.4-84.2l11.8,11.8L267.6,256L352,340.2z'/></svg>");
+}
+
+.toolbar-ios-mapButton .searchbar-ios .searchbar-ios-cancel {
+  color: #42A5f5;
+}
+
 .searchbar-ios-mainButton .searchbar-ios-cancel {
   color: white;
 }
@@ -22695,6 +23606,10 @@ ion-searchbar {
 }
 
 .searchbar-wp-heartFab.searchbar-has-focus .searchbar-input-container {
+  border-color: white;
+}
+
+.searchbar-wp-mapButton.searchbar-has-focus .searchbar-input-container {
   border-color: white;
 }
 
@@ -23070,6 +23985,32 @@ ion-segment {
   color: white;
 }
 
+.segment-ios-mapButton .segment-button {
+  border-color: white;
+  color: white;
+}
+
+.segment-ios-mapButton .segment-button:hover:not(.segment-activated) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.segment-ios-mapButton .segment-button:active:not(.segment-activated) {
+  background-color: rgba(255, 255, 255, 0.16);
+}
+
+.segment-ios-mapButton .segment-button.segment-activated {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.segment-ios-mapButton .segment-button-disabled {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.toolbar-ios-mapButton .segment-ios .segment-button.segment-activated {
+  color: white;
+}
+
 .segment-ios-mainButton .segment-button {
   border-color: white;
   color: white;
@@ -23227,6 +24168,16 @@ ion-segment {
   opacity: 1;
 }
 
+.segment-md-mapButton .segment-button {
+  color: white;
+}
+
+.segment-md-mapButton .segment-button.activated, .segment-md-mapButton .segment-button.segment-activated {
+  border-color: white;
+  color: white;
+  opacity: 1;
+}
+
 .segment-md-mainButton .segment-button {
   color: white;
 }
@@ -23355,6 +24306,16 @@ ion-segment {
 }
 
 .segment-wp-heartFab .segment-button.activated, .segment-wp-heartFab .segment-button.segment-activated {
+  border-color: white;
+  color: white;
+  opacity: 1;
+}
+
+.segment-wp-mapButton .segment-button {
+  color: white;
+}
+
+.segment-wp-mapButton .segment-button.activated, .segment-wp-mapButton .segment-button.segment-activated {
   border-color: white;
   color: white;
   opacity: 1;
@@ -24548,6 +25509,18 @@ ion-spinner.spinner-paused svg {
   fill: white;
 }
 
+.spinner-ios-mapButton.spinner-ios line,
+.spinner-ios-mapButton.spinner-ios-small line,
+.spinner-ios-mapButton.spinner-crescent circle {
+  stroke: white;
+}
+
+.spinner-ios-mapButton.spinner-bubbles circle,
+.spinner-ios-mapButton.spinner-circles circle,
+.spinner-ios-mapButton.spinner-dots circle {
+  fill: white;
+}
+
 .spinner-ios-mainButton.spinner-ios line,
 .spinner-ios-mainButton.spinner-ios-small line,
 .spinner-ios-mainButton.spinner-crescent circle {
@@ -24677,6 +25650,18 @@ ion-spinner.spinner-paused svg {
   fill: white;
 }
 
+.spinner-md-mapButton.spinner-ios line,
+.spinner-md-mapButton.spinner-ios-small line,
+.spinner-md-mapButton.spinner-crescent circle {
+  stroke: white;
+}
+
+.spinner-md-mapButton.spinner-bubbles circle,
+.spinner-md-mapButton.spinner-circles circle,
+.spinner-md-mapButton.spinner-dots circle {
+  fill: white;
+}
+
 .spinner-md-mainButton.spinner-ios line,
 .spinner-md-mainButton.spinner-ios-small line,
 .spinner-md-mainButton.spinner-crescent circle {
@@ -24803,6 +25788,18 @@ ion-spinner.spinner-paused svg {
 .spinner-wp-heartFab.spinner-bubbles circle,
 .spinner-wp-heartFab.spinner-circles circle,
 .spinner-wp-heartFab.spinner-dots circle {
+  fill: white;
+}
+
+.spinner-wp-mapButton.spinner-ios line,
+.spinner-wp-mapButton.spinner-ios-small line,
+.spinner-wp-mapButton.spinner-crescent circle {
+  stroke: white;
+}
+
+.spinner-wp-mapButton.spinner-bubbles circle,
+.spinner-wp-mapButton.spinner-circles circle,
+.spinner-wp-mapButton.spinner-dots circle {
   fill: white;
 }
 
@@ -25351,6 +26348,23 @@ ion-spinner.spinner-paused svg {
   color: #FF4081;
 }
 
+.tabs-ios-mapButton .tabbar {
+  border-color: #e6e6e6;
+  background-color: white;
+}
+
+.tabs-ios-mapButton .tab-button,
+.tabs-ios-mapButton .tab-button-icon,
+.tabs-ios-mapButton .tab-button:hover:not(.disable-hover),
+.tabs-ios-mapButton .tab-button:hover:not(.disable-hover) .tab-button-icon {
+  color: rgba(0, 191, 165, 0.7);
+}
+
+.tabs-ios-mapButton .tab-button[aria-selected=true],
+.tabs-ios-mapButton .tab-button[aria-selected=true] .tab-button-icon {
+  color: #00BFA5;
+}
+
 .tabs-ios-mainButton .tabbar {
   border-color: #e6e6e6;
   background-color: white;
@@ -25634,6 +26648,25 @@ ion-spinner.spinner-paused svg {
   background: #FF4081;
 }
 
+.tabs-md-mapButton .tabbar {
+  background-color: white;
+}
+
+.tabs-md-mapButton .tab-button,
+.tabs-md-mapButton .tab-button-icon {
+  color: rgba(0, 191, 165, 0.7);
+}
+
+.tabs-md-mapButton .tab-button:hover:not(.disable-hover),
+.tabs-md-mapButton .tab-button[aria-selected=true],
+.tabs-md-mapButton .tab-button[aria-selected=true] .tab-button-icon {
+  color: #00BFA5;
+}
+
+.tabs-md-mapButton[tabsHighlight=true] .tab-highlight {
+  background: #00BFA5;
+}
+
 .tabs-md-mainButton .tabbar {
   background-color: white;
 }
@@ -25863,6 +26896,23 @@ ion-spinner.spinner-paused svg {
 .tabs-wp-heartFab .tab-button[aria-selected=true] .tab-button-icon {
   border-color: #FF4081;
   color: #FF4081;
+}
+
+.tabs-wp-mapButton .tabbar {
+  background-color: white;
+}
+
+.tabs-wp-mapButton .tab-button,
+.tabs-wp-mapButton .tab-button-icon {
+  color: rgba(0, 191, 165, 0.7);
+}
+
+.tabs-wp-mapButton .tab-button:hover:not(.disable-hover),
+.tabs-wp-mapButton .tab-button:hover:not(.disable-hover) .tab-button-icon,
+.tabs-wp-mapButton .tab-button[aria-selected=true],
+.tabs-wp-mapButton .tab-button[aria-selected=true] .tab-button-icon {
+  border-color: #00BFA5;
+  color: #00BFA5;
 }
 
 .tabs-wp-mainButton .tabbar {
@@ -26184,6 +27234,10 @@ ion-toast {
   background-color: white;
 }
 
+.toggle-ios-mapButton.toggle-checked .toggle-icon {
+  background-color: white;
+}
+
 .toggle-ios-mainButton.toggle-checked .toggle-icon {
   background-color: white;
 }
@@ -26347,6 +27401,14 @@ ion-toast {
 }
 
 .toggle-md-heartFab.toggle-checked .toggle-inner {
+  background-color: white;
+}
+
+.toggle-md-mapButton.toggle-checked .toggle-icon {
+  background-color: white;
+}
+
+.toggle-md-mapButton.toggle-checked .toggle-inner {
   background-color: white;
 }
 
@@ -26525,6 +27587,15 @@ ion-toast {
 
 .toggle-wp-heartFab.toggle-checked .toggle-inner {
   background-color: #FF4081;
+}
+
+.toggle-wp-mapButton.toggle-checked .toggle-icon {
+  border-color: white;
+  background-color: white;
+}
+
+.toggle-wp-mapButton.toggle-checked .toggle-inner {
+  background-color: #00BFA5;
 }
 
 .toggle-wp-mainButton.toggle-checked .toggle-icon {
@@ -27298,6 +28369,46 @@ ion-navbar.toolbar {
   background-color: #ebebeb;
 }
 
+.toolbar-ios-primary .bar-button-mapButton-ios,
+.toolbar-ios-primary .bar-button-default.bar-button-ios-mapButton,
+.toolbar-ios-primary .bar-button-clear-ios-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-ios-primary .bar-button-mapButton-ios:hover:not(.disable-hover),
+.toolbar-ios-primary .bar-button-default.bar-button-ios-mapButton:hover:not(.disable-hover),
+.toolbar-ios-primary .bar-button-clear-ios-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-ios-primary .bar-button-mapButton-ios.activated,
+.toolbar-ios-primary .bar-button-default.bar-button-ios-mapButton.activated,
+.toolbar-ios-primary .bar-button-clear-ios-mapButton.activated {
+  opacity: .4;
+}
+
+.toolbar-ios-primary .bar-button-outline-ios-mapButton {
+  border-color: white;
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-ios-primary .bar-button-outline-ios-mapButton.activated {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-ios-primary .bar-button-solid-ios-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-ios-primary .bar-button-solid-ios-mapButton.activated {
+  color: #00BFA5;
+  background-color: #ebebeb;
+}
+
 .toolbar-ios-primary .bar-button-mainButton-ios,
 .toolbar-ios-primary .bar-button-default.bar-button-ios-mainButton,
 .toolbar-ios-primary .bar-button-clear-ios-mainButton {
@@ -27705,6 +28816,46 @@ ion-navbar.toolbar {
 
 .toolbar-ios-secondary .bar-button-solid-ios-heartFab.activated {
   color: #FF4081;
+  background-color: #ebebeb;
+}
+
+.toolbar-ios-secondary .bar-button-mapButton-ios,
+.toolbar-ios-secondary .bar-button-default.bar-button-ios-mapButton,
+.toolbar-ios-secondary .bar-button-clear-ios-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-ios-secondary .bar-button-mapButton-ios:hover:not(.disable-hover),
+.toolbar-ios-secondary .bar-button-default.bar-button-ios-mapButton:hover:not(.disable-hover),
+.toolbar-ios-secondary .bar-button-clear-ios-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-ios-secondary .bar-button-mapButton-ios.activated,
+.toolbar-ios-secondary .bar-button-default.bar-button-ios-mapButton.activated,
+.toolbar-ios-secondary .bar-button-clear-ios-mapButton.activated {
+  opacity: .4;
+}
+
+.toolbar-ios-secondary .bar-button-outline-ios-mapButton {
+  border-color: white;
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-ios-secondary .bar-button-outline-ios-mapButton.activated {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-ios-secondary .bar-button-solid-ios-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-ios-secondary .bar-button-solid-ios-mapButton.activated {
+  color: #00BFA5;
   background-color: #ebebeb;
 }
 
@@ -28118,6 +29269,46 @@ ion-navbar.toolbar {
   background-color: #ebebeb;
 }
 
+.toolbar-ios-danger .bar-button-mapButton-ios,
+.toolbar-ios-danger .bar-button-default.bar-button-ios-mapButton,
+.toolbar-ios-danger .bar-button-clear-ios-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-ios-danger .bar-button-mapButton-ios:hover:not(.disable-hover),
+.toolbar-ios-danger .bar-button-default.bar-button-ios-mapButton:hover:not(.disable-hover),
+.toolbar-ios-danger .bar-button-clear-ios-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-ios-danger .bar-button-mapButton-ios.activated,
+.toolbar-ios-danger .bar-button-default.bar-button-ios-mapButton.activated,
+.toolbar-ios-danger .bar-button-clear-ios-mapButton.activated {
+  opacity: .4;
+}
+
+.toolbar-ios-danger .bar-button-outline-ios-mapButton {
+  border-color: white;
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-ios-danger .bar-button-outline-ios-mapButton.activated {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-ios-danger .bar-button-solid-ios-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-ios-danger .bar-button-solid-ios-mapButton.activated {
+  color: #00BFA5;
+  background-color: #ebebeb;
+}
+
 .toolbar-ios-danger .bar-button-mainButton-ios,
 .toolbar-ios-danger .bar-button-default.bar-button-ios-mainButton,
 .toolbar-ios-danger .bar-button-clear-ios-mainButton {
@@ -28525,6 +29716,46 @@ ion-navbar.toolbar {
 
 .toolbar-ios-light .bar-button-solid-ios-heartFab.activated {
   color: #FF4081;
+  background-color: #ebebeb;
+}
+
+.toolbar-ios-light .bar-button-mapButton-ios,
+.toolbar-ios-light .bar-button-default.bar-button-ios-mapButton,
+.toolbar-ios-light .bar-button-clear-ios-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-ios-light .bar-button-mapButton-ios:hover:not(.disable-hover),
+.toolbar-ios-light .bar-button-default.bar-button-ios-mapButton:hover:not(.disable-hover),
+.toolbar-ios-light .bar-button-clear-ios-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-ios-light .bar-button-mapButton-ios.activated,
+.toolbar-ios-light .bar-button-default.bar-button-ios-mapButton.activated,
+.toolbar-ios-light .bar-button-clear-ios-mapButton.activated {
+  opacity: .4;
+}
+
+.toolbar-ios-light .bar-button-outline-ios-mapButton {
+  border-color: white;
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-ios-light .bar-button-outline-ios-mapButton.activated {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-ios-light .bar-button-solid-ios-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-ios-light .bar-button-solid-ios-mapButton.activated {
+  color: #00BFA5;
   background-color: #ebebeb;
 }
 
@@ -28938,6 +30169,46 @@ ion-navbar.toolbar {
   background-color: #ebebeb;
 }
 
+.toolbar-ios-dark .bar-button-mapButton-ios,
+.toolbar-ios-dark .bar-button-default.bar-button-ios-mapButton,
+.toolbar-ios-dark .bar-button-clear-ios-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-ios-dark .bar-button-mapButton-ios:hover:not(.disable-hover),
+.toolbar-ios-dark .bar-button-default.bar-button-ios-mapButton:hover:not(.disable-hover),
+.toolbar-ios-dark .bar-button-clear-ios-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-ios-dark .bar-button-mapButton-ios.activated,
+.toolbar-ios-dark .bar-button-default.bar-button-ios-mapButton.activated,
+.toolbar-ios-dark .bar-button-clear-ios-mapButton.activated {
+  opacity: .4;
+}
+
+.toolbar-ios-dark .bar-button-outline-ios-mapButton {
+  border-color: white;
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-ios-dark .bar-button-outline-ios-mapButton.activated {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-ios-dark .bar-button-solid-ios-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-ios-dark .bar-button-solid-ios-mapButton.activated {
+  color: #00BFA5;
+  background-color: #ebebeb;
+}
+
 .toolbar-ios-dark .bar-button-mainButton-ios,
 .toolbar-ios-dark .bar-button-default.bar-button-ios-mainButton,
 .toolbar-ios-dark .bar-button-clear-ios-mainButton {
@@ -29345,6 +30616,46 @@ ion-navbar.toolbar {
 
 .toolbar-ios-header .bar-button-solid-ios-heartFab.activated {
   color: #FF4081;
+  background-color: #ebebeb;
+}
+
+.toolbar-ios-header .bar-button-mapButton-ios,
+.toolbar-ios-header .bar-button-default.bar-button-ios-mapButton,
+.toolbar-ios-header .bar-button-clear-ios-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-ios-header .bar-button-mapButton-ios:hover:not(.disable-hover),
+.toolbar-ios-header .bar-button-default.bar-button-ios-mapButton:hover:not(.disable-hover),
+.toolbar-ios-header .bar-button-clear-ios-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-ios-header .bar-button-mapButton-ios.activated,
+.toolbar-ios-header .bar-button-default.bar-button-ios-mapButton.activated,
+.toolbar-ios-header .bar-button-clear-ios-mapButton.activated {
+  opacity: .4;
+}
+
+.toolbar-ios-header .bar-button-outline-ios-mapButton {
+  border-color: white;
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-ios-header .bar-button-outline-ios-mapButton.activated {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-ios-header .bar-button-solid-ios-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-ios-header .bar-button-solid-ios-mapButton.activated {
+  color: #00BFA5;
   background-color: #ebebeb;
 }
 
@@ -29758,6 +31069,46 @@ ion-navbar.toolbar {
   background-color: #ebebeb;
 }
 
+.toolbar-ios-lightFab .bar-button-mapButton-ios,
+.toolbar-ios-lightFab .bar-button-default.bar-button-ios-mapButton,
+.toolbar-ios-lightFab .bar-button-clear-ios-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-ios-lightFab .bar-button-mapButton-ios:hover:not(.disable-hover),
+.toolbar-ios-lightFab .bar-button-default.bar-button-ios-mapButton:hover:not(.disable-hover),
+.toolbar-ios-lightFab .bar-button-clear-ios-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-ios-lightFab .bar-button-mapButton-ios.activated,
+.toolbar-ios-lightFab .bar-button-default.bar-button-ios-mapButton.activated,
+.toolbar-ios-lightFab .bar-button-clear-ios-mapButton.activated {
+  opacity: .4;
+}
+
+.toolbar-ios-lightFab .bar-button-outline-ios-mapButton {
+  border-color: white;
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-ios-lightFab .bar-button-outline-ios-mapButton.activated {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-ios-lightFab .bar-button-solid-ios-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-ios-lightFab .bar-button-solid-ios-mapButton.activated {
+  color: #00BFA5;
+  background-color: #ebebeb;
+}
+
 .toolbar-ios-lightFab .bar-button-mainButton-ios,
 .toolbar-ios-lightFab .bar-button-default.bar-button-ios-mainButton,
 .toolbar-ios-lightFab .bar-button-clear-ios-mainButton {
@@ -30168,6 +31519,46 @@ ion-navbar.toolbar {
   background-color: #ebebeb;
 }
 
+.toolbar-ios-heartFab .bar-button-mapButton-ios,
+.toolbar-ios-heartFab .bar-button-default.bar-button-ios-mapButton,
+.toolbar-ios-heartFab .bar-button-clear-ios-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-ios-heartFab .bar-button-mapButton-ios:hover:not(.disable-hover),
+.toolbar-ios-heartFab .bar-button-default.bar-button-ios-mapButton:hover:not(.disable-hover),
+.toolbar-ios-heartFab .bar-button-clear-ios-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-ios-heartFab .bar-button-mapButton-ios.activated,
+.toolbar-ios-heartFab .bar-button-default.bar-button-ios-mapButton.activated,
+.toolbar-ios-heartFab .bar-button-clear-ios-mapButton.activated {
+  opacity: .4;
+}
+
+.toolbar-ios-heartFab .bar-button-outline-ios-mapButton {
+  border-color: white;
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-ios-heartFab .bar-button-outline-ios-mapButton.activated {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-ios-heartFab .bar-button-solid-ios-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-ios-heartFab .bar-button-solid-ios-mapButton.activated {
+  color: #00BFA5;
+  background-color: #ebebeb;
+}
+
 .toolbar-ios-heartFab .bar-button-mainButton-ios,
 .toolbar-ios-heartFab .bar-button-default.bar-button-ios-mainButton,
 .toolbar-ios-heartFab .bar-button-clear-ios-mainButton {
@@ -30245,6 +31636,456 @@ ion-navbar.toolbar {
 
 .bar-button-solid-ios-heartFab.activated {
   color: #FF4081;
+  background-color: #ebebeb;
+}
+
+.toolbar-ios-mapButton .toolbar-background-ios {
+  background: white;
+}
+
+.toolbar-ios-mapButton .toolbar-title-ios,
+.toolbar-ios-mapButton .bar-button-clear-ios,
+.toolbar-ios-mapButton .bar-button-default-ios {
+  color: #00BFA5;
+}
+
+.toolbar-ios-mapButton .bar-button-primary-ios,
+.toolbar-ios-mapButton .bar-button-default.bar-button-ios-primary,
+.toolbar-ios-mapButton .bar-button-clear-ios-primary {
+  color: #488aff;
+  background-color: transparent;
+}
+
+.toolbar-ios-mapButton .bar-button-primary-ios:hover:not(.disable-hover),
+.toolbar-ios-mapButton .bar-button-default.bar-button-ios-primary:hover:not(.disable-hover),
+.toolbar-ios-mapButton .bar-button-clear-ios-primary:hover:not(.disable-hover) {
+  color: #488aff;
+}
+
+.toolbar-ios-mapButton .bar-button-primary-ios.activated,
+.toolbar-ios-mapButton .bar-button-default.bar-button-ios-primary.activated,
+.toolbar-ios-mapButton .bar-button-clear-ios-primary.activated {
+  opacity: .4;
+}
+
+.toolbar-ios-mapButton .bar-button-outline-ios-primary {
+  border-color: #488aff;
+  color: #488aff;
+  background-color: transparent;
+}
+
+.toolbar-ios-mapButton .bar-button-outline-ios-primary.activated {
+  color: #fff;
+  background-color: #488aff;
+}
+
+.toolbar-ios-mapButton .bar-button-solid-ios-primary {
+  color: #fff;
+  background-color: #488aff;
+}
+
+.toolbar-ios-mapButton .bar-button-solid-ios-primary.activated {
+  color: #fff;
+  background-color: #427feb;
+}
+
+.toolbar-ios-mapButton .bar-button-secondary-ios,
+.toolbar-ios-mapButton .bar-button-default.bar-button-ios-secondary,
+.toolbar-ios-mapButton .bar-button-clear-ios-secondary {
+  color: #32db64;
+  background-color: transparent;
+}
+
+.toolbar-ios-mapButton .bar-button-secondary-ios:hover:not(.disable-hover),
+.toolbar-ios-mapButton .bar-button-default.bar-button-ios-secondary:hover:not(.disable-hover),
+.toolbar-ios-mapButton .bar-button-clear-ios-secondary:hover:not(.disable-hover) {
+  color: #32db64;
+}
+
+.toolbar-ios-mapButton .bar-button-secondary-ios.activated,
+.toolbar-ios-mapButton .bar-button-default.bar-button-ios-secondary.activated,
+.toolbar-ios-mapButton .bar-button-clear-ios-secondary.activated {
+  opacity: .4;
+}
+
+.toolbar-ios-mapButton .bar-button-outline-ios-secondary {
+  border-color: #32db64;
+  color: #32db64;
+  background-color: transparent;
+}
+
+.toolbar-ios-mapButton .bar-button-outline-ios-secondary.activated {
+  color: #fff;
+  background-color: #32db64;
+}
+
+.toolbar-ios-mapButton .bar-button-solid-ios-secondary {
+  color: #fff;
+  background-color: #32db64;
+}
+
+.toolbar-ios-mapButton .bar-button-solid-ios-secondary.activated {
+  color: #fff;
+  background-color: #2ec95c;
+}
+
+.toolbar-ios-mapButton .bar-button-danger-ios,
+.toolbar-ios-mapButton .bar-button-default.bar-button-ios-danger,
+.toolbar-ios-mapButton .bar-button-clear-ios-danger {
+  color: #f53d3d;
+  background-color: transparent;
+}
+
+.toolbar-ios-mapButton .bar-button-danger-ios:hover:not(.disable-hover),
+.toolbar-ios-mapButton .bar-button-default.bar-button-ios-danger:hover:not(.disable-hover),
+.toolbar-ios-mapButton .bar-button-clear-ios-danger:hover:not(.disable-hover) {
+  color: #f53d3d;
+}
+
+.toolbar-ios-mapButton .bar-button-danger-ios.activated,
+.toolbar-ios-mapButton .bar-button-default.bar-button-ios-danger.activated,
+.toolbar-ios-mapButton .bar-button-clear-ios-danger.activated {
+  opacity: .4;
+}
+
+.toolbar-ios-mapButton .bar-button-outline-ios-danger {
+  border-color: #f53d3d;
+  color: #f53d3d;
+  background-color: transparent;
+}
+
+.toolbar-ios-mapButton .bar-button-outline-ios-danger.activated {
+  color: #fff;
+  background-color: #f53d3d;
+}
+
+.toolbar-ios-mapButton .bar-button-solid-ios-danger {
+  color: #fff;
+  background-color: #f53d3d;
+}
+
+.toolbar-ios-mapButton .bar-button-solid-ios-danger.activated {
+  color: #fff;
+  background-color: #e13838;
+}
+
+.toolbar-ios-mapButton .bar-button-light-ios,
+.toolbar-ios-mapButton .bar-button-default.bar-button-ios-light,
+.toolbar-ios-mapButton .bar-button-clear-ios-light {
+  color: #f4f4f4;
+  background-color: transparent;
+}
+
+.toolbar-ios-mapButton .bar-button-light-ios:hover:not(.disable-hover),
+.toolbar-ios-mapButton .bar-button-default.bar-button-ios-light:hover:not(.disable-hover),
+.toolbar-ios-mapButton .bar-button-clear-ios-light:hover:not(.disable-hover) {
+  color: #f4f4f4;
+}
+
+.toolbar-ios-mapButton .bar-button-light-ios.activated,
+.toolbar-ios-mapButton .bar-button-default.bar-button-ios-light.activated,
+.toolbar-ios-mapButton .bar-button-clear-ios-light.activated {
+  opacity: .4;
+}
+
+.toolbar-ios-mapButton .bar-button-outline-ios-light {
+  border-color: #f4f4f4;
+  color: #f4f4f4;
+  background-color: transparent;
+}
+
+.toolbar-ios-mapButton .bar-button-outline-ios-light.activated {
+  color: #000;
+  background-color: #f4f4f4;
+}
+
+.toolbar-ios-mapButton .bar-button-solid-ios-light {
+  color: #000;
+  background-color: #f4f4f4;
+}
+
+.toolbar-ios-mapButton .bar-button-solid-ios-light.activated {
+  color: #000;
+  background-color: #e0e0e0;
+}
+
+.toolbar-ios-mapButton .bar-button-dark-ios,
+.toolbar-ios-mapButton .bar-button-default.bar-button-ios-dark,
+.toolbar-ios-mapButton .bar-button-clear-ios-dark {
+  color: #222;
+  background-color: transparent;
+}
+
+.toolbar-ios-mapButton .bar-button-dark-ios:hover:not(.disable-hover),
+.toolbar-ios-mapButton .bar-button-default.bar-button-ios-dark:hover:not(.disable-hover),
+.toolbar-ios-mapButton .bar-button-clear-ios-dark:hover:not(.disable-hover) {
+  color: #222;
+}
+
+.toolbar-ios-mapButton .bar-button-dark-ios.activated,
+.toolbar-ios-mapButton .bar-button-default.bar-button-ios-dark.activated,
+.toolbar-ios-mapButton .bar-button-clear-ios-dark.activated {
+  opacity: .4;
+}
+
+.toolbar-ios-mapButton .bar-button-outline-ios-dark {
+  border-color: #222;
+  color: #222;
+  background-color: transparent;
+}
+
+.toolbar-ios-mapButton .bar-button-outline-ios-dark.activated {
+  color: #fff;
+  background-color: #222;
+}
+
+.toolbar-ios-mapButton .bar-button-solid-ios-dark {
+  color: #fff;
+  background-color: #222;
+}
+
+.toolbar-ios-mapButton .bar-button-solid-ios-dark.activated {
+  color: #fff;
+  background-color: #343434;
+}
+
+.toolbar-ios-mapButton .bar-button-header-ios,
+.toolbar-ios-mapButton .bar-button-default.bar-button-ios-header,
+.toolbar-ios-mapButton .bar-button-clear-ios-header {
+  color: #42A5F5;
+  background-color: transparent;
+}
+
+.toolbar-ios-mapButton .bar-button-header-ios:hover:not(.disable-hover),
+.toolbar-ios-mapButton .bar-button-default.bar-button-ios-header:hover:not(.disable-hover),
+.toolbar-ios-mapButton .bar-button-clear-ios-header:hover:not(.disable-hover) {
+  color: #42A5F5;
+}
+
+.toolbar-ios-mapButton .bar-button-header-ios.activated,
+.toolbar-ios-mapButton .bar-button-default.bar-button-ios-header.activated,
+.toolbar-ios-mapButton .bar-button-clear-ios-header.activated {
+  opacity: .4;
+}
+
+.toolbar-ios-mapButton .bar-button-outline-ios-header {
+  border-color: #42A5F5;
+  color: #42A5F5;
+  background-color: transparent;
+}
+
+.toolbar-ios-mapButton .bar-button-outline-ios-header.activated {
+  color: white;
+  background-color: #42A5F5;
+}
+
+.toolbar-ios-mapButton .bar-button-solid-ios-header {
+  color: white;
+  background-color: #42A5F5;
+}
+
+.toolbar-ios-mapButton .bar-button-solid-ios-header.activated {
+  color: white;
+  background-color: #3d98e1;
+}
+
+.toolbar-ios-mapButton .bar-button-lightFab-ios,
+.toolbar-ios-mapButton .bar-button-default.bar-button-ios-lightFab,
+.toolbar-ios-mapButton .bar-button-clear-ios-lightFab {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-ios-mapButton .bar-button-lightFab-ios:hover:not(.disable-hover),
+.toolbar-ios-mapButton .bar-button-default.bar-button-ios-lightFab:hover:not(.disable-hover),
+.toolbar-ios-mapButton .bar-button-clear-ios-lightFab:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-ios-mapButton .bar-button-lightFab-ios.activated,
+.toolbar-ios-mapButton .bar-button-default.bar-button-ios-lightFab.activated,
+.toolbar-ios-mapButton .bar-button-clear-ios-lightFab.activated {
+  opacity: .4;
+}
+
+.toolbar-ios-mapButton .bar-button-outline-ios-lightFab {
+  border-color: white;
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-ios-mapButton .bar-button-outline-ios-lightFab.activated {
+  color: #42A5f5;
+  background-color: white;
+}
+
+.toolbar-ios-mapButton .bar-button-solid-ios-lightFab {
+  color: #42A5f5;
+  background-color: white;
+}
+
+.toolbar-ios-mapButton .bar-button-solid-ios-lightFab.activated {
+  color: #42A5f5;
+  background-color: #ebebeb;
+}
+
+.toolbar-ios-mapButton .bar-button-heartFab-ios,
+.toolbar-ios-mapButton .bar-button-default.bar-button-ios-heartFab,
+.toolbar-ios-mapButton .bar-button-clear-ios-heartFab {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-ios-mapButton .bar-button-heartFab-ios:hover:not(.disable-hover),
+.toolbar-ios-mapButton .bar-button-default.bar-button-ios-heartFab:hover:not(.disable-hover),
+.toolbar-ios-mapButton .bar-button-clear-ios-heartFab:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-ios-mapButton .bar-button-heartFab-ios.activated,
+.toolbar-ios-mapButton .bar-button-default.bar-button-ios-heartFab.activated,
+.toolbar-ios-mapButton .bar-button-clear-ios-heartFab.activated {
+  opacity: .4;
+}
+
+.toolbar-ios-mapButton .bar-button-outline-ios-heartFab {
+  border-color: white;
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-ios-mapButton .bar-button-outline-ios-heartFab.activated {
+  color: #FF4081;
+  background-color: white;
+}
+
+.toolbar-ios-mapButton .bar-button-solid-ios-heartFab {
+  color: #FF4081;
+  background-color: white;
+}
+
+.toolbar-ios-mapButton .bar-button-solid-ios-heartFab.activated {
+  color: #FF4081;
+  background-color: #ebebeb;
+}
+
+.toolbar-ios-mapButton .bar-button-mapButton-ios,
+.toolbar-ios-mapButton .bar-button-default.bar-button-ios-mapButton,
+.toolbar-ios-mapButton .bar-button-clear-ios-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-ios-mapButton .bar-button-mapButton-ios:hover:not(.disable-hover),
+.toolbar-ios-mapButton .bar-button-default.bar-button-ios-mapButton:hover:not(.disable-hover),
+.toolbar-ios-mapButton .bar-button-clear-ios-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-ios-mapButton .bar-button-mapButton-ios.activated,
+.toolbar-ios-mapButton .bar-button-default.bar-button-ios-mapButton.activated,
+.toolbar-ios-mapButton .bar-button-clear-ios-mapButton.activated {
+  opacity: .4;
+}
+
+.toolbar-ios-mapButton .bar-button-outline-ios-mapButton {
+  border-color: white;
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-ios-mapButton .bar-button-outline-ios-mapButton.activated {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-ios-mapButton .bar-button-solid-ios-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-ios-mapButton .bar-button-solid-ios-mapButton.activated {
+  color: #00BFA5;
+  background-color: #ebebeb;
+}
+
+.toolbar-ios-mapButton .bar-button-mainButton-ios,
+.toolbar-ios-mapButton .bar-button-default.bar-button-ios-mainButton,
+.toolbar-ios-mapButton .bar-button-clear-ios-mainButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-ios-mapButton .bar-button-mainButton-ios:hover:not(.disable-hover),
+.toolbar-ios-mapButton .bar-button-default.bar-button-ios-mainButton:hover:not(.disable-hover),
+.toolbar-ios-mapButton .bar-button-clear-ios-mainButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-ios-mapButton .bar-button-mainButton-ios.activated,
+.toolbar-ios-mapButton .bar-button-default.bar-button-ios-mainButton.activated,
+.toolbar-ios-mapButton .bar-button-clear-ios-mainButton.activated {
+  opacity: .4;
+}
+
+.toolbar-ios-mapButton .bar-button-outline-ios-mainButton {
+  border-color: white;
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-ios-mapButton .bar-button-outline-ios-mainButton.activated {
+  color: #42A5F5;
+  background-color: white;
+}
+
+.toolbar-ios-mapButton .bar-button-solid-ios-mainButton {
+  color: #42A5F5;
+  background-color: white;
+}
+
+.toolbar-ios-mapButton .bar-button-solid-ios-mainButton.activated {
+  color: #42A5F5;
+  background-color: #ebebeb;
+}
+
+.bar-button-mapButton-ios,
+.bar-button-default.bar-button-ios-mapButton,
+.bar-button-clear-ios-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.bar-button-mapButton-ios:hover:not(.disable-hover),
+.bar-button-default.bar-button-ios-mapButton:hover:not(.disable-hover),
+.bar-button-clear-ios-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.bar-button-mapButton-ios.activated,
+.bar-button-default.bar-button-ios-mapButton.activated,
+.bar-button-clear-ios-mapButton.activated {
+  opacity: .4;
+}
+
+.bar-button-outline-ios-mapButton {
+  border-color: white;
+  color: white;
+  background-color: transparent;
+}
+
+.bar-button-outline-ios-mapButton.activated {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.bar-button-solid-ios-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.bar-button-solid-ios-mapButton.activated {
+  color: #00BFA5;
   background-color: #ebebeb;
 }
 
@@ -30575,6 +32416,46 @@ ion-navbar.toolbar {
 
 .toolbar-ios-mainButton .bar-button-solid-ios-heartFab.activated {
   color: #FF4081;
+  background-color: #ebebeb;
+}
+
+.toolbar-ios-mainButton .bar-button-mapButton-ios,
+.toolbar-ios-mainButton .bar-button-default.bar-button-ios-mapButton,
+.toolbar-ios-mainButton .bar-button-clear-ios-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-ios-mainButton .bar-button-mapButton-ios:hover:not(.disable-hover),
+.toolbar-ios-mainButton .bar-button-default.bar-button-ios-mapButton:hover:not(.disable-hover),
+.toolbar-ios-mainButton .bar-button-clear-ios-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-ios-mainButton .bar-button-mapButton-ios.activated,
+.toolbar-ios-mainButton .bar-button-default.bar-button-ios-mapButton.activated,
+.toolbar-ios-mainButton .bar-button-clear-ios-mapButton.activated {
+  opacity: .4;
+}
+
+.toolbar-ios-mainButton .bar-button-outline-ios-mapButton {
+  border-color: white;
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-ios-mainButton .bar-button-outline-ios-mapButton.activated {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-ios-mainButton .bar-button-solid-ios-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-ios-mainButton .bar-button-solid-ios-mapButton.activated {
+  color: #00BFA5;
   background-color: #ebebeb;
 }
 
@@ -31260,6 +33141,43 @@ ion-navbar.toolbar {
   background-color: #ebebeb;
 }
 
+.toolbar-md-primary .bar-button-mapButton-md,
+.toolbar-md-primary .bar-button-clear-md-mapButton,
+.toolbar-md-primary .bar-button-md-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-md-primary .bar-button-mapButton-md:hover:not(.disable-hover),
+.toolbar-md-primary .bar-button-clear-md-mapButton:hover:not(.disable-hover),
+.toolbar-md-primary .bar-button-md-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-md-primary .bar-button-outline-md-mapButton {
+  border-color: #ebebeb;
+  color: #ebebeb;
+  background-color: transparent;
+}
+
+.toolbar-md-primary .bar-button-outline-md-mapButton.activated {
+  background-color: transparent;
+}
+
+.toolbar-md-primary .bar-button-outline-md-mapButton .button-effect {
+  background-color: #ebebeb;
+}
+
+.toolbar-md-primary .bar-button-solid-md-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-md-primary .bar-button-solid-md-mapButton.activated {
+  color: #00BFA5;
+  background-color: #ebebeb;
+}
+
 .toolbar-md-primary .bar-button-mainButton-md,
 .toolbar-md-primary .bar-button-clear-md-mainButton,
 .toolbar-md-primary .bar-button-md-mainButton {
@@ -31648,6 +33566,43 @@ ion-navbar.toolbar {
 
 .toolbar-md-secondary .bar-button-solid-md-heartFab.activated {
   color: #FF4081;
+  background-color: #ebebeb;
+}
+
+.toolbar-md-secondary .bar-button-mapButton-md,
+.toolbar-md-secondary .bar-button-clear-md-mapButton,
+.toolbar-md-secondary .bar-button-md-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-md-secondary .bar-button-mapButton-md:hover:not(.disable-hover),
+.toolbar-md-secondary .bar-button-clear-md-mapButton:hover:not(.disable-hover),
+.toolbar-md-secondary .bar-button-md-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-md-secondary .bar-button-outline-md-mapButton {
+  border-color: #ebebeb;
+  color: #ebebeb;
+  background-color: transparent;
+}
+
+.toolbar-md-secondary .bar-button-outline-md-mapButton.activated {
+  background-color: transparent;
+}
+
+.toolbar-md-secondary .bar-button-outline-md-mapButton .button-effect {
+  background-color: #ebebeb;
+}
+
+.toolbar-md-secondary .bar-button-solid-md-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-md-secondary .bar-button-solid-md-mapButton.activated {
+  color: #00BFA5;
   background-color: #ebebeb;
 }
 
@@ -32042,6 +33997,43 @@ ion-navbar.toolbar {
   background-color: #ebebeb;
 }
 
+.toolbar-md-danger .bar-button-mapButton-md,
+.toolbar-md-danger .bar-button-clear-md-mapButton,
+.toolbar-md-danger .bar-button-md-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-md-danger .bar-button-mapButton-md:hover:not(.disable-hover),
+.toolbar-md-danger .bar-button-clear-md-mapButton:hover:not(.disable-hover),
+.toolbar-md-danger .bar-button-md-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-md-danger .bar-button-outline-md-mapButton {
+  border-color: #ebebeb;
+  color: #ebebeb;
+  background-color: transparent;
+}
+
+.toolbar-md-danger .bar-button-outline-md-mapButton.activated {
+  background-color: transparent;
+}
+
+.toolbar-md-danger .bar-button-outline-md-mapButton .button-effect {
+  background-color: #ebebeb;
+}
+
+.toolbar-md-danger .bar-button-solid-md-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-md-danger .bar-button-solid-md-mapButton.activated {
+  color: #00BFA5;
+  background-color: #ebebeb;
+}
+
 .toolbar-md-danger .bar-button-mainButton-md,
 .toolbar-md-danger .bar-button-clear-md-mainButton,
 .toolbar-md-danger .bar-button-md-mainButton {
@@ -32430,6 +34422,43 @@ ion-navbar.toolbar {
 
 .toolbar-md-light .bar-button-solid-md-heartFab.activated {
   color: #FF4081;
+  background-color: #ebebeb;
+}
+
+.toolbar-md-light .bar-button-mapButton-md,
+.toolbar-md-light .bar-button-clear-md-mapButton,
+.toolbar-md-light .bar-button-md-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-md-light .bar-button-mapButton-md:hover:not(.disable-hover),
+.toolbar-md-light .bar-button-clear-md-mapButton:hover:not(.disable-hover),
+.toolbar-md-light .bar-button-md-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-md-light .bar-button-outline-md-mapButton {
+  border-color: #ebebeb;
+  color: #ebebeb;
+  background-color: transparent;
+}
+
+.toolbar-md-light .bar-button-outline-md-mapButton.activated {
+  background-color: transparent;
+}
+
+.toolbar-md-light .bar-button-outline-md-mapButton .button-effect {
+  background-color: #ebebeb;
+}
+
+.toolbar-md-light .bar-button-solid-md-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-md-light .bar-button-solid-md-mapButton.activated {
+  color: #00BFA5;
   background-color: #ebebeb;
 }
 
@@ -32824,6 +34853,43 @@ ion-navbar.toolbar {
   background-color: #ebebeb;
 }
 
+.toolbar-md-dark .bar-button-mapButton-md,
+.toolbar-md-dark .bar-button-clear-md-mapButton,
+.toolbar-md-dark .bar-button-md-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-md-dark .bar-button-mapButton-md:hover:not(.disable-hover),
+.toolbar-md-dark .bar-button-clear-md-mapButton:hover:not(.disable-hover),
+.toolbar-md-dark .bar-button-md-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-md-dark .bar-button-outline-md-mapButton {
+  border-color: #ebebeb;
+  color: #ebebeb;
+  background-color: transparent;
+}
+
+.toolbar-md-dark .bar-button-outline-md-mapButton.activated {
+  background-color: transparent;
+}
+
+.toolbar-md-dark .bar-button-outline-md-mapButton .button-effect {
+  background-color: #ebebeb;
+}
+
+.toolbar-md-dark .bar-button-solid-md-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-md-dark .bar-button-solid-md-mapButton.activated {
+  color: #00BFA5;
+  background-color: #ebebeb;
+}
+
 .toolbar-md-dark .bar-button-mainButton-md,
 .toolbar-md-dark .bar-button-clear-md-mainButton,
 .toolbar-md-dark .bar-button-md-mainButton {
@@ -33212,6 +35278,43 @@ ion-navbar.toolbar {
 
 .toolbar-md-header .bar-button-solid-md-heartFab.activated {
   color: #FF4081;
+  background-color: #ebebeb;
+}
+
+.toolbar-md-header .bar-button-mapButton-md,
+.toolbar-md-header .bar-button-clear-md-mapButton,
+.toolbar-md-header .bar-button-md-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-md-header .bar-button-mapButton-md:hover:not(.disable-hover),
+.toolbar-md-header .bar-button-clear-md-mapButton:hover:not(.disable-hover),
+.toolbar-md-header .bar-button-md-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-md-header .bar-button-outline-md-mapButton {
+  border-color: #ebebeb;
+  color: #ebebeb;
+  background-color: transparent;
+}
+
+.toolbar-md-header .bar-button-outline-md-mapButton.activated {
+  background-color: transparent;
+}
+
+.toolbar-md-header .bar-button-outline-md-mapButton .button-effect {
+  background-color: #ebebeb;
+}
+
+.toolbar-md-header .bar-button-solid-md-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-md-header .bar-button-solid-md-mapButton.activated {
+  color: #00BFA5;
   background-color: #ebebeb;
 }
 
@@ -33606,6 +35709,43 @@ ion-navbar.toolbar {
   background-color: #ebebeb;
 }
 
+.toolbar-md-lightFab .bar-button-mapButton-md,
+.toolbar-md-lightFab .bar-button-clear-md-mapButton,
+.toolbar-md-lightFab .bar-button-md-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-md-lightFab .bar-button-mapButton-md:hover:not(.disable-hover),
+.toolbar-md-lightFab .bar-button-clear-md-mapButton:hover:not(.disable-hover),
+.toolbar-md-lightFab .bar-button-md-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-md-lightFab .bar-button-outline-md-mapButton {
+  border-color: #ebebeb;
+  color: #ebebeb;
+  background-color: transparent;
+}
+
+.toolbar-md-lightFab .bar-button-outline-md-mapButton.activated {
+  background-color: transparent;
+}
+
+.toolbar-md-lightFab .bar-button-outline-md-mapButton .button-effect {
+  background-color: #ebebeb;
+}
+
+.toolbar-md-lightFab .bar-button-solid-md-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-md-lightFab .bar-button-solid-md-mapButton.activated {
+  color: #00BFA5;
+  background-color: #ebebeb;
+}
+
 .toolbar-md-lightFab .bar-button-mainButton-md,
 .toolbar-md-lightFab .bar-button-clear-md-mainButton,
 .toolbar-md-lightFab .bar-button-md-mainButton {
@@ -33997,6 +36137,43 @@ ion-navbar.toolbar {
   background-color: #ebebeb;
 }
 
+.toolbar-md-heartFab .bar-button-mapButton-md,
+.toolbar-md-heartFab .bar-button-clear-md-mapButton,
+.toolbar-md-heartFab .bar-button-md-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-md-heartFab .bar-button-mapButton-md:hover:not(.disable-hover),
+.toolbar-md-heartFab .bar-button-clear-md-mapButton:hover:not(.disable-hover),
+.toolbar-md-heartFab .bar-button-md-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-md-heartFab .bar-button-outline-md-mapButton {
+  border-color: #ebebeb;
+  color: #ebebeb;
+  background-color: transparent;
+}
+
+.toolbar-md-heartFab .bar-button-outline-md-mapButton.activated {
+  background-color: transparent;
+}
+
+.toolbar-md-heartFab .bar-button-outline-md-mapButton .button-effect {
+  background-color: #ebebeb;
+}
+
+.toolbar-md-heartFab .bar-button-solid-md-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-md-heartFab .bar-button-solid-md-mapButton.activated {
+  color: #00BFA5;
+  background-color: #ebebeb;
+}
+
 .toolbar-md-heartFab .bar-button-mainButton-md,
 .toolbar-md-heartFab .bar-button-clear-md-mainButton,
 .toolbar-md-heartFab .bar-button-md-mainButton {
@@ -34068,6 +36245,434 @@ ion-navbar.toolbar {
 
 .bar-button-solid-md-heartFab.activated {
   color: #FF4081;
+  background-color: #ebebeb;
+}
+
+.toolbar-md-mapButton .toolbar-background-md {
+  background: white;
+}
+
+.toolbar-md-mapButton .bar-button-clear-md,
+.toolbar-md-mapButton .bar-button-default-md,
+.toolbar-md-mapButton .bar-button-outline-md,
+.toolbar-md-mapButton .toolbar-title-md {
+  color: #42A5f5;
+}
+
+.toolbar-md-mapButton .bar-button-clear-md .button-effect,
+.toolbar-md-mapButton .bar-button-default-md .button-effect,
+.toolbar-md-mapButton .bar-button-outline-md .button-effect {
+  background-color: #42A5f5;
+}
+
+.toolbar-md-mapButton .bar-button-outline-md {
+  border-color: #42A5f5;
+}
+
+.toolbar-md-mapButton .bar-button-primary-md,
+.toolbar-md-mapButton .bar-button-clear-md-primary,
+.toolbar-md-mapButton .bar-button-md-primary {
+  color: #488aff;
+  background-color: transparent;
+}
+
+.toolbar-md-mapButton .bar-button-primary-md:hover:not(.disable-hover),
+.toolbar-md-mapButton .bar-button-clear-md-primary:hover:not(.disable-hover),
+.toolbar-md-mapButton .bar-button-md-primary:hover:not(.disable-hover) {
+  color: #488aff;
+}
+
+.toolbar-md-mapButton .bar-button-outline-md-primary {
+  border-color: #427feb;
+  color: #427feb;
+  background-color: transparent;
+}
+
+.toolbar-md-mapButton .bar-button-outline-md-primary.activated {
+  background-color: transparent;
+}
+
+.toolbar-md-mapButton .bar-button-outline-md-primary .button-effect {
+  background-color: #427feb;
+}
+
+.toolbar-md-mapButton .bar-button-solid-md-primary {
+  color: #fff;
+  background-color: #488aff;
+}
+
+.toolbar-md-mapButton .bar-button-solid-md-primary.activated {
+  color: #fff;
+  background-color: #427feb;
+}
+
+.toolbar-md-mapButton .bar-button-secondary-md,
+.toolbar-md-mapButton .bar-button-clear-md-secondary,
+.toolbar-md-mapButton .bar-button-md-secondary {
+  color: #32db64;
+  background-color: transparent;
+}
+
+.toolbar-md-mapButton .bar-button-secondary-md:hover:not(.disable-hover),
+.toolbar-md-mapButton .bar-button-clear-md-secondary:hover:not(.disable-hover),
+.toolbar-md-mapButton .bar-button-md-secondary:hover:not(.disable-hover) {
+  color: #32db64;
+}
+
+.toolbar-md-mapButton .bar-button-outline-md-secondary {
+  border-color: #2ec95c;
+  color: #2ec95c;
+  background-color: transparent;
+}
+
+.toolbar-md-mapButton .bar-button-outline-md-secondary.activated {
+  background-color: transparent;
+}
+
+.toolbar-md-mapButton .bar-button-outline-md-secondary .button-effect {
+  background-color: #2ec95c;
+}
+
+.toolbar-md-mapButton .bar-button-solid-md-secondary {
+  color: #fff;
+  background-color: #32db64;
+}
+
+.toolbar-md-mapButton .bar-button-solid-md-secondary.activated {
+  color: #fff;
+  background-color: #2ec95c;
+}
+
+.toolbar-md-mapButton .bar-button-danger-md,
+.toolbar-md-mapButton .bar-button-clear-md-danger,
+.toolbar-md-mapButton .bar-button-md-danger {
+  color: #f53d3d;
+  background-color: transparent;
+}
+
+.toolbar-md-mapButton .bar-button-danger-md:hover:not(.disable-hover),
+.toolbar-md-mapButton .bar-button-clear-md-danger:hover:not(.disable-hover),
+.toolbar-md-mapButton .bar-button-md-danger:hover:not(.disable-hover) {
+  color: #f53d3d;
+}
+
+.toolbar-md-mapButton .bar-button-outline-md-danger {
+  border-color: #e13838;
+  color: #e13838;
+  background-color: transparent;
+}
+
+.toolbar-md-mapButton .bar-button-outline-md-danger.activated {
+  background-color: transparent;
+}
+
+.toolbar-md-mapButton .bar-button-outline-md-danger .button-effect {
+  background-color: #e13838;
+}
+
+.toolbar-md-mapButton .bar-button-solid-md-danger {
+  color: #fff;
+  background-color: #f53d3d;
+}
+
+.toolbar-md-mapButton .bar-button-solid-md-danger.activated {
+  color: #fff;
+  background-color: #e13838;
+}
+
+.toolbar-md-mapButton .bar-button-light-md,
+.toolbar-md-mapButton .bar-button-clear-md-light,
+.toolbar-md-mapButton .bar-button-md-light {
+  color: #f4f4f4;
+  background-color: transparent;
+}
+
+.toolbar-md-mapButton .bar-button-light-md:hover:not(.disable-hover),
+.toolbar-md-mapButton .bar-button-clear-md-light:hover:not(.disable-hover),
+.toolbar-md-mapButton .bar-button-md-light:hover:not(.disable-hover) {
+  color: #f4f4f4;
+}
+
+.toolbar-md-mapButton .bar-button-outline-md-light {
+  border-color: #e0e0e0;
+  color: #e0e0e0;
+  background-color: transparent;
+}
+
+.toolbar-md-mapButton .bar-button-outline-md-light.activated {
+  background-color: transparent;
+}
+
+.toolbar-md-mapButton .bar-button-outline-md-light .button-effect {
+  background-color: #e0e0e0;
+}
+
+.toolbar-md-mapButton .bar-button-solid-md-light {
+  color: #000;
+  background-color: #f4f4f4;
+}
+
+.toolbar-md-mapButton .bar-button-solid-md-light.activated {
+  color: #000;
+  background-color: #e0e0e0;
+}
+
+.toolbar-md-mapButton .bar-button-dark-md,
+.toolbar-md-mapButton .bar-button-clear-md-dark,
+.toolbar-md-mapButton .bar-button-md-dark {
+  color: #222;
+  background-color: transparent;
+}
+
+.toolbar-md-mapButton .bar-button-dark-md:hover:not(.disable-hover),
+.toolbar-md-mapButton .bar-button-clear-md-dark:hover:not(.disable-hover),
+.toolbar-md-mapButton .bar-button-md-dark:hover:not(.disable-hover) {
+  color: #222;
+}
+
+.toolbar-md-mapButton .bar-button-outline-md-dark {
+  border-color: #343434;
+  color: #343434;
+  background-color: transparent;
+}
+
+.toolbar-md-mapButton .bar-button-outline-md-dark.activated {
+  background-color: transparent;
+}
+
+.toolbar-md-mapButton .bar-button-outline-md-dark .button-effect {
+  background-color: #343434;
+}
+
+.toolbar-md-mapButton .bar-button-solid-md-dark {
+  color: #fff;
+  background-color: #222;
+}
+
+.toolbar-md-mapButton .bar-button-solid-md-dark.activated {
+  color: #fff;
+  background-color: #343434;
+}
+
+.toolbar-md-mapButton .bar-button-header-md,
+.toolbar-md-mapButton .bar-button-clear-md-header,
+.toolbar-md-mapButton .bar-button-md-header {
+  color: #42A5F5;
+  background-color: transparent;
+}
+
+.toolbar-md-mapButton .bar-button-header-md:hover:not(.disable-hover),
+.toolbar-md-mapButton .bar-button-clear-md-header:hover:not(.disable-hover),
+.toolbar-md-mapButton .bar-button-md-header:hover:not(.disable-hover) {
+  color: #42A5F5;
+}
+
+.toolbar-md-mapButton .bar-button-outline-md-header {
+  border-color: #3d98e1;
+  color: #3d98e1;
+  background-color: transparent;
+}
+
+.toolbar-md-mapButton .bar-button-outline-md-header.activated {
+  background-color: transparent;
+}
+
+.toolbar-md-mapButton .bar-button-outline-md-header .button-effect {
+  background-color: #3d98e1;
+}
+
+.toolbar-md-mapButton .bar-button-solid-md-header {
+  color: white;
+  background-color: #42A5F5;
+}
+
+.toolbar-md-mapButton .bar-button-solid-md-header.activated {
+  color: white;
+  background-color: #3d98e1;
+}
+
+.toolbar-md-mapButton .bar-button-lightFab-md,
+.toolbar-md-mapButton .bar-button-clear-md-lightFab,
+.toolbar-md-mapButton .bar-button-md-lightFab {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-md-mapButton .bar-button-lightFab-md:hover:not(.disable-hover),
+.toolbar-md-mapButton .bar-button-clear-md-lightFab:hover:not(.disable-hover),
+.toolbar-md-mapButton .bar-button-md-lightFab:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-md-mapButton .bar-button-outline-md-lightFab {
+  border-color: #ebebeb;
+  color: #ebebeb;
+  background-color: transparent;
+}
+
+.toolbar-md-mapButton .bar-button-outline-md-lightFab.activated {
+  background-color: transparent;
+}
+
+.toolbar-md-mapButton .bar-button-outline-md-lightFab .button-effect {
+  background-color: #ebebeb;
+}
+
+.toolbar-md-mapButton .bar-button-solid-md-lightFab {
+  color: #42A5f5;
+  background-color: white;
+}
+
+.toolbar-md-mapButton .bar-button-solid-md-lightFab.activated {
+  color: #42A5f5;
+  background-color: #ebebeb;
+}
+
+.toolbar-md-mapButton .bar-button-heartFab-md,
+.toolbar-md-mapButton .bar-button-clear-md-heartFab,
+.toolbar-md-mapButton .bar-button-md-heartFab {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-md-mapButton .bar-button-heartFab-md:hover:not(.disable-hover),
+.toolbar-md-mapButton .bar-button-clear-md-heartFab:hover:not(.disable-hover),
+.toolbar-md-mapButton .bar-button-md-heartFab:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-md-mapButton .bar-button-outline-md-heartFab {
+  border-color: #ebebeb;
+  color: #ebebeb;
+  background-color: transparent;
+}
+
+.toolbar-md-mapButton .bar-button-outline-md-heartFab.activated {
+  background-color: transparent;
+}
+
+.toolbar-md-mapButton .bar-button-outline-md-heartFab .button-effect {
+  background-color: #ebebeb;
+}
+
+.toolbar-md-mapButton .bar-button-solid-md-heartFab {
+  color: #FF4081;
+  background-color: white;
+}
+
+.toolbar-md-mapButton .bar-button-solid-md-heartFab.activated {
+  color: #FF4081;
+  background-color: #ebebeb;
+}
+
+.toolbar-md-mapButton .bar-button-mapButton-md,
+.toolbar-md-mapButton .bar-button-clear-md-mapButton,
+.toolbar-md-mapButton .bar-button-md-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-md-mapButton .bar-button-mapButton-md:hover:not(.disable-hover),
+.toolbar-md-mapButton .bar-button-clear-md-mapButton:hover:not(.disable-hover),
+.toolbar-md-mapButton .bar-button-md-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-md-mapButton .bar-button-outline-md-mapButton {
+  border-color: #ebebeb;
+  color: #ebebeb;
+  background-color: transparent;
+}
+
+.toolbar-md-mapButton .bar-button-outline-md-mapButton.activated {
+  background-color: transparent;
+}
+
+.toolbar-md-mapButton .bar-button-outline-md-mapButton .button-effect {
+  background-color: #ebebeb;
+}
+
+.toolbar-md-mapButton .bar-button-solid-md-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-md-mapButton .bar-button-solid-md-mapButton.activated {
+  color: #00BFA5;
+  background-color: #ebebeb;
+}
+
+.toolbar-md-mapButton .bar-button-mainButton-md,
+.toolbar-md-mapButton .bar-button-clear-md-mainButton,
+.toolbar-md-mapButton .bar-button-md-mainButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-md-mapButton .bar-button-mainButton-md:hover:not(.disable-hover),
+.toolbar-md-mapButton .bar-button-clear-md-mainButton:hover:not(.disable-hover),
+.toolbar-md-mapButton .bar-button-md-mainButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-md-mapButton .bar-button-outline-md-mainButton {
+  border-color: #ebebeb;
+  color: #ebebeb;
+  background-color: transparent;
+}
+
+.toolbar-md-mapButton .bar-button-outline-md-mainButton.activated {
+  background-color: transparent;
+}
+
+.toolbar-md-mapButton .bar-button-outline-md-mainButton .button-effect {
+  background-color: #ebebeb;
+}
+
+.toolbar-md-mapButton .bar-button-solid-md-mainButton {
+  color: #42A5F5;
+  background-color: white;
+}
+
+.toolbar-md-mapButton .bar-button-solid-md-mainButton.activated {
+  color: #42A5F5;
+  background-color: #ebebeb;
+}
+
+.bar-button-mapButton-md,
+.bar-button-clear-md-mapButton,
+.bar-button-md-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.bar-button-mapButton-md:hover:not(.disable-hover),
+.bar-button-clear-md-mapButton:hover:not(.disable-hover),
+.bar-button-md-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.bar-button-outline-md-mapButton {
+  border-color: #ebebeb;
+  color: #ebebeb;
+  background-color: transparent;
+}
+
+.bar-button-outline-md-mapButton.activated {
+  background-color: transparent;
+}
+
+.bar-button-outline-md-mapButton .button-effect {
+  background-color: #ebebeb;
+}
+
+.bar-button-solid-md-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.bar-button-solid-md-mapButton.activated {
+  color: #00BFA5;
   background-color: #ebebeb;
 }
 
@@ -34385,6 +36990,43 @@ ion-navbar.toolbar {
 
 .toolbar-md-mainButton .bar-button-solid-md-heartFab.activated {
   color: #FF4081;
+  background-color: #ebebeb;
+}
+
+.toolbar-md-mainButton .bar-button-mapButton-md,
+.toolbar-md-mainButton .bar-button-clear-md-mapButton,
+.toolbar-md-mainButton .bar-button-md-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-md-mainButton .bar-button-mapButton-md:hover:not(.disable-hover),
+.toolbar-md-mainButton .bar-button-clear-md-mapButton:hover:not(.disable-hover),
+.toolbar-md-mainButton .bar-button-md-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-md-mainButton .bar-button-outline-md-mapButton {
+  border-color: #ebebeb;
+  color: #ebebeb;
+  background-color: transparent;
+}
+
+.toolbar-md-mainButton .bar-button-outline-md-mapButton.activated {
+  background-color: transparent;
+}
+
+.toolbar-md-mainButton .bar-button-outline-md-mapButton .button-effect {
+  background-color: #ebebeb;
+}
+
+.toolbar-md-mainButton .bar-button-solid-md-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-md-mainButton .bar-button-solid-md-mapButton.activated {
+  color: #00BFA5;
   background-color: #ebebeb;
 }
 
@@ -34997,6 +37639,40 @@ ion-navbar.toolbar {
   background-color: #ebebeb;
 }
 
+.toolbar-wp-primary .bar-button-mapButton-wp,
+.toolbar-wp-primary .bar-button-clear-wp-mapButton,
+.toolbar-wp-primary .bar-button-wp-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-wp-primary .bar-button-mapButton-wp:hover:not(.disable-hover),
+.toolbar-wp-primary .bar-button-clear-wp-mapButton:hover:not(.disable-hover),
+.toolbar-wp-primary .bar-button-wp-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-wp-primary .bar-button-outline-wp-mapButton {
+  border-color: #ebebeb;
+  color: #ebebeb;
+  background-color: transparent;
+}
+
+.toolbar-wp-primary .bar-button-outline-wp-mapButton.activated {
+  color: #00BFA5;
+  background-color: #ebebeb;
+}
+
+.toolbar-wp-primary .bar-button-solid-wp-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-wp-primary .bar-button-solid-wp-mapButton.activated {
+  color: #00BFA5;
+  background-color: #ebebeb;
+}
+
 .toolbar-wp-primary .bar-button-mainButton-wp,
 .toolbar-wp-primary .bar-button-clear-wp-mainButton,
 .toolbar-wp-primary .bar-button-wp-mainButton {
@@ -35349,6 +38025,40 @@ ion-navbar.toolbar {
 
 .toolbar-wp-secondary .bar-button-solid-wp-heartFab.activated {
   color: #FF4081;
+  background-color: #ebebeb;
+}
+
+.toolbar-wp-secondary .bar-button-mapButton-wp,
+.toolbar-wp-secondary .bar-button-clear-wp-mapButton,
+.toolbar-wp-secondary .bar-button-wp-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-wp-secondary .bar-button-mapButton-wp:hover:not(.disable-hover),
+.toolbar-wp-secondary .bar-button-clear-wp-mapButton:hover:not(.disable-hover),
+.toolbar-wp-secondary .bar-button-wp-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-wp-secondary .bar-button-outline-wp-mapButton {
+  border-color: #ebebeb;
+  color: #ebebeb;
+  background-color: transparent;
+}
+
+.toolbar-wp-secondary .bar-button-outline-wp-mapButton.activated {
+  color: #00BFA5;
+  background-color: #ebebeb;
+}
+
+.toolbar-wp-secondary .bar-button-solid-wp-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-wp-secondary .bar-button-solid-wp-mapButton.activated {
+  color: #00BFA5;
   background-color: #ebebeb;
 }
 
@@ -35707,6 +38417,40 @@ ion-navbar.toolbar {
   background-color: #ebebeb;
 }
 
+.toolbar-wp-danger .bar-button-mapButton-wp,
+.toolbar-wp-danger .bar-button-clear-wp-mapButton,
+.toolbar-wp-danger .bar-button-wp-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-wp-danger .bar-button-mapButton-wp:hover:not(.disable-hover),
+.toolbar-wp-danger .bar-button-clear-wp-mapButton:hover:not(.disable-hover),
+.toolbar-wp-danger .bar-button-wp-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-wp-danger .bar-button-outline-wp-mapButton {
+  border-color: #ebebeb;
+  color: #ebebeb;
+  background-color: transparent;
+}
+
+.toolbar-wp-danger .bar-button-outline-wp-mapButton.activated {
+  color: #00BFA5;
+  background-color: #ebebeb;
+}
+
+.toolbar-wp-danger .bar-button-solid-wp-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-wp-danger .bar-button-solid-wp-mapButton.activated {
+  color: #00BFA5;
+  background-color: #ebebeb;
+}
+
 .toolbar-wp-danger .bar-button-mainButton-wp,
 .toolbar-wp-danger .bar-button-clear-wp-mainButton,
 .toolbar-wp-danger .bar-button-wp-mainButton {
@@ -36059,6 +38803,40 @@ ion-navbar.toolbar {
 
 .toolbar-wp-light .bar-button-solid-wp-heartFab.activated {
   color: #FF4081;
+  background-color: #ebebeb;
+}
+
+.toolbar-wp-light .bar-button-mapButton-wp,
+.toolbar-wp-light .bar-button-clear-wp-mapButton,
+.toolbar-wp-light .bar-button-wp-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-wp-light .bar-button-mapButton-wp:hover:not(.disable-hover),
+.toolbar-wp-light .bar-button-clear-wp-mapButton:hover:not(.disable-hover),
+.toolbar-wp-light .bar-button-wp-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-wp-light .bar-button-outline-wp-mapButton {
+  border-color: #ebebeb;
+  color: #ebebeb;
+  background-color: transparent;
+}
+
+.toolbar-wp-light .bar-button-outline-wp-mapButton.activated {
+  color: #00BFA5;
+  background-color: #ebebeb;
+}
+
+.toolbar-wp-light .bar-button-solid-wp-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-wp-light .bar-button-solid-wp-mapButton.activated {
+  color: #00BFA5;
   background-color: #ebebeb;
 }
 
@@ -36417,6 +39195,40 @@ ion-navbar.toolbar {
   background-color: #ebebeb;
 }
 
+.toolbar-wp-dark .bar-button-mapButton-wp,
+.toolbar-wp-dark .bar-button-clear-wp-mapButton,
+.toolbar-wp-dark .bar-button-wp-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-wp-dark .bar-button-mapButton-wp:hover:not(.disable-hover),
+.toolbar-wp-dark .bar-button-clear-wp-mapButton:hover:not(.disable-hover),
+.toolbar-wp-dark .bar-button-wp-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-wp-dark .bar-button-outline-wp-mapButton {
+  border-color: #ebebeb;
+  color: #ebebeb;
+  background-color: transparent;
+}
+
+.toolbar-wp-dark .bar-button-outline-wp-mapButton.activated {
+  color: #00BFA5;
+  background-color: #ebebeb;
+}
+
+.toolbar-wp-dark .bar-button-solid-wp-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-wp-dark .bar-button-solid-wp-mapButton.activated {
+  color: #00BFA5;
+  background-color: #ebebeb;
+}
+
 .toolbar-wp-dark .bar-button-mainButton-wp,
 .toolbar-wp-dark .bar-button-clear-wp-mainButton,
 .toolbar-wp-dark .bar-button-wp-mainButton {
@@ -36769,6 +39581,40 @@ ion-navbar.toolbar {
 
 .toolbar-wp-header .bar-button-solid-wp-heartFab.activated {
   color: #FF4081;
+  background-color: #ebebeb;
+}
+
+.toolbar-wp-header .bar-button-mapButton-wp,
+.toolbar-wp-header .bar-button-clear-wp-mapButton,
+.toolbar-wp-header .bar-button-wp-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-wp-header .bar-button-mapButton-wp:hover:not(.disable-hover),
+.toolbar-wp-header .bar-button-clear-wp-mapButton:hover:not(.disable-hover),
+.toolbar-wp-header .bar-button-wp-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-wp-header .bar-button-outline-wp-mapButton {
+  border-color: #ebebeb;
+  color: #ebebeb;
+  background-color: transparent;
+}
+
+.toolbar-wp-header .bar-button-outline-wp-mapButton.activated {
+  color: #00BFA5;
+  background-color: #ebebeb;
+}
+
+.toolbar-wp-header .bar-button-solid-wp-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-wp-header .bar-button-solid-wp-mapButton.activated {
+  color: #00BFA5;
   background-color: #ebebeb;
 }
 
@@ -37127,6 +39973,40 @@ ion-navbar.toolbar {
   background-color: #ebebeb;
 }
 
+.toolbar-wp-lightFab .bar-button-mapButton-wp,
+.toolbar-wp-lightFab .bar-button-clear-wp-mapButton,
+.toolbar-wp-lightFab .bar-button-wp-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-wp-lightFab .bar-button-mapButton-wp:hover:not(.disable-hover),
+.toolbar-wp-lightFab .bar-button-clear-wp-mapButton:hover:not(.disable-hover),
+.toolbar-wp-lightFab .bar-button-wp-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-wp-lightFab .bar-button-outline-wp-mapButton {
+  border-color: #ebebeb;
+  color: #ebebeb;
+  background-color: transparent;
+}
+
+.toolbar-wp-lightFab .bar-button-outline-wp-mapButton.activated {
+  color: #00BFA5;
+  background-color: #ebebeb;
+}
+
+.toolbar-wp-lightFab .bar-button-solid-wp-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-wp-lightFab .bar-button-solid-wp-mapButton.activated {
+  color: #00BFA5;
+  background-color: #ebebeb;
+}
+
 .toolbar-wp-lightFab .bar-button-mainButton-wp,
 .toolbar-wp-lightFab .bar-button-clear-wp-mainButton,
 .toolbar-wp-lightFab .bar-button-wp-mainButton {
@@ -37482,6 +40362,40 @@ ion-navbar.toolbar {
   background-color: #ebebeb;
 }
 
+.toolbar-wp-heartFab .bar-button-mapButton-wp,
+.toolbar-wp-heartFab .bar-button-clear-wp-mapButton,
+.toolbar-wp-heartFab .bar-button-wp-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-wp-heartFab .bar-button-mapButton-wp:hover:not(.disable-hover),
+.toolbar-wp-heartFab .bar-button-clear-wp-mapButton:hover:not(.disable-hover),
+.toolbar-wp-heartFab .bar-button-wp-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-wp-heartFab .bar-button-outline-wp-mapButton {
+  border-color: #ebebeb;
+  color: #ebebeb;
+  background-color: transparent;
+}
+
+.toolbar-wp-heartFab .bar-button-outline-wp-mapButton.activated {
+  color: #00BFA5;
+  background-color: #ebebeb;
+}
+
+.toolbar-wp-heartFab .bar-button-solid-wp-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-wp-heartFab .bar-button-solid-wp-mapButton.activated {
+  color: #00BFA5;
+  background-color: #ebebeb;
+}
+
 .toolbar-wp-heartFab .bar-button-mainButton-wp,
 .toolbar-wp-heartFab .bar-button-clear-wp-mainButton,
 .toolbar-wp-heartFab .bar-button-wp-mainButton {
@@ -37547,6 +40461,395 @@ ion-navbar.toolbar {
 
 .bar-button-solid-wp-heartFab.activated {
   color: #FF4081;
+  background-color: #ebebeb;
+}
+
+.toolbar-wp-mapButton .toolbar-background-wp {
+  background: white;
+}
+
+.toolbar-wp-mapButton .bar-button-clear-wp,
+.toolbar-wp-mapButton .bar-button-default-wp,
+.toolbar-wp-mapButton .bar-button-outline-wp,
+.toolbar-wp-mapButton .toolbar-title-wp {
+  color: #00BFA5;
+}
+
+.toolbar-wp-mapButton .bar-button-outline-wp {
+  border-color: #00BFA5;
+}
+
+.toolbar-wp-mapButton .bar-button-primary-wp,
+.toolbar-wp-mapButton .bar-button-clear-wp-primary,
+.toolbar-wp-mapButton .bar-button-wp-primary {
+  color: #488aff;
+  background-color: transparent;
+}
+
+.toolbar-wp-mapButton .bar-button-primary-wp:hover:not(.disable-hover),
+.toolbar-wp-mapButton .bar-button-clear-wp-primary:hover:not(.disable-hover),
+.toolbar-wp-mapButton .bar-button-wp-primary:hover:not(.disable-hover) {
+  color: #488aff;
+}
+
+.toolbar-wp-mapButton .bar-button-outline-wp-primary {
+  border-color: #427feb;
+  color: #427feb;
+  background-color: transparent;
+}
+
+.toolbar-wp-mapButton .bar-button-outline-wp-primary.activated {
+  color: #fff;
+  background-color: #427feb;
+}
+
+.toolbar-wp-mapButton .bar-button-solid-wp-primary {
+  color: #fff;
+  background-color: #488aff;
+}
+
+.toolbar-wp-mapButton .bar-button-solid-wp-primary.activated {
+  color: #fff;
+  background-color: #427feb;
+}
+
+.toolbar-wp-mapButton .bar-button-secondary-wp,
+.toolbar-wp-mapButton .bar-button-clear-wp-secondary,
+.toolbar-wp-mapButton .bar-button-wp-secondary {
+  color: #32db64;
+  background-color: transparent;
+}
+
+.toolbar-wp-mapButton .bar-button-secondary-wp:hover:not(.disable-hover),
+.toolbar-wp-mapButton .bar-button-clear-wp-secondary:hover:not(.disable-hover),
+.toolbar-wp-mapButton .bar-button-wp-secondary:hover:not(.disable-hover) {
+  color: #32db64;
+}
+
+.toolbar-wp-mapButton .bar-button-outline-wp-secondary {
+  border-color: #2ec95c;
+  color: #2ec95c;
+  background-color: transparent;
+}
+
+.toolbar-wp-mapButton .bar-button-outline-wp-secondary.activated {
+  color: #fff;
+  background-color: #2ec95c;
+}
+
+.toolbar-wp-mapButton .bar-button-solid-wp-secondary {
+  color: #fff;
+  background-color: #32db64;
+}
+
+.toolbar-wp-mapButton .bar-button-solid-wp-secondary.activated {
+  color: #fff;
+  background-color: #2ec95c;
+}
+
+.toolbar-wp-mapButton .bar-button-danger-wp,
+.toolbar-wp-mapButton .bar-button-clear-wp-danger,
+.toolbar-wp-mapButton .bar-button-wp-danger {
+  color: #f53d3d;
+  background-color: transparent;
+}
+
+.toolbar-wp-mapButton .bar-button-danger-wp:hover:not(.disable-hover),
+.toolbar-wp-mapButton .bar-button-clear-wp-danger:hover:not(.disable-hover),
+.toolbar-wp-mapButton .bar-button-wp-danger:hover:not(.disable-hover) {
+  color: #f53d3d;
+}
+
+.toolbar-wp-mapButton .bar-button-outline-wp-danger {
+  border-color: #e13838;
+  color: #e13838;
+  background-color: transparent;
+}
+
+.toolbar-wp-mapButton .bar-button-outline-wp-danger.activated {
+  color: #fff;
+  background-color: #e13838;
+}
+
+.toolbar-wp-mapButton .bar-button-solid-wp-danger {
+  color: #fff;
+  background-color: #f53d3d;
+}
+
+.toolbar-wp-mapButton .bar-button-solid-wp-danger.activated {
+  color: #fff;
+  background-color: #e13838;
+}
+
+.toolbar-wp-mapButton .bar-button-light-wp,
+.toolbar-wp-mapButton .bar-button-clear-wp-light,
+.toolbar-wp-mapButton .bar-button-wp-light {
+  color: #f4f4f4;
+  background-color: transparent;
+}
+
+.toolbar-wp-mapButton .bar-button-light-wp:hover:not(.disable-hover),
+.toolbar-wp-mapButton .bar-button-clear-wp-light:hover:not(.disable-hover),
+.toolbar-wp-mapButton .bar-button-wp-light:hover:not(.disable-hover) {
+  color: #f4f4f4;
+}
+
+.toolbar-wp-mapButton .bar-button-outline-wp-light {
+  border-color: #e0e0e0;
+  color: #e0e0e0;
+  background-color: transparent;
+}
+
+.toolbar-wp-mapButton .bar-button-outline-wp-light.activated {
+  color: #000;
+  background-color: #e0e0e0;
+}
+
+.toolbar-wp-mapButton .bar-button-solid-wp-light {
+  color: #000;
+  background-color: #f4f4f4;
+}
+
+.toolbar-wp-mapButton .bar-button-solid-wp-light.activated {
+  color: #000;
+  background-color: #e0e0e0;
+}
+
+.toolbar-wp-mapButton .bar-button-dark-wp,
+.toolbar-wp-mapButton .bar-button-clear-wp-dark,
+.toolbar-wp-mapButton .bar-button-wp-dark {
+  color: #222;
+  background-color: transparent;
+}
+
+.toolbar-wp-mapButton .bar-button-dark-wp:hover:not(.disable-hover),
+.toolbar-wp-mapButton .bar-button-clear-wp-dark:hover:not(.disable-hover),
+.toolbar-wp-mapButton .bar-button-wp-dark:hover:not(.disable-hover) {
+  color: #222;
+}
+
+.toolbar-wp-mapButton .bar-button-outline-wp-dark {
+  border-color: #343434;
+  color: #343434;
+  background-color: transparent;
+}
+
+.toolbar-wp-mapButton .bar-button-outline-wp-dark.activated {
+  color: #fff;
+  background-color: #343434;
+}
+
+.toolbar-wp-mapButton .bar-button-solid-wp-dark {
+  color: #fff;
+  background-color: #222;
+}
+
+.toolbar-wp-mapButton .bar-button-solid-wp-dark.activated {
+  color: #fff;
+  background-color: #343434;
+}
+
+.toolbar-wp-mapButton .bar-button-header-wp,
+.toolbar-wp-mapButton .bar-button-clear-wp-header,
+.toolbar-wp-mapButton .bar-button-wp-header {
+  color: #42A5F5;
+  background-color: transparent;
+}
+
+.toolbar-wp-mapButton .bar-button-header-wp:hover:not(.disable-hover),
+.toolbar-wp-mapButton .bar-button-clear-wp-header:hover:not(.disable-hover),
+.toolbar-wp-mapButton .bar-button-wp-header:hover:not(.disable-hover) {
+  color: #42A5F5;
+}
+
+.toolbar-wp-mapButton .bar-button-outline-wp-header {
+  border-color: #3d98e1;
+  color: #3d98e1;
+  background-color: transparent;
+}
+
+.toolbar-wp-mapButton .bar-button-outline-wp-header.activated {
+  color: white;
+  background-color: #3d98e1;
+}
+
+.toolbar-wp-mapButton .bar-button-solid-wp-header {
+  color: white;
+  background-color: #42A5F5;
+}
+
+.toolbar-wp-mapButton .bar-button-solid-wp-header.activated {
+  color: white;
+  background-color: #3d98e1;
+}
+
+.toolbar-wp-mapButton .bar-button-lightFab-wp,
+.toolbar-wp-mapButton .bar-button-clear-wp-lightFab,
+.toolbar-wp-mapButton .bar-button-wp-lightFab {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-wp-mapButton .bar-button-lightFab-wp:hover:not(.disable-hover),
+.toolbar-wp-mapButton .bar-button-clear-wp-lightFab:hover:not(.disable-hover),
+.toolbar-wp-mapButton .bar-button-wp-lightFab:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-wp-mapButton .bar-button-outline-wp-lightFab {
+  border-color: #ebebeb;
+  color: #ebebeb;
+  background-color: transparent;
+}
+
+.toolbar-wp-mapButton .bar-button-outline-wp-lightFab.activated {
+  color: #42A5f5;
+  background-color: #ebebeb;
+}
+
+.toolbar-wp-mapButton .bar-button-solid-wp-lightFab {
+  color: #42A5f5;
+  background-color: white;
+}
+
+.toolbar-wp-mapButton .bar-button-solid-wp-lightFab.activated {
+  color: #42A5f5;
+  background-color: #ebebeb;
+}
+
+.toolbar-wp-mapButton .bar-button-heartFab-wp,
+.toolbar-wp-mapButton .bar-button-clear-wp-heartFab,
+.toolbar-wp-mapButton .bar-button-wp-heartFab {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-wp-mapButton .bar-button-heartFab-wp:hover:not(.disable-hover),
+.toolbar-wp-mapButton .bar-button-clear-wp-heartFab:hover:not(.disable-hover),
+.toolbar-wp-mapButton .bar-button-wp-heartFab:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-wp-mapButton .bar-button-outline-wp-heartFab {
+  border-color: #ebebeb;
+  color: #ebebeb;
+  background-color: transparent;
+}
+
+.toolbar-wp-mapButton .bar-button-outline-wp-heartFab.activated {
+  color: #FF4081;
+  background-color: #ebebeb;
+}
+
+.toolbar-wp-mapButton .bar-button-solid-wp-heartFab {
+  color: #FF4081;
+  background-color: white;
+}
+
+.toolbar-wp-mapButton .bar-button-solid-wp-heartFab.activated {
+  color: #FF4081;
+  background-color: #ebebeb;
+}
+
+.toolbar-wp-mapButton .bar-button-mapButton-wp,
+.toolbar-wp-mapButton .bar-button-clear-wp-mapButton,
+.toolbar-wp-mapButton .bar-button-wp-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-wp-mapButton .bar-button-mapButton-wp:hover:not(.disable-hover),
+.toolbar-wp-mapButton .bar-button-clear-wp-mapButton:hover:not(.disable-hover),
+.toolbar-wp-mapButton .bar-button-wp-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-wp-mapButton .bar-button-outline-wp-mapButton {
+  border-color: #ebebeb;
+  color: #ebebeb;
+  background-color: transparent;
+}
+
+.toolbar-wp-mapButton .bar-button-outline-wp-mapButton.activated {
+  color: #00BFA5;
+  background-color: #ebebeb;
+}
+
+.toolbar-wp-mapButton .bar-button-solid-wp-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-wp-mapButton .bar-button-solid-wp-mapButton.activated {
+  color: #00BFA5;
+  background-color: #ebebeb;
+}
+
+.toolbar-wp-mapButton .bar-button-mainButton-wp,
+.toolbar-wp-mapButton .bar-button-clear-wp-mainButton,
+.toolbar-wp-mapButton .bar-button-wp-mainButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-wp-mapButton .bar-button-mainButton-wp:hover:not(.disable-hover),
+.toolbar-wp-mapButton .bar-button-clear-wp-mainButton:hover:not(.disable-hover),
+.toolbar-wp-mapButton .bar-button-wp-mainButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-wp-mapButton .bar-button-outline-wp-mainButton {
+  border-color: #ebebeb;
+  color: #ebebeb;
+  background-color: transparent;
+}
+
+.toolbar-wp-mapButton .bar-button-outline-wp-mainButton.activated {
+  color: #42A5F5;
+  background-color: #ebebeb;
+}
+
+.toolbar-wp-mapButton .bar-button-solid-wp-mainButton {
+  color: #42A5F5;
+  background-color: white;
+}
+
+.toolbar-wp-mapButton .bar-button-solid-wp-mainButton.activated {
+  color: #42A5F5;
+  background-color: #ebebeb;
+}
+
+.bar-button-mapButton-wp,
+.bar-button-clear-wp-mapButton,
+.bar-button-wp-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.bar-button-mapButton-wp:hover:not(.disable-hover),
+.bar-button-clear-wp-mapButton:hover:not(.disable-hover),
+.bar-button-wp-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.bar-button-outline-wp-mapButton {
+  border-color: #ebebeb;
+  color: #ebebeb;
+  background-color: transparent;
+}
+
+.bar-button-outline-wp-mapButton.activated {
+  color: #00BFA5;
+  background-color: #ebebeb;
+}
+
+.bar-button-solid-wp-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.bar-button-solid-wp-mapButton.activated {
+  color: #00BFA5;
   background-color: #ebebeb;
 }
 
@@ -37837,6 +41140,40 @@ ion-navbar.toolbar {
   background-color: #ebebeb;
 }
 
+.toolbar-wp-mainButton .bar-button-mapButton-wp,
+.toolbar-wp-mainButton .bar-button-clear-wp-mapButton,
+.toolbar-wp-mainButton .bar-button-wp-mapButton {
+  color: white;
+  background-color: transparent;
+}
+
+.toolbar-wp-mainButton .bar-button-mapButton-wp:hover:not(.disable-hover),
+.toolbar-wp-mainButton .bar-button-clear-wp-mapButton:hover:not(.disable-hover),
+.toolbar-wp-mainButton .bar-button-wp-mapButton:hover:not(.disable-hover) {
+  color: white;
+}
+
+.toolbar-wp-mainButton .bar-button-outline-wp-mapButton {
+  border-color: #ebebeb;
+  color: #ebebeb;
+  background-color: transparent;
+}
+
+.toolbar-wp-mainButton .bar-button-outline-wp-mapButton.activated {
+  color: #00BFA5;
+  background-color: #ebebeb;
+}
+
+.toolbar-wp-mainButton .bar-button-solid-wp-mapButton {
+  color: #00BFA5;
+  background-color: white;
+}
+
+.toolbar-wp-mainButton .bar-button-solid-wp-mapButton.activated {
+  color: #00BFA5;
+  background-color: #ebebeb;
+}
+
 .toolbar-wp-mainButton .bar-button-mainButton-wp,
 .toolbar-wp-mainButton .bar-button-clear-wp-mainButton,
 .toolbar-wp-mainButton .bar-button-wp-mainButton {
@@ -37941,6 +41278,10 @@ ion-navbar.toolbar {
   color: white;
 }
 
+.text-ios-mapButton {
+  color: white;
+}
+
 .text-ios-mainButton {
   color: white;
 }
@@ -37977,6 +41318,10 @@ ion-navbar.toolbar {
   color: white;
 }
 
+.text-md-mapButton {
+  color: white;
+}
+
 .text-md-mainButton {
   color: white;
 }
@@ -38010,6 +41355,10 @@ ion-navbar.toolbar {
 }
 
 .text-wp-heartFab {
+  color: white;
+}
+
+.text-wp-mapButton {
   color: white;
 }
 
@@ -38311,7 +41660,7 @@ page-home ion-content {
 }
 
 page-home #map-button ion-icon {
-  color: #00E676;
+  color: #00BFA5;
 }
 
 page-home #favorite-button ion-icon {
@@ -38423,6 +41772,7 @@ page-place h3 {
 
 page-place h4 {
   font-size: 7vw;
+  margin: 0;
 }
 
 page-place img {
@@ -38438,6 +41788,7 @@ page-place ion-grid ion-col, page-place ion-grid ion-row ion-col {
 }
 
 page-place .classification-card {
+  margin: 0 auto !important;
   font-family: Palanquin-Light, sans-serif !important;
   background: linear-gradient(45deg, #7C4DFF 0%, #B388FF 100%);
   border-radius: 12px !important;
@@ -38483,7 +41834,18 @@ page-place ion-scroll img {
 }
 
 page-place .darksky-img {
-  margin: 0;
-  width: 50vw;
-  height: 8vh;
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  max-width: 25vw;
+  width: auto;
+  height: auto;
+}
+
+page-place #find-place-button {
+  margin-top: 12px;
+}
+
+page-place #find-place-button ion-icon {
+  color: #00BFA5;
 }

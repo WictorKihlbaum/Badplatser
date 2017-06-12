@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LoadingController, ModalController, NavController, NavParams} from 'ionic-angular';
 import { Geolocation } from '@ionic-native/geolocation';
-import { PlacePage } from "./place/place";
+import { PlacePage } from "../place/place";
 import { SearchPage } from "../search/search";
 
 declare const google: any;
