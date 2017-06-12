@@ -13,6 +13,7 @@ import { SearchPage } from "../pages/search/search";
 import { AboutPage } from "../pages/about/about";
 import { FavoritesPage } from "../pages/favorites/favorites";
 import { InAppBrowser } from "@ionic-native/in-app-browser";
+import { Network } from "@ionic-native/network";
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { InAppBrowser } from "@ionic-native/in-app-browser";
     StatusBar,
     SplashScreen,
     InAppBrowser,
+    Network,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
