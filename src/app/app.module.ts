@@ -12,6 +12,7 @@ import { HttpModule } from "@angular/http";
 import { SearchPage } from "../pages/search/search";
 import { AboutPage } from "../pages/about/about";
 import { FavoritesPage } from "../pages/favorites/favorites";
+import { InAppBrowser } from "@ionic-native/in-app-browser";
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { FavoritesPage } from "../pages/favorites/favorites";
   providers: [
     StatusBar,
     SplashScreen,
+    InAppBrowser,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

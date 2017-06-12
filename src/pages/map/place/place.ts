@@ -3,6 +3,7 @@ import {LoadingController, NavController, NavParams, ToastController } from 'ion
 import { WeatherService } from "../../../providers/weather-service";
 import * as localforage from "localforage";
 import { StatusBar } from "@ionic-native/status-bar";
+import { InAppBrowser } from "@ionic-native/in-app-browser";
 
 @Component({
   selector: 'page-place',
@@ -37,12 +38,12 @@ export class PlacePage implements OnInit {
 
 
   constructor(
-    private navCtrl: NavController,
     private navParams: NavParams,
     private weatherService: WeatherService,
     private loadingCtrl: LoadingController,
     private statusBar: StatusBar,
-    private toastCtrl: ToastController) {
+    private toastCtrl: ToastController,
+    private iab: InAppBrowser) {
 
     this.setFavoritesStore();
     this.checkIfFavoriteIsSaved();
@@ -138,6 +139,10 @@ export class PlacePage implements OnInit {
       this.statusBar.show();
     });
     toast.present();
+  }
+
+  onVisitDarkSky() {
+    this.iab.create('https://darksky.net/poweredby/', '_system');
   }
 
 }

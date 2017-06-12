@@ -16,18 +16,10 @@
     <ion-row align-items-center>
       <ion-col>
 
-
         <h1>{{ placeName }}</h1>
         <h2>{{ commune }}, {{ county }}</h2>
         <h3>{{ temperature }}</h3>
         <h4>{{ summary }}</h4>
-
-<!--
-        <h1>Styrsö</h1>
-        <h2>Göteborg, Västra Götalands län</h2>
-        <h3>15°C</h3>
-        <h4>Regnskurar</h4>
--->
 
         <ion-scroll scrollX="true">
           <ul *ngFor="let hour of weatherByHours" id="hourly-container">
@@ -49,6 +41,8 @@
             </ul>
           </ion-card-content>
         </ion-card>
+
+        <img src="../../../assets/img/darksky-logo.png" class="darksky-img" (click)="onVisitDarkSky()" />
 
       </ion-col>
     </ion-row>
