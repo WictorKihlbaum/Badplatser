@@ -3,6 +3,8 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { InAppBrowser } from "@ionic-native/in-app-browser";
+import { Network } from "@ionic-native/network";
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -12,8 +14,7 @@ import { HttpModule } from "@angular/http";
 import { SearchPage } from "../pages/search/search";
 import { AboutPage } from "../pages/about/about";
 import { FavoritesPage } from "../pages/favorites/favorites";
-import { InAppBrowser } from "@ionic-native/in-app-browser";
-import { Network } from "@ionic-native/network";
+import { StationPage } from "../pages/station/station";
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { Network } from "@ionic-native/network";
     PlacePage,
     SearchPage,
     AboutPage,
-    FavoritesPage
+    FavoritesPage,
+    StationPage
   ],
   imports: [
     BrowserModule,
@@ -38,7 +40,8 @@ import { Network } from "@ionic-native/network";
     PlacePage,
     SearchPage,
     AboutPage,
-    FavoritesPage
+    FavoritesPage,
+    StationPage
   ],
   providers: [
     StatusBar,

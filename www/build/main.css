@@ -41645,8 +41645,14 @@ page-favorites ion-grid ion-col, page-favorites ion-grid ion-row ion-col {
   text-align: center;
 }
 
+page-favorites ion-grid ion-col h1, page-favorites ion-grid ion-row ion-col h1 {
+  font-size: 6vw;
+}
+
 page-favorites ion-grid ion-col p, page-favorites ion-grid ion-row ion-col p {
   text-align: left;
+  line-height: 1.4;
+  font-size: 5vw;
 }
 
 page-home {
@@ -41848,4 +41854,40 @@ page-place #find-place-button {
 
 page-place #find-place-button ion-icon {
   color: #00BFA5;
+}
+
+page-station ion-content {
+  background: linear-gradient(45deg, #2196f3 0%, #42a5f5 100%);
+  color: white !important;
+}
+
+page-station ion-grid, page-station ion-grid ion-row {
+  height: 100% !important;
+}
+
+page-station ion-grid ion-col, page-station ion-grid ion-row ion-col {
+  text-align: center;
+}
+
+page-station h1, page-station h3 {
+  font-size: 6vw;
+  font-family: Palanquin-Light, sans-serif;
+}
+
+page-station h2, page-station h4 {
+  font-family: Palanquin-Regular, sans-serif;
+  font-size: 8vw;
+  margin: 0;
+}
+
+page-station h2 {
+  text-transform: lowercase;
+}
+
+page-station h2:first-letter {
+  text-transform: uppercase;
+}
+
+page-station h3 {
+  margin-top: 24px;
 }

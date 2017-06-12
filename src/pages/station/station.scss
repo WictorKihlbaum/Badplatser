@@ -1,0 +1,34 @@
+page-station {
+
+  ion-content {
+    background: linear-gradient(45deg, #2196f3 0%, #42a5f5 100%);
+    color: white !important;
+  }
+
+  ion-grid, ion-grid ion-row {
+    height: 100% !important;
+    ion-col {
+      text-align: center;
+    }
+  }
+
+  h1, h3 {
+    font-size: 6vw;
+    font-family: Palanquin-Light, sans-serif;
+  }
+  h2, h4 {
+    font-family: Palanquin-Regular, sans-serif;
+    font-size: 8vw;
+    margin: 0;
+  }
+  h2 {
+    text-transform: lowercase;
+  }
+  h2:first-letter {
+    text-transform: uppercase;
+  }
+  h3 {
+    margin-top: 24px;
+  }
+
+}

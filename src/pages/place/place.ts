@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {LoadingController, NavParams, ToastController } from 'ionic-angular';
+import { LoadingController, NavParams, ToastController } from 'ionic-angular';
 import { WeatherService } from "../../providers/weather-service";
 import * as localforage from "localforage";
 import { StatusBar } from "@ionic-native/status-bar";

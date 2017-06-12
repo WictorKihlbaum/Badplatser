@@ -20,8 +20,14 @@ page-favorites {
     ion-col {
       text-align: center;
 
+      h1 {
+        font-size: 6vw;
+      }
+
       p {
         text-align: left;
+        line-height: 1.4;
+        font-size: 5vw;
       }
     }
   }
