@@ -24,10 +24,12 @@ export class HomePage implements OnInit {
     private toastCtrl: ToastController,
     private statusBar: StatusBar) {
 
+    /*
     let favoritesStore = localforage.createInstance({ name: "badplatser", storeName: 'favorites' });
     favoritesStore.clear().then(() => {
       console.log('allt clear');
     });
+    */
   }
 
   ngOnInit() {

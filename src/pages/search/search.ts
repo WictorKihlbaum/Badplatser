@@ -12,6 +12,7 @@ export class SearchPage implements OnInit {
 
   private parsedPlaces: any;
   private places: any = [];
+  private placesToShow: any = [];
 
 
   constructor(private navParams: NavParams, private modalCtrl: ModalController) {
@@ -38,13 +39,16 @@ export class SearchPage implements OnInit {
     this.initializePlaces();
 
     // Set val to the value of the searchbar.
-    let val = ev.target.value;
+    const val = ev.target.value;
 
     // If the value is an empty string don't filter the items.
-    if (val && val.trim() != '') {
-      this.places = this.places.filter((place) => {
+    if (val && val.trim() != '' && val.length >= 3) {
+      this.placesToShow = this.places.filter((place) => {
         return (place.C6.toLowerCase().indexOf(val.toLowerCase()) > -1);
-      })
+      });
+    }
+    else {
+      this.placesToShow = [];
     }
   }
 

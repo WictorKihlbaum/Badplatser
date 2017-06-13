@@ -45,14 +45,14 @@ export class PlacePage implements OnInit {
     private toastCtrl: ToastController,
     private iab: InAppBrowser) {
 
-    this.placeName = navParams.get('C6');            // Badplats C6
-    this.latitude = navParams.get('C8');              // Latitud C8
-    this.longitude = navParams.get('C10');            // Longitud C10
-    this.county = navParams.get('C9') + ' län';           // Län C9
-    this.commune = navParams.get('C7');                // Kommun C7
-    this.classification = navParams.get('C5'); // Klassificering C5
-    this.euBath = navParams.get('C3');                  // EuBad C3
-    this.year = navParams.get('C4');                       // År C4
+    this.placeName = navParams.get('C6');
+    this.latitude = navParams.get('C8');
+    this.longitude = navParams.get('C10');
+    this.county = navParams.get('C9') + ' län';
+    this.commune = navParams.get('C7');
+    this.classification = navParams.get('C5');
+    this.euBath = navParams.get('C3');
+    this.year = navParams.get('C4');
 
     if (this.euBath == 'J') this.euBath = 'Ja';
     else this.euBath = 'Nej';
@@ -68,6 +68,7 @@ export class PlacePage implements OnInit {
       this.loader.dismiss();
     }
     catch (error) {
+      this.loader.dismiss();
       this.showToast(error, 'error-toast');
     }
   }

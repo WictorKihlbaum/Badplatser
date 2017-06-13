@@ -16,8 +16,9 @@
 <ion-content no-bounce>
 
   <ion-list>
-    <ion-item *ngFor="let place of places" (click)="onShowPlace(place)">
+    <ion-item *ngFor="let place of placesToShow" (click)="onShowPlace(place)">
       {{ place.C6 }}
+      <p>{{ place.C7 }}, {{ place.C9 }} län</p>
     </ion-item>
   </ion-list>
 

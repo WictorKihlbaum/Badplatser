@@ -41752,6 +41752,15 @@ page-home .wave.-two {
 
 page-map #map {
   height: 100%;
+  /* Cluster markers */
+}
+
+page-map #map div {
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  color: white !important;
 }
 
 page-place {
