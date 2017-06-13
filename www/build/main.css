@@ -41608,10 +41608,10 @@ page-about ion-content h1 {
   font-size: 8vw;
 }
 
-page-about ion-content #about-text {
-  text-align: left;
+page-about ion-content .about-text {
+  text-align: justify;
   line-height: 1.4;
-  font-size: 5vw;
+  font-size: 4vw;
 }
 
 page-about ion-grid, page-about ion-grid ion-row {

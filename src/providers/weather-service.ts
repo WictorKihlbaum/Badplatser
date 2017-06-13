@@ -17,9 +17,17 @@ export class WeatherService {
     }
   }
 
-  load(latitude, longitude) {
+  fetchWeather(latitude, longitude) {
     const url = `${this.cors + this.apiUrl}/${latitude},${longitude}?lang=sv&units=si&exclude=flags,daily`;
+    return this.fetchJSON(url);
+  }
 
+  fetchSeaTemperature() {
+    const url = 'https://opendata-download-ocobs.smhi.se/api/version/latest/parameter/5/station-set/all/period/latest-hour/data.json';
+    return this.fetchJSON(url);
+  }
+
+  fetchJSON(url: string) {
     return new Promise((resolve, reject) => {
       this.http.get(url)
         .map(res => res.json())

@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { ModalController, NavController, NavParams, Searchbar } from 'ionic-angular';
+import { ModalController, NavParams, Searchbar } from 'ionic-angular';
 import { PlacePage } from "../place/place";
 
 @Component({
@@ -14,13 +14,12 @@ export class SearchPage implements OnInit {
   private places: any = [];
 
 
-  constructor(private navCtrl: NavController, private navParams: NavParams, private modalCtrl: ModalController) {
+  constructor(private navParams: NavParams, private modalCtrl: ModalController) {
     this.parsedPlaces = JSON.parse(navParams['data']);
   }
 
   ngOnInit() {
     this.initializePlaces();
-    //this.searchbar.setFocus();
   }
 
   ionViewDidEnter() {
@@ -44,7 +43,7 @@ export class SearchPage implements OnInit {
     // If the value is an empty string don't filter the items.
     if (val && val.trim() != '') {
       this.places = this.places.filter((place) => {
-        return (place.Badplats.toLowerCase().indexOf(val.toLowerCase()) > -1);
+        return (place.C6.toLowerCase().indexOf(val.toLowerCase()) > -1);
       })
     }
   }

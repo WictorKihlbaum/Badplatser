@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {ModalController, NavController, NavParams, ToastController } from 'ionic-angular';
+import {ModalController, ToastController } from 'ionic-angular';
 import * as localforage from "localforage";
 import { PlacePage } from "../place/place";
 import { StatusBar } from "@ionic-native/status-bar";
@@ -15,8 +15,6 @@ export class FavoritesPage {
 
 
   constructor(
-    private navCtrl: NavController,
-    private navParams: NavParams,
     private modalCtrl: ModalController,
     private statusBar: StatusBar,
     private toastCtrl: ToastController) {
@@ -42,7 +40,7 @@ export class FavoritesPage {
 
   async onDeleteFavorite(placeData: any) {
     try {
-      await this.favoritesStore.removeItem(placeData['data'].Badplats);
+      await this.favoritesStore.removeItem(placeData['data'].C6);
       this.showToast('Badplatsen togs bort', 'success-toast');
       this.resetAndRefresh();
     }

@@ -45,26 +45,31 @@ export class PlacePage implements OnInit {
     private toastCtrl: ToastController,
     private iab: InAppBrowser) {
 
-    this.setFavoritesStore();
-    this.checkIfFavoriteIsSaved();
-
-    this.placeName = navParams.get('Badplats');
-    this.latitude = navParams.get('Latitud');
-    this.longitude = navParams.get('Longitud');
-    this.county = navParams.get('Län') + ' län';
-    this.commune = navParams.get('Kommun');
-    this.classification = navParams.get('Klassificering');
-    this.euBath = navParams.get('EuBad');
-    this.year = navParams.get('År');
+    this.placeName = navParams.get('C6');            // Badplats C6
+    this.latitude = navParams.get('C8');              // Latitud C8
+    this.longitude = navParams.get('C10');            // Longitud C10
+    this.county = navParams.get('C9') + ' län';           // Län C9
+    this.commune = navParams.get('C7');                // Kommun C7
+    this.classification = navParams.get('C5'); // Klassificering C5
+    this.euBath = navParams.get('C3');                  // EuBad C3
+    this.year = navParams.get('C4');                       // År C4
 
     if (this.euBath == 'J') this.euBath = 'Ja';
     else this.euBath = 'Nej';
+
+    this.setFavoritesStore();
+    this.checkIfFavoriteIsSaved();
   }
 
   async ngOnInit() {
-    this.showLoading('Hämtar väder...');
-    await this.getWeatherData();
-    this.loader.dismiss();
+    try {
+      this.showLoading('Hämtar väder...');
+      await this.getWeatherData();
+      this.loader.dismiss();
+    }
+    catch (error) {
+      this.showToast(error, 'error-toast');
+    }
   }
 
   setFavoritesStore() {
@@ -72,15 +77,20 @@ export class PlacePage implements OnInit {
   }
 
   async checkIfFavoriteIsSaved() {
-    const key = this.navParams.get('Badplats');
+    const key = this.placeName;
     const value = await this.favoritesStore.getItem(key);
     if (value != null) this.favoriteIsSaved = true;
   }
 
   async getWeatherData() {
-    const weatherData = await this.weatherService.load(this.latitude, this.longitude);
-    this.setCurrentlyWeatherData(weatherData['currently']);
-    this.setHourlyWeatherData(weatherData['hourly']);
+    try {
+      const weatherData = await this.weatherService.fetchWeather(this.latitude, this.longitude);
+      this.setCurrentlyWeatherData(weatherData['currently']);
+      this.setHourlyWeatherData(weatherData['hourly']);
+    }
+    catch (error) {
+      throw 'Ett fel uppstod när vädret för badplatsen skulle hämtas.';
+    }
   }
 
   setCurrentlyWeatherData(currently: any) {
@@ -122,7 +132,6 @@ export class PlacePage implements OnInit {
       this.showToast('Badplats har lagts till mina favoriter!', 'success-toast');
     }
     catch (error) {
-      console.log(error);
       this.showToast('Ett fel uppstod när badplats skulle sparas. Var god försök igen.', 'error-toast');
     }
   }
