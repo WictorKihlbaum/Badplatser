@@ -95,7 +95,7 @@ export class PlacePage implements OnInit {
   }
 
   setCurrentlyWeatherData(currently: any) {
-    this.temperature = parseInt(currently['temperature']) + '°C';
+    this.temperature = parseInt(currently['temperature']) + '°';
     this.summary = currently['summary'];
     this.icon = currently['icon'];
   }
@@ -105,7 +105,8 @@ export class PlacePage implements OnInit {
       const hourData: any = hourly.data[i];
 
       const milliseconds: number = parseInt(hourData.time + '000');
-      const hour: number = new Date(milliseconds).getHours();
+      let hour: string = new Date(milliseconds).getHours().toString();
+      if (hour.length == 1) hour = '0' + hour;
 
       const temperature: number = parseInt(hourData.temperature);
       const icon: string = hourData.icon;

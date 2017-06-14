@@ -9,7 +9,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding no-bounce>
+<ion-content padding no-bounce class="gradient-background">
 
   <ion-grid no-padding *ngIf="favorites.length == 0">
     <ion-row align-items-center>
@@ -25,16 +25,22 @@
 
 
   <div *ngIf="favorites.length > 0">
-    <ion-list>
+    <ion-list no-lines>
       <ion-item *ngFor="let favorite of favorites">
+
+        <ion-avatar item-start>
+          <img src="../../assets/img/place.png">
+        </ion-avatar>
 
         <span (click)="onShowPlace(favorite)">
           {{ favorite.data['C6'] }}
         </span>
+        <p>
+          {{ favorite.data['C7'] }}, {{ favorite.data['C9'] }} län
+        </p>
 
-        <button ion-button item-end icon-right clear (click)="onDeleteFavorite(favorite)">
-          Ta bort
-          <ion-icon name="trash"></ion-icon>
+        <button ion-fab mini item-end (click)="onDeleteFavorite(favorite)">
+          <ion-icon name="close"></ion-icon>
         </button>
 
       </ion-item>

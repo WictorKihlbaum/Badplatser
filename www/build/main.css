@@ -45240,18 +45240,26 @@ page-about ion-grid ion-col, page-about ion-grid ion-row ion-col {
 }
 
 page-favorites ion-content {
-  background: linear-gradient(45deg, #2196f3 0%, #42a5f5 100%);
   color: white !important;
   font-family: Palanquin-Light, sans-serif;
 }
 
 page-favorites ion-item {
-  background-color: transparent !important;
+  background: linear-gradient(45deg, #536DFE 0%, #b388FF 100%) !important;
+  box-shadow: 0 2px 5px rgba(179, 136, 255, 0.3) !important;
+  border-radius: 8px !important;
+  margin-bottom: 6px !important;
+  color: white !important;
+}
+
+page-favorites ion-item p {
   color: white !important;
 }
 
 page-favorites ion-item button {
   color: white !important;
+  background: transparent !important;
+  box-shadow: none !important;
 }
 
 page-favorites ion-grid, page-favorites ion-grid ion-row {
@@ -45299,7 +45307,7 @@ page-home #favorite-button ion-icon {
 }
 
 page-home #about-button ion-icon {
-  color: #00B0FF;
+  color: #40C4FF;
 }
 
 page-home ion-grid, page-home ion-grid ion-row {

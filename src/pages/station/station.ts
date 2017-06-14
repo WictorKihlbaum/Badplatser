@@ -16,7 +16,7 @@ export class StationPage {
     const temperature = navParams.get('value')[0];
 
     if (temperature != null) {
-      this.temperature = parseInt(temperature.value).toString() + '°C';
+      this.temperature = parseInt(temperature.value).toString() + '°';
     } else {
       this.temperature = 'Ingen data tillgänglig';
     }
