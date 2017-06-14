@@ -32,8 +32,13 @@ $colors: (
 
 
   header:(
-    base: #42A5F5,
+    base: #42A5f5,
     contrast: white
+  ),
+
+  homeSubButton:(
+    base: white,
+    contrast: #536DFE
   ),
 
   lightFab:(

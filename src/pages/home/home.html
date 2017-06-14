@@ -4,20 +4,22 @@
     <ion-row align-items-center>
       <ion-col>
 
-        <h1 padding>Svenska bad</h1>
+        <img src="../../assets/img/sweden.png" />
+
+        <h1>Svenska bad</h1>
 
         <div id="buttons-container">
-          <button ion-button round icon-left color="lightFab" id="map-button" [navPush]="mapPage">
-            <ion-icon name="md-globe"></ion-icon>
+          <button ion-button large round icon-left id="map-button" [navPush]="mapPage">
+            <ion-icon name="search"></ion-icon>
             Hitta badplats
           </button>
 
-          <button ion-button round icon-left color="lightFab" id="favorite-button" [navPush]="favoritesPage">
+          <button ion-button round icon-left color="homeSubButton" id="favorite-button" [navPush]="favoritesPage">
             <ion-icon name="heart"></ion-icon>
             Mina favoriter
           </button>
 
-          <button ion-button round icon-left color="lightFab" id="about-button" [navPush]="aboutPage">
+          <button ion-button round icon-left color="homeSubButton" id="about-button" [navPush]="aboutPage">
             <ion-icon name="information-circle"></ion-icon>
             Om appen
           </button>
