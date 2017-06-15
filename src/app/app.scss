@@ -25,7 +25,19 @@
   font-family: Palanquin-Regular;
   src: url("../assets/fonts/Palanquin-Regular.ttf");
 }
+/* Comfortaa */
+@font-face {
+  font-family: Comfortaa-Regular;
+  src: url("../assets/fonts/Comfortaa-Regular.ttf");
+}
+@font-face {
+  font-family: Comfortaa-Light;
+  src: url("../assets/fonts/Comfortaa-Light.ttf");
+}
 
+ion-navbar {
+  font-family: Comfortaa-Regular, sans-serif;
+}
 
 .gradient-background {
   background: linear-gradient(45deg, #69f0AE 0%, #00E5FF 100%);

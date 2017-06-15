@@ -6,6 +6,10 @@ page-station {
     color: white !important;
   }
 
+  img {
+    width: 30vw;
+  }
+
   ion-grid, ion-grid ion-row {
     height: 100% !important;
     ion-col {
@@ -14,12 +18,12 @@ page-station {
   }
 
   h1, h3 {
-    font-size: 6vw;
+    font-size: 5vw;
     font-family: Palanquin-Light, sans-serif;
   }
   h2, h4 {
     font-family: Palanquin-Regular, sans-serif;
-    font-size: 8vw;
+    font-size: 6vw;
     margin: 0;
   }
   h2 {

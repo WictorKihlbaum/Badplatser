@@ -90,7 +90,7 @@ export class PlacePage implements OnInit {
       this.setHourlyWeatherData(weatherData['hourly']);
     }
     catch (error) {
-      throw 'Ett fel uppstod när vädret för badplatsen skulle hämtas.';
+      throw 'Vädret för badplatsen kunde inte hämtas';
     }
   }
 

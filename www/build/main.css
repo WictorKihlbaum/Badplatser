@@ -45184,6 +45184,21 @@ ion-navbar.toolbar {
   src: url("../assets/fonts/Palanquin-Regular.ttf");
 }
 
+/* Comfortaa */
+@font-face {
+  font-family: Comfortaa-Regular;
+  src: url("../assets/fonts/Comfortaa-Regular.ttf");
+}
+
+@font-face {
+  font-family: Comfortaa-Light;
+  src: url("../assets/fonts/Comfortaa-Light.ttf");
+}
+
+ion-navbar {
+  font-family: Comfortaa-Regular, sans-serif;
+}
+
 .gradient-background {
   background: linear-gradient(45deg, #69f0AE 0%, #00E5FF 100%);
 }
@@ -45367,6 +45382,7 @@ page-home ion-grid ion-col #buttons-container button, page-home ion-grid ion-row
   display: block !important;
   margin: 8px auto;
   box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
+  font-family: Comfortaa-Regular, sans-serif;
 }
 
 page-home .wave {
@@ -45436,10 +45452,9 @@ page-place {
 }
 
 page-place ion-content {
-  background: linear-gradient(45deg, #2196f3 0%, #42a5f5 100%);
+  background: linear-gradient(45deg, #69f0ae 0%, #4dd0e1 100%);
   color: white !important;
   font-family: Palanquin-Light, sans-serif;
-  background-size: 400% 400%;
 }
 
 page-place h1 {
@@ -45541,6 +45556,10 @@ page-station ion-content {
   color: white !important;
 }
 
+page-station img {
+  width: 30vw;
+}
+
 page-station ion-grid, page-station ion-grid ion-row {
   height: 100% !important;
 }
@@ -45550,13 +45569,13 @@ page-station ion-grid ion-col, page-station ion-grid ion-row ion-col {
 }
 
 page-station h1, page-station h3 {
-  font-size: 6vw;
+  font-size: 5vw;
   font-family: Palanquin-Light, sans-serif;
 }
 
 page-station h2, page-station h4 {
   font-family: Palanquin-Regular, sans-serif;
-  font-size: 8vw;
+  font-size: 6vw;
   margin: 0;
 }
 
