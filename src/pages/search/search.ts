@@ -10,14 +10,11 @@ export class SearchPage implements OnInit {
 
   @ViewChild('searchbar') searchbar: Searchbar;
 
-  private parsedPlaces: any;
   private places: any = [];
   private placesToShow: any = [];
 
 
-  constructor(private navParams: NavParams, private modalCtrl: ModalController) {
-    this.parsedPlaces = JSON.parse(navParams['data']);
-  }
+  constructor(private navParams: NavParams, private modalCtrl: ModalController) {}
 
   ngOnInit() {
     this.initializePlaces();
@@ -28,10 +25,7 @@ export class SearchPage implements OnInit {
   }
 
   initializePlaces() {
-    this.places = [];
-    for (let place of this.parsedPlaces['Badplatser']) {
-      this.places.push(place);
-    }
+    this.places = this.navParams['data'].Badplatser;
   }
 
   getPlaces(ev: any) {
@@ -43,7 +37,7 @@ export class SearchPage implements OnInit {
 
     // If the value is an empty string don't filter the items.
     if (val && val.trim() != '' && val.length >= 3) {
-      this.placesToShow = this.places.filter((place) => {
+      this.placesToShow = this.places.filter(place => {
         return (place.C6.toLowerCase().indexOf(val.toLowerCase()) > -1);
       });
     }
@@ -52,8 +46,8 @@ export class SearchPage implements OnInit {
     }
   }
 
-  onShowPlace(placeData: any) {
-    const placeModal = this.modalCtrl.create(PlacePage, placeData);
+  onShowPlace(place: any) {
+    const placeModal = this.modalCtrl.create(PlacePage, place);
     placeModal.present();
   }
 

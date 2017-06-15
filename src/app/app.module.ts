@@ -5,12 +5,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { InAppBrowser } from "@ionic-native/in-app-browser";
 import { Network } from "@ionic-native/network";
+import { HttpModule } from "@angular/http";
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { MapPage } from '../pages/map/map';
 import { PlacePage } from "../pages/place/place";
-import { HttpModule } from "@angular/http";
 import { SearchPage } from "../pages/search/search";
 import { AboutPage } from "../pages/about/about";
 import { FavoritesPage } from "../pages/favorites/favorites";
