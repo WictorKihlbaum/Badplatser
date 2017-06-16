@@ -3,30 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="0aaff879-e7a7-4ca7-a45c-89a92c88d0d2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.scss" afterPath="$PROJECT_DIR$/src/app/app.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/about/about.html" afterPath="$PROJECT_DIR$/src/pages/about/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/about/about.scss" afterPath="$PROJECT_DIR$/src/pages/about/about.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/favorites/favorites.html" afterPath="$PROJECT_DIR$/src/pages/favorites/favorites.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/favorites/favorites.scss" afterPath="$PROJECT_DIR$/src/pages/favorites/favorites.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/home/home.html" afterPath="$PROJECT_DIR$/src/pages/home/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/home/home.scss" afterPath="$PROJECT_DIR$/src/pages/home/home.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/map/map.html" afterPath="$PROJECT_DIR$/src/pages/map/map.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/map/map.scss" afterPath="$PROJECT_DIR$/src/pages/map/map.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/map/map.ts" afterPath="$PROJECT_DIR$/src/pages/map/map.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/place/place.html" afterPath="$PROJECT_DIR$/src/pages/place/place.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/place/place.scss" afterPath="$PROJECT_DIR$/src/pages/place/place.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/place/place.ts" afterPath="$PROJECT_DIR$/src/pages/place/place.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/search/search.html" afterPath="$PROJECT_DIR$/src/pages/search/search.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/station/station.html" afterPath="$PROJECT_DIR$/src/pages/station/station.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/station/station.scss" afterPath="$PROJECT_DIR$/src/pages/station/station.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/station/station.ts" afterPath="$PROJECT_DIR$/src/pages/station/station.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/providers/weather-service.ts" afterPath="$PROJECT_DIR$/src/providers/weather-service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/theme/variables.scss" afterPath="$PROJECT_DIR$/src/theme/variables.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/main.css" afterPath="$PROJECT_DIR$/www/build/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/main.js" afterPath="$PROJECT_DIR$/www/build/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/main.js.map" afterPath="$PROJECT_DIR$/www/build/main.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,21 +24,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="favorites.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/favorites/favorites.html">
+      <file leaf-file-name="place.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pages/place/place.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="17" column="54" lean-forward="false" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+            <state relative-caret-position="315">
+              <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="favorites.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pages/favorites/favorites.scss">
+      <file leaf-file-name="place.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/place/place.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="39" column="35" lean-forward="false" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+            <state relative-caret-position="175">
+              <caret line="96" column="96" lean-forward="false" selection-start-line="96" selection-start-column="96" selection-end-line="96" selection-end-column="96" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="place.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/place/place.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -113,13 +106,13 @@
         <option value="$PROJECT_DIR$/src/pages/home/home.scss" />
         <option value="$PROJECT_DIR$/src/app/app.scss" />
         <option value="$PROJECT_DIR$/src/pages/about/about.html" />
+        <option value="$PROJECT_DIR$/src/pages/map/map.ts" />
+        <option value="$PROJECT_DIR$/src/pages/favorites/favorites.html" />
+        <option value="$PROJECT_DIR$/src/pages/favorites/favorites.scss" />
+        <option value="$PROJECT_DIR$/src/pages/place/place.ts" />
         <option value="$PROJECT_DIR$/src/pages/map/map.scss" />
         <option value="$PROJECT_DIR$/src/pages/place/place.scss" />
         <option value="$PROJECT_DIR$/src/pages/place/place.html" />
-        <option value="$PROJECT_DIR$/src/pages/map/map.ts" />
-        <option value="$PROJECT_DIR$/src/pages/place/place.ts" />
-        <option value="$PROJECT_DIR$/src/pages/favorites/favorites.html" />
-        <option value="$PROJECT_DIR$/src/pages/favorites/favorites.scss" />
       </list>
     </option>
   </component>
@@ -263,7 +256,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="favorites" />
+              <option name="myItemId" value="place" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -285,7 +278,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="about" />
+              <option name="myItemId" value="map" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -418,12 +411,12 @@
       <workItem from="1497428521050" duration="3680000" />
       <workItem from="1497470629745" duration="12930000" />
       <workItem from="1497566491912" duration="651000" />
-      <workItem from="1497609168432" duration="12386000" />
+      <workItem from="1497609168432" duration="14230000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75420000" />
+    <option name="totallyTimeSpent" value="77264000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="47" y="23" width="1393" height="797" extended-state="0" />
@@ -693,14 +686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/theme/variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="40" column="18" lean-forward="false" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/about/about.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -765,42 +750,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/map/map.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/map/map.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="40" column="36" lean-forward="false" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/place/place.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="74" column="36" lean-forward="true" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/place/place.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="79" column="20" lean-forward="false" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/place/place.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -825,6 +778,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="39" column="35" lean-forward="false" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/theme/variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="40" column="18" lean-forward="false" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/map/map.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/place/place.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="96" column="96" lean-forward="false" selection-start-line="96" selection-start-column="96" selection-end-line="96" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/place/place.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/place/place.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
           <folding />
         </state>
       </provider>

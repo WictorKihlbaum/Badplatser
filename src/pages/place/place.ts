@@ -95,7 +95,6 @@ export class PlacePage implements OnInit {
   async getWeatherData() {
     try {
       const weatherData = await this.weatherService.fetchWeather(this.latitude, this.longitude);
-      console.log(weatherData['daily']);
       this.setCurrentlyWeatherData(weatherData['currently']);
       this.setHourlyWeatherData(weatherData['hourly']);
       this.setDailyWeatherData(weatherData['daily'].data[0]); // Just today

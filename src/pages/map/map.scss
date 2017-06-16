@@ -4,11 +4,12 @@ page-map {
     height: 100%;
 
     /* Cluster markers */
-    div {
-      font-size: 16px !important;
-      font-weight: bold !important;
-      color: white !important;
-
+    .cluster {
+      div {
+        font-size: 16px !important;
+        font-weight: bold !important;
+        color: white !important;
+      }
       img { width: 100%; }
     }
   }

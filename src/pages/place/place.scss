@@ -27,8 +27,15 @@ page-place {
       height: 14vh;
     }
 
+    #swipe-icon {
+      width: 10vw;
+      height: auto;
+      margin: 0 auto;
+    }
+
     ion-scroll{
       font-size: 14px;
+      //height: 86px;
       height: 86px;
       white-space: nowrap;
 

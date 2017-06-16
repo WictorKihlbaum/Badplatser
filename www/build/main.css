@@ -45401,13 +45401,13 @@ page-map #map {
   /* Cluster markers */
 }
 
-page-map #map div {
+page-map #map .cluster div {
   font-size: 16px !important;
   font-weight: bold !important;
   color: white !important;
 }
 
-page-map #map div img {
+page-map #map .cluster img {
   width: 100%;
 }
 
@@ -45437,6 +45437,12 @@ page-place #weather-container h3 {
 
 page-place #weather-container img {
   height: 14vh;
+}
+
+page-place #weather-container #swipe-icon {
+  width: 10vw;
+  height: auto;
+  margin: 0 auto;
 }
 
 page-place #weather-container ion-scroll {
