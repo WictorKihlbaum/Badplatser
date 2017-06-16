@@ -23,20 +23,21 @@ page-favorites {
     }
   }
 
-  ion-grid, ion-grid ion-row {
-    height: 100% !important;
-    ion-col {
-      text-align: center;
+  #no-favorites-container {
+    img {
+      width: 18vw;
+    }
 
-      h1 {
-        font-size: 6vw;
-      }
+    h1 {
+      font-size: 6vw;
+      font-family: Palanquin-Regular, sans-serif;
+    }
 
-      p {
-        text-align: left;
-        line-height: 1.4;
-        font-size: 5vw;
-      }
+    p {
+      text-align: left;
+      line-height: 1.4;
+      font-size: 5vw;
+      font-family: Palanquin-Light, sans-serif;
     }
   }
 

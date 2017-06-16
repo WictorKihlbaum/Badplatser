@@ -38,7 +38,7 @@ export class MapPage implements OnInit {
 
   async ngOnInit() {
     try {
-      this.showLoading('Laddar karta...');
+      this.showLoading('Laddar karta');
       await this.setCurrentCoordinates();
       this.initMap();
       this.setLoaderDismiss();

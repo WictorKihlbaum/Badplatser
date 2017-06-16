@@ -18,7 +18,7 @@ export class WeatherService {
   }
 
   fetchWeather(latitude, longitude) {
-    const url = `${this.cors + this.apiUrl}/${latitude},${longitude}?lang=sv&units=si&exclude=flags,daily`;
+    const url = `${this.cors + this.apiUrl}/${latitude},${longitude}?lang=sv&units=si&exclude=flags`;
     return this.fetchJSON(url);
   }
 

@@ -1,10 +1,9 @@
 page-home {
 
   ion-content {
-    //background: linear-gradient(45deg, #2196f3 0%,#42a5f5 100%);
-    background: linear-gradient(45deg, #69f0ae 0%, #00e5ff 100%);
     color: white !important;
     font-family: Palanquin-Light, sans-serif;
+    background: linear-gradient(45deg, #00b0ff 0%, #40c4ff 100%);
   }
 
   #map-button {
@@ -13,9 +12,11 @@ page-home {
     ion-icon {
       color: white;
     }
-    background: linear-gradient(45deg, #536DFE 0%, #b388FF 100%) !important;
+    //background: linear-gradient(45deg, #536dfe 0%, #b388ff 100%) !important;
+    background: linear-gradient(45deg, #1de9b6 0%, #00e5ff 100%) !important;
     color: white !important;
-    box-shadow: 0 2px 5px rgba(179, 136, 255, 0.3) !important;
+    box-shadow: 0 2px 5px rgba(178, 235, 242, 0.3) !important;
+    font-weight: bold;
   }
   #favorite-button ion-icon {
     color: #FF4081;
@@ -26,10 +27,8 @@ page-home {
 
   ion-grid, ion-grid ion-row {
     z-index: 1000;
-    height: 100% !important;
 
     ion-col {
-      text-align: center;
 
       img {
         width: 14vw;
@@ -47,7 +46,6 @@ page-home {
         button {
           display: block !important;
           margin: 8px auto;
-          box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
           font-family: Comfortaa-Regular, sans-serif;
         }
       }

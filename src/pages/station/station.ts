@@ -8,7 +8,7 @@ import { NavParams } from 'ionic-angular';
 export class StationPage {
 
   private name: string;
-  private temperature: string;
+  private temperature: string = 'Ingen data tillgänglig';
 
 
   constructor(private navParams: NavParams) {
@@ -17,8 +17,6 @@ export class StationPage {
 
     if (temperature != null) {
       this.temperature = parseInt(temperature.value).toString() + '°';
-    } else {
-      this.temperature = 'Ingen data tillgänglig';
     }
   }
 

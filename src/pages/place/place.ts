@@ -12,9 +12,15 @@ import { InAppBrowser } from "@ionic-native/in-app-browser";
 })
 export class PlacePage implements OnInit {
 
+  private placeInfo: string = 'weather';
+  private weather: string = 'weather';
+  private quality: string = 'quality';
+
+  private weatherDataIsFetched: boolean = false;
   private loader: any;
   private favoritesStore: any;
   private favoriteIsSaved: boolean = false;
+  private stars: any = [];
 
   // Place data
   private placeName: string;
@@ -35,6 +41,9 @@ export class PlacePage implements OnInit {
 
   // Hourly
   private weatherByHours: any = [];
+
+  // Daily
+  private dailyData: any;
 
 
   constructor(
@@ -63,7 +72,7 @@ export class PlacePage implements OnInit {
 
   async ngOnInit() {
     try {
-      this.showLoading('Hämtar väder...');
+      this.showLoading('Hämtar väder');
       await this.getWeatherData();
       this.loader.dismiss();
     }
@@ -86,8 +95,11 @@ export class PlacePage implements OnInit {
   async getWeatherData() {
     try {
       const weatherData = await this.weatherService.fetchWeather(this.latitude, this.longitude);
+      console.log(weatherData['daily']);
       this.setCurrentlyWeatherData(weatherData['currently']);
       this.setHourlyWeatherData(weatherData['hourly']);
+      this.setDailyWeatherData(weatherData['daily'].data[0]); // Just today
+      this.weatherDataIsFetched = true;
     }
     catch (error) {
       throw 'Vädret för badplatsen kunde inte hämtas';
@@ -114,6 +126,17 @@ export class PlacePage implements OnInit {
       const weatherByHour: any = { h: hour, t: temperature, i: icon };
       this.weatherByHours.push(weatherByHour);
     }
+  }
+
+  setDailyWeatherData(daily: any) {
+    const date: any = new Date(parseFloat(daily.sunsetTime + '000'));
+    const hours: any = date.getHours();
+    const minutes: any = date.getMinutes();
+
+    this.dailyData = {
+      summary: daily.summary,
+      sunsetTime: `${hours}:${minutes}`
+    };
   }
 
   showLoading(text: string) {

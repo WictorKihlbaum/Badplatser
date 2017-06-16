@@ -1,20 +1,11 @@
 page-station {
 
   ion-content {
-    background: linear-gradient(45deg, #5c6bc0, #7986cb);
-    background-size: 400% 400%;
     color: white !important;
   }
 
   img {
     width: 30vw;
-  }
-
-  ion-grid, ion-grid ion-row {
-    height: 100% !important;
-    ion-col {
-      text-align: center;
-    }
   }
 
   h1, h3 {

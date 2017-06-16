@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header no-border>
   <ion-navbar color="header" [hideBackButton]="true">
     <ion-buttons start>
       <button ion-button icon-only color="lightFab" navPop>
@@ -9,7 +9,7 @@
   </ion-navbar>
 
   <ion-toolbar color="header">
-    <ion-searchbar (ionInput)="getPlaces($event)" placeholder="Sök..." #searchbar></ion-searchbar>
+    <ion-searchbar (ionInput)="getPlaces($event)" placeholder="Skriv in badplatsens namn" #searchbar></ion-searchbar>
   </ion-toolbar>
 </ion-header>
 

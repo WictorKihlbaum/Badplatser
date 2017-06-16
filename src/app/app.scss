@@ -35,33 +35,20 @@
   src: url("../assets/fonts/Comfortaa-Light.ttf");
 }
 
+ion-grid, ion-grid ion-row {
+  height: 100% !important;
+  ion-col {
+    text-align: center;
+  }
+}
+
 ion-navbar {
   font-family: Comfortaa-Regular, sans-serif;
 }
 
 .gradient-background {
-  background: linear-gradient(45deg, #69f0AE 0%, #00E5FF 100%);
-}
-
-.background-animation {
-  -webkit-animation: bgAnimation 30s ease infinite;
-  -moz-animation: bgAnimation 30s ease infinite;
-  animation: bgAnimation 30s ease infinite;
-}
-@-webkit-keyframes bgAnimation {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-@-moz-keyframes bgAnimation {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-@keyframes bgAnimation {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
+  //background: linear-gradient(45deg, #69f0AE 0%, #00E5FF 100%);
+  background: linear-gradient(45deg, #00b0ff 0%, #40c4ff 100%);
 }
 
 /* Toasts */

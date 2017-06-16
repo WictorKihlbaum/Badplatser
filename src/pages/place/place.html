@@ -1,57 +1,108 @@
-<ion-content padding no-bounce>
+<ion-header no-border>
+  <ion-navbar color="header">
 
-  <!-- Close button -->
-  <ion-fab left top navPop>
-    <button ion-fab mini color="lightFab"><ion-icon name="close"></ion-icon></button>
-  </ion-fab>
+    <ion-buttons start>
+      <button ion-button icon-only clear navPop>
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
 
-  <!-- Save to favorites button -->
-  <ion-fab right top>
-    <button ion-fab mini color="heartFab" (click)="onSaveFavorite()" [disabled]="favoriteIsSaved">
-      <ion-icon name="heart"></ion-icon>
-    </button>
-  </ion-fab>
+    <ion-title>{{ placeName }}</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only clear (click)="onFindPlace()">
+        <ion-icon name="md-map"></ion-icon>
+      </button>
+      <button ion-button icon-only clear (click)="onSaveFavorite()" [disabled]="favoriteIsSaved">
+        <ion-icon name="heart"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+
+  <ion-toolbar color="header">
+    <ion-segment [(ngModel)]="placeInfo" color="light">
+      <ion-segment-button value="weather" isActive>
+        Väder
+      </ion-segment-button>
+      <ion-segment-button value="quality">
+        Badvattenkvalité
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content padding no-bounce class="gradient-background">
 
   <ion-grid no-padding>
     <ion-row align-items-center>
       <ion-col>
+        <div [ngSwitch]="placeInfo">
 
-        <h1>{{ placeName }}</h1>
-        <h2>{{ commune }}, {{ county }}</h2>
-        <h3>{{ temperature }}</h3>
-        <h4>{{ summary }}</h4>
+          <div *ngSwitchCase="'weather'" id="weather-container">
+            <div *ngIf="weatherDataIsFetched">
 
-        <ion-scroll scrollX="true">
-          <ul *ngFor="let hour of weatherByHours" id="hourly-container">
-            <li class="hour">{{ hour.h }}</li>
-            <li><img src="../../../assets/img/weather-icons/{{icon}}.png" /></li>
-            <li class="temperature">{{ hour.t }}°</li>
-          </ul>
-        </ion-scroll>
+              <img src="../../../assets/img/weather-icons/large/{{icon}}.png" />
+              <h1>{{ temperature }}</h1>
+              <h2>{{ summary }}</h2>
 
-        <ion-card class="classification-card">
-          <ion-card-header>
-            Badvattenkvalité
-          </ion-card-header>
-          <ion-card-content>
-            <ul>
-              <li>EU-bad: {{ euBath }}</li>
-              <li>Klassificering: {{ classification }}</li>
-              <li>Senaste provtagning: {{ year }}</li>
-            </ul>
-          </ion-card-content>
-        </ion-card>
+              <h3>
+                {{ dailyData.summary }} Solen kommer gå ner Kl. {{ dailyData.sunsetTime }}
+              </h3>
 
-        <button ion-button icon-left small round color="lightFab" (click)="onFindPlace()" id="find-place-button">
-          <ion-icon name="md-map"></ion-icon>
-          Hitta hit
-        </button>
+              <ion-scroll scrollX="true">
+                <ul *ngFor="let hour of weatherByHours" id="hourly-container">
+                  <li class="hour">{{ hour.h }}</li>
+                  <li><img src="../../../assets/img/weather-icons/{{icon}}.png" /></li>
+                  <li class="temperature">{{ hour.t }}°</li>
+                </ul>
+              </ion-scroll>
+
+              <!-- Absolute position -->
+              <img src="../../assets/img/darksky-logo.png" class="darksky-img" (click)="onVisitDarkSky()" />
+
+            </div>
+          </div>
+
+          <div *ngSwitchCase="'quality'" id="quality-container">
+
+            <img src="../../assets/img/place-quality.png" id="quality-icon" />
+
+            <div id="stars-container">
+
+              <div *ngIf="classification == 'Utmärkt kvalitet'">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+
+              <div *ngIf="classification == 'Bra kvalitet'">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+
+              <div *ngIf="classification == 'Tillfredsställande kvalitet'">
+                <ion-icon name="star"></ion-icon>
+              </div>
+
+            </div>
+
+            <h1>Klassificering</h1>
+            <h2>{{ classification }}</h2>
+
+            <h3>EU-bad</h3>
+            <h4>{{ euBath }}</h4>
+
+            <h5>Gäller för</h5>
+            <h6>{{ year }}</h6>
+
+          </div>
+
+        </div>
 
       </ion-col>
     </ion-row>
   </ion-grid>
-
-  <!-- Absolute position -->
-  <img src="../../assets/img/darksky-logo.png" class="darksky-img" (click)="onVisitDarkSky()" />
 
 </ion-content>

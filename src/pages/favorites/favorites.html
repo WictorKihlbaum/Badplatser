@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header no-border>
   <ion-navbar color="header" [hideBackButton]="true">
     <ion-buttons start>
       <button ion-button icon-only color="lightFab" navPop>
@@ -11,9 +11,12 @@
 
 <ion-content padding no-bounce class="gradient-background">
 
-  <ion-grid no-padding *ngIf="favorites.length == 0">
+  <ion-grid no-padding *ngIf="favorites.length == 0" id="no-favorites-container">
     <ion-row align-items-center>
       <ion-col>
+
+        <img src="../../assets/img/favorites-heart.png" />
+
         <h1>Du har inga favoritbadplatser</h1>
         <p>
           Hitta badplatser och klicka på hjärtat i det övre högra
@@ -22,7 +25,6 @@
       </ion-col>
     </ion-row>
   </ion-grid>
-
 
   <div *ngIf="favorites.length > 0">
     <ion-list no-lines>
