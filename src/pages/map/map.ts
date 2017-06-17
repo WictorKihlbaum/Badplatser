@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LoadingController, ModalController, PopoverController, ToastController } from 'ionic-angular';
+import { LoadingController, ModalController, ToastController } from 'ionic-angular';
 import { Geolocation } from '@ionic-native/geolocation';
 import { PlacePage } from "../place/place";
 import { SearchPage } from "../search/search";
@@ -7,7 +7,6 @@ import { StationPage } from "../station/station";
 import { StatusBar } from "@ionic-native/status-bar";
 import { WeatherService } from "../../providers/weather-service";
 import { PlacesService } from "../../providers/places-service";
-import {PopoverPage} from "../popover/popover";
 
 declare const google: any;
 declare const MarkerClusterer: any;
@@ -34,13 +33,13 @@ export class MapPage implements OnInit {
     private statusBar: StatusBar,
     private toastCtrl: ToastController,
     private weatherService: WeatherService,
-    private placesService: PlacesService,
-    private popoverCtrl: PopoverController) {
+    private placesService: PlacesService) {
   }
 
   async ngOnInit() {
     try {
       this.showLoading('Laddar karta');
+      this.places = await this.placesService.getPlacesData();
       await this.setCurrentCoordinates();
       this.initMap();
       this.setLoaderDismiss();
@@ -50,6 +49,7 @@ export class MapPage implements OnInit {
     }
     catch (error) {
       this.showToast(error, 'error-toast');
+      this.loader.dismiss();
       console.log(error);
     }
   }
@@ -61,7 +61,6 @@ export class MapPage implements OnInit {
   }
 
   async markAllPlaces() {
-    this.places = await this.placesService.getPlacesData();
     let markers: any = [];
 
     for (let place of this.places['Badplatser']) {
@@ -73,21 +72,15 @@ export class MapPage implements OnInit {
         position: {lat: latitude, lng: longitude},
         icon: {
           url: 'assets/img/place.png',
-          scaledSize: new google.maps.Size(32, 32)
+          scaledSize: new google.maps.Size(46, 46)
         }
       });
       marker.addListener('click', () => {
-        //this.onShowPlace(place);
-        this.showPopOverPlace(place);
+        this.onShowPlace(place);
       });
       markers.push(marker);
     }
     new MarkerClusterer(this.map, markers, { imagePath: 'assets/img/place-clusters/place' });
-  }
-
-  showPopOverPlace(place: any) {
-    const popover = this.popoverCtrl.create(PopoverPage, place);
-    popover.present();
   }
 
   async markAllSeaTemperatures() {
@@ -102,7 +95,7 @@ export class MapPage implements OnInit {
         position: { lat: station.latitude, lng: station.longitude },
         icon: {
           url: 'assets/img/buoy.png',
-          scaledSize: new google.maps.Size(32, 32)
+          scaledSize: new google.maps.Size(46, 46)
         }
       });
       marker.addListener('click', () => {

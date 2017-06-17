@@ -20,7 +20,6 @@ export class PlacePage implements OnInit {
   private loader: any;
   private favoritesStore: any;
   private favoriteIsSaved: boolean = false;
-  private stars: any = [];
 
   // Place data
   private placeName: string;
@@ -153,10 +152,10 @@ export class PlacePage implements OnInit {
       const key = this.placeName;
       await this.favoritesStore.setItem(key, JSON.stringify(this.navParams));
       this.favoriteIsSaved = true;
-      this.showToast('Badplats har lagts till mina favoriter!', 'success-toast');
+      this.showToast('Badplatsen har lagts till mina favoriter!', 'success-toast');
     }
     catch (error) {
-      this.showToast('Ett fel uppstod när badplats skulle sparas. Var god försök igen.', 'error-toast');
+      this.showToast('Badplatsen kunde inte sparas. Var god försök igen.', 'error-toast');
     }
   }
 

@@ -15,7 +15,6 @@ import { SearchPage } from "../pages/search/search";
 import { AboutPage } from "../pages/about/about";
 import { FavoritesPage } from "../pages/favorites/favorites";
 import { StationPage } from "../pages/station/station";
-import { PopoverPage } from "../pages/popover/popover";
 
 @NgModule({
   declarations: [
@@ -26,8 +25,7 @@ import { PopoverPage } from "../pages/popover/popover";
     SearchPage,
     AboutPage,
     FavoritesPage,
-    StationPage,
-    PopoverPage
+    StationPage
   ],
   imports: [
     BrowserModule,
@@ -43,8 +41,7 @@ import { PopoverPage } from "../pages/popover/popover";
     SearchPage,
     AboutPage,
     FavoritesPage,
-    StationPage,
-    PopoverPage
+    StationPage
   ],
   providers: [
     StatusBar,

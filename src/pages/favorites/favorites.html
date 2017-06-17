@@ -31,7 +31,7 @@
       <ion-item *ngFor="let favorite of favorites">
 
         <ion-avatar item-start>
-          <img src="../../assets/img/place.png">
+          <img src="../../assets/img/swimming.png">
         </ion-avatar>
 
         <span (click)="onShowPlace(favorite)">
@@ -41,7 +41,7 @@
           {{ favorite.data['C7'] }}, {{ favorite.data['C9'] }} län
         </p>
 
-        <button ion-fab mini item-end (click)="onDeleteFavorite(favorite)">
+        <button ion-fab mini item-end (click)="onDeleteFavorite(favorite)" color="transparentButton">
           <ion-icon name="close"></ion-icon>
         </button>
 

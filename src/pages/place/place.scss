@@ -7,6 +7,12 @@ page-place {
 
   #weather-container {
 
+    #time-stamp {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
     h1, h2, h3 {
       margin: 0;
     }
@@ -19,7 +25,7 @@ page-place {
     h3 {
       margin-top: 6px;
       text-align: left;
-      font-size: 4vw;
+      font-size: 5vw;
       padding: 0 12px;
     }
 
@@ -35,8 +41,7 @@ page-place {
 
     ion-scroll{
       font-size: 14px;
-      //height: 86px;
-      height: 86px;
+      height: 96px;
       white-space: nowrap;
 
       .scroll-content {
@@ -58,7 +63,7 @@ page-place {
     }
 
     .darksky-img {
-      max-width: 25vw;
+      max-width: 40vw;
       width: auto;
       height: auto;
     }

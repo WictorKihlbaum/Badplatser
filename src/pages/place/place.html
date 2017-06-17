@@ -52,9 +52,8 @@
                 {{ dailyData.summary }} Solen kommer gå ner Kl. {{ dailyData.sunsetTime }}
               </h3>
 
-              <ion-card color="primary">
-                <ion-card-header no-padding>Kommande 48 timmarna</ion-card-header>
-                <ion-card-content no-padding>
+              <!--<ion-card color="primary">
+                <ion-card-content no-padding>-->
                   <ion-scroll scrollX="true">
                     <ul *ngFor="let hour of weatherByHours" id="hourly-container">
                       <li class="hour">{{ hour.h }}</li>
@@ -62,13 +61,11 @@
                       <li class="temperature">{{ hour.t }}°</li>
                     </ul>
                   </ion-scroll>
-                </ion-card-content>
-              </ion-card>
-
-              <img src="../../assets/img/swipe.png" id="swipe-icon" />
+                <!--</ion-card-content>
+              </ion-card>-->
 
               <!-- Absolute position -->
-              <!--<img src="../../assets/img/darksky-logo.png" class="darksky-img" (click)="onVisitDarkSky()" />-->
+              <img src="../../assets/img/darksky-logo.png" class="darksky-img" (click)="onVisitDarkSky()" />
 
             </div>
           </div>
