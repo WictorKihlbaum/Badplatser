@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LoadingController, ModalController, ToastController } from 'ionic-angular';
+import { LoadingController, ModalController, PopoverController, ToastController } from 'ionic-angular';
 import { Geolocation } from '@ionic-native/geolocation';
 import { PlacePage } from "../place/place";
 import { SearchPage } from "../search/search";
@@ -7,6 +7,7 @@ import { StationPage } from "../station/station";
 import { StatusBar } from "@ionic-native/status-bar";
 import { WeatherService } from "../../providers/weather-service";
 import { PlacesService } from "../../providers/places-service";
+import {PopoverPage} from "../popover/popover";
 
 declare const google: any;
 declare const MarkerClusterer: any;
@@ -33,7 +34,8 @@ export class MapPage implements OnInit {
     private statusBar: StatusBar,
     private toastCtrl: ToastController,
     private weatherService: WeatherService,
-    private placesService: PlacesService ) {
+    private placesService: PlacesService,
+    private popoverCtrl: PopoverController) {
   }
 
   async ngOnInit() {
@@ -75,11 +77,17 @@ export class MapPage implements OnInit {
         }
       });
       marker.addListener('click', () => {
-        this.onShowPlace(place);
+        //this.onShowPlace(place);
+        this.showPopOverPlace(place);
       });
       markers.push(marker);
     }
     new MarkerClusterer(this.map, markers, { imagePath: 'assets/img/place-clusters/place' });
+  }
+
+  showPopOverPlace(place: any) {
+    const popover = this.popoverCtrl.create(PopoverPage, place);
+    popover.present();
   }
 
   async markAllSeaTemperatures() {
