@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LoadingController, NavParams, ToastController } from 'ionic-angular';
+import { NavParams, ToastController } from 'ionic-angular';
 import { WeatherService } from "../../providers/weather-service";
 import * as localforage from "localforage";
 import { StatusBar } from "@ionic-native/status-bar";
@@ -19,7 +19,6 @@ export class PlacePage implements OnInit {
   private reviews: string = 'reviews';
 
   private weatherDataIsFetched: boolean = false;
-  private loader: any;
   private favoritesStore: any;
   private favoriteIsSaved: boolean = false;
 
@@ -36,6 +35,7 @@ export class PlacePage implements OnInit {
   private overallRating: any;
   private reviewsList: any;
   private reviewsNotFound: boolean = false;
+  private showSpinner: boolean = true;
 
   /* WEATHER DATA */
 
@@ -49,13 +49,14 @@ export class PlacePage implements OnInit {
 
   // Daily
   private dailyData: any;
+  private sunsetTime: string;
+  private daySummary: string;
 
 
   constructor(
     private navParams: NavParams,
     private weatherService: WeatherService,
     private placesService: PlacesService,
-    private loadingCtrl: LoadingController,
     private statusBar: StatusBar,
     private toastCtrl: ToastController,
     private iab: InAppBrowser) {
@@ -78,14 +79,12 @@ export class PlacePage implements OnInit {
 
   async ngOnInit() {
     try {
-      this.showLoading('Hämtar väder');
-      //await this.getWeatherData();
-      this.loader.dismiss();
+      await this.getWeatherData();
     }
     catch (error) {
-      this.loader.dismiss();
       this.showToast(error, 'error-toast');
     }
+    this.showSpinner = false;
   }
 
   async getPlaceReviews() {
@@ -113,7 +112,6 @@ export class PlacePage implements OnInit {
 
   async getWeatherData() {
     try {
-      console.log('lat: ' + this.latitude + '. Lng: ' + this.longitude);
       const weatherData = await this.weatherService.fetchWeather(this.latitude, this.longitude);
       this.setCurrentlyWeatherData(weatherData['currently']);
       this.setHourlyWeatherData(weatherData['hourly']);
@@ -148,24 +146,13 @@ export class PlacePage implements OnInit {
   }
 
   setDailyWeatherData(daily: any) {
-    const date: any = new Date(parseFloat(daily.sunsetTime + '000'));
-    const hours: any = date.getHours();
-    const minutes: any = date.getMinutes();
-
-    this.dailyData = {
-      summary: daily.summary,
-      sunsetTime: `${hours}:${minutes}`
-    };
-  }
-
-  showLoading(text: string) {
-    this.loader = this.loadingCtrl.create({
-      spinner: 'bubbles',
-      content: text,
-      dismissOnPageChange: true,
-      cssClass: 'loading-animation'
-    });
-    this.loader.present();
+    if (daily.sunsetTime) {
+      const date: any = new Date(parseFloat(daily.sunsetTime + '000'));
+      const hours: any = date.getHours();
+      const minutes: any = date.getMinutes();
+      this.sunsetTime = `${hours}:${minutes}`;
+    }
+    this.daySummary = daily.summary;
   }
 
   async onSaveFavorite() {

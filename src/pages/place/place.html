@@ -45,6 +45,9 @@
         <div [ngSwitch]="placeInfo">
 
           <div *ngSwitchCase="'weather'" id="weather-container">
+
+            <ion-spinner name="bubbles" *ngIf="showSpinner" class="loader-spinner"></ion-spinner>
+
             <div *ngIf="weatherDataIsFetched">
 
               <img src="../../../assets/img/weather-icons/large/{{icon}}.png" />
@@ -52,7 +55,10 @@
               <h2>{{ summary }}</h2>
 
               <h3>
-                {{ dailyData.summary }} Solen kommer gå ner Kl. {{ dailyData.sunsetTime }}
+                {{ daySummary }}
+                <span *ngIf="sunsetTime">
+                  Solen kommer gå ner Kl. {{ sunsetTime }}
+                </span>
               </h3>
 
               <ion-scroll scrollX="true">
@@ -105,23 +111,25 @@
 
           <div *ngSwitchCase="'reviews'" id="reviews-container">
 
-            <ion-spinner name="bubbles" *ngIf="!reviewsList && !reviewsNotFound"></ion-spinner>
+            <ion-spinner name="bubbles" class="loader-spinner" *ngIf="!reviewsList && !reviewsNotFound"></ion-spinner>
 
-            <div *ngIf="reviewsNotFound">
+            <div *ngIf="reviewsNotFound" id="not-found-container">
               <img src="../../assets/img/rating.png" class="rating-icon" />
-              <h2>Det finns inga omdömen för badplatsen</h2>
+              <h2>Inga omdömen kunde hittas för badplatsen</h2>
             </div>
 
-            <div *ngIf="reviewsList">
+            <div *ngIf="reviewsList" id="found-container">
+
+              <img src="../../assets/img/rating.png" class="rating-icon" />
 
               <div>
-                <p>Snittbetyg: {{ overallRating }}/5</p>
-                <p>Baserat på {{ reviewsList.length }} omdömen</p>
+                <h1>Snittbetyg</h1>
+                <h2>{{ overallRating }}</h2>
               </div>
 
               <ion-slides>
                 <ion-slide *ngFor="let review of reviewsList">
-                  <ion-card>
+                  <ion-card class="review-card">
                     <ion-item>
                       <ion-avatar item-start>
                         <img src="{{review.profile_photo_url}}">

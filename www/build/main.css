@@ -46445,6 +46445,16 @@ page-home {
   /* Wave animations */
 }
 
+page-home #heart-fab {
+  color: white;
+  background: linear-gradient(45deg, #FF4081 0%, #FF80AB 100%);
+}
+
+page-home #info-fab {
+  color: white;
+  background: linear-gradient(45deg, #536DFE 0%, #8C9EFF 100%);
+}
+
 page-home ion-content {
   color: white !important;
   font-family: Palanquin-Light, sans-serif;
@@ -46561,9 +46571,18 @@ page-map #map .cluster img {
   width: 100%;
 }
 
+page-map #navigate-fab {
+  margin-bottom: 12px;
+}
+
 page-place ion-content {
   color: white !important;
   font-family: Palanquin-Light, sans-serif;
+}
+
+page-place ion-content .loader-spinner * {
+  fill: white;
+  stroke: white;
 }
 
 page-place #weather-container #time-stamp {
@@ -46655,24 +46674,51 @@ page-place #quality-container h2, page-place #quality-container h4, page-place #
   font-size: 5vw;
 }
 
-page-place #reviews-container .rating-icon {
-  width: 30vw;
+page-place #reviews-container #not-found-container .rating-icon {
+  width: 20vw;
 }
 
-page-place #reviews-container ion-scroll {
-  height: 220px;
-  width: 100%;
-  white-space: nowrap;
+page-place #reviews-container #not-found-container h2 {
+  font-size: 6vw;
 }
 
-page-place #reviews-container ion-card {
-  text-align: left;
-  color: black;
+page-place #reviews-container #found-container .rating-icon {
+  width: 22vw;
 }
 
-page-place #reviews-container ion-spinner * {
-  fill: white;
-  stroke: white;
+page-place #reviews-container #found-container h1, page-place #reviews-container #found-container h2 {
+  margin: 0;
+}
+
+page-place #reviews-container #found-container h1 {
+  font-family: Palanquin-Regular, sans-serif;
+  font-size: 6vw;
+}
+
+page-place #reviews-container #found-container h2 {
+  font-family: Palanquin-Light, sans-serif;
+  font-size: 5vw;
+}
+
+page-place #reviews-container .review-card {
+  background: linear-gradient(45deg, #7C4DFF 0%, #B388FF 100%);
+  border-radius: 12px !important;
+  box-shadow: 0 15px 10px -12px rgba(124, 77, 255, 0.3) !important;
+}
+
+page-place #reviews-container .review-card ion-item {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 2px 2px rgba(255, 255, 255, 0.02) !important;
+}
+
+page-place #reviews-container .review-card ion-card-content {
+  text-align: left !important;
+  margin-top: 16px !important;
+}
+
+page-place #reviews-container .review-card h2, page-place #reviews-container .review-card p {
+  color: white !important;
+  font-family: Palanquin-Regular, sans-serif !important;
 }
 
 page-station ion-content {

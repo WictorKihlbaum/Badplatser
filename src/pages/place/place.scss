@@ -3,6 +3,11 @@ page-place {
   ion-content {
     color: white !important;
     font-family: Palanquin-Light, sans-serif;
+
+    .loader-spinner * {
+      fill: white;
+      stroke: white;
+    }
   }
 
   #weather-container {
@@ -97,24 +102,50 @@ page-place {
 
   #reviews-container {
 
-    .rating-icon {
-      width: 30vw;
+    #not-found-container {
+      .rating-icon {
+        width: 20vw;
+      }
+      h2 {
+        font-size: 6vw;
+      }
     }
 
-    ion-scroll {
-      height: 220px;
-      width: 100%;
-      white-space: nowrap;
+    #found-container {
+      .rating-icon {
+        width: 22vw;
+      }
+      h1, h2 {
+        margin: 0;
+      }
+      h1 {
+        font-family: Palanquin-Regular, sans-serif;
+        font-size: 6vw;
+      }
+      h2 {
+        font-family: Palanquin-Light, sans-serif;
+        font-size: 5vw;
+      }
     }
 
-    ion-card {
-      text-align: left;
-      color: black;
-    }
+    .review-card {
+      background: linear-gradient(45deg, #7C4DFF 0%, #B388FF 100%);
+      border-radius: 12px !important;
+      box-shadow: 0 15px 10px -12px rgba(124, 77, 255, 0.3) !important;
 
-    ion-spinner * {
-      fill: white;
-      stroke: white;
+      ion-item {
+        background-color: rgba(255, 255, 255, 0.08) !important;
+        box-shadow: 0 2px 2px rgba(255, 255, 255, 0.02) !important;
+      }
+
+      ion-card-content {
+        text-align: left !important;
+        margin-top: 16px !important;
+      }
+      h2, p {
+        color: white !important;
+        font-family: Palanquin-Regular, sans-serif !important;
+      }
     }
 
   }

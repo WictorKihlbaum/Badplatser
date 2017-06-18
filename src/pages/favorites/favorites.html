@@ -30,13 +30,13 @@
     <ion-list no-lines>
       <ion-item *ngFor="let favorite of favorites">
 
-        <ion-avatar item-start>
+        <ion-avatar item-start (click)="onShowPlace(favorite)">
           <img src="../../assets/img/swimming.png">
         </ion-avatar>
 
-        <span (click)="onShowPlace(favorite)">
+        <h2>
           {{ favorite.data['C6'] }}
-        </span>
+        </h2>
         <p>
           {{ favorite.data['C7'] }}, {{ favorite.data['C9'] }} län
         </p>

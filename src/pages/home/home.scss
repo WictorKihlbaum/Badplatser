@@ -1,5 +1,14 @@
 page-home {
 
+  #heart-fab {
+    color: white;
+    background: linear-gradient(45deg, #FF4081 0%, #FF80AB 100%);
+  }
+  #info-fab {
+    color: white;
+    background: linear-gradient(45deg, #536DFE 0%, #8C9EFF 100%);
+  }
+
   ion-content {
     color: white !important;
     font-family: Palanquin-Light, sans-serif;
