@@ -14,7 +14,7 @@
       <button ion-button icon-only clear (click)="onFindPlace()">
         <ion-icon name="md-map"></ion-icon>
       </button>
-      <button ion-button icon-only clear (click)="onSaveFavorite()" [disabled]="favoriteIsSaved">
+      <button ion-button icon-only (click)="onSaveFavorite()" [disabled]="favoriteIsSaved">
         <ion-icon name="heart"></ion-icon>
       </button>
     </ion-buttons>
@@ -28,6 +28,9 @@
       </ion-segment-button>
       <ion-segment-button value="quality">
         Badvattenkvalité
+      </ion-segment-button>
+      <ion-segment-button value="reviews" (click)="getPlaceReviews()">
+        Omdömen
       </ion-segment-button>
     </ion-segment>
   </ion-toolbar>
@@ -52,17 +55,13 @@
                 {{ dailyData.summary }} Solen kommer gå ner Kl. {{ dailyData.sunsetTime }}
               </h3>
 
-              <!--<ion-card color="primary">
-                <ion-card-content no-padding>-->
-                  <ion-scroll scrollX="true">
-                    <ul *ngFor="let hour of weatherByHours" id="hourly-container">
-                      <li class="hour">{{ hour.h }}</li>
-                      <li><img src="../../../assets/img/weather-icons/{{icon}}.png" /></li>
-                      <li class="temperature">{{ hour.t }}°</li>
-                    </ul>
-                  </ion-scroll>
-                <!--</ion-card-content>
-              </ion-card>-->
+              <ion-scroll scrollX="true">
+                <ul *ngFor="let hour of weatherByHours" id="hourly-container">
+                  <li class="hour">{{ hour.h }}</li>
+                  <li><img src="../../../assets/img/weather-icons/{{icon}}.png" /></li>
+                  <li class="temperature">{{ hour.t }}°</li>
+                </ul>
+              </ion-scroll>
 
               <!-- Absolute position -->
               <img src="../../assets/img/darksky-logo.png" class="darksky-img" (click)="onVisitDarkSky()" />
@@ -104,6 +103,43 @@
 
           </div>
 
+          <div *ngSwitchCase="'reviews'" id="reviews-container">
+
+            <ion-spinner name="bubbles" *ngIf="!reviewsList && !reviewsNotFound"></ion-spinner>
+
+            <div *ngIf="reviewsNotFound">
+              <img src="../../assets/img/rating.png" class="rating-icon" />
+              <h2>Det finns inga omdömen för badplatsen</h2>
+            </div>
+
+            <div *ngIf="reviewsList">
+
+              <div>
+                <p>Snittbetyg: {{ overallRating }}/5</p>
+                <p>Baserat på {{ reviewsList.length }} omdömen</p>
+              </div>
+
+              <ion-slides>
+                <ion-slide *ngFor="let review of reviewsList">
+                  <ion-card>
+                    <ion-item>
+                      <ion-avatar item-start>
+                        <img src="{{review.profile_photo_url}}">
+                      </ion-avatar>
+                      <h2>{{ review.author_name }}</h2>
+                      <p>Betyg: {{ review.rating }}/5</p>
+                    </ion-item>
+                    <ion-card-content>
+                      {{ review.text }}
+                    </ion-card-content>
+                    <p>Skrevs {{ review.relative_time_description }}</p>
+                  </ion-card>
+                </ion-slide>
+              </ion-slides>
+
+            </div>
+
+          </div>
         </div>
 
       </ion-col>

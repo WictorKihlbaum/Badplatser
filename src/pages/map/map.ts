@@ -24,6 +24,7 @@ export class MapPage implements OnInit {
   private loader: any;
   private map: any;
   private places: any;
+  private google: any;
 
 
   constructor(

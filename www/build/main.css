@@ -46655,6 +46655,26 @@ page-place #quality-container h2, page-place #quality-container h4, page-place #
   font-size: 5vw;
 }
 
+page-place #reviews-container .rating-icon {
+  width: 30vw;
+}
+
+page-place #reviews-container ion-scroll {
+  height: 220px;
+  width: 100%;
+  white-space: nowrap;
+}
+
+page-place #reviews-container ion-card {
+  text-align: left;
+  color: black;
+}
+
+page-place #reviews-container ion-spinner * {
+  fill: white;
+  stroke: white;
+}
+
 page-station ion-content {
   color: white !important;
 }

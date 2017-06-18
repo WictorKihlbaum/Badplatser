@@ -95,4 +95,28 @@ page-place {
 
   }
 
+  #reviews-container {
+
+    .rating-icon {
+      width: 30vw;
+    }
+
+    ion-scroll {
+      height: 220px;
+      width: 100%;
+      white-space: nowrap;
+    }
+
+    ion-card {
+      text-align: left;
+      color: black;
+    }
+
+    ion-spinner * {
+      fill: white;
+      stroke: white;
+    }
+
+  }
+
 }

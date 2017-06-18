@@ -4,17 +4,19 @@ import { WeatherService } from "../../providers/weather-service";
 import * as localforage from "localforage";
 import { StatusBar } from "@ionic-native/status-bar";
 import { InAppBrowser } from "@ionic-native/in-app-browser";
+import { PlacesService } from "../../providers/places-service";
 
 @Component({
   selector: 'page-place',
   templateUrl: 'place.html',
-  providers: [WeatherService]
+  providers: [WeatherService, PlacesService]
 })
 export class PlacePage implements OnInit {
 
   private placeInfo: string = 'weather';
   private weather: string = 'weather';
   private quality: string = 'quality';
+  private reviews: string = 'reviews';
 
   private weatherDataIsFetched: boolean = false;
   private loader: any;
@@ -30,6 +32,10 @@ export class PlacePage implements OnInit {
   private classification: string;
   private euBath: string;
   private year: string;
+
+  private overallRating: any;
+  private reviewsList: any;
+  private reviewsNotFound: boolean = false;
 
   /* WEATHER DATA */
 
@@ -48,6 +54,7 @@ export class PlacePage implements OnInit {
   constructor(
     private navParams: NavParams,
     private weatherService: WeatherService,
+    private placesService: PlacesService,
     private loadingCtrl: LoadingController,
     private statusBar: StatusBar,
     private toastCtrl: ToastController,
@@ -72,12 +79,25 @@ export class PlacePage implements OnInit {
   async ngOnInit() {
     try {
       this.showLoading('Hämtar väder');
-      await this.getWeatherData();
+      //await this.getWeatherData();
       this.loader.dismiss();
     }
     catch (error) {
       this.loader.dismiss();
       this.showToast(error, 'error-toast');
+    }
+  }
+
+  async getPlaceReviews() {
+    if (!this.reviewsList) {
+      const details = await this.placesService.getGoogleReviews(this.latitude, this.longitude, this.placeName);
+      if (details) {
+        console.log(details);
+        this.reviewsList = details['result'].reviews;
+        this.overallRating = details['result'].rating;
+      } else {
+        this.reviewsNotFound = true;
+      }
     }
   }
 
@@ -93,6 +113,7 @@ export class PlacePage implements OnInit {
 
   async getWeatherData() {
     try {
+      console.log('lat: ' + this.latitude + '. Lng: ' + this.longitude);
       const weatherData = await this.weatherService.fetchWeather(this.latitude, this.longitude);
       this.setCurrentlyWeatherData(weatherData['currently']);
       this.setHourlyWeatherData(weatherData['hourly']);
