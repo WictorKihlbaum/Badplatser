@@ -29,9 +29,6 @@
       <ion-segment-button value="quality">
         Badvattenkvalité
       </ion-segment-button>
-      <ion-segment-button value="reviews" (click)="getPlaceReviews()">
-        Omdömen
-      </ion-segment-button>
     </ion-segment>
   </ion-toolbar>
 
@@ -50,21 +47,23 @@
 
             <div *ngIf="weatherDataIsFetched">
 
-              <img src="../../../assets/img/weather-icons/large/{{icon}}.png" />
-              <h1>{{ temperature }}</h1>
-              <h2>{{ summary }}</h2>
+              <div id="weather-summary">
+                <img src="../../../assets/img/weather-icons/large/{{icon}}.png" />
+                <h1>{{ temperature }}</h1>
+                <h2>{{ summary }}</h2>
 
-              <h3>
-                {{ daySummary }}
-                <span *ngIf="sunsetTime">
+                <h3>
+                  {{ daySummary }}
+                  <span *ngIf="sunsetTime">
                   Solen kommer gå ner Kl. {{ sunsetTime }}
                 </span>
-              </h3>
+                </h3>
+              </div>
 
-              <ion-scroll scrollX="true">
+              <ion-scroll scrollX="true" id="weather-details">
                 <ul *ngFor="let hour of weatherByHours" id="hourly-container">
                   <li class="hour">{{ hour.h }}</li>
-                  <li><img src="../../../assets/img/weather-icons/{{icon}}.png" /></li>
+                  <li><img src="../../../assets/img/weather-icons/small/{{icon}}.png" /></li>
                   <li class="temperature">{{ hour.t }}°</li>
                 </ul>
               </ion-scroll>
@@ -80,22 +79,7 @@
             <img src="../../assets/img/place-quality.png" id="quality-icon" />
 
             <div id="stars-container">
-
-              <div *ngIf="classification == 'Utmärkt kvalitet'">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-              </div>
-
-              <div *ngIf="classification == 'Bra kvalitet'">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-              </div>
-
-              <div *ngIf="classification == 'Tillfredsställande kvalitet'">
-                <ion-icon name="star"></ion-icon>
-              </div>
-
+              <img src="../../assets/img/star.png" class="star-icon" *ngFor="let star of stars" />
             </div>
 
             <h1>Klassificering</h1>
@@ -109,45 +93,6 @@
 
           </div>
 
-          <div *ngSwitchCase="'reviews'" id="reviews-container">
-
-            <ion-spinner name="bubbles" class="loader-spinner" *ngIf="!reviewsList && !reviewsNotFound"></ion-spinner>
-
-            <div *ngIf="reviewsNotFound" id="not-found-container">
-              <img src="../../assets/img/rating.png" class="rating-icon" />
-              <h2>Inga omdömen kunde hittas för badplatsen</h2>
-            </div>
-
-            <div *ngIf="reviewsList" id="found-container">
-
-              <img src="../../assets/img/rating.png" class="rating-icon" />
-
-              <div>
-                <h1>Snittbetyg</h1>
-                <h2>{{ overallRating }}</h2>
-              </div>
-
-              <ion-slides>
-                <ion-slide *ngFor="let review of reviewsList">
-                  <ion-card class="review-card">
-                    <ion-item>
-                      <ion-avatar item-start>
-                        <img src="{{review.profile_photo_url}}">
-                      </ion-avatar>
-                      <h2>{{ review.author_name }}</h2>
-                      <p>Betyg: {{ review.rating }}/5</p>
-                    </ion-item>
-                    <ion-card-content>
-                      {{ review.text }}
-                    </ion-card-content>
-                    <p>Skrevs {{ review.relative_time_description }}</p>
-                  </ion-card>
-                </ion-slide>
-              </ion-slides>
-
-            </div>
-
-          </div>
         </div>
 
       </ion-col>

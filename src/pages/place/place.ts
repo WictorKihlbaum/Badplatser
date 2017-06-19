@@ -9,14 +9,13 @@ import { PlacesService } from "../../providers/places-service";
 @Component({
   selector: 'page-place',
   templateUrl: 'place.html',
-  providers: [WeatherService, PlacesService]
+  providers: [WeatherService]
 })
 export class PlacePage implements OnInit {
 
   private placeInfo: string = 'weather';
   private weather: string = 'weather';
   private quality: string = 'quality';
-  private reviews: string = 'reviews';
 
   private weatherDataIsFetched: boolean = false;
   private favoritesStore: any;
@@ -31,10 +30,8 @@ export class PlacePage implements OnInit {
   private classification: string;
   private euBath: string;
   private year: string;
+  private stars: any = [];
 
-  private overallRating: any;
-  private reviewsList: any;
-  private reviewsNotFound: boolean = false;
   private showSpinner: boolean = true;
 
   /* WEATHER DATA */
@@ -48,7 +45,6 @@ export class PlacePage implements OnInit {
   private weatherByHours: any = [];
 
   // Daily
-  private dailyData: any;
   private sunsetTime: string;
   private daySummary: string;
 
@@ -56,7 +52,6 @@ export class PlacePage implements OnInit {
   constructor(
     private navParams: NavParams,
     private weatherService: WeatherService,
-    private placesService: PlacesService,
     private statusBar: StatusBar,
     private toastCtrl: ToastController,
     private iab: InAppBrowser) {
@@ -80,24 +75,12 @@ export class PlacePage implements OnInit {
   async ngOnInit() {
     try {
       await this.getWeatherData();
+      this.setAmountOfStars();
     }
     catch (error) {
       this.showToast(error, 'error-toast');
     }
     this.showSpinner = false;
-  }
-
-  async getPlaceReviews() {
-    if (!this.reviewsList) {
-      const details = await this.placesService.getGoogleReviews(this.latitude, this.longitude, this.placeName);
-      if (details) {
-        console.log(details);
-        this.reviewsList = details['result'].reviews;
-        this.overallRating = details['result'].rating;
-      } else {
-        this.reviewsNotFound = true;
-      }
-    }
   }
 
   setFavoritesStore() {
@@ -187,6 +170,16 @@ export class PlacePage implements OnInit {
 
   onFindPlace() {
     this.iab.create(`https://www.google.se/maps/place/${this.latitude}+${this.longitude}`, '_system');
+  }
+
+  // Not the prettiest solution. Keep updated on Angular for-loop N times.
+  setAmountOfStars() {
+    switch (this.classification) {
+      case 'Utmärkt kvalitet': this.stars = [1, 1, 1]; break;
+      case 'Bra kvalitet': this.stars = [1, 1]; break;
+      case 'Tillfredsställande kvalitet': this.stars = [1]; break;
+      default: break;
+    }
   }
 
 }

@@ -21,20 +21,10 @@ export class PlacesService {
     return this.fetchJSON('assets/data/places.json');
   }
 
-  async getGoogleReviews(latitude: any, longitude: any, name: any) {
-    const url = `${this.cors}https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${latitude},${longitude}&radius=10000&keyword=${name}&key=${this.apiKey}`;
-    const results = await this.fetchJSON(url);
-
-    for (let result of results['results']) {
-      if (name.match(result.name) && result.hasOwnProperty('rating')) {
-        return this.getPlaceDetails(result);
-      }
-    }
-  }
-
-  async getPlaceDetails(result: any) {
-    const url = `${this.cors}https://maps.googleapis.com/maps/api/place/details/json?placeid=${result.place_id}&key=${this.apiKey}`;
-    return await this.fetchJSON(url);
+  getUserAddress(latitude: number, longitude: number) {
+    // const url: string = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=${this.apiKey}`
+    const url = 'assets/data/address.json';
+    return this.fetchJSON(url);
   }
 
   fetchJSON(url: string) {

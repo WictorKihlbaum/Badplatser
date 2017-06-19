@@ -46,6 +46,7 @@ export class MapPage implements OnInit {
       this.showCurrentLocationOnMap({ lat: this.currentLat, lng: this.currentLng });
       this.markAllPlaces();
       this.markAllSeaTemperatures();
+      //this.notifyUserAboutWarnings();
     }
     catch (error) {
       this.showToast(error, 'error-toast');
@@ -76,11 +77,29 @@ export class MapPage implements OnInit {
         }
       });
       marker.addListener('click', () => {
-        this.onShowPlace(place);
+        //this.onShowPlace(place);
+        this.showPlaceCard(place);
       });
       markers.push(marker);
     }
     new MarkerClusterer(this.map, markers, { imagePath: 'assets/img/place-clusters/place' });
+  }
+
+  showPlaceCard(place: any) {
+    document.getElementById('card-h1').innerText = place.C6;
+    document.getElementById('card-h2').innerText = `${place.C7}, ${place.C9} län`;
+
+    const coordinates1: any = new google.maps.LatLng(place.C8, place.C10);
+    const coordinates2: any = new google.maps.LatLng(this.currentLat, this.currentLng);
+    const meters: number = google.maps.geometry.spherical.computeDistanceBetween(coordinates1, coordinates2);
+
+    let distance: string;
+    if (meters < 10000) {
+      distance = (meters / 1000).toFixed(1) + ' Km';
+    } else {
+      distance = (meters / 10000).toFixed(1) + ' Mil';
+    }
+    document.getElementById('card-h3').innerText = `Ca ${distance} bort`;
   }
 
   async markAllSeaTemperatures() {
@@ -150,6 +169,34 @@ export class MapPage implements OnInit {
         scaledSize: new google.maps.Size(46, 46)
       }
     });
+  }
+
+  async notifyUserAboutWarnings() {
+    const userAddress: any = await this.placesService.getUserAddress(this.currentLat, this.currentLng);
+    const components: any = userAddress['results'][0].address_components;
+
+    for (let component of components) {
+      if (component.types[0] == 'administrative_area_level_1') {
+        console.log(component.long_name);
+        this.getWarnings(component.long_name);
+      }
+    }
+  }
+
+  async getWarnings(county: string) {
+    const warnings = await this.weatherService.fetchWarnings();
+    let nearWarnings: any = [];
+
+    for (let warning of warnings['alert']) {
+      if (warning.info.event.toLowerCase() == 'fire warning') {
+        if (warning.info.headline.toLowerCase().includes(county.toLowerCase())) {
+          nearWarnings.push(warning);
+        }
+        //console.log(warning.info.headline);
+        //console.log(warning.info.description);
+      }
+    }
+    console.log(nearWarnings);
   }
 
   showLoading(text: string) {

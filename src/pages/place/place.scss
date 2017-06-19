@@ -12,10 +12,21 @@ page-place {
 
   #weather-container {
 
-    #time-stamp {
-      position: absolute;
-      top: 0;
-      right: 0;
+    #weather-summary {
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 8px;
+      padding: 8px;
+
+      /*background-image: url("../../assets/img/weatherBG.png");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      padding: 14px;*/
+    }
+    #weather-details {
+      /*background-image: url("../../assets/img/weatherBGsmall.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding: 8px;*/
     }
 
     h1, h2, h3 {
@@ -44,7 +55,7 @@ page-place {
       margin: 0 auto;
     }
 
-    ion-scroll{
+    ion-scroll {
       font-size: 14px;
       height: 96px;
       white-space: nowrap;
@@ -58,12 +69,12 @@ page-place {
         list-style-type: none;
         padding: 0;
         margin-right: 12px;
-      }
 
-      img {
-        width: 12px;
-        height: 12px;
-        margin: 0;
+        img {
+          width: 14px;
+          height: 14px;
+          margin: 0;
+        }
       }
     }
 
@@ -82,9 +93,12 @@ page-place {
       width: 22vw;
       height: auto;
     }
-
     #stars-container {
       margin-bottom: 6px;
+      .star-icon, .warning-icon {
+        width: 8vw;
+        margin: 4px;
+      }
     }
 
     h1, h3, h5 {
@@ -97,57 +111,6 @@ page-place {
       margin: 0 0 12px 0;
       font-size: 5vw;
     }
-
-  }
-
-  #reviews-container {
-
-    #not-found-container {
-      .rating-icon {
-        width: 20vw;
-      }
-      h2 {
-        font-size: 6vw;
-      }
-    }
-
-    #found-container {
-      .rating-icon {
-        width: 22vw;
-      }
-      h1, h2 {
-        margin: 0;
-      }
-      h1 {
-        font-family: Palanquin-Regular, sans-serif;
-        font-size: 6vw;
-      }
-      h2 {
-        font-family: Palanquin-Light, sans-serif;
-        font-size: 5vw;
-      }
-    }
-
-    .review-card {
-      background: linear-gradient(45deg, #7C4DFF 0%, #B388FF 100%);
-      border-radius: 12px !important;
-      box-shadow: 0 15px 10px -12px rgba(124, 77, 255, 0.3) !important;
-
-      ion-item {
-        background-color: rgba(255, 255, 255, 0.08) !important;
-        box-shadow: 0 2px 2px rgba(255, 255, 255, 0.02) !important;
-      }
-
-      ion-card-content {
-        text-align: left !important;
-        margin-top: 16px !important;
-      }
-      h2, p {
-        color: white !important;
-        font-family: Palanquin-Regular, sans-serif !important;
-      }
-    }
-
   }
 
 }

@@ -46575,6 +46575,32 @@ page-map #navigate-fab {
   margin-bottom: 12px;
 }
 
+page-map .place-card {
+  z-index: 1000;
+  position: absolute;
+  top: 10px;
+  background-color: white;
+}
+
+page-map .place-card h1, page-map .place-card h2, page-map .place-card h3 {
+  margin: 0;
+  text-align: center;
+  font-family: Palanquin-Light, sans-serif;
+}
+
+page-map .place-card h1 {
+  font-size: 6vw;
+  margin-bottom: 6px;
+}
+
+page-map .place-card h2 {
+  font-size: 4vw;
+}
+
+page-map .place-card h3 {
+  font-size: 3vw;
+}
+
 page-place ion-content {
   color: white !important;
   font-family: Palanquin-Light, sans-serif;
@@ -46585,10 +46611,21 @@ page-place ion-content .loader-spinner * {
   stroke: white;
 }
 
-page-place #weather-container #time-stamp {
-  position: absolute;
-  top: 0;
-  right: 0;
+page-place #weather-container #weather-summary {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+  padding: 8px;
+  /*background-image: url("../../assets/img/weatherBG.png");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      padding: 14px;*/
+}
+
+page-place #weather-container #weather-details {
+  /*background-image: url("../../assets/img/weatherBGsmall.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding: 8px;*/
 }
 
 page-place #weather-container h1, page-place #weather-container h2, page-place #weather-container h3 {
@@ -46637,9 +46674,9 @@ page-place #weather-container ion-scroll #hourly-container {
   margin-right: 12px;
 }
 
-page-place #weather-container ion-scroll img {
-  width: 12px;
-  height: 12px;
+page-place #weather-container ion-scroll #hourly-container img {
+  width: 14px;
+  height: 14px;
   margin: 0;
 }
 
@@ -46662,6 +46699,11 @@ page-place #quality-container #stars-container {
   margin-bottom: 6px;
 }
 
+page-place #quality-container #stars-container .star-icon, page-place #quality-container #stars-container .warning-icon {
+  width: 8vw;
+  margin: 4px;
+}
+
 page-place #quality-container h1, page-place #quality-container h3, page-place #quality-container h5 {
   margin: 0;
   font-size: 6vw;
@@ -46672,53 +46714,6 @@ page-place #quality-container h2, page-place #quality-container h4, page-place #
   font-family: Palanquin-Light, sans-serif;
   margin: 0 0 12px 0;
   font-size: 5vw;
-}
-
-page-place #reviews-container #not-found-container .rating-icon {
-  width: 20vw;
-}
-
-page-place #reviews-container #not-found-container h2 {
-  font-size: 6vw;
-}
-
-page-place #reviews-container #found-container .rating-icon {
-  width: 22vw;
-}
-
-page-place #reviews-container #found-container h1, page-place #reviews-container #found-container h2 {
-  margin: 0;
-}
-
-page-place #reviews-container #found-container h1 {
-  font-family: Palanquin-Regular, sans-serif;
-  font-size: 6vw;
-}
-
-page-place #reviews-container #found-container h2 {
-  font-family: Palanquin-Light, sans-serif;
-  font-size: 5vw;
-}
-
-page-place #reviews-container .review-card {
-  background: linear-gradient(45deg, #7C4DFF 0%, #B388FF 100%);
-  border-radius: 12px !important;
-  box-shadow: 0 15px 10px -12px rgba(124, 77, 255, 0.3) !important;
-}
-
-page-place #reviews-container .review-card ion-item {
-  background-color: rgba(255, 255, 255, 0.08) !important;
-  box-shadow: 0 2px 2px rgba(255, 255, 255, 0.02) !important;
-}
-
-page-place #reviews-container .review-card ion-card-content {
-  text-align: left !important;
-  margin-top: 16px !important;
-}
-
-page-place #reviews-container .review-card h2, page-place #reviews-container .review-card p {
-  color: white !important;
-  font-family: Palanquin-Regular, sans-serif !important;
 }
 
 page-station ion-content {
