@@ -45,6 +45,11 @@
 
             <ion-spinner name="bubbles" *ngIf="showSpinner" class="loader-spinner"></ion-spinner>
 
+            <button ion-button round outline color="light" icon-left *ngIf="!showSpinner && !weatherDataIsFetched" (click)="getWeatherData()">
+              <ion-icon name="refresh-circle"></ion-icon>
+              Försök igen
+            </button>
+
             <div *ngIf="weatherDataIsFetched">
 
               <div id="weather-summary">
@@ -55,8 +60,8 @@
                 <h3>
                   {{ daySummary }}
                   <span *ngIf="sunsetTime">
-                  Solen kommer gå ner Kl. {{ sunsetTime }}
-                </span>
+                    Solen kommer gå ner Kl. {{ sunsetTime }}
+                  </span>
                 </h3>
               </div>
 

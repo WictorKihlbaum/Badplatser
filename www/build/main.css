@@ -46347,6 +46347,12 @@ ion-navbar.toolbar {
   src: url("../assets/fonts/Comfortaa-Light.ttf");
 }
 
+/* PermanentMarker */
+@font-face {
+  font-family: PermanentMarker;
+  src: url("../assets/fonts/PermanentMarker.ttf");
+}
+
 ion-grid, ion-grid ion-row {
   height: 100% !important;
 }
@@ -46445,20 +46451,16 @@ page-home {
   /* Wave animations */
 }
 
-page-home #heart-fab {
-  color: white;
-  background: linear-gradient(45deg, #FF4081 0%, #FF80AB 100%);
-}
-
-page-home #info-fab {
-  color: white;
-  background: linear-gradient(45deg, #536DFE 0%, #8C9EFF 100%);
-}
-
 page-home ion-content {
   color: white !important;
   font-family: Palanquin-Light, sans-serif;
   background: linear-gradient(45deg, #00b0ff 0%, #40c4ff 100%);
+}
+
+page-home #logo-text {
+  font-family: PermanentMarker, cursive;
+  font-size: 8vw;
+  color: #E8F5E9;
 }
 
 page-home #map-button {
@@ -46609,23 +46611,6 @@ page-place ion-content {
 page-place ion-content .loader-spinner * {
   fill: white;
   stroke: white;
-}
-
-page-place #weather-container #weather-summary {
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 8px;
-  padding: 8px;
-  /*background-image: url("../../assets/img/weatherBG.png");
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-      padding: 14px;*/
-}
-
-page-place #weather-container #weather-details {
-  /*background-image: url("../../assets/img/weatherBGsmall.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      padding: 8px;*/
 }
 
 page-place #weather-container h1, page-place #weather-container h2, page-place #weather-container h3 {

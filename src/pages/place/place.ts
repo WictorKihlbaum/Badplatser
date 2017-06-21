@@ -74,11 +74,11 @@ export class PlacePage implements OnInit {
 
   async ngOnInit() {
     try {
-      await this.getWeatherData();
       this.setAmountOfStars();
+      await this.getWeatherData();
     }
     catch (error) {
-      this.showToast(error, 'error-toast');
+      console.log(error);
     }
     this.showSpinner = false;
   }
@@ -95,14 +95,17 @@ export class PlacePage implements OnInit {
 
   async getWeatherData() {
     try {
+      this.showSpinner = true;
       const weatherData = await this.weatherService.fetchWeather(this.latitude, this.longitude);
       this.setCurrentlyWeatherData(weatherData['currently']);
       this.setHourlyWeatherData(weatherData['hourly']);
       this.setDailyWeatherData(weatherData['daily'].data[0]); // Just today
       this.weatherDataIsFetched = true;
+      this.showSpinner = false;
     }
     catch (error) {
-      throw 'Vädret för badplatsen kunde inte hämtas';
+      this.showToast('Vädret för badplatsen kunde inte hämtas', 'error-toast');
+      this.showSpinner = false;
     }
   }
 

@@ -20,6 +20,10 @@
   <!-- Google Map -->
   <div id="map"></div>
 
+  <ion-fab middle right>
+    <button ion-fab (click)="onToggleMapStyle()"><ion-icon name="brush"></ion-icon></button>
+  </ion-fab>
+
   <ion-fab bottom right id="navigate-fab" (click)="navigateToUserPin()">
     <button ion-fab mini color="header"><ion-icon name="navigate"></ion-icon></button>
   </ion-fab>

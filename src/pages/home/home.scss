@@ -1,18 +1,15 @@
 page-home {
 
-  #heart-fab {
-    color: white;
-    background: linear-gradient(45deg, #FF4081 0%, #FF80AB 100%);
-  }
-  #info-fab {
-    color: white;
-    background: linear-gradient(45deg, #536DFE 0%, #8C9EFF 100%);
-  }
-
   ion-content {
     color: white !important;
     font-family: Palanquin-Light, sans-serif;
     background: linear-gradient(45deg, #00b0ff 0%, #40c4ff 100%);
+  }
+
+  #logo-text {
+    font-family: PermanentMarker, cursive;
+    font-size: 8vw;
+    color: #E8F5E9;
   }
 
   #map-button {
