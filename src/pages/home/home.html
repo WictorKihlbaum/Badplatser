@@ -1,34 +1,41 @@
-<ion-content no-bounce class="gradient-background">
+<ion-content no-bounce padding class="gradient-background">
 
-  <ion-grid no-padding>
+  <ion-grid no-padding id="main-grid">
     <ion-row align-items-center>
       <ion-col>
 
-        <img src="../../assets/img/sweden.png" />
-
-        <h1 id="logo-text">Svenska Bad</h1>
+        <div id="logo-container">
+          <img src="../../assets/img/sweden.png" id="logo-img" />
+          <h1 id="logo-text">Svenska Bad</h1>
+        </div>
 
         <div id="buttons-container">
-          <button ion-button large color="light" round icon-left id="map-button" [navPush]="mapPage">
+          <button ion-button round large icon-left color="light" id="map-button" [navPush]="mapPage">
             <ion-icon name="search"></ion-icon>
             Hitta badplats
           </button>
 
-          <button ion-button round icon-left color="homeSubButton" id="favorite-button" [navPush]="favoritesPage">
+          <button ion-button round icon-left id="favorite-button" [navPush]="favoritesPage">
             <ion-icon name="heart"></ion-icon>
             Mina favoriter
           </button>
 
+          <!--
           <button ion-button round icon-left color="homeSubButton" id="about-button" [navPush]="aboutPage">
             <ion-icon name="information-circle"></ion-icon>
             Om appen
           </button>
+          -->
 
         </div>
 
       </ion-col>
     </ion-row>
   </ion-grid>
+
+  <ion-fab bottom right [navPush]="aboutPage">
+    <button ion-fab id="about-button"><ion-icon name="information-circle"></ion-icon></button>
+  </ion-fab>
 
   <!-- Water animation waves -->
   <div class='wave -one'></div>

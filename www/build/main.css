@@ -46451,21 +46451,7 @@ page-home {
   /* Wave animations */
 }
 
-page-home ion-content {
-  color: white !important;
-  font-family: Palanquin-Light, sans-serif;
-  background: linear-gradient(45deg, #00b0ff 0%, #40c4ff 100%);
-}
-
-page-home #logo-text {
-  font-family: PermanentMarker, cursive;
-  font-size: 8vw;
-  color: #E8F5E9;
-}
-
 page-home #map-button {
-  margin-top: 36px !important;
-  margin-bottom: 24px !important;
   background: linear-gradient(45deg, #1de9b6 0%, #00e5ff 100%) !important;
   color: white !important;
   box-shadow: 0 2px 5px rgba(178, 235, 242, 0.3) !important;
@@ -46476,36 +46462,41 @@ page-home #map-button ion-icon {
   color: white;
 }
 
-page-home #favorite-button ion-icon {
-  color: #FF4081;
+page-home #favorite-button {
+  background: linear-gradient(45deg, #ff80ab 0%, #b388FF 100%) !important;
+  box-shadow: 0 2px 5px rgba(248, 187, 208, 0.3) !important;
+  color: white;
 }
 
-page-home #about-button ion-icon {
-  color: #40C4FF;
+page-home #about-button {
+  color: #E8F5E9;
+  background: transparent;
+  border: 1px solid #E8F5E9;
+  margin-right: 12px;
+  margin-bottom: 12px;
 }
 
-page-home ion-grid, page-home ion-grid ion-row {
+page-home #main-grid, page-home #main-grid ion-row {
   z-index: 1000;
 }
 
-page-home ion-grid ion-col img, page-home ion-grid ion-row ion-col img {
-  width: 14vw;
+page-home #main-grid ion-col #logo-container #logo-img, page-home #main-grid ion-row ion-col #logo-container #logo-img {
+  width: 20vw;
 }
 
-page-home ion-grid ion-col h1, page-home ion-grid ion-row ion-col h1 {
-  margin: 0;
-  color: white;
-  font-size: 6vw;
-  font-family: Palanquin-Regular, sans-serif;
+page-home #main-grid ion-col #logo-container #logo-text, page-home #main-grid ion-row ion-col #logo-container #logo-text {
+  margin: 10px 0 0 0;
+  font-family: PermanentMarker, cursive;
+  font-size: 8vw;
+  color: #E8F5E9;
 }
 
-page-home ion-grid ion-col #buttons-container, page-home ion-grid ion-row ion-col #buttons-container {
+page-home #main-grid ion-col #buttons-container, page-home #main-grid ion-row ion-col #buttons-container {
   margin-top: 24px;
 }
 
-page-home ion-grid ion-col #buttons-container button, page-home ion-grid ion-row ion-col #buttons-container button {
-  display: block !important;
-  margin: 8px auto;
+page-home #main-grid ion-col #buttons-container button, page-home #main-grid ion-row ion-col #buttons-container button {
+  margin: 6px auto;
   font-family: Comfortaa-Regular, sans-serif;
 }
 
@@ -46601,6 +46592,10 @@ page-map .place-card h2 {
 
 page-map .place-card h3 {
   font-size: 3vw;
+}
+
+page-map .place-card button {
+  margin: 0;
 }
 
 page-place ion-content {

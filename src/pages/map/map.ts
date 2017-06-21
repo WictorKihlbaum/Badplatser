@@ -25,6 +25,7 @@ export class MapPage implements OnInit {
   private map: any;
   private defaultMapStyle: boolean = true;
   private places: any;
+  private event: any;
 
 
   constructor(
@@ -78,8 +79,8 @@ export class MapPage implements OnInit {
         }
       });
       marker.addListener('click', () => {
-        //this.onShowPlace(place);
-        this.showPlaceCard(place);
+        this.onShowPlace(place);
+        //this.showPlaceCard(place);
       });
       markers.push(marker);
     }
@@ -101,6 +102,9 @@ export class MapPage implements OnInit {
       distance = (meters / 10000).toFixed(1) + ' Mil';
     }
     document.getElementById('card-h3').innerText = `Ca ${distance} bort`;
+    document.getElementById('show-button').addEventListener('click', () => {
+      this.onShowPlace(place);
+    });
   }
 
   async markAllSeaTemperatures() {
@@ -185,13 +189,9 @@ export class MapPage implements OnInit {
   async notifyUserAboutWarnings() {
     const userAddress: any = await this.placesService.getUserAddress(this.currentLat, this.currentLng);
     const components: any = userAddress['results'][0].address_components;
-
-    for (let component of components) {
-      if (component.types[0] == 'administrative_area_level_1') {
-        console.log(component.long_name);
-        this.getWarnings(component.long_name);
-      }
-    }
+    // Find county
+    const component = components.find(x => x.types[0] == 'administrative_area_level_1');
+    if (component) this.getWarnings(component.long_name);
   }
 
   async getWarnings(county: string) {
