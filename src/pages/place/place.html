@@ -1,5 +1,4 @@
 <ion-header no-border>
-
   <ion-navbar color="header">
 
     <ion-buttons start>
@@ -20,88 +19,142 @@
     </ion-buttons>
 
   </ion-navbar>
-
-  <ion-toolbar color="header">
-    <ion-segment [(ngModel)]="placeInfo" color="light">
-      <ion-segment-button value="weather" isActive>
-        Väder
-      </ion-segment-button>
-      <ion-segment-button value="quality">
-        Badvattenkvalité
-      </ion-segment-button>
-    </ion-segment>
-  </ion-toolbar>
-
 </ion-header>
 
-<ion-content padding no-bounce class="gradient-background">
+<ion-content no-bounce padding class="gradient-background">
 
-  <ion-grid no-padding>
+  <ion-slides pager>
+
+    <ion-slide>
+
+      <div id="weather-slide">
+        <div id="spinner-div" *ngIf="showSpinner && !weatherDataIsFetched">
+          <ion-spinner name="bubbles" class="loader-spinner"></ion-spinner>
+        </div>
+
+        <div id="retry-button-div" *ngIf="!showSpinner && !weatherDataIsFetched">
+          <button ion-button round outline color="light" icon-left (click)="getWeatherData()">
+            <ion-icon name="refresh-circle"></ion-icon>
+            Försök igen
+          </button>
+        </div>
+
+        <div id="weather-container" *ngIf="!showSpinner && weatherDataIsFetched">
+          <div>
+            <img src="assets/img/weather-icons/large/{{icon}}.png" />
+            <h1>{{ temperature }}</h1>
+            <h2>{{ summary }}</h2>
+
+            <div id="weather-summary">
+              <h3>
+                {{ daySummary }}
+                <span *ngIf="sunsetTime">
+                Solen kommer gå ner Kl. {{ sunsetTime }}
+              </span>
+              </h3>
+            </div>
+
+          </div>
+
+          <ion-scroll scrollX="true">
+            <ul *ngFor="let hour of weatherByHours" id="hourly-container">
+              <li class="hour">{{ hour.h }}</li>
+              <li><img src="assets/img/weather-icons/small/{{hour.i}}.png" /></li>
+              <li class="temperature">{{ hour.t }}°</li>
+            </ul>
+          </ion-scroll>
+
+          <img src="assets/img/darksky-logo.png" class="darksky-img" (click)="onVisitDarkSky()" />
+
+        </div>
+      </div>
+
+    </ion-slide>
+
+    <ion-slide>
+
+      <div id="quality-slide">
+        <img src="assets/img/place-quality.png" id="quality-icon" />
+
+        <h1>Klassificering</h1>
+        <h2>{{ classification }}</h2>
+
+        <h3>EU-bad</h3>
+        <h4>{{ euBath }}</h4>
+
+        <h5>Gäller för</h5>
+        <h6>{{ year }}</h6>
+      </div>
+
+    </ion-slide>
+
+  </ion-slides>
+
+
+  <!--
+  <ion-grid id="weather-grid">
     <ion-row align-items-center>
       <ion-col>
-        <div [ngSwitch]="placeInfo">
 
-          <div *ngSwitchCase="'weather'" id="weather-container">
+        <div id="spinner-div" *ngIf="showSpinner && !weatherDataIsFetched">
+          <ion-spinner name="bubbles" class="loader-spinner"></ion-spinner>
+        </div>
 
-            <ion-spinner name="bubbles" *ngIf="showSpinner" class="loader-spinner"></ion-spinner>
+        <div id="retry-button-div" *ngIf="!showSpinner && !weatherDataIsFetched">
+          <button ion-button round outline color="light" icon-left (click)="getWeatherData()">
+            <ion-icon name="refresh-circle"></ion-icon>
+            Försök igen
+          </button>
+        </div>
 
-            <button ion-button round outline color="light" icon-left *ngIf="!showSpinner && !weatherDataIsFetched" (click)="getWeatherData()">
-              <ion-icon name="refresh-circle"></ion-icon>
-              Försök igen
-            </button>
-
-            <div *ngIf="weatherDataIsFetched">
-
-              <div id="weather-summary">
-                <img src="../../../assets/img/weather-icons/large/{{icon}}.png" />
-                <h1>{{ temperature }}</h1>
-                <h2>{{ summary }}</h2>
-
-                <h3>
-                  {{ daySummary }}
-                  <span *ngIf="sunsetTime">
-                    Solen kommer gå ner Kl. {{ sunsetTime }}
-                  </span>
-                </h3>
-              </div>
-
-              <ion-scroll scrollX="true" id="weather-details">
-                <ul *ngFor="let hour of weatherByHours" id="hourly-container">
-                  <li class="hour">{{ hour.h }}</li>
-                  <li><img src="../../../assets/img/weather-icons/small/{{icon}}.png" /></li>
-                  <li class="temperature">{{ hour.t }}°</li>
-                </ul>
-              </ion-scroll>
-
-              <!-- Absolute position -->
-              <img src="../../assets/img/darksky-logo.png" class="darksky-img" (click)="onVisitDarkSky()" />
-
-            </div>
+        <div id="weather-container" *ngIf="!showSpinner && weatherDataIsFetched">
+          <div>
+            <img src="assets/img/weather-icons/large/{{icon}}.png" />
+            <h1>{{ temperature }}</h1>
+            <h2>{{ summary }}</h2>
+            <h3>
+              {{ daySummary }}
+              <span *ngIf="sunsetTime">
+                Solen kommer gå ner Kl. {{ sunsetTime }}
+              </span>
+            </h3>
           </div>
 
-          <div *ngSwitchCase="'quality'" id="quality-container">
+          <ion-scroll scrollX="true">
+            <ul *ngFor="let hour of weatherByHours" id="hourly-container">
+              <li class="hour">{{ hour.h }}</li>
+              <li><img src="assets/img/weather-icons/small/{{hour.i}}.png" /></li>
+              <li class="temperature">{{ hour.t }}°</li>
+            </ul>
+          </ion-scroll>
 
-            <img src="../../assets/img/place-quality.png" id="quality-icon" />
-
-            <div id="stars-container">
-              <img src="../../assets/img/star.png" class="star-icon" *ngFor="let star of stars" />
-            </div>
-
-            <h1>Klassificering</h1>
-            <h2>{{ classification }}</h2>
-
-            <h3>EU-bad</h3>
-            <h4>{{ euBath }}</h4>
-
-            <h5>Gäller för</h5>
-            <h6>{{ year }}</h6>
-
-          </div>
+          <img src="assets/img/darksky-logo.png" class="darksky-img" (click)="onVisitDarkSky()" />
 
         </div>
 
       </ion-col>
     </ion-row>
   </ion-grid>
+
+  <ion-grid id="quality-grid">
+    <ion-row align-items-center>
+      <ion-col>
+
+        <img src="assets/img/place-quality.png" id="quality-icon" />
+
+        <h1>Klassificering</h1>
+        <h2>{{ classification }}</h2>
+
+        <h3>EU-bad</h3>
+        <h4>{{ euBath }}</h4>
+
+        <h5>Gäller för</h5>
+        <h6>{{ year }}</h6>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  -->
 
 </ion-content>

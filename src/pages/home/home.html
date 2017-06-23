@@ -5,20 +5,23 @@
       <ion-col>
 
         <div id="logo-container">
-          <img src="../../assets/img/sweden.png" id="logo-img" />
+          <img src="assets/img/sweden.png" id="logo-img" />
           <h1 id="logo-text">Svenska Bad</h1>
         </div>
 
         <div id="buttons-container">
-          <button ion-button round large icon-left color="light" id="map-button" [navPush]="mapPage">
-            <ion-icon name="search"></ion-icon>
-            Hitta badplats
-          </button>
-
-          <button ion-button round icon-left id="favorite-button" [navPush]="favoritesPage">
-            <ion-icon name="heart"></ion-icon>
-            Mina favoriter
-          </button>
+          <div>
+            <button ion-button round large icon-left color="light" id="map-button" [navPush]="mapPage">
+              <ion-icon name="search"></ion-icon>
+              Hitta badplats
+            </button>
+          </div>
+          <div>
+            <button ion-button round icon-left id="favorite-button" [navPush]="favoritesPage">
+              <ion-icon name="heart"></ion-icon>
+              Mina favoriter
+            </button>
+          </div>
 
           <!--
           <button ion-button round icon-left color="homeSubButton" id="about-button" [navPush]="aboutPage">

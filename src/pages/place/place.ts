@@ -1,10 +1,9 @@
-import { Component, OnInit } from '@angular/core';
-import { NavParams, ToastController } from 'ionic-angular';
+import {Component, NgZone, OnInit } from '@angular/core';
+import { NavParams, ToastController} from 'ionic-angular';
 import { WeatherService } from "../../providers/weather-service";
 import * as localforage from "localforage";
 import { StatusBar } from "@ionic-native/status-bar";
 import { InAppBrowser } from "@ionic-native/in-app-browser";
-import { PlacesService } from "../../providers/places-service";
 
 @Component({
   selector: 'page-place',
@@ -13,11 +12,8 @@ import { PlacesService } from "../../providers/places-service";
 })
 export class PlacePage implements OnInit {
 
-  private placeInfo: string = 'weather';
-  private weather: string = 'weather';
-  private quality: string = 'quality';
-
-  private weatherDataIsFetched: boolean = false;
+  public showSpinner: boolean = true;
+  public weatherDataIsFetched: boolean = false;
   private favoritesStore: any;
   private favoriteIsSaved: boolean = false;
 
@@ -30,9 +26,6 @@ export class PlacePage implements OnInit {
   private classification: string;
   private euBath: string;
   private year: string;
-  private stars: any = [];
-
-  private showSpinner: boolean = true;
 
   /* WEATHER DATA */
 
@@ -54,7 +47,8 @@ export class PlacePage implements OnInit {
     private weatherService: WeatherService,
     private statusBar: StatusBar,
     private toastCtrl: ToastController,
-    private iab: InAppBrowser) {
+    private iab: InAppBrowser,
+    private zone: NgZone) {
 
     this.placeName = navParams.get('C6');
     this.latitude = navParams.get('C8');
@@ -72,15 +66,13 @@ export class PlacePage implements OnInit {
     this.checkIfFavoriteIsSaved();
   }
 
-  async ngOnInit() {
+  ngOnInit() {
     try {
-      this.setAmountOfStars();
-      await this.getWeatherData();
+      this.getWeatherData();
     }
     catch (error) {
       console.log(error);
     }
-    this.showSpinner = false;
   }
 
   setFavoritesStore() {
@@ -93,20 +85,23 @@ export class PlacePage implements OnInit {
     if (value != null) this.favoriteIsSaved = true;
   }
 
-  async getWeatherData() {
-    try {
-      this.showSpinner = true;
-      const weatherData = await this.weatherService.fetchWeather(this.latitude, this.longitude);
-      this.setCurrentlyWeatherData(weatherData['currently']);
-      this.setHourlyWeatherData(weatherData['hourly']);
-      this.setDailyWeatherData(weatherData['daily'].data[0]); // Just today
-      this.weatherDataIsFetched = true;
-      this.showSpinner = false;
-    }
-    catch (error) {
-      this.showToast('Vädret för badplatsen kunde inte hämtas', 'error-toast');
-      this.showSpinner = false;
-    }
+  getWeatherData() {
+    // Zone is used because there will be problem with view update otherwise.
+    this.zone.run(async () => {
+      try {
+        this.showSpinner = true;
+        const weatherData = await this.weatherService.fetchWeather(this.latitude, this.longitude);
+        this.setCurrentlyWeatherData(weatherData['currently']);
+        this.setHourlyWeatherData(weatherData['hourly']);
+        this.setDailyWeatherData(weatherData['daily'].data[0]); // Just today
+        this.showSpinner = false;
+        this.weatherDataIsFetched = true;
+      }
+      catch (error) {
+        this.showToast('Vädret för badplatsen kunde inte hämtas', 'error-toast');
+        this.showSpinner = false;
+      }
+    });
   }
 
   setCurrentlyWeatherData(currently: any) {
@@ -173,16 +168,6 @@ export class PlacePage implements OnInit {
 
   onFindPlace() {
     this.iab.create(`https://www.google.se/maps/place/${this.latitude}+${this.longitude}`, '_system');
-  }
-
-  // Not the prettiest solution. Keep updated on Angular for-loop N times.
-  setAmountOfStars() {
-    switch (this.classification) {
-      case 'Utmärkt kvalitet': this.stars = [1, 1, 1]; break;
-      case 'Bra kvalitet': this.stars = [1, 1]; break;
-      case 'Tillfredsställande kvalitet': this.stars = [1]; break;
-      default: break;
-    }
   }
 
 }

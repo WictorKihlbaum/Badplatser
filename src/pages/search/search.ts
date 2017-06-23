@@ -46,8 +46,8 @@ export class SearchPage implements OnInit {
     }
   }
 
-  onShowPlace(place: any) {
-    const placeModal = this.modalCtrl.create(PlacePage, place);
+  onShowPlace(placeData: any) {
+    const placeModal = this.modalCtrl.create(PlacePage, placeData);
     placeModal.present();
   }
 

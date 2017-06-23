@@ -21,6 +21,7 @@ page-home {
     border: 1px solid #E8F5E9;
     margin-right: 12px;
     margin-bottom: 12px;
+    box-shadow: none;
   }
 
   #main-grid, #main-grid ion-row {
@@ -37,7 +38,6 @@ page-home {
           color: #E8F5E9;
         }
       }
-
       #buttons-container {
         margin-top: 24px;
         button {

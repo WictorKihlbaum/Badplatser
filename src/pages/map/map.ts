@@ -25,7 +25,6 @@ export class MapPage implements OnInit {
   private map: any;
   private defaultMapStyle: boolean = true;
   private places: any;
-  private event: any;
 
 
   constructor(
@@ -233,7 +232,8 @@ export class MapPage implements OnInit {
     toast.present();
   }
 
-  navigateToUserPin() {
+  async locateUser() {
+    await this.setCurrentCoordinates();
     this.map.panTo({ lat: this.currentLat, lng: this.currentLng });
     this.map.setZoom(12);
   }
