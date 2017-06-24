@@ -19,79 +19,22 @@
     </ion-buttons>
 
   </ion-navbar>
+
+  <ion-toolbar color="header">
+    <!--<ion-grid id="header-grid">-->
+      <ion-row id="header-grid">
+        <ion-col>
+          <button ion-button small color="clearMain" round (click)="onScrollToWeather()">Väder</button>
+          <button ion-button small color="clearMain" round (click)="onScrollToQuality()">Badvattenkvalité</button>
+        </ion-col>
+      </ion-row>
+    <!--</ion-grid>-->
+  </ion-toolbar>
+
 </ion-header>
 
 <ion-content no-bounce padding class="gradient-background">
 
-  <ion-slides pager>
-
-    <ion-slide>
-
-      <div id="weather-slide">
-        <div id="spinner-div" *ngIf="showSpinner && !weatherDataIsFetched">
-          <ion-spinner name="bubbles" class="loader-spinner"></ion-spinner>
-        </div>
-
-        <div id="retry-button-div" *ngIf="!showSpinner && !weatherDataIsFetched">
-          <button ion-button round outline color="light" icon-left (click)="getWeatherData()">
-            <ion-icon name="refresh-circle"></ion-icon>
-            Försök igen
-          </button>
-        </div>
-
-        <div id="weather-container" *ngIf="!showSpinner && weatherDataIsFetched">
-          <div>
-            <img src="assets/img/weather-icons/large/{{icon}}.png" />
-            <h1>{{ temperature }}</h1>
-            <h2>{{ summary }}</h2>
-
-            <div id="weather-summary">
-              <h3>
-                {{ daySummary }}
-                <span *ngIf="sunsetTime">
-                Solen kommer gå ner Kl. {{ sunsetTime }}
-              </span>
-              </h3>
-            </div>
-
-          </div>
-
-          <ion-scroll scrollX="true">
-            <ul *ngFor="let hour of weatherByHours" id="hourly-container">
-              <li class="hour">{{ hour.h }}</li>
-              <li><img src="assets/img/weather-icons/small/{{hour.i}}.png" /></li>
-              <li class="temperature">{{ hour.t }}°</li>
-            </ul>
-          </ion-scroll>
-
-          <img src="assets/img/darksky-logo.png" class="darksky-img" (click)="onVisitDarkSky()" />
-
-        </div>
-      </div>
-
-    </ion-slide>
-
-    <ion-slide>
-
-      <div id="quality-slide">
-        <img src="assets/img/place-quality.png" id="quality-icon" />
-
-        <h1>Klassificering</h1>
-        <h2>{{ classification }}</h2>
-
-        <h3>EU-bad</h3>
-        <h4>{{ euBath }}</h4>
-
-        <h5>Gäller för</h5>
-        <h6>{{ year }}</h6>
-      </div>
-
-    </ion-slide>
-
-  </ion-slides>
-
-
-  <!--
   <ion-grid id="weather-grid">
     <ion-row align-items-center>
       <ion-col>
@@ -108,25 +51,18 @@
         </div>
 
         <div id="weather-container" *ngIf="!showSpinner && weatherDataIsFetched">
-          <div>
-            <img src="assets/img/weather-icons/large/{{icon}}.png" />
-            <h1>{{ temperature }}</h1>
-            <h2>{{ summary }}</h2>
-            <h3>
-              {{ daySummary }}
-              <span *ngIf="sunsetTime">
-                Solen kommer gå ner Kl. {{ sunsetTime }}
-              </span>
-            </h3>
-          </div>
 
-          <ion-scroll scrollX="true">
-            <ul *ngFor="let hour of weatherByHours" id="hourly-container">
-              <li class="hour">{{ hour.h }}</li>
-              <li><img src="assets/img/weather-icons/small/{{hour.i}}.png" /></li>
-              <li class="temperature">{{ hour.t }}°</li>
-            </ul>
-          </ion-scroll>
+          <img src="assets/img/weather-icons/large/{{icon}}.png" id="icon" />
+
+          <h1 id="temperature">{{ temperature }}°</h1>
+
+          <h2 id="summary-topic">{{ summary }}</h2>
+          <p id="summary-text">{{ daySummary }} <span *ngIf="sunsetTime">Solen kommer gå ner Kl. {{ sunsetTime }}</span></p>
+
+          <ion-range min="0" max="47" [(ngModel)]="hoursCounter" color="secondary" (ionChange)="onHourChange()">
+            <ion-icon small range-left name="time"></ion-icon>
+            <ion-icon range-right name="time"></ion-icon>
+          </ion-range>
 
           <img src="assets/img/darksky-logo.png" class="darksky-img" (click)="onVisitDarkSky()" />
 
@@ -154,7 +90,5 @@
       </ion-col>
     </ion-row>
   </ion-grid>
-
-  -->
 
 </ion-content>

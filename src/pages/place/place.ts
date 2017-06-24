@@ -1,5 +1,5 @@
-import {Component, NgZone, OnInit } from '@angular/core';
-import { NavParams, ToastController} from 'ionic-angular';
+import { Component, NgZone, OnInit, ViewChild } from '@angular/core';
+import { Content, NavParams, ToastController } from 'ionic-angular';
 import { WeatherService } from "../../providers/weather-service";
 import * as localforage from "localforage";
 import { StatusBar } from "@ionic-native/status-bar";
@@ -11,6 +11,8 @@ import { InAppBrowser } from "@ionic-native/in-app-browser";
   providers: [WeatherService]
 })
 export class PlacePage implements OnInit {
+
+  @ViewChild(Content) content: Content;
 
   public showSpinner: boolean = true;
   public weatherDataIsFetched: boolean = false;
@@ -36,6 +38,7 @@ export class PlacePage implements OnInit {
 
   // Hourly
   private weatherByHours: any = [];
+  private hoursCounter: number = 0;
 
   // Daily
   private sunsetTime: string;
@@ -75,6 +78,20 @@ export class PlacePage implements OnInit {
     }
   }
 
+  onHourChange() {
+    const hourData: any = this.weatherByHours[this.hoursCounter];
+    this.temperature = hourData.t;
+    this.icon = hourData.i;
+  }
+
+  onScrollToWeather() {
+    this.content.scrollToTop();
+  }
+
+  onScrollToQuality() {
+    this.content.scrollToBottom();
+  }
+
   setFavoritesStore() {
     this.favoritesStore = localforage.createInstance({ name: "badplatser", storeName: 'favorites' });
   }
@@ -105,7 +122,7 @@ export class PlacePage implements OnInit {
   }
 
   setCurrentlyWeatherData(currently: any) {
-    this.temperature = parseInt(currently['temperature']) + '°';
+    this.temperature = parseInt(currently['temperature']).toString();
     this.summary = currently['summary'];
     this.icon = currently['icon'];
   }

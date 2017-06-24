@@ -9,7 +9,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding no-bounce class="gradient-background">
+<ion-content no-bounce class="gradient-background">
 
   <ion-grid no-padding *ngIf="favorites.length == 0" id="no-favorites-container">
     <ion-row align-items-center>
@@ -28,24 +28,30 @@
 
   <div *ngIf="favorites.length > 0">
     <ion-list no-lines>
-      <ion-item *ngFor="let favorite of favorites">
+      <ion-item-sliding *ngFor="let favorite of favorites">
+        <ion-item>
 
-        <ion-avatar item-start (click)="onShowPlace(favorite)">
-          <img src="assets/img/swimming.png">
-        </ion-avatar>
+            <h2>
+              {{ favorite.data['C6'] }}
+            </h2>
 
-        <h2>
-          {{ favorite.data['C6'] }}
-        </h2>
-        <p>
-          {{ favorite.data['C7'] }}, {{ favorite.data['C9'] }} län
-        </p>
+            <p>
+              {{ favorite.data['C7'] }}, {{ favorite.data['C9'] }} län
+            </p>
 
-        <button ion-fab mini item-end (click)="onDeleteFavorite(favorite)" color="transparentButton">
-          <ion-icon name="close"></ion-icon>
-        </button>
+          <button ion-button item-end icon-right clear (click)="onShowPlace(favorite)">
+            Öppna
+            <ion-icon name="arrow-forward"></ion-icon>
+          </button>
 
-      </ion-item>
+        </ion-item>
+        <ion-item-options side="right">
+          <button ion-button color="danger" (click)="onDeleteFavorite(favorite)">
+            <ion-icon name="trash"></ion-icon>
+            Ta bort
+          </button>
+        </ion-item-options>
+      </ion-item-sliding>
     </ion-list>
   </div>
 

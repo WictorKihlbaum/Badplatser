@@ -36,6 +36,11 @@ $colors: (
     contrast: white
   ),
 
+  clearMain:(
+    base: white,
+    contrast: #00B0FF
+  ),
+
   homeSubButton:(
     base: white,
     contrast: #00B0FF
@@ -46,14 +51,14 @@ $colors: (
     contrast: white
   ),
 
-  lightFab:(
-    base: white,
-    contrast: #42A5f5
-  ),
-
   heartFab:(
     base: white,
     contrast: #FF4081
+  ),
+
+  buoy:(
+    base: white,
+    contrast: #FF5252
   ),
 
   mapButton:(

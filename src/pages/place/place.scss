@@ -1,5 +1,12 @@
 page-place {
 
+  #header-grid ion-col {
+    text-align: center;
+    button {
+      box-shadow: none;
+    }
+  }
+
   ion-content {
     color: white !important;
     font-family: Palanquin-Light, sans-serif;
@@ -10,71 +17,34 @@ page-place {
     }
   }
 
-  .swiper-pagination {
-    .swiper-pagination-bullet {
-      background: #FFF;
-    }
-  }
-
-  #weather-slide {
+  #weather-container {
     margin-bottom: 16px;
 
-    #weather-container {
-      h1, h2, h3 {
-        margin: 0;
-      }
-      h1 {
-        font-size: 10vw;
-      }
-      h2 {
-        font-size: 7vw;
-      }
-
-      #weather-summary {
-        margin-top: 8px;
-        border-top: 1px solid white;
-        h3 {
-          text-align: left;
-          font-size: 5vw;
-          padding: 6px 0;
-        }
-      }
-
-      img {
-        height: 14vh;
-      }
-      ion-scroll {
-        font-size: 14px;
-        height: 110px;
-        white-space: nowrap;
-
-        border-top: 1px solid white;
-        border-bottom: 1px solid white;
-
-        .scroll-content {
-          padding: 0 16px !important;
-        }
-        #hourly-container {
-          display: inline-block;
-          list-style-type: none;
-          padding: 0;
-          margin-right: 12px;
-
-          img {
-            width: 14px;
-            height: 14px;
-            margin: 0;
-          }
-        }
-      }
-      .darksky-img {
-        max-width: 45vw;
-        width: auto;
-        height: auto;
-      }
+    #temperature {
+      font-size: 16vw;
+      margin-top: 0;
+    }
+    #icon {
+      width: 25vw;
+      height: auto !important;
+    }
+    #summary-topic {
+      font-size: 7vw;
+    }
+    #summary-text {
+      font-size: 5vw;
+      text-align: left;
+    }
+    .darksky-img {
+      max-width: 45vw;
+      width: auto;
+      height: auto;
     }
   }
-  #quality-slide {
+
+  #quality-grid {
+    height: 100%;
+
     #quality-icon {
       width: 22vw;
       height: auto;
