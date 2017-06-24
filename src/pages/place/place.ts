@@ -82,6 +82,7 @@ export class PlacePage implements OnInit {
     const hourData: any = this.weatherByHours[this.hoursCounter];
     this.temperature = hourData.t;
     this.icon = hourData.i;
+    this.summary = hourData.s;
   }
 
   onScrollToWeather() {
@@ -108,8 +109,8 @@ export class PlacePage implements OnInit {
       try {
         this.showSpinner = true;
         const weatherData = await this.weatherService.fetchWeather(this.latitude, this.longitude);
-        this.setCurrentlyWeatherData(weatherData['currently']);
         this.setHourlyWeatherData(weatherData['hourly']);
+        this.setCurrentlyWeatherData();
         this.setDailyWeatherData(weatherData['daily'].data[0]); // Just today
         this.showSpinner = false;
         this.weatherDataIsFetched = true;
@@ -121,24 +122,24 @@ export class PlacePage implements OnInit {
     });
   }
 
-  setCurrentlyWeatherData(currently: any) {
-    this.temperature = parseInt(currently['temperature']).toString();
-    this.summary = currently['summary'];
-    this.icon = currently['icon'];
+  setCurrentlyWeatherData() {
+    const hourData: any = this.weatherByHours[0];
+    this.temperature = hourData.t;
+    this.summary = hourData.s;
+    this.icon = hourData.i;
   }
 
   setHourlyWeatherData(hourly: any) {
-    for (let i = 0; i < hourly.data.length; i += 1) {
-      const hourData: any = hourly.data[i];
-
+    for (let hourData of hourly.data) {
       const milliseconds: number = parseInt(hourData.time + '000');
       let hour: string = new Date(milliseconds).getHours().toString();
       if (hour.length == 1) hour = '0' + hour;
 
       const temperature: number = parseInt(hourData.temperature);
       const icon: string = hourData.icon;
+      const summary: string = hourData.summary;
 
-      const weatherByHour: any = { h: hour, t: temperature, i: icon };
+      const weatherByHour: any = { h: hour, t: temperature, i: icon, s: summary };
       this.weatherByHours.push(weatherByHour);
     }
   }

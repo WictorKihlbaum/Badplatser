@@ -50764,6 +50764,7 @@ page-place #header-grid ion-col button {
 page-place ion-content {
   color: white !important;
   font-family: Palanquin-Light, sans-serif;
+  background: linear-gradient(45deg, #00b0ff 0%, #69f0ae 100%) !important;
 }
 
 page-place ion-content .loader-spinner * {
@@ -50776,22 +50777,27 @@ page-place #weather-container {
 }
 
 page-place #weather-container #temperature {
-  font-size: 16vw;
+  font-size: 22vw;
   margin-top: 0;
 }
 
 page-place #weather-container #icon {
-  width: 25vw;
+  text-align: right;
+  width: 16vw;
   height: auto !important;
+  margin-left: 8px;
+  margin-bottom: 16px;
 }
 
 page-place #weather-container #summary-topic {
   font-size: 7vw;
+  margin: 0;
 }
 
 page-place #weather-container #summary-text {
   font-size: 5vw;
   text-align: left;
+  line-height: 1.4;
 }
 
 page-place #weather-container .darksky-img {

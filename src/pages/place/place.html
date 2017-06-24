@@ -52,9 +52,15 @@
 
         <div id="weather-container" *ngIf="!showSpinner && weatherDataIsFetched">
 
-          <img src="assets/img/weather-icons/large/{{icon}}.png" id="icon" />
+          <ion-row>
+            <ion-col>
+              <span id="temperature">{{ temperature }}°</span>
+              <img src="assets/img/weather-icons/large/{{icon}}.png" id="icon" />
+            </ion-col>
+          </ion-row>
 
-          <h1 id="temperature">{{ temperature }}°</h1>
+
+
 
           <h2 id="summary-topic">{{ summary }}</h2>
           <p id="summary-text">{{ daySummary }} <span *ngIf="sunsetTime">Solen kommer gå ner Kl. {{ sunsetTime }}</span></p>

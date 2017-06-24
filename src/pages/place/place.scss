@@ -10,6 +10,7 @@ page-place {
   ion-content {
     color: white !important;
     font-family: Palanquin-Light, sans-serif;
+    background: linear-gradient(45deg, #00b0ff 0%,#69f0ae 100%) !important;
 
     .loader-spinner * {
       fill: white;
@@ -21,19 +22,24 @@ page-place {
     margin-bottom: 16px;
 
     #temperature {
-      font-size: 16vw;
+      font-size: 22vw;
       margin-top: 0;
     }
     #icon {
-      width: 25vw;
+      text-align: right;
+      width: 16vw;
       height: auto !important;
+      margin-left: 8px;
+      margin-bottom: 16px;
     }
     #summary-topic {
       font-size: 7vw;
+      margin: 0;
     }
     #summary-text {
       font-size: 5vw;
       text-align: left;
+      line-height: 1.4;
     }
     .darksky-img {
       max-width: 45vw;

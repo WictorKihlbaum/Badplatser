@@ -23,7 +23,7 @@ export class WeatherService {
   }
 
   fetchWeather(latitude, longitude) {
-    const url = `${this.cors + this.apiUrl}/${latitude},${longitude}?lang=sv&units=si&exclude=flags`;
+    const url = `${this.cors + this.apiUrl}/${latitude},${longitude}?lang=sv&units=si&exclude=flags,currently`;
     return this.fetchJSON(url);
   }
 
