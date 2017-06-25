@@ -18,30 +18,40 @@ page-map {
     margin-bottom: 12px;
   }
 
-  .place-card {
+  #place-card {
+    visibility: hidden;
     z-index: 1000;
     position: absolute;
-    top: 10px;
-    background-color: white;
+    width: 100%;
+    top: 0;
+    background: linear-gradient(to bottom, #00b0ff 0%, #00e5ff 100%);
 
-    h1, h2, h3 {
-      margin: 0;
+    #text-container {
+      padding: 12px;
+
+      h1, h2, h3 {
+        margin: 0;
+        color: white;
+        text-align: center;
+        font-family: Palanquin-Light, sans-serif;
+      }
+      h1 {
+        font-size: 6vw;
+        margin-bottom: 6px;
+      }
+      h2 {
+        font-size: 4vw;
+      }
+      h3 {
+        font-size: 3vw;
+      }
+    }
+
+    #place-card-grid ion-col {
       text-align: center;
-      font-family: Palanquin-Light, sans-serif;
-    }
-    h1 {
-      font-size: 6vw;
-      margin-bottom: 6px;
-    }
-    h2 {
-      font-size: 4vw;
-    }
-    h3 {
-      font-size: 3vw;
-    }
-
-    button {
-      margin: 0;
+      button {
+        box-shadow: none;
+      }
     }
   }
 

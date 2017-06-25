@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {ModalController, ToastController } from 'ionic-angular';
+import { ModalController, ToastController } from 'ionic-angular';
 import * as localforage from "localforage";
 import { PlacePage } from "../place/place";
 import { StatusBar } from "@ionic-native/status-bar";
@@ -41,17 +41,14 @@ export class FavoritesPage {
   async onDeleteFavorite(placeData: any) {
     try {
       await this.favoritesStore.removeItem(placeData['data'].C6);
+      const index: number = this.favorites.indexOf(placeData);
+      this.favorites.splice(index, 1);
+      console.log(this.favorites);
       this.showToast('Badplatsen togs bort', 'success-toast');
-      this.resetAndRefresh();
     }
     catch (error) {
       this.showToast('Ett fel uppstod när badplatsen skulle tas bort. Var god försök igen.', 'error-toast');
     }
-  }
-
-  resetAndRefresh() {
-    this.favorites = [];
-    this.listFavorites();
   }
 
   showToast(message: string, css: string) {

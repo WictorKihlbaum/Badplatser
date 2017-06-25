@@ -26,6 +26,10 @@ export class MapPage implements OnInit {
   private defaultMapStyle: boolean = true;
   private places: any;
 
+  private chosenPlace: any;
+  private placeCard: any;
+  private placeCardIsShowing: boolean = false;
+
 
   constructor(
     private loadingCtrl: LoadingController,
@@ -48,6 +52,7 @@ export class MapPage implements OnInit {
       this.markAllPlaces();
       this.markAllSeaTemperatures();
       //this.notifyUserAboutWarnings();
+      this.setPlaceCard();
     }
     catch (error) {
       this.showToast(error, 'error-toast');
@@ -78,8 +83,9 @@ export class MapPage implements OnInit {
         }
       });
       marker.addListener('click', () => {
-        this.onShowPlace(place);
-        //this.showPlaceCard(place);
+        //this.onShowPlace(place);
+        this.chosenPlace = place;
+        this.showPlaceCard(place);
       });
       markers.push(marker);
     }
@@ -101,9 +107,24 @@ export class MapPage implements OnInit {
       distance = (meters / 10000).toFixed(1) + ' Mil';
     }
     document.getElementById('card-h3').innerText = `Ca ${distance} bort`;
-    document.getElementById('show-button').addEventListener('click', () => {
-      this.onShowPlace(place);
-    });
+
+    if (!this.placeCardIsShowing) {
+      this.placeCard.classList.remove('slideOutUp');
+      this.placeCard.classList.add('slideInDown');
+      setTimeout(() => {
+        this.placeCard.style.visibility = 'visible';
+        this.placeCardIsShowing = true;
+      }, 1000);
+    }
+  }
+
+  onClosePlaceCard() {
+    this.placeCardIsShowing = false;
+    this.placeCard.classList.remove('slideInDown');
+    this.placeCard.classList.add('slideOutUp');
+    setTimeout(() => {
+      this.placeCard.style.visibility = 'hidden';
+    }, 1000);
   }
 
   async markAllSeaTemperatures() {
@@ -236,6 +257,11 @@ export class MapPage implements OnInit {
     await this.setCurrentCoordinates();
     this.map.panTo({ lat: this.currentLat, lng: this.currentLng });
     this.map.setZoom(12);
+  }
+
+  setPlaceCard() {
+    this.placeCard = (<HTMLInputElement>document.getElementById('place-card'));
+    console.log(this.placeCard);
   }
 
   getMapStyleDefault() {

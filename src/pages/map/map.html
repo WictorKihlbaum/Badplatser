@@ -1,7 +1,7 @@
 <ion-header no-border>
-  <ion-navbar color="header" [hideBackButton]="true">
+  <ion-navbar [hideBackButton]="true" color="header">
     <ion-buttons start>
-      <button ion-button icon-only color="lightFab" navPop>
+      <button ion-button icon-only navPop>
         <ion-icon name="arrow-back"></ion-icon>
       </button>
     </ion-buttons>
@@ -21,22 +21,29 @@
   <div id="map"></div>
 
   <ion-fab middle right>
-    <button ion-fab color="header" (click)="onToggleMapStyle()"><ion-icon name="color-palette"></ion-icon></button>
+    <button ion-fab color="header" (click)="onToggleMapStyle()">
+      <ion-icon name="color-palette"></ion-icon>
+    </button>
   </ion-fab>
 
   <ion-fab bottom right id="navigate-fab" (click)="locateUser()">
-    <button ion-fab color="header"><ion-icon name="locate"></ion-icon></button>
+    <button ion-fab color="header">
+      <ion-icon name="locate"></ion-icon>
+    </button>
   </ion-fab>
 
-  <!--
-  <ion-card class="place-card">
-    <ion-card-content>
+  <div id="place-card" class="animated">
+    <div id="text-container">
       <h1 id="card-h1">Djursjön</h1>
       <h2 id="card-h2">Mölndal, Västra Götalands län</h2>
       <h3 id="card-h3">Ca 2 Mil bort</h3>
-    </ion-card-content>
-    <button ion-button small full id="show-button">Visa</button>
-  </ion-card>
-  -->
+    </div>
+    <ion-row id="place-card-grid">
+      <ion-col>
+        <button ion-button small color="clearMain" round (click)="onShowPlace(chosenPlace)">Visa</button>
+        <button ion-button small color="clearMain" round (click)="onClosePlaceCard()">Stäng</button>
+      </ion-col>
+    </ion-row>
+  </div>
 
 </ion-content>
