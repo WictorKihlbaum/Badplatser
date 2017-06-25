@@ -42701,8 +42701,12 @@ page-map #map .cluster img {
   width: 100%;
 }
 
-page-map #navigate-fab {
+page-map #locate-fab {
   margin-bottom: 12px;
+}
+
+page-map .visible {
+  visibility: visible !important;
 }
 
 page-map #place-card {
@@ -42712,6 +42716,7 @@ page-map #place-card {
   width: 100%;
   top: 0;
   background: linear-gradient(to bottom, #00b0ff 0%, #00e5ff 100%);
+  box-shadow: 0 3px 3px rgba(117, 117, 117, 0.3);
 }
 
 page-map #place-card #text-container {

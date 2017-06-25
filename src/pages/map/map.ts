@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, NgZone, OnInit} from '@angular/core';
 import { LoadingController, ModalController, ToastController } from 'ionic-angular';
 import { Geolocation } from '@ionic-native/geolocation';
 import { PlacePage } from "../place/place";
@@ -26,9 +26,11 @@ export class MapPage implements OnInit {
   private defaultMapStyle: boolean = true;
   private places: any;
 
-  private chosenPlace: any;
+  // Place info card
+  private chosenPlace: any = { C6: null, C7: null, C9: null};
   private placeCard: any;
   private placeCardIsShowing: boolean = false;
+  private distance: string = null;
 
 
   constructor(
@@ -38,7 +40,8 @@ export class MapPage implements OnInit {
     private statusBar: StatusBar,
     private toastCtrl: ToastController,
     private weatherService: WeatherService,
-    private placesService: PlacesService) {
+    private placesService: PlacesService,
+    private zone: NgZone) {
   }
 
   async ngOnInit() {
@@ -83,39 +86,24 @@ export class MapPage implements OnInit {
         }
       });
       marker.addListener('click', () => {
-        //this.onShowPlace(place);
         this.chosenPlace = place;
-        this.showPlaceCard(place);
+        this.onShowPlaceCard(place);
       });
       markers.push(marker);
     }
     new MarkerClusterer(this.map, markers, { imagePath: 'assets/img/place-clusters/place' });
   }
 
-  showPlaceCard(place: any) {
-    document.getElementById('card-h1').innerText = place.C6;
-    document.getElementById('card-h2').innerText = `${place.C7}, ${place.C9} län`;
-
-    const coordinates1: any = new google.maps.LatLng(place.C8, place.C10);
-    const coordinates2: any = new google.maps.LatLng(this.currentLat, this.currentLng);
-    const meters: number = google.maps.geometry.spherical.computeDistanceBetween(coordinates1, coordinates2);
-
-    let distance: string;
-    if (meters < 10000) {
-      distance = (meters / 1000).toFixed(1) + ' Km';
-    } else {
-      distance = (meters / 10000).toFixed(1) + ' Mil';
-    }
-    document.getElementById('card-h3').innerText = `Ca ${distance} bort`;
-
-    if (!this.placeCardIsShowing) {
-      this.placeCard.classList.remove('slideOutUp');
-      this.placeCard.classList.add('slideInDown');
-      setTimeout(() => {
-        this.placeCard.style.visibility = 'visible';
+  onShowPlaceCard(place: any) {
+    this.zone.run(() => {
+      this.calculateDistance(place);
+      if (!this.placeCardIsShowing) {
+        this.placeCard.classList.remove('slideOutUp');
+        this.placeCard.classList.add('slideInDown');
+        this.placeCard.classList.add('visible');
         this.placeCardIsShowing = true;
-      }, 1000);
-    }
+      }
+    });
   }
 
   onClosePlaceCard() {
@@ -123,8 +111,20 @@ export class MapPage implements OnInit {
     this.placeCard.classList.remove('slideInDown');
     this.placeCard.classList.add('slideOutUp');
     setTimeout(() => {
-      this.placeCard.style.visibility = 'hidden';
+      this.placeCard.classList.remove('visible');
     }, 1000);
+  }
+
+  calculateDistance(place: any) {
+    const coordinates1: any = new google.maps.LatLng(place.C8, place.C10);
+    const coordinates2: any = new google.maps.LatLng(this.currentLat, this.currentLng);
+    const meters: number = google.maps.geometry.spherical.computeDistanceBetween(coordinates1, coordinates2);
+
+    if (meters < 10000) {
+      this.distance = (meters / 1000).toFixed(1) + ' Km';
+    } else {
+      this.distance = (meters / 10000).toFixed(1) + ' Mil';
+    }
   }
 
   async markAllSeaTemperatures() {
@@ -261,7 +261,6 @@ export class MapPage implements OnInit {
 
   setPlaceCard() {
     this.placeCard = (<HTMLInputElement>document.getElementById('place-card'));
-    console.log(this.placeCard);
   }
 
   getMapStyleDefault() {

@@ -26,7 +26,7 @@
     </button>
   </ion-fab>
 
-  <ion-fab bottom right id="navigate-fab" (click)="locateUser()">
+  <ion-fab bottom right id="locate-fab" (click)="locateUser()">
     <button ion-fab color="header">
       <ion-icon name="locate"></ion-icon>
     </button>
@@ -34,9 +34,9 @@
 
   <div id="place-card" class="animated">
     <div id="text-container">
-      <h1 id="card-h1">Djursjön</h1>
-      <h2 id="card-h2">Mölndal, Västra Götalands län</h2>
-      <h3 id="card-h3">Ca 2 Mil bort</h3>
+      <h1>{{ chosenPlace.C6 }}</h1>
+      <h2>{{ chosenPlace.C7 }}, {{ chosenPlace.C9 }} län</h2>
+      <h3>{{ distance }}</h3>
     </div>
     <ion-row id="place-card-grid">
       <ion-col>

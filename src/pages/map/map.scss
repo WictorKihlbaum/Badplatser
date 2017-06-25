@@ -2,7 +2,6 @@ page-map {
 
   #map {
     height: 100%;
-
     /* Cluster markers */
     .cluster {
       div {
@@ -14,8 +13,12 @@ page-map {
     }
   }
 
-  #navigate-fab {
+  #locate-fab {
     margin-bottom: 12px;
+  }
+
+  .visible {
+    visibility: visible !important;
   }
 
   #place-card {
@@ -25,6 +28,7 @@ page-map {
     width: 100%;
     top: 0;
     background: linear-gradient(to bottom, #00b0ff 0%, #00e5ff 100%);
+    box-shadow: 0 3px 3px rgba(117, 117, 117, 0.3);
 
     #text-container {
       padding: 12px;
