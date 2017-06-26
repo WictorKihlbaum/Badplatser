@@ -33,27 +33,17 @@ $colors: (
 
   header:(
     base: #00B0FF,
-    contrast: white
+    contrast: #E8F5E9
   ),
 
   clearMain:(
-    base: white,
+    base: #E8F5E9,
     contrast: #00B0FF
   ),
 
   transparentButton:(
     base: transparent,
     contrast: white
-  ),
-
-  heartFab:(
-    base: white,
-    contrast: #FF4081
-  ),
-
-  mapButton:(
-    base: white,
-    contrast: #00BFA5
   ),
 
   mainButton:(

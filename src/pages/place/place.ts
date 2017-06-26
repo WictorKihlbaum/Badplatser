@@ -35,6 +35,7 @@ export class PlacePage implements OnInit {
   private temperature: string;
   private summary: string;
   private icon: string;
+  private hour: string;
 
   // Hourly
   private weatherByHours: any = [];
@@ -83,6 +84,7 @@ export class PlacePage implements OnInit {
     this.temperature = hourData.t;
     this.icon = hourData.i;
     this.summary = hourData.s;
+    this.hour = hourData.h;
   }
 
   onScrollToWeather() {
@@ -104,7 +106,6 @@ export class PlacePage implements OnInit {
   }
 
   getWeatherData() {
-    // Zone is used because there will be problem with view update otherwise.
     this.zone.run(async () => {
       try {
         this.showSpinner = true;
@@ -127,6 +128,7 @@ export class PlacePage implements OnInit {
     this.temperature = hourData.t;
     this.summary = hourData.s;
     this.icon = hourData.i;
+    this.hour = hourData.h;
   }
 
   setHourlyWeatherData(hourly: any) {

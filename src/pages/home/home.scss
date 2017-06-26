@@ -15,10 +15,6 @@ page-home {
     box-shadow: 0 2px 5px rgba(248, 187, 208, 0.3) !important;
     color: white;
   }
-  #buoy-button {
-    margin-left: 12px;
-    margin-bottom: 12px;
-  }
   #about-button {
     color: #E8F5E9;
     background: transparent;
@@ -28,7 +24,7 @@ page-home {
     box-shadow: none;
   }
 
-  #main-grid, #main-grid ion-row {
+  .page-grid, .page-grid ion-row {
     z-index: 1000;
     ion-col {
       #logo-container {

@@ -1,6 +1,6 @@
 page-place {
 
-  #header-grid ion-col {
+  #header-row ion-col {
     text-align: center;
     button {
       box-shadow: none;
@@ -20,6 +20,13 @@ page-place {
 
   #weather-container {
     margin-bottom: 16px;
+
+    #hour {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 6vw;
+    }
 
     #temperature {
       font-size: 22vw;
@@ -49,8 +56,6 @@ page-place {
   }
 
   #quality-grid {
-    height: 100%;
-
     #quality-icon {
       width: 22vw;
       height: auto;

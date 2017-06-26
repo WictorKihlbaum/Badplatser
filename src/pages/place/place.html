@@ -21,21 +21,21 @@
   </ion-navbar>
 
   <ion-toolbar color="header">
-    <!--<ion-grid id="header-grid">-->
-      <ion-row id="header-grid">
+    <ion-grid>
+      <ion-row id="header-row">
         <ion-col>
           <button ion-button small color="clearMain" round (click)="onScrollToWeather()">Väder</button>
           <button ion-button small color="clearMain" round (click)="onScrollToQuality()">Badvattenkvalité</button>
         </ion-col>
       </ion-row>
-    <!--</ion-grid>-->
+    </ion-grid>
   </ion-toolbar>
 
 </ion-header>
 
 <ion-content no-bounce padding class="gradient-background">
 
-  <ion-grid id="weather-grid">
+  <ion-grid class="page-grid">
     <ion-row align-items-center>
       <ion-col>
 
@@ -52,6 +52,8 @@
 
         <div id="weather-container" *ngIf="!showSpinner && weatherDataIsFetched">
 
+          <span id="hour">Kl. {{ hour }}</span>
+
           <ion-row>
             <ion-col>
               <span id="temperature">{{ temperature }}°</span>
@@ -59,13 +61,10 @@
             </ion-col>
           </ion-row>
 
-
-
-
           <h2 id="summary-topic">{{ summary }}</h2>
           <p id="summary-text">{{ daySummary }} <span *ngIf="sunsetTime">Solen kommer gå ner Kl. {{ sunsetTime }}</span></p>
 
-          <ion-range min="0" max="47" [(ngModel)]="hoursCounter" color="secondary" (ionChange)="onHourChange()">
+          <ion-range min="0" max="47" [(ngModel)]="hoursCounter" color="clearMain" (ionChange)="onHourChange()">
             <ion-icon small range-left name="time"></ion-icon>
             <ion-icon range-right name="time"></ion-icon>
           </ion-range>
@@ -78,7 +77,7 @@
     </ion-row>
   </ion-grid>
 
-  <ion-grid id="quality-grid">
+  <ion-grid id="quality-grid" class="page-grid">
     <ion-row align-items-center>
       <ion-col>
 
