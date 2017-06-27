@@ -35575,29 +35575,25 @@ page-about ion-content #season-topic {
   font-size: 5vw;
 }
 
-page-favorites {
-  /*
-  ion-item {
-    background: linear-gradient(45deg, #536DFE 0%, #b388FF 100%) !important;
-    box-shadow: 0 2px 5px rgba(179, 136, 255, 0.3) !important;
-    border-radius: 8px !important;
-    margin-bottom: 6px !important;
-    color: white !important;
-
-    p {
-      color: white !important;
-    }
-
-    button {
-      box-shadow: none !important;
-    }
-  }
-  */
-}
-
 page-favorites ion-content {
   color: white !important;
   font-family: Palanquin-Light, sans-serif;
+}
+
+page-favorites ion-item {
+  background: linear-gradient(45deg, #2979FF 0%, #448AFF 100%) !important;
+  box-shadow: 0 2px 5px rgba(179, 136, 255, 0.3) !important;
+  border-radius: 8px !important;
+  margin-bottom: 6px !important;
+  color: white !important;
+}
+
+page-favorites ion-item p {
+  color: white !important;
+}
+
+page-favorites ion-item button {
+  box-shadow: none !important;
 }
 
 page-favorites #no-favorites-container img {
@@ -35883,11 +35879,11 @@ page-station h2, page-station h4 {
   margin: 0;
 }
 
-page-station h2 {
+page-station ion-title, page-station h2 {
   text-transform: lowercase;
 }
 
-page-station h2:first-letter {
+page-station ion-title:first-letter, page-station h2:first-letter {
   text-transform: uppercase;
 }
 

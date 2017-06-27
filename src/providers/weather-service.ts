@@ -17,11 +17,6 @@ export class WeatherService {
     }
   }
 
-  fetchWarnings() {
-    const url = 'assets/data/warnings.json';
-    return this.fetchJSON(url);
-  }
-
   fetchWeather(latitude, longitude) {
     const url = `${this.cors + this.apiUrl}/${latitude},${longitude}?lang=sv&units=si&exclude=flags,currently`;
     return this.fetchJSON(url);
@@ -29,7 +24,7 @@ export class WeatherService {
 
   fetchSeaTemperature() {
     const url = 'https://opendata-download-ocobs.smhi.se/api/version/latest/parameter/5/station-set/all/period/latest-hour/data.json';
-    return this.fetchJSON(url);
+    return this.fetchJSON('assets/data/seatemp.json'); // Change to url.
   }
 
   fetchJSON(url: string) {

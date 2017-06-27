@@ -17,10 +17,10 @@ page-station {
     font-size: 6vw;
     margin: 0;
   }
-  h2 {
+  ion-title, h2 {
     text-transform: lowercase;
   }
-  h2:first-letter {
+  ion-title:first-letter, h2:first-letter {
     text-transform: uppercase;
   }
   h3 {

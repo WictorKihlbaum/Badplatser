@@ -1,5 +1,5 @@
-import { Component, NgZone, OnInit} from '@angular/core';
-import { LoadingController, ModalController, ToastController } from 'ionic-angular';
+import { Component, NgZone, OnInit, ViewChild } from '@angular/core';
+import { Content, LoadingController, ModalController, ToastController } from 'ionic-angular';
 import { Geolocation } from '@ionic-native/geolocation';
 import { PlacePage } from "../place/place";
 import { SearchPage } from "../search/search";
@@ -18,6 +18,8 @@ declare const MarkerClusterer: any;
 })
 export class MapPage implements OnInit {
 
+  @ViewChild(Content) content: Content;
+
   private searchPage: any = SearchPage;
   private currentLat: number;
   private currentLng: number;
@@ -27,11 +29,11 @@ export class MapPage implements OnInit {
   private places: any;
 
   // Place info card
-  //private chosenPlace: any = { C6: null, C7: null, C9: null};
   private chosenPlace: any;
   private placeCard: any;
   private placeCardIsShowing: boolean = false;
   private distance: string = null;
+  private animationIsDone: boolean = true;
 
 
   constructor(
@@ -55,7 +57,6 @@ export class MapPage implements OnInit {
       this.showCurrentLocationOnMap({ lat: this.currentLat, lng: this.currentLng });
       this.markAllPlaces();
       this.markAllSeaTemperatures();
-      //this.notifyUserAboutWarnings();
       this.setPlaceCard();
     }
     catch (error) {
@@ -87,16 +88,23 @@ export class MapPage implements OnInit {
         }
       });
       marker.addListener('click', () => {
-        if (place != this.chosenPlace) {
-          this.chosenPlace = place;
-          this.onShowPlaceCard(place);
-        } else {
-          this.onClosePlaceCard();
-        }
+        this.onMarkerClick(place);
+        this.content.resize();
       });
       markers.push(marker);
     }
     new MarkerClusterer(this.map, markers, { imagePath: 'assets/img/place-clusters/place' });
+  }
+
+  onMarkerClick(place: any) {
+    if (this.animationIsDone) {
+      if (place != this.chosenPlace) {
+        this.chosenPlace = place;
+        this.onShowPlaceCard(place);
+      } else {
+        this.onClosePlaceCard();
+      }
+    }
   }
 
   onShowPlaceCard(place: any) {
@@ -113,19 +121,25 @@ export class MapPage implements OnInit {
 
   animatePlaceCardIn() {
     if (!this.placeCardIsShowing) {
+      this.animationIsDone = false;
       this.placeCard.classList.remove('slideOutUp');
       this.placeCard.classList.add('slideInDown');
       this.placeCard.classList.add('visible');
-      this.placeCardIsShowing = true;
+      setTimeout(() => {
+        this.placeCardIsShowing = true;
+        this.animationIsDone = true;
+      }, 1000);
     }
   }
 
   animatePlaceCardOut() {
+    this.animationIsDone = false;
     this.placeCard.classList.remove('slideInDown');
     this.placeCard.classList.add('slideOutUp');
     setTimeout(() => {
       this.placeCard.classList.remove('visible');
       this.chosenPlace = null;
+      this.animationIsDone = true;
     }, 1000);
   }
 
@@ -134,17 +148,15 @@ export class MapPage implements OnInit {
     const coordinates2: any = new google.maps.LatLng(this.currentLat, this.currentLng);
     const meters: number = google.maps.geometry.spherical.computeDistanceBetween(coordinates1, coordinates2);
 
-    if (meters < 10000) {
-      this.distance = (meters / 1000).toFixed(1) + ' Km';
+    if (meters < 1e4) {
+      this.distance = (meters / 1e3).toFixed(1) + ' Km';
     } else {
-      this.distance = (meters / 10000).toFixed(1) + ' Mil';
+      this.distance = (meters / 1e4).toFixed(1) + ' Mil';
     }
   }
 
   async markAllSeaTemperatures() {
-    const hardCode: string = '{"station":[{"key":"33084","name":"ONSALA","latitude":57.3919805555556,"longitude":11.91898056,"value":[{"date":1497286800000,"value":15.81,"quality":"O"}]},{"key":"2105","name":"RINGHALS","latitude":57.2497222222222,"longitude":12.1125,"value":[{"date":1497286800000,"value":16.97,"quality":"O"}]},{"key":"2109","name":"GÖTEBORG-TORSHAMNEN","latitude":57.68472222222219,"longitude":11.79055556,"value":[{"date":1497286800000,"value":15.2,"quality":"O"}]},{"key":"38053","name":"STENA VISION FERRYBOX","latitude":54.55,"longitude":18.51,"value":[null]},{"key":"38050","name":"STENA SUPERFAST X FERRYBOX","latitude":53.35,"longitude":-6.2,"value":[null]},{"key":"38041","name":"STENA JUTLANDICA FERRYBOX","latitude":57.59,"longitude":11.65,"value":[null]},{"key":"38042","name":"STENA MERSEY FERRYBOX","latitude":53.4,"longitude":-3.01,"value":[null]},{"key":"38044","name":"STENA LAGAN FERRYBOX","latitude":54.63,"longitude":-5.89,"value":[null]},{"key":"38046","name":"STENA SCANDINAVICA FERRYBOX","latitude":57.7,"longitude":11.91,"value":[null]},{"key":"38048","name":"STENA SUPERFAST VII FERRYBOX","latitude":54.94,"longitude":-5.33,"value":[null]},{"key":"38040","name":"STENA HOLLANDICA FERRYBOX","latitude":51.99,"longitude":4.08,"value":[null]},{"key":"38049","name":"STENA SUPERFAST VIII FERRYBOX","latitude":54.74,"longitude":-5.65,"value":[null]},{"key":"38031","name":"STENA SPIRIT FERRYBOX","latitude":56.17,"longitude":15.63,"value":[null]},{"key":"38033","name":"STENA DANICA FERRYBOX","latitude":0.0,"longitude":0.0,"value":[null]},{"key":"38034","name":"STENA ADVENTURE FERRYBOX","latitude":53.34,"longitude":-4.61,"value":[null]},{"key":"38035","name":"STENA BRITANNICA FERRYBOX","latitude":51.92,"longitude":2.78,"value":[null]},{"key":"38037","name":"STENA FLAVIA FERRYBOX","latitude":58.03,"longitude":19.72,"value":[null]},{"key":"33015","name":"VÄDERÖARNA WR BOJ","latitude":58.48329999999999,"longitude":10.9333,"value":[null]},{"key":"33005","name":"VÄDERÖARNA BOJ","latitude":58.48333333,"longitude":10.93333333,"value":[null]},{"key":"33002","name":"HUVUDSKÄR OST BOJ","latitude":58.93333333,"longitude":19.16666667,"value":[{"date":1497286800000,"value":11.18,"quality":"G"}]},{"key":"33003","name":"FINNGRUNDET WR BOJ","latitude":61.0,"longitude":18.66666667,"value":[null]},{"key":"33008","name":"KNOLLS GRUND BOJ","latitude":57.21666667,"longitude":17.61666667,"value":[null]},{"key":"38003","name":"TRANSPAPER FERRYBOX","latitude":54.07,"longitude":11.06,"value":[null]},{"key":"38005","name":"FREJ FERRYBOX","latitude":65.57,"longitude":22.17,"value":[null]},{"key":"38006","name":"ODEN FERRYBOX","latitude":56.03,"longitude":12.7,"value":[null]},{"key":"38007","name":"ATLE FERRYBOX","latitude":65.57,"longitude":22.17,"value":[{"date":1497286800000,"value":12.97,"quality":"O"}]},{"key":"2179","name":"FORSMARK","latitude":60.4086111111111,"longitude":18.21083333,"value":[{"date":1497286800000,"value":11.59,"quality":"O"}]},{"key":"2076","name":"MARVIKEN","latitude":58.5536111111111,"longitude":16.83722222,"value":[{"date":1497286800000,"value":13.15,"quality":"O"}]},{"key":"2507","name":"LANDSORT NORRA","latitude":58.7688888888889,"longitude":17.85888889,"value":[{"date":1497286800000,"value":13.1,"quality":"O"}]},{"key":"2088","name":"KUNGSHOLMSFORT","latitude":56.1052777777778,"longitude":15.589444439999998,"value":[{"date":1497286800000,"value":14.8,"quality":"O"}]}],"parameter":{"key":"5","name":"Havstemperatur","unit":"°C"},"period":{"key":"latest-hour","from":1497283201000,"to":1497286800000,"summary":"Data från senaste timmen"},"link":[{"rel":"data","type":"application/json","href":"https://opendata-download-ocobs.smhi.se/api/version/latest/parameter/5/station-set/all/period/latest-hour/data.json"},{"rel":"data","type":"application/xml","href":"https://opendata-download-ocobs.smhi.se/api/version/latest/parameter/5/station-set/all/period/latest-hour/data.xml"},{"rel":"data","type":"text/plain","href":"https://opendata-download-ocobs.smhi.se/api/version/latest/parameter/5/station-set/all/period/latest-hour/data.csv"},{"rel":"period","type":"application/atom+xml","href":"https://opendata-download-ocobs.smhi.se/api/version/latest/parameter/5/station-set/all/period/latest-hour.atom"},{"rel":"iso19139","type":"application/vnd.iso.19139+xml","href":"https://opendata-catalog.smhi.se/catalog/srv/eng/csw?request=GetRecordById&service=CSW&version=2.0.2&elementSetName=full&outputSchema=csw:IsoRecord&id=123059c2-11c3-4cb4-bcf0-d05924e16a10"},{"rel":"iso19139","type":"application/vnd.iso.19139+xml","href":"https://opendata-catalog.smhi.se/catalog/srv/eng/csw?request=GetRecordById&service=CSW&version=2.0.2&elementSetName=full&outputSchema=csw:IsoRecord&id=7ef0a848-a7c0-4078-9604-da90978cfb87"}]}';
-    const data = JSON.parse(hardCode);
-    //const data: any = await this.weatherService.fetchSeaTemperature();
+    const data: any = await this.weatherService.fetchSeaTemperature();
     let markers: any = [];
 
     for (let station of data['station']) {
@@ -169,8 +181,8 @@ export class MapPage implements OnInit {
     stationModal.present();
   }
 
-  onShowPlace(placeData: any) {
-    const placeModal = this.modalCtrl.create(PlacePage, placeData);
+  onShowPlace(place: any) {
+    const placeModal = this.modalCtrl.create(PlacePage, place);
     placeModal.present();
   }
 
@@ -186,18 +198,22 @@ export class MapPage implements OnInit {
   }
 
   initMap() {
-    const point = { lat: this.currentLat, lng: this.currentLng };
-    const divMap = (<HTMLInputElement>document.getElementById('map'));
-    this.map = new google.maps.Map(divMap, {
-      center: point,
-      zoom: 14,
-      styles: this.getMapStyleDefault(),
-      disableDefaultUI: true,
-      draggable: true,
-      zoomControl: false,
-      clickableIcons: false
-    });
-    this.map.setTilt(45);
+    try {
+      const point = { lat: this.currentLat, lng: this.currentLng };
+      const divMap = (<HTMLInputElement>document.getElementById('map'));
+      this.map = new google.maps.Map(divMap, {
+        center: point,
+        zoom: 14,
+        styles: this.getMapStyleDefault(),
+        disableDefaultUI: true,
+        draggable: true,
+        zoomControl: false,
+        clickableIcons: false
+      });
+    }
+    catch (error) {
+      throw 'Kartan kunde inte laddas in';
+    }
   }
 
   onToggleMapStyle() {
@@ -220,30 +236,6 @@ export class MapPage implements OnInit {
         scaledSize: new google.maps.Size(38, 38)
       }
     });
-  }
-
-  async notifyUserAboutWarnings() {
-    const userAddress: any = await this.placesService.getUserAddress(this.currentLat, this.currentLng);
-    const components: any = userAddress['results'][0].address_components;
-    // Find county
-    const component = components.find(x => x.types[0] == 'administrative_area_level_1');
-    if (component) this.getWarnings(component.long_name);
-  }
-
-  async getWarnings(county: string) {
-    const warnings = await this.weatherService.fetchWarnings();
-    let nearWarnings: any = [];
-
-    for (let warning of warnings['alert']) {
-      if (warning.info.event.toLowerCase() == 'fire warning') {
-        if (warning.info.headline.toLowerCase().includes(county.toLowerCase())) {
-          nearWarnings.push(warning);
-        }
-        //console.log(warning.info.headline);
-        //console.log(warning.info.description);
-      }
-    }
-    console.log(nearWarnings);
   }
 
   showLoading(text: string) {
@@ -269,7 +261,7 @@ export class MapPage implements OnInit {
     toast.present();
   }
 
-  async locateUser() {
+  async onLocateUser() {
     await this.setCurrentCoordinates();
     this.map.panTo({ lat: this.currentLat, lng: this.currentLng });
     this.map.setZoom(12);

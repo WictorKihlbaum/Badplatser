@@ -12,6 +12,7 @@ export class FavoritesPage {
 
   private favoritesStore: any;
   private favorites: any = [];
+  private deleteButtonWasPressed: boolean = false;
 
 
   constructor(
@@ -33,18 +34,21 @@ export class FavoritesPage {
     });
   }
 
-  onShowPlace(placeData: any) {
-    const placeModal = this.modalCtrl.create(PlacePage, placeData['data']);
-    placeModal.present();
+  onShowPlace(place: any) {
+    if (!this.deleteButtonWasPressed) {
+      const placeModal = this.modalCtrl.create(PlacePage, place['data']);
+      placeModal.present();
+    }
   }
 
-  async onDeleteFavorite(placeData: any) {
+  async onDeleteFavorite(place: any) {
     try {
-      await this.favoritesStore.removeItem(placeData['data'].C6);
-      const index: number = this.favorites.indexOf(placeData);
+      this.deleteButtonWasPressed = true;
+      await this.favoritesStore.removeItem(place['data'].C6);
+      const index: number = this.favorites.indexOf(place);
       this.favorites.splice(index, 1);
-      console.log(this.favorites);
       this.showToast('Badplatsen togs bort', 'success-toast');
+      this.deleteButtonWasPressed = false;
     }
     catch (error) {
       this.showToast('Ett fel uppstod när badplatsen skulle tas bort. Var god försök igen.', 'error-toast');
