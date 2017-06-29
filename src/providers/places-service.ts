@@ -8,7 +8,7 @@ export class PlacesService {
   constructor(public http: Http) {}
 
   getPlacesData() {
-    return this.fetchJSON('assets/data/places.json');
+    return this.fetchJSON(`assets/data/places.json`);
   }
 
   fetchJSON(url: string) {

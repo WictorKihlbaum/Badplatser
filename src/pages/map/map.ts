@@ -1,5 +1,5 @@
-import { Component, NgZone, OnInit, ViewChild } from '@angular/core';
-import { Content, LoadingController, ModalController, ToastController } from 'ionic-angular';
+import { Component, NgZone, OnInit } from '@angular/core';
+import { LoadingController, ModalController, ToastController } from 'ionic-angular';
 import { Geolocation } from '@ionic-native/geolocation';
 import { PlacePage } from "../place/place";
 import { SearchPage } from "../search/search";
@@ -10,6 +10,7 @@ import { PlacesService } from "../../providers/places-service";
 
 declare const google: any;
 declare const MarkerClusterer: any;
+declare const InfoBubble: any;
 
 @Component({
   selector: 'page-map',
@@ -17,8 +18,6 @@ declare const MarkerClusterer: any;
   providers: [Geolocation, WeatherService, PlacesService]
 })
 export class MapPage implements OnInit {
-
-  @ViewChild(Content) content: Content;
 
   private searchPage: any = SearchPage;
   private currentLat: number;
@@ -34,6 +33,8 @@ export class MapPage implements OnInit {
   private placeCardIsShowing: boolean = false;
   private distance: string = null;
   private animationIsDone: boolean = true;
+
+  private activeInfoBubble: any;
 
 
   constructor(
@@ -57,6 +58,7 @@ export class MapPage implements OnInit {
       this.showCurrentLocationOnMap({ lat: this.currentLat, lng: this.currentLng });
       this.markAllPlaces();
       this.markAllSeaTemperatures();
+      this.setMapEvent();
       this.setPlaceCard();
     }
     catch (error) {
@@ -64,6 +66,14 @@ export class MapPage implements OnInit {
       this.loader.dismiss();
       console.log(error);
     }
+  }
+
+  setMapEvent() {
+    google.maps.event.addListener(this.map, "click", () => {
+      if (this.activeInfoBubble) {
+        this.activeInfoBubble.close();
+      }
+    });
   }
 
   setLoaderDismiss() {
@@ -87,9 +97,43 @@ export class MapPage implements OnInit {
           scaledSize: new google.maps.Size(46, 46)
         }
       });
+
+      let html = `
+        <div class="infobubble-content">
+          ${place.C6}
+        </div>
+      `;
+
+      const infoBubble = new InfoBubble({
+        content: html,
+        shadowStyle: 0,
+        borderRadius: 4,
+        arrowSize: 10,
+        borderWidth: 0,
+        disableAutoPan: true,
+        hideCloseButton: true,
+        arrowPosition: 50,
+        arrowStyle: 0,
+        minWidth: 'auto',
+        minHeight: 'auto'
+      });
+
+      infoBubble.e.addEventListener('click', () => {
+        this.onShowPlace(place);
+      });
+
       marker.addListener('click', () => {
-        this.onMarkerClick(place);
-        this.content.resize();
+        //this.onMarkerClick(place);
+        if (!infoBubble.isOpen()) {
+          if (this.activeInfoBubble) {
+            this.activeInfoBubble.close();
+          }
+          infoBubble.open(this.map, marker);
+          this.activeInfoBubble = infoBubble;
+        } else {
+          infoBubble.close();
+          this.activeInfoBubble = null;
+        }
       });
       markers.push(marker);
     }

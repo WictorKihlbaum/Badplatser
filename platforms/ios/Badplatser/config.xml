@@ -42,7 +42,7 @@
         <param name="ios-package" value="CDVConnection" />
     </feature>
     <name>Badplatser</name>
-    <description>An awesome Ionic/Cordova app.</description>
+    <description>Hitta svenska badplatser</description>
     <author email="wictor.kihlbaum@gmail.com" href="http://ionicframework.com/">Wictor Kihlbaum</author>
     <content src="index.html" />
     <access origin="*" />

@@ -23,8 +23,9 @@ export class WeatherService {
   }
 
   fetchSeaTemperature() {
-    const url = 'https://opendata-download-ocobs.smhi.se/api/version/latest/parameter/5/station-set/all/period/latest-hour/data.json';
+    //const url = 'https://opendata-download-ocobs.smhi.se/api/version/latest/parameter/5/station-set/all/period/latest-hour/data.json';
     return this.fetchJSON('assets/data/seatemp.json'); // Change to url.
+    //'assets/data/seatemp.json'
   }
 
   fetchJSON(url: string) {

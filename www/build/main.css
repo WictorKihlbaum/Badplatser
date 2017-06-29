@@ -35783,6 +35783,19 @@ page-map #place-card #place-card-row ion-col button {
   box-shadow: none;
 }
 
+page-map .infobubble-content {
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: gray;
+  font-family: Comfortaa-Regular, sans-serif;
+  font-size: 16px;
+  padding-right: 24px;
+  background: url(../../assets/img/arrow.png) right center no-repeat;
+  background-size: 12px;
+}
+
 page-place #header-row ion-col {
   text-align: center;
 }
