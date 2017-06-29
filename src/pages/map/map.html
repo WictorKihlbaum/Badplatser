@@ -20,35 +20,11 @@
   <!-- Google Map -->
   <div id="map"></div>
 
-  <!-- Change map style button -->
-  <ion-fab middle right id="style-fab">
-    <button ion-fab color="header" (click)="onToggleMapStyle()">
-      <ion-icon name="color-palette"></ion-icon>
-    </button>
-  </ion-fab>
-
   <!-- Locate user button -->
   <ion-fab bottom right id="locate-fab" (click)="onLocateUser()">
     <button ion-fab color="header">
       <ion-icon name="locate"></ion-icon>
     </button>
   </ion-fab>
-
-  <!-- Place info card -->
-  <div id="place-card" class="animated">
-    <div id="text-container" class="animated" *ngIf="chosenPlace">
-      <h1>{{ chosenPlace.C6 }}</h1>
-      <h2>{{ chosenPlace.C7 }}, {{ chosenPlace.C9 }} län</h2>
-      <h3>{{ distance }}</h3>
-    </div>
-    <ion-grid>
-      <ion-row id="place-card-row">
-        <ion-col>
-          <button ion-button small color="clearMain" round (click)="onShowPlace(chosenPlace)">Visa</button>
-          <button ion-button small color="clearMain" outline round (click)="onClosePlaceCard()">Stäng</button>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </div>
 
 </ion-content>
