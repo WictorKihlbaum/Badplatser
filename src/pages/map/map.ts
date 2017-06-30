@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { LoadingController, ModalController, ToastController } from 'ionic-angular';
+import { Component, OnInit, ViewChild} from '@angular/core';
+import { LoadingController, ModalController, Select, ToastController } from 'ionic-angular';
 import { Geolocation } from '@ionic-native/geolocation';
 import { PlacePage } from "../place/place";
 import { SearchPage } from "../search/search";
@@ -19,16 +19,19 @@ declare const InfoBubble: any;
 })
 export class MapPage implements OnInit {
 
+  @ViewChild('countySelect') countySelect: Select;
+
   private searchPage: any = SearchPage;
   private currentLat: number;
   private currentLng: number;
   private loader: any;
   private map: any;
   private places: any;
-
-  //private distance: string = null;
   private activeInfoBubble: any;
 
+  private userCounty: string;
+  private counties: any = ['Blekinge', 'Dalarna', 'Gotland', 'Gävleborg', 'Halland', 'Jämtland', 'Jönköping', 'Kalmar', 'Kronoberg', 'Norrbotten', 'Skåne', 'Stockholm', 'Södermanland', 'Uppsala', 'Värmland', 'Västerbotten', 'Västernorrland', 'Västmanland', 'Västra götaland', 'Örebro', 'Östergötland'];
+  private chosenCounty: string = 'Blekinge';
 
   constructor(
     private loadingCtrl: LoadingController,
@@ -45,12 +48,13 @@ export class MapPage implements OnInit {
       this.showLoading('Laddar karta');
       this.places = await this.placesService.getPlacesData();
       await this.setCurrentCoordinates();
+      await this.getUserCounty();
       this.initMap();
       this.setLoaderDismiss();
       this.showCurrentLocationOnMap({ lat: this.currentLat, lng: this.currentLng });
       this.markAllPlaces();
-      //this.markAllSeaTemperatures();
-      //this.setMapEvent();
+      this.markAllSeaTemperatures();
+      this.setMapEvent();
     }
     catch (error) {
       this.showToast(error, 'error-toast');
@@ -68,6 +72,20 @@ export class MapPage implements OnInit {
     catch (error) {
       throw 'Din nuvarande plats kunde inte hämtas';
     }
+  }
+
+  async getUserCounty() {
+    const county = await this.placesService.getUserCounty(this.currentLat, this.currentLng);
+    if (county) {
+      this.userCounty = county;
+    } else {
+      this.showToast('Ditt län kunde inte hittas. Var vänlig välj ett i listan.', 'info-toast');
+      this.countySelect.open();
+    }
+  }
+
+  onCountyChange() {
+    console.log('Län har ändrats!');
   }
 
   initMap() {
@@ -111,21 +129,24 @@ export class MapPage implements OnInit {
     let markers: any = [];
 
     for (let place of this.places['Badplatser']) {
-      const latitude: number = parseFloat(place.C8);
-      const longitude: number = parseFloat(place.C10);
-      const imageName: string = 'place';
+      // Only set markers for the users current county.
+      if (place.C9.toLowerCase().includes(this.userCounty)) {
+        const latitude: number = parseFloat(place.C8);
+        const longitude: number = parseFloat(place.C10);
+        const imageName: string = 'place';
 
-      const marker: any = this.getMarker(latitude, longitude, imageName);
-      const infoBubble = this.getInfoBubble(place);
+        const marker: any = this.getMarker(latitude, longitude, imageName);
+        const infoBubble = this.getInfoBubble(place);
 
-      infoBubble.e.addEventListener('click', () => {
-        this.onShowPlace(place);
-      });
+        infoBubble.e.addEventListener('click', () => {
+          this.onShowPlace(place);
+        });
 
-      marker.addListener('click', () => {
-        this.onMarkerClick(marker, infoBubble);
-      });
-      markers.push(marker);
+        marker.addListener('click', () => {
+          this.onMarkerClick(marker, infoBubble);
+        });
+        markers.push(marker);
+      }
     }
     new MarkerClusterer(this.map, markers, { imagePath: 'assets/img/place-clusters/place' });
   }
@@ -160,20 +181,6 @@ export class MapPage implements OnInit {
       this.activeInfoBubble = null;
     }
   }
-
-  /*
-  calculateDistance(place: any) {
-    const coordinates1: any = new google.maps.LatLng(place.C8, place.C10);
-    const coordinates2: any = new google.maps.LatLng(this.currentLat, this.currentLng);
-    const meters: number = google.maps.geometry.spherical.computeDistanceBetween(coordinates1, coordinates2);
-
-    if (meters < 1e4) {
-      this.distance = (meters / 1e3).toFixed(1) + ' Km';
-    } else {
-      this.distance = (meters / 1e4).toFixed(1) + ' Mil';
-    }
-  }
-  */
 
   async markAllSeaTemperatures() {
     const data: any = await this.weatherService.fetchSeaTemperature();

@@ -35527,7 +35527,7 @@ ion-navbar {
 }
 
 .gradient-background {
-  background: linear-gradient(to bottom, #40c4ff 0%, #536dfe 50%, #7c4dff 100%);
+  background: linear-gradient(45deg, #00b0ff 0%, #40c4ff 100%);
 }
 
 /* Toasts */
@@ -35545,6 +35545,14 @@ ion-navbar {
 
 .success-toast .toast-wrapper .toast-message, .success-toast .toast-wrapper .toast-button {
   color: #4CAF50 !important;
+}
+
+.info-toast .toast-wrapper {
+  background-color: #E1F5FE;
+}
+
+.info-toast .toast-wrapper .toast-message, .info-toast .toast-wrapper .toast-button {
+  color: #039BE5 !important;
 }
 
 /* Loading animation */
@@ -35792,7 +35800,7 @@ page-map .infobubble-content {
   font-family: Comfortaa-Regular, sans-serif;
   font-size: 16px;
   padding-right: 24px;
-  background: url(../../assets/img/arrow.png) right center no-repeat;
+  background: url(../assets/img/arrow.png) right center no-repeat;
   background-size: 12px;
 }
 
