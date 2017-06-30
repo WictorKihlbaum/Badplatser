@@ -28,12 +28,14 @@ export class MapPage implements OnInit {
   private map: any;
   private places: any;
   private activeInfoBubble: any;
+
+  private userMarker: any;
   private markers: any = [];
   private markerClusterer: any;
 
   private userCounty: string;
-  private counties: any = ['Blekinge', 'Dalarna', 'Gotland', 'Gävleborg', 'Halland', 'Jämtland', 'Jönköping', 'Kalmar', 'Kronoberg', 'Norrbotten', 'Skåne', 'Stockholm', 'Södermanland', 'Uppsala', 'Värmland', 'Västerbotten', 'Västernorrland', 'Västmanland', 'Västra götaland', 'Örebro', 'Östergötland'];
-  private chosenCounty: string = 'Blekinge';
+  private counties: any = ['Blekinge', 'Dalarna', 'Gotland', 'Gävleborg', 'Halland', 'Jämtland', 'Jönköping', 'Kalmar', 'Kronoberg', 'Norrbotten', 'Skåne', 'Stockholm', 'Södermanland', 'Uppsala', 'Värmland', 'Västerbotten', 'Västernorrland', 'Västmanland', 'Västra götalands', 'Örebro', 'Östergötland'];
+  private chosenCounty: string;
 
   constructor(
     private loadingCtrl: LoadingController,
@@ -57,12 +59,30 @@ export class MapPage implements OnInit {
       this.markAllPlaces();
       //this.markAllSeaTemperatures();
       this.setMapEvent();
+      //this.setUserWatcher();
     }
     catch (error) {
       this.showToast(error, 'error-toast');
       this.loader.dismiss();
       console.log(error);
     }
+  }
+
+  userCoordinatesAreSet() {
+    return typeof this.currentLat != 'undefined' && typeof this.currentLng != 'undefined';
+  }
+
+  setUserWatcher() {
+    const watch = this.geolocation.watchPosition();
+    watch.subscribe(data => {
+      const latitude: any = data.coords.latitude;
+      const longitude: any = data.coords.longitude;
+
+      if (latitude && longitude) {
+        const position: any = new google.maps.LatLng(latitude, longitude);
+        this.userMarker.setPosition(position);
+      }
+    });
   }
 
   async setCurrentCoordinates() {
@@ -72,35 +92,41 @@ export class MapPage implements OnInit {
       this.currentLng = position.coords.longitude;
     }
     catch (error) {
-      throw 'Din nuvarande plats kunde inte hämtas';
+      console.log('Din nuvarande plats kunde inte hämtas');
     }
   }
 
   async getUserCounty() {
-    const county = await this.placesService.getUserCounty(this.currentLat, this.currentLng);
-    if (county) {
+    if (this.userCoordinatesAreSet()) {
+      const county = await this.placesService.getUserCounty(this.currentLat, this.currentLng);
       this.userCounty = county;
+      this.chosenCounty = this.counties.find(c => {
+        return county.toLowerCase().includes(c.toLowerCase())
+      });
     } else {
-      this.showToast('Ditt län kunde inte hittas. Var vänlig välj ett i listan.', 'info-toast');
+      this.showToast('Ditt län kunde inte hittas. Var vänlig välj ett län i listan.', 'info-toast');
       this.countySelect.open();
     }
   }
 
   onCountyChange() {
-    //console.log(this.markerCluster);
+    console.log('on change');
     this.userCounty = this.chosenCounty;
     this.removeMarkers();
     this.markAllPlaces();
-    // TODO: Change map center coordinates.
   }
 
   initMap() {
     try {
-      const point = { lat: this.currentLat, lng: this.currentLng };
+      const latitude: number = this.currentLat || 62;
+      const longitude: number = this.currentLng || 15;
+      const mapZoom: number = this.getMapZoom();
+      const point = { lat: latitude, lng: longitude };
       const divMap = (<HTMLInputElement>document.getElementById('map'));
+
       this.map = new google.maps.Map(divMap, {
         center: point,
-        zoom: 15,
+        zoom: mapZoom,
         styles: this.getMapStyle(),
         disableDefaultUI: true,
         draggable: true,
@@ -113,6 +139,11 @@ export class MapPage implements OnInit {
     }
   }
 
+  getMapZoom() {
+    if (this.userCoordinatesAreSet()) return 15;
+    else return 7;
+  }
+
   setLoaderDismiss() {
     google.maps.event.addListenerOnce(this.map, 'tilesloaded', () => {
       this.loader.dismiss();
@@ -120,22 +151,23 @@ export class MapPage implements OnInit {
   }
 
   showCurrentLocationOnMap(coordinates: any) {
-    new google.maps.Marker({
-      map: this.map,
-      animation: google.maps.Animation.DROP,
-      position: coordinates,
-      icon: {
-        url: 'assets/img/pin.png',
-        scaledSize: new google.maps.Size(38, 38)
-      }
-    });
+    if (this.userCoordinatesAreSet()) {
+      this.userMarker = new google.maps.Marker({
+        map: this.map,
+        animation: google.maps.Animation.DROP,
+        position: coordinates,
+        icon: {
+          url: 'assets/img/pin.png',
+          scaledSize: new google.maps.Size(38, 38)
+        }
+      });
+    }
   }
 
   async markAllPlaces() {
     for (let place of this.places['Badplatser']) {
       // Only set markers for the users current county.
       if (place.C9.toLowerCase().includes(this.userCounty.toLowerCase())) {
-        console.log('hej');
         const latitude: number = parseFloat(place.C8);
         const longitude: number = parseFloat(place.C10);
         const imageName: string = 'place';
@@ -151,18 +183,24 @@ export class MapPage implements OnInit {
           this.onMarkerClick(marker, infoBubble);
         });
         this.markers.push(marker);
+        console.log(this.markers);
       }
     }
-    this.markerClusterer = new MarkerClusterer(this.map, this.markers, { imagePath: 'assets/img/place-clusters/place' });
+    this.markerClusterer = new MarkerClusterer(
+      this.map, this.markers, { imagePath: 'assets/img/place-clusters/place' }
+    );
   }
 
   removeMarkers() {
-    this.markerClusterer.setMap(null);
-    this.markerClusterer = null;
-    for (let marker of this.markers) {
-      marker.setMap(null);
+    if (this.markerClusterer && this.markers) {
+      this.markerClusterer.setMap(null);
+      this.markerClusterer = null;
+
+      for (let marker of this.markers) {
+        marker.setMap(null);
+      }
+      this.markers = [];
     }
-    this.markers = [];
   }
 
   getInfoBubble(place: any) {
