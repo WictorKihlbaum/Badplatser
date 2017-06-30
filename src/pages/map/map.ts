@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild} from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { LoadingController, ModalController, Select, ToastController } from 'ionic-angular';
 import { Geolocation } from '@ionic-native/geolocation';
 import { PlacePage } from "../place/place";
@@ -28,6 +28,8 @@ export class MapPage implements OnInit {
   private map: any;
   private places: any;
   private activeInfoBubble: any;
+  private markers: any = [];
+  private markerClusterer: any;
 
   private userCounty: string;
   private counties: any = ['Blekinge', 'Dalarna', 'Gotland', 'Gävleborg', 'Halland', 'Jämtland', 'Jönköping', 'Kalmar', 'Kronoberg', 'Norrbotten', 'Skåne', 'Stockholm', 'Södermanland', 'Uppsala', 'Värmland', 'Västerbotten', 'Västernorrland', 'Västmanland', 'Västra götaland', 'Örebro', 'Östergötland'];
@@ -53,7 +55,7 @@ export class MapPage implements OnInit {
       this.setLoaderDismiss();
       this.showCurrentLocationOnMap({ lat: this.currentLat, lng: this.currentLng });
       this.markAllPlaces();
-      this.markAllSeaTemperatures();
+      //this.markAllSeaTemperatures();
       this.setMapEvent();
     }
     catch (error) {
@@ -85,7 +87,11 @@ export class MapPage implements OnInit {
   }
 
   onCountyChange() {
-    console.log('Län har ändrats!');
+    //console.log(this.markerCluster);
+    this.userCounty = this.chosenCounty;
+    this.removeMarkers();
+    this.markAllPlaces();
+    // TODO: Change map center coordinates.
   }
 
   initMap() {
@@ -126,11 +132,10 @@ export class MapPage implements OnInit {
   }
 
   async markAllPlaces() {
-    let markers: any = [];
-
     for (let place of this.places['Badplatser']) {
       // Only set markers for the users current county.
-      if (place.C9.toLowerCase().includes(this.userCounty)) {
+      if (place.C9.toLowerCase().includes(this.userCounty.toLowerCase())) {
+        console.log('hej');
         const latitude: number = parseFloat(place.C8);
         const longitude: number = parseFloat(place.C10);
         const imageName: string = 'place';
@@ -145,10 +150,19 @@ export class MapPage implements OnInit {
         marker.addListener('click', () => {
           this.onMarkerClick(marker, infoBubble);
         });
-        markers.push(marker);
+        this.markers.push(marker);
       }
     }
-    new MarkerClusterer(this.map, markers, { imagePath: 'assets/img/place-clusters/place' });
+    this.markerClusterer = new MarkerClusterer(this.map, this.markers, { imagePath: 'assets/img/place-clusters/place' });
+  }
+
+  removeMarkers() {
+    this.markerClusterer.setMap(null);
+    this.markerClusterer = null;
+    for (let marker of this.markers) {
+      marker.setMap(null);
+    }
+    this.markers = [];
   }
 
   getInfoBubble(place: any) {

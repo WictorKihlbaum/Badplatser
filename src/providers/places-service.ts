@@ -22,7 +22,7 @@ export class PlacesService {
     const userAddress: any = await this.getUserAddress(latitude, longitude);
     const components: any = userAddress['results'][0].address_components;
     // Find county
-    const component = components.find(x => x.types[0] == 'administrative_area_level_1');
+    const component = components.find(c => c.types[0] == 'administrative_area_level_1');
     if (component) {
       for (let county of this.counties) {
         if (component.long_name.toLowerCase().includes(county)) {
@@ -36,7 +36,9 @@ export class PlacesService {
   }
 
   getUserAddress(latitude: number, longitude: number) {
-    const url: string = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=${this.googleApiKey}`;
+    const base: string = 'https://maps.googleapis.com/maps/api/geocode/json';
+    const parameters: string = `?latlng=${latitude},${longitude}&key=${this.googleApiKey}`;
+    const url: string = base + parameters;
     //const url = 'assets/data/address.json';
     return this.fetchJSON(url);
   }
