@@ -29,10 +29,10 @@
   <div id="map"></div>
 
   <ion-fab middle right id="control-fabs">
-    <button ion-fab mini>
+    <button ion-fab mini (click)="onZoomIn()">
       <ion-icon name="add"></ion-icon>
     </button>
-    <button ion-fab mini>
+    <button ion-fab mini (click)="onZoomOut()">
       <ion-icon name="remove"></ion-icon>
     </button>
     <button ion-fab mini (click)="onLocateUser()">
