@@ -13,55 +13,10 @@ page-map {
     }
   }
 
-  #locate-fab {
-    margin-bottom: 12px;
-  }
-  #locate-fab button, #style-fab button {
+  #control-fabs button {
     background: linear-gradient(45deg, #00b0ff 0%, #40C4FF 100%);
     //box-shadow: 0 3px 3px rgba(117, 117, 117, 0.3);
     box-shadow: 0 3px 3px rgba(0, 176, 255, 0.3);
-  }
-
-  .visible {
-    visibility: visible !important;
-  }
-
-  #place-card {
-    visibility: hidden;
-    z-index: 1000;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    background: linear-gradient(to bottom, #00b0ff 0%, #40C4FF 100%);
-    //box-shadow: 0 3px 3px rgba(117, 117, 117, 0.3);
-    box-shadow: 0 3px 3px rgba(0, 176, 255, 0.3);
-
-    #text-container {
-      padding: 12px;
-
-      h1, h2, h3 {
-        margin: 0;
-        color: #E8F5E9;
-        text-align: center;
-      }
-      h1 {
-        font-size: 6vw;
-        margin-bottom: 6px;
-        font-family: Palanquin-Regular, sans-serif;
-      }
-      h2, h3 {
-        font-family: Palanquin-Light, sans-serif;
-        font-size: 4vw;
-      }
-    }
-
-    #place-card-row ion-col {
-      text-align: center;
-      padding-bottom: 12px;
-      button {
-        box-shadow: none;
-      }
-    }
   }
 
   .infobubble-content {

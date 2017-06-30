@@ -28,9 +28,14 @@
   <!-- Google Map -->
   <div id="map"></div>
 
-  <!-- Locate user button -->
-  <ion-fab bottom right id="locate-fab" (click)="onLocateUser()">
-    <button ion-fab color="header">
+  <ion-fab middle right id="control-fabs">
+    <button ion-fab mini>
+      <ion-icon name="add"></ion-icon>
+    </button>
+    <button ion-fab mini>
+      <ion-icon name="remove"></ion-icon>
+    </button>
+    <button ion-fab mini (click)="onLocateUser()">
       <ion-icon name="locate"></ion-icon>
     </button>
   </ion-fab>
