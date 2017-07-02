@@ -52,14 +52,14 @@ export class MapPage implements OnInit {
       this.showLoading('Laddar karta');
       this.places = await this.placesService.getPlacesData();
       await this.setCurrentCoordinates();
-      await this.getUserCounty();
       this.initMap();
       this.setLoaderDismiss();
       this.showCurrentLocationOnMap({ lat: this.currentLat, lng: this.currentLng });
+      await this.getUserCounty();
       this.markAllPlaces();
       //this.markAllSeaTemperatures();
-      this.setMapEvent();
-      //this.setUserWatcher();
+      this.setMapEvents();
+      this.setUserWatcher();
     }
     catch (error) {
       this.showToast(error, 'error-toast');
@@ -73,16 +73,18 @@ export class MapPage implements OnInit {
   }
 
   setUserWatcher() {
-    const watch = this.geolocation.watchPosition();
-    watch.subscribe(data => {
-      const latitude: any = data.coords.latitude;
-      const longitude: any = data.coords.longitude;
+    if (this.userCoordinatesAreSet()) {
+      const watch = this.geolocation.watchPosition();
+      watch.subscribe(data => {
+        const latitude: any = data.coords.latitude;
+        const longitude: any = data.coords.longitude;
 
-      if (latitude && longitude) {
-        const position: any = new google.maps.LatLng(latitude, longitude);
-        this.userMarker.setPosition(position);
-      }
-    });
+        if (latitude && longitude) {
+          const position: any = new google.maps.LatLng(latitude, longitude);
+          this.userMarker.setPosition(position);
+        }
+      });
+    }
   }
 
   async setCurrentCoordinates() {
@@ -104,16 +106,22 @@ export class MapPage implements OnInit {
         return county.toLowerCase().includes(c.toLowerCase())
       });
     } else {
-      this.showToast('Ditt län kunde inte hittas. Var vänlig välj ett län i listan.', 'info-toast');
+      this.showToast('Ditt län kunde inte hittas. Var vänlig välj ett i listan.', 'info-toast');
       this.countySelect.open();
     }
   }
 
   onCountyChange() {
-    console.log('on change');
+    this.closeInfoBubble();
     this.userCounty = this.chosenCounty;
     this.removeMarkers();
     this.markAllPlaces();
+  }
+
+  closeInfoBubble() {
+    if (this.activeInfoBubble) {
+      this.activeInfoBubble.close();
+    }
   }
 
   initMap() {
@@ -131,17 +139,18 @@ export class MapPage implements OnInit {
         disableDefaultUI: true,
         draggable: true,
         zoomControl: false,
-        clickableIcons: false
+        clickableIcons: false,
+        gestureHandling: 'greedy'
       });
     }
     catch (error) {
-      throw 'Kartan kunde inte laddas in';
+      throw 'Kartan kunde inte laddas. Du kan fortfarande söka bland badplatser via "Sök".';
     }
   }
 
   getMapZoom() {
     if (this.userCoordinatesAreSet()) return 15;
-    else return 7;
+    else return 4;
   }
 
   setLoaderDismiss() {
@@ -183,7 +192,6 @@ export class MapPage implements OnInit {
           this.onMarkerClick(marker, infoBubble);
         });
         this.markers.push(marker);
-        console.log(this.markers);
       }
     }
     this.markerClusterer = new MarkerClusterer(
@@ -192,7 +200,8 @@ export class MapPage implements OnInit {
   }
 
   removeMarkers() {
-    if (this.markerClusterer && this.markers) {
+
+    if (this.markerClusterer && this.markers.length > 0) {
       this.markerClusterer.setMap(null);
       this.markerClusterer = null;
 
@@ -222,9 +231,7 @@ export class MapPage implements OnInit {
 
   onMarkerClick(marker: any, infoBubble: any) {
     if (!infoBubble.isOpen()) {
-      if (this.activeInfoBubble) {
-        this.activeInfoBubble.close();
-      }
+      this.closeInfoBubble();
       infoBubble.open(this.map, marker);
       this.activeInfoBubble = infoBubble;
     }
@@ -252,11 +259,12 @@ export class MapPage implements OnInit {
     new MarkerClusterer(this.map, markers, { imagePath: 'assets/img/buoy-clusters/buoy' });
   }
 
-  setMapEvent() {
+  setMapEvents() {
     google.maps.event.addListener(this.map, 'click', () => {
-      if (this.activeInfoBubble) {
-        this.activeInfoBubble.close();
-      }
+      this.closeInfoBubble();
+    });
+    google.maps.event.addListener(this.map, 'zoom_changed', () => {
+      this.closeInfoBubble();
     });
   }
 
@@ -294,7 +302,7 @@ export class MapPage implements OnInit {
     this.statusBar.hide();
     const toast = this.toastCtrl.create({
       message: message,
-      duration: 5000,
+      duration: 7000,
       position: 'top',
       cssClass: css
     });
@@ -302,24 +310,6 @@ export class MapPage implements OnInit {
       this.statusBar.show();
     });
     toast.present();
-  }
-
-  async onLocateUser() {
-    await this.setCurrentCoordinates();
-    this.map.panTo({ lat: this.currentLat, lng: this.currentLng });
-    this.map.setZoom(12);
-  }
-
-  onZoomIn() {
-    const currentZoom: number = this.map.getZoom();
-    this.map.setZoom(currentZoom + 1);
-  }
-
-  onZoomOut() {
-    const currentZoom: number = this.map.getZoom();
-    if (currentZoom > 0) {
-      this.map.setZoom(currentZoom - 1);
-    }
   }
 
   getMapStyle() {

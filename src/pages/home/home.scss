@@ -1,5 +1,9 @@
 page-home {
 
+  #home-background-gradient {
+    background: linear-gradient(45deg, #00b0ff 0%, #40c4ff 100%);
+  }
+
   #map-button {
     ion-icon {
       color: white;
@@ -32,7 +36,7 @@ page-home {
         }
         #logo-text {
           margin: 10px 0 0 0;
-          font-family: PermanentMarker, cursive;
+          font-family: Montserrat-Black, cursive;
           font-size: 8vw;
           color: #E8F5E9;
         }

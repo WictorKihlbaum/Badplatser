@@ -35508,10 +35508,10 @@ ion-navbar.toolbar {
   src: url("../assets/fonts/Comfortaa-Light.ttf");
 }
 
-/* PermanentMarker */
+/* Montserrat-Black */
 @font-face {
-  font-family: PermanentMarker;
-  src: url("../assets/fonts/PermanentMarker.ttf");
+  font-family: Montserrat-Black;
+  src: url("../assets/fonts/Montserrat-Black.ttf");
 }
 
 .page-grid, .page-grid ion-row {
@@ -35527,7 +35527,7 @@ ion-navbar {
 }
 
 .gradient-background {
-  background: linear-gradient(45deg, #00b0ff 0%, #40c4ff 100%);
+  background: linear-gradient(45deg, #00b0ff 0%, #69f0ae 100%);
 }
 
 /* Toasts */
@@ -35567,6 +35567,11 @@ ion-navbar {
 page-about ion-content {
   color: white !important;
   font-family: Palanquin-Light, sans-serif;
+  /*
+    #season-topic {
+      font-size: 5vw;
+    }
+    */
 }
 
 page-about ion-content img {
@@ -35577,10 +35582,6 @@ page-about ion-content .about-text {
   text-align: left;
   line-height: 1.4;
   font-size: 4vw;
-}
-
-page-about ion-content #season-topic {
-  font-size: 5vw;
 }
 
 page-favorites ion-content {
@@ -35624,6 +35625,10 @@ page-home {
   /* Wave animations */
 }
 
+page-home #home-background-gradient {
+  background: linear-gradient(45deg, #00b0ff 0%, #40c4ff 100%);
+}
+
 page-home #map-button {
   background: linear-gradient(45deg, #1de9b6 0%, #00e5ff 100%) !important;
   color: white !important;
@@ -35660,7 +35665,7 @@ page-home .page-grid ion-col #logo-container #logo-img, page-home .page-grid ion
 
 page-home .page-grid ion-col #logo-container #logo-text, page-home .page-grid ion-row ion-col #logo-container #logo-text {
   margin: 10px 0 0 0;
-  font-family: PermanentMarker, cursive;
+  font-family: Montserrat-Black, cursive;
   font-size: 8vw;
   color: #E8F5E9;
 }
@@ -35723,6 +35728,10 @@ page-home .wave.-two {
   }
 }
 
+page-map ion-select .select-icon-inner {
+  color: white !important;
+}
+
 page-map #map {
   height: 100%;
 }
@@ -35737,11 +35746,6 @@ page-map #map .cluster img {
   width: 100%;
 }
 
-page-map #control-fabs button {
-  background: linear-gradient(45deg, #00b0ff 0%, #40C4FF 100%);
-  box-shadow: 0 3px 3px rgba(0, 176, 255, 0.3);
-}
-
 page-map .infobubble-content {
   max-width: 200px;
   white-space: nowrap;
@@ -35750,7 +35754,7 @@ page-map .infobubble-content {
   color: gray;
   font-family: Comfortaa-Regular, sans-serif;
   font-size: 16px;
-  padding-right: 24px;
+  padding-right: 18px;
   background: url(../assets/img/arrow.png) right center no-repeat;
   background-size: 12px;
 }

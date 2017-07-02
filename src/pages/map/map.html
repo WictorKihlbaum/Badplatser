@@ -15,8 +15,8 @@
   </ion-navbar>
   <ion-toolbar color="header">
     <ion-item no-lines color="header">
-      <ion-label>Län</ion-label>
-      <ion-select [(ngModel)]="chosenCounty" okText="Välj" cancelText="Stäng" #countySelect (ionChange)="onCountyChange()">
+      <ion-label color="light">Län</ion-label>
+      <ion-select [(ngModel)]="chosenCounty" okText="Välj" cancelText="Stäng" #countySelect (ionChange)="onCountyChange()" [disabled]="!map">
         <ion-option *ngFor="let county of counties" value="{{county}}">{{ county }}</ion-option>
       </ion-select>
     </ion-item>
@@ -27,17 +27,5 @@
 
   <!-- Google Map -->
   <div id="map"></div>
-
-  <ion-fab middle right id="control-fabs">
-    <button ion-fab mini (click)="onZoomIn()">
-      <ion-icon name="add"></ion-icon>
-    </button>
-    <button ion-fab mini (click)="onZoomOut()">
-      <ion-icon name="remove"></ion-icon>
-    </button>
-    <button ion-fab mini (click)="onLocateUser()">
-      <ion-icon name="locate"></ion-icon>
-    </button>
-  </ion-fab>
 
 </ion-content>

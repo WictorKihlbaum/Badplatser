@@ -150,7 +150,8 @@ export class PlacePage implements OnInit {
     if (daily.sunsetTime) {
       const date: any = new Date(parseFloat(daily.sunsetTime + '000'));
       const hours: any = date.getHours();
-      const minutes: any = date.getMinutes();
+      let minutes: any = date.getMinutes();
+      if (minutes.toString().length == 1) minutes = '0' + minutes;
       this.sunsetTime = `${hours}:${minutes}`;
     }
     this.daySummary = daily.summary;

@@ -1,5 +1,9 @@
 page-map {
 
+  ion-select .select-icon-inner {
+    color: white !important; // Set arrow color
+  }
+
   #map {
     height: 100%;
     .cluster {
@@ -12,11 +16,6 @@ page-map {
     }
   }
 
-  #control-fabs button {
-    background: linear-gradient(45deg, #00b0ff 0%, #40C4FF 100%);
-    box-shadow: 0 3px 3px rgba(0, 176, 255, 0.3);
-  }
-
   .infobubble-content {
     max-width: 200px;
     white-space: nowrap;
@@ -25,7 +24,7 @@ page-map {
     color: gray;
     font-family: Comfortaa-Regular, sans-serif;
     font-size: 16px;
-    padding-right: 24px;
+    padding-right: 18px;
     background: url(../assets/img/arrow.png) right center no-repeat;
     background-size: 12px;
   }

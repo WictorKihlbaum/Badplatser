@@ -1,4 +1,4 @@
-<ion-content no-bounce padding class="gradient-background">
+<ion-content no-bounce id="home-background-gradient">
 
   <ion-grid no-padding class="page-grid">
     <ion-row align-items-center>
@@ -6,12 +6,12 @@
 
         <div id="logo-container">
           <img src="assets/img/sweden.png" id="logo-img" />
-          <h1 id="logo-text">Svenska Bad</h1>
+          <h1 id="logo-text">Badställen</h1>
         </div>
 
         <div id="buttons-container">
           <div>
-            <button ion-button round large icon-left color="light" id="map-button" [navPush]="mapPage">
+            <button ion-button round icon-left color="light" id="map-button" [navPush]="mapPage">
               <ion-icon name="search"></ion-icon>
               Hitta badplats
             </button>
@@ -31,6 +31,7 @@
   <ion-fab bottom right [navPush]="aboutPage">
     <button ion-fab id="about-button"><ion-icon name="information-circle"></ion-icon></button>
   </ion-fab>
+
 
   <!-- Water animation waves -->
   <div class='wave -one'></div>

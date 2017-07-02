@@ -86,7 +86,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		HsnHNS0KnNxmEEpKRW2hL6vqHFc=
+		o7ghyaOLkbT9H4Neyo1N+j+V6wg=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		7qvgHZuLmm3PgDdjOizzaTdD2zI=
+		+A6YFUTsXlK1xQGBsdGW69Zq184=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -158,7 +158,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		JRw8NJPSjHFUediqvZG6i0ZAjCQ=
+		YcXW1Xdp7igDuHBIiR1Q1T+3gmQ=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -446,23 +446,23 @@
 		</data>
 		<key>www/assets/img/place-clusters/place1.png</key>
 		<data>
-		Bpmp7FxSr3CE4JoB2wa/ZI+wBpo=
+		fBQ2JXgSe4XwlQdp/KwXmbOHnVk=
 		</data>
 		<key>www/assets/img/place-clusters/place2.png</key>
 		<data>
-		Bpmp7FxSr3CE4JoB2wa/ZI+wBpo=
+		fBQ2JXgSe4XwlQdp/KwXmbOHnVk=
 		</data>
 		<key>www/assets/img/place-clusters/place3.png</key>
 		<data>
-		Bpmp7FxSr3CE4JoB2wa/ZI+wBpo=
+		fBQ2JXgSe4XwlQdp/KwXmbOHnVk=
 		</data>
 		<key>www/assets/img/place-clusters/place4.png</key>
 		<data>
-		Bpmp7FxSr3CE4JoB2wa/ZI+wBpo=
+		fBQ2JXgSe4XwlQdp/KwXmbOHnVk=
 		</data>
 		<key>www/assets/img/place-clusters/place5.png</key>
 		<data>
-		Bpmp7FxSr3CE4JoB2wa/ZI+wBpo=
+		fBQ2JXgSe4XwlQdp/KwXmbOHnVk=
 		</data>
 		<key>www/assets/img/place-quality.png</key>
 		<data>
@@ -470,7 +470,7 @@
 		</data>
 		<key>www/assets/img/place.png</key>
 		<data>
-		Fmmlqwr301A0ouRVfnoPEVJkvuY=
+		xNFoCnx7Yz1FvjE9jKkaWekRqrY=
 		</data>
 		<key>www/assets/img/star.png</key>
 		<data>
@@ -576,9 +576,13 @@
 		<data>
 		gWcLZZzv7qJ1/R81jsMxzWZSBAM=
 		</data>
+		<key>www/assets/js/markerclusterer.min.js</key>
+		<data>
+		3/o7aMVzV1bK9mq6NCUcHvC8/d4=
+		</data>
 		<key>www/build/main.css</key>
 		<data>
-		BqT8CBrABn6CSPacE9AozhLVyfQ=
+		YOiouM5uDCbNjKZGvRzmbTeG44M=
 		</data>
 		<key>www/build/main.css.map</key>
 		<data>
@@ -586,11 +590,11 @@
 		</data>
 		<key>www/build/main.js</key>
 		<data>
-		DgemScdYRI+VkOAZjv9SjekAT/M=
+		nvkmVgVq+cs3JDd9ki9FOoCRAbU=
 		</data>
 		<key>www/build/main.js.map</key>
 		<data>
-		4q2jjwJbc/pQQo3isNZ4+RNPA78=
+		J3k0JKjLCTY/vZ8hB+0zvAgL04E=
 		</data>
 		<key>www/build/polyfills.js</key>
 		<data>
@@ -618,7 +622,7 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		gWXq7cC90Dx5Cb4M/SQw2+RKuf4=
+		IiHH5kICHMfCmQxXd6oASE3sKVY=
 		</data>
 		<key>www/manifest.json</key>
 		<data>
@@ -907,11 +911,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HsnHNS0KnNxmEEpKRW2hL6vqHFc=
+			o7ghyaOLkbT9H4Neyo1N+j+V6wg=
 			</data>
 			<key>hash2</key>
 			<data>
-			jBZvEcU6nVr6vduxszY6HaQfu4sDLF7FgCu5AGKriSI=
+			dfmtoHoXYUJ43CaAWQ0PGHzJpJH6NbWlPdAUOQU8UFo=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -929,11 +933,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7qvgHZuLmm3PgDdjOizzaTdD2zI=
+			+A6YFUTsXlK1xQGBsdGW69Zq184=
 			</data>
 			<key>hash2</key>
 			<data>
-			4ADCkt9d+YoEmU39aofhSrrvwSpJvnJEY/8dBNzBG1Y=
+			YRlIH8pVQb3E0nufBZ64hGM3uVvUSoghCwM9Q5vcqjI=
 			</data>
 		</dict>
 		<key>LaunchImage-568h@2x.png</key>
@@ -1094,11 +1098,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JRw8NJPSjHFUediqvZG6i0ZAjCQ=
+			YcXW1Xdp7igDuHBIiR1Q1T+3gmQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			QXnNWVqwL8Xo0EUST/AphHbn8PlJoLpG54yykIbBG6o=
+			i6jREFnR2fhN7QBXa6b8ZVaMwdSC9wqmAEY4n6aOns4=
 			</data>
 		</dict>
 		<key>archived-expanded-entitlements.xcent</key>
@@ -1875,55 +1879,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Bpmp7FxSr3CE4JoB2wa/ZI+wBpo=
+			fBQ2JXgSe4XwlQdp/KwXmbOHnVk=
 			</data>
 			<key>hash2</key>
 			<data>
-			e4ov43ZfnPsJJ0bnHH6yHB+YJvNYtWmAApTkkFe+MdM=
+			BJk4RZKEHSE9EymWkyn4y/WNLVLgxmr9xCiC0qc6Wh8=
 			</data>
 		</dict>
 		<key>www/assets/img/place-clusters/place2.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Bpmp7FxSr3CE4JoB2wa/ZI+wBpo=
+			fBQ2JXgSe4XwlQdp/KwXmbOHnVk=
 			</data>
 			<key>hash2</key>
 			<data>
-			e4ov43ZfnPsJJ0bnHH6yHB+YJvNYtWmAApTkkFe+MdM=
+			BJk4RZKEHSE9EymWkyn4y/WNLVLgxmr9xCiC0qc6Wh8=
 			</data>
 		</dict>
 		<key>www/assets/img/place-clusters/place3.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Bpmp7FxSr3CE4JoB2wa/ZI+wBpo=
+			fBQ2JXgSe4XwlQdp/KwXmbOHnVk=
 			</data>
 			<key>hash2</key>
 			<data>
-			e4ov43ZfnPsJJ0bnHH6yHB+YJvNYtWmAApTkkFe+MdM=
+			BJk4RZKEHSE9EymWkyn4y/WNLVLgxmr9xCiC0qc6Wh8=
 			</data>
 		</dict>
 		<key>www/assets/img/place-clusters/place4.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Bpmp7FxSr3CE4JoB2wa/ZI+wBpo=
+			fBQ2JXgSe4XwlQdp/KwXmbOHnVk=
 			</data>
 			<key>hash2</key>
 			<data>
-			e4ov43ZfnPsJJ0bnHH6yHB+YJvNYtWmAApTkkFe+MdM=
+			BJk4RZKEHSE9EymWkyn4y/WNLVLgxmr9xCiC0qc6Wh8=
 			</data>
 		</dict>
 		<key>www/assets/img/place-clusters/place5.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Bpmp7FxSr3CE4JoB2wa/ZI+wBpo=
+			fBQ2JXgSe4XwlQdp/KwXmbOHnVk=
 			</data>
 			<key>hash2</key>
 			<data>
-			e4ov43ZfnPsJJ0bnHH6yHB+YJvNYtWmAApTkkFe+MdM=
+			BJk4RZKEHSE9EymWkyn4y/WNLVLgxmr9xCiC0qc6Wh8=
 			</data>
 		</dict>
 		<key>www/assets/img/place-quality.png</key>
@@ -1941,11 +1945,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Fmmlqwr301A0ouRVfnoPEVJkvuY=
+			xNFoCnx7Yz1FvjE9jKkaWekRqrY=
 			</data>
 			<key>hash2</key>
 			<data>
-			XynXP5IKLblf1lFb/vS/IPsPYAuubtKbTlJosaaseHc=
+			pqLmhtNisQrbIaUY6FiMxXcFNkB5NAmgeldaR5lOzC8=
 			</data>
 		</dict>
 		<key>www/assets/img/star.png</key>
@@ -2234,15 +2238,26 @@
 			FkjMshckVOgELnXzEx7Us0Nl3YRXWbJMCmr5b4PBokQ=
 			</data>
 		</dict>
+		<key>www/assets/js/markerclusterer.min.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3/o7aMVzV1bK9mq6NCUcHvC8/d4=
+			</data>
+			<key>hash2</key>
+			<data>
+			dkbGI7C62EEujFhaiXFsUTQOWDo5Z4IcizQU80Qdek0=
+			</data>
+		</dict>
 		<key>www/build/main.css</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BqT8CBrABn6CSPacE9AozhLVyfQ=
+			YOiouM5uDCbNjKZGvRzmbTeG44M=
 			</data>
 			<key>hash2</key>
 			<data>
-			fy/te2ZAj4ZweSL1n30mtmQVHkYPdnEhSPakB6oYOn4=
+			s4T+D4psNuFWFbJIuQZQs0qkdXrqh2boF/5N7cQB8zo=
 			</data>
 		</dict>
 		<key>www/build/main.css.map</key>
@@ -2260,22 +2275,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DgemScdYRI+VkOAZjv9SjekAT/M=
+			nvkmVgVq+cs3JDd9ki9FOoCRAbU=
 			</data>
 			<key>hash2</key>
 			<data>
-			X4n8Kiw+tHiX1VnjYGnSohpf8tFOn64Ag14UMUt7Vis=
+			EG+Q6D30idW+mUsPz0BBK7S3spAdgZBVgla7GVrj8DU=
 			</data>
 		</dict>
 		<key>www/build/main.js.map</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4q2jjwJbc/pQQo3isNZ4+RNPA78=
+			J3k0JKjLCTY/vZ8hB+0zvAgL04E=
 			</data>
 			<key>hash2</key>
 			<data>
-			jlHp6stbd3xj7KpcQW2xokljtOZqSZbIt0/c1MlGeS8=
+			qFmHYwwTVTEh6gAIycrSRd3CmzSiErMj+P7cEnrxgQw=
 			</data>
 		</dict>
 		<key>www/build/polyfills.js</key>
@@ -2348,11 +2363,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gWXq7cC90Dx5Cb4M/SQw2+RKuf4=
+			IiHH5kICHMfCmQxXd6oASE3sKVY=
 			</data>
 			<key>hash2</key>
 			<data>
-			weQ2EPzLcYc9c9jzzBmPOJvNV+JcKpq01BoffBLDJ/0=
+			OZ4x/xq4E06b+rvY1gYnu3CA6/nNab42uyazSeGXaaY=
 			</data>
 		</dict>
 		<key>www/manifest.json</key>

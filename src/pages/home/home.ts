@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { MapPage } from "../map/map";
 import { AboutPage } from "../about/about";
 import { FavoritesPage } from "../favorites/favorites";
-import * as localforage from "localforage";
 import { Network } from "@ionic-native/network";
 import { ToastController } from "ionic-angular";
 import { StatusBar } from "@ionic-native/status-bar";
@@ -23,13 +22,6 @@ export class HomePage implements OnInit {
     private network: Network,
     private toastCtrl: ToastController,
     private statusBar: StatusBar) {
-
-    /*
-    let favoritesStore = localforage.createInstance({ name: "badplatser", storeName: 'favorites' });
-    favoritesStore.clear().then(() => {
-      console.log('allt clear');
-    });
-    */
   }
 
   ngOnInit() {
@@ -43,7 +35,7 @@ export class HomePage implements OnInit {
     });
     // Network connection is up. Dismiss error toast.
     this.network.onConnect().subscribe(() => {
-      this.toast.dismiss();
+      if (this.toast) this.toast.dismiss();
     });
   }
 
