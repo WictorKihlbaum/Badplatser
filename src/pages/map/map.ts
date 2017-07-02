@@ -57,7 +57,7 @@ export class MapPage implements OnInit {
       this.showCurrentLocationOnMap({ lat: this.currentLat, lng: this.currentLng });
       await this.getUserCounty();
       this.markAllPlaces();
-      //this.markAllSeaTemperatures();
+      this.markAllSeaTemperatures();
       this.setMapEvents();
       this.setUserWatcher();
     }
@@ -246,15 +246,18 @@ export class MapPage implements OnInit {
     let markers: any = [];
 
     for (let station of data['station']) {
-      const latitude: number = station.latitude;
-      const longitude: number = station.longitude;
-      const imageName: string = 'buoy';
-      const marker: any = this.getMarker(latitude, longitude, imageName);
+      // Set marker only if there is a temperature to show.
+      if (station.value[0]) {
+        const latitude: number = station.latitude;
+        const longitude: number = station.longitude;
+        const imageName: string = 'buoy';
+        const marker: any = this.getMarker(latitude, longitude, imageName);
 
-      marker.addListener('click', () => {
-        this.onShowStation(station);
-      });
-      markers.push(marker);
+        marker.addListener('click', () => {
+          this.onShowStation(station);
+        });
+        markers.push(marker);
+      }
     }
     new MarkerClusterer(this.map, markers, { imagePath: 'assets/img/buoy-clusters/buoy' });
   }
