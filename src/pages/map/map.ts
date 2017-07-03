@@ -182,7 +182,7 @@ export class MapPage implements OnInit {
         const imageName: string = 'place';
 
         const marker: any = this.getMarker(latitude, longitude, imageName);
-        const infoBubble = this.getInfoBubble(place);
+        const infoBubble = this.getInfoBubble(place.C6, 'place-bubble');
 
         infoBubble.e.addEventListener('click', () => {
           this.onShowPlace(place);
@@ -199,8 +199,36 @@ export class MapPage implements OnInit {
     );
   }
 
-  removeMarkers() {
+  async markAllSeaTemperatures() {
+    const data: any = await this.weatherService.fetchSeaTemperature();
+    let markers: any = [];
 
+    for (let station of data['station']) {
+      // Set marker only if there is a temperature to show.
+      if (station.value[0]) {
+        const latitude: number = station.latitude;
+        const longitude: number = station.longitude;
+        const imageName: string = 'buoy';
+
+        const marker: any = this.getMarker(latitude, longitude, imageName);
+        const infoBubble = this.getInfoBubble('Havstemperatur', 'station-bubble');
+
+        infoBubble.e.addEventListener('click', () => {
+          this.onShowStation(station);
+        });
+
+        marker.addListener('click', () => {
+          this.onMarkerClick(marker, infoBubble);
+        });
+        markers.push(marker);
+      }
+    }
+    new MarkerClusterer(
+      this.map, markers, { imagePath: 'assets/img/buoy-clusters/buoy' }
+    );
+  }
+
+  removeMarkers() {
     if (this.markerClusterer && this.markers.length > 0) {
       this.markerClusterer.setMap(null);
       this.markerClusterer = null;
@@ -212,8 +240,8 @@ export class MapPage implements OnInit {
     }
   }
 
-  getInfoBubble(place: any) {
-    const html = `<div class="infobubble-content">${place.C6} </div>`;
+  getInfoBubble(text: string, customClass: string) {
+    const html = `<div class="infobubble-content ${customClass}">${text} </div>`;
     return new InfoBubble({
       content: html,
       shadowStyle: 0,
@@ -239,27 +267,6 @@ export class MapPage implements OnInit {
       infoBubble.close();
       this.activeInfoBubble = null;
     }
-  }
-
-  async markAllSeaTemperatures() {
-    const data: any = await this.weatherService.fetchSeaTemperature();
-    let markers: any = [];
-
-    for (let station of data['station']) {
-      // Set marker only if there is a temperature to show.
-      if (station.value[0]) {
-        const latitude: number = station.latitude;
-        const longitude: number = station.longitude;
-        const imageName: string = 'buoy';
-        const marker: any = this.getMarker(latitude, longitude, imageName);
-
-        marker.addListener('click', () => {
-          this.onShowStation(station);
-        });
-        markers.push(marker);
-      }
-    }
-    new MarkerClusterer(this.map, markers, { imagePath: 'assets/img/buoy-clusters/buoy' });
   }
 
   setMapEvents() {

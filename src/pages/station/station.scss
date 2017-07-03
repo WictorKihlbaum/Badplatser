@@ -8,23 +8,35 @@ page-station {
     width: 30vw;
   }
 
-  h1, h3 {
-    font-size: 5vw;
-    font-family: Palanquin-Light, sans-serif;
+  #temperature-container {
+    margin-top: 24px;
+    h2 { font-size: 6vw; }
+    h3 { font-size: 10vw; }
   }
+  #station-name-container {
+    margin-top: 24px;
+    h4 { font-size: 5vw }
+    h5 { font-size: 6vw }
+  }
+  #date-container {
+    margin-top: 16px;
+    h4 { font-size: 5vw }
+    h5 { font-size: 6vw }
+  }
+
   h2, h4 {
-    font-family: Palanquin-Regular, sans-serif;
-    font-size: 6vw;
+    font-family: Palanquin-Light, sans-serif;
     margin: 0;
   }
-  ion-title, h2 {
+  h3, h5 {
+    font-family: Palanquin-Regular, sans-serif;
+    margin: 0 0 8px 0;
+  }
+  h5 {
     text-transform: lowercase;
   }
-  ion-title:first-letter, h2:first-letter {
+  h5:first-letter {
     text-transform: uppercase;
-  }
-  h3 {
-    margin-top: 24px;
   }
 
 }

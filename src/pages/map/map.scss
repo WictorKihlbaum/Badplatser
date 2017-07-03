@@ -24,9 +24,16 @@ page-map {
     color: gray;
     font-family: Comfortaa-Regular, sans-serif;
     font-size: 16px;
-    padding-right: 18px;
-    background: url(../assets/img/arrow.png) right center no-repeat;
-    background-size: 12px;
+    padding: 4px 18px 4px 32px;
+    background-position: left center, right center;
+    background-repeat: no-repeat;
+    background-size: 28px, 12px;
+  }
+  .place-bubble {
+    background-image: url(../assets/img/swimming-blue.png), url(../assets/img/arrow.png);
+  }
+  .station-bubble {
+    background-image: url(../assets/img/water-temperature.png), url(../assets/img/arrow.png);
   }
 
 }

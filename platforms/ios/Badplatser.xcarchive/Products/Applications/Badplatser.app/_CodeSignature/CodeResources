@@ -86,7 +86,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		o7ghyaOLkbT9H4Neyo1N+j+V6wg=
+		I6yBONdhTZLbrZvpEP3mgkp3cAs=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		+A6YFUTsXlK1xQGBsdGW69Zq184=
+		YUlSlxpxzT+FCoRCr+k/b72tBdY=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -158,7 +158,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		YcXW1Xdp7igDuHBIiR1Q1T+3gmQ=
+		kEE464WeUJ4GYecAfSB5WKk3QT0=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -284,6 +284,10 @@
 		<data>
 		FsGRHj2X9fxUnoZTNVwMHMOAUzQ=
 		</data>
+		<key>www/assets/fonts/Montserrat-Black.ttf</key>
+		<data>
+		UnG8FgnbTvYlftbwQpwrgfrgTOU=
+		</data>
 		<key>www/assets/fonts/Palanquin-Light.ttf</key>
 		<data>
 		OnvBbrfZ7Fd8GDMjY0Zy0XGgwdw=
@@ -291,10 +295,6 @@
 		<key>www/assets/fonts/Palanquin-Regular.ttf</key>
 		<data>
 		TI+nmf2HGpEyWbb+4nYIPcRICm0=
-		</data>
-		<key>www/assets/fonts/PermanentMarker.ttf</key>
-		<data>
-		NboykAybf2EUzgdHmeDEguHLLKs=
 		</data>
 		<key>www/assets/fonts/ionicons.eot</key>
 		<data>
@@ -402,7 +402,7 @@
 		</data>
 		<key>www/assets/img/arrow.png</key>
 		<data>
-		CszvOiGD3N6b+6BH40hNLnFepKk=
+		YbRU1IgYLvRYVf1n4WA/+md6ESg=
 		</data>
 		<key>www/assets/img/buoy-big.png</key>
 		<data>
@@ -410,39 +410,43 @@
 		</data>
 		<key>www/assets/img/buoy-clusters/buoy1.png</key>
 		<data>
-		/lrG/fl3TCk5kfH3nUYzuq81i0E=
+		31Ig07QbNUy9af1Z+X5pLHdZ9dk=
 		</data>
 		<key>www/assets/img/buoy-clusters/buoy2.png</key>
 		<data>
-		/lrG/fl3TCk5kfH3nUYzuq81i0E=
+		31Ig07QbNUy9af1Z+X5pLHdZ9dk=
 		</data>
 		<key>www/assets/img/buoy-clusters/buoy3.png</key>
 		<data>
-		/lrG/fl3TCk5kfH3nUYzuq81i0E=
+		31Ig07QbNUy9af1Z+X5pLHdZ9dk=
 		</data>
 		<key>www/assets/img/buoy-clusters/buoy4.png</key>
 		<data>
-		/lrG/fl3TCk5kfH3nUYzuq81i0E=
+		31Ig07QbNUy9af1Z+X5pLHdZ9dk=
+		</data>
+		<key>www/assets/img/buoy-clusters/buoy5.png</key>
+		<data>
+		31Ig07QbNUy9af1Z+X5pLHdZ9dk=
 		</data>
 		<key>www/assets/img/buoy.png</key>
 		<data>
-		luQYTZehBPxHL4Sl18k4AeSrMfk=
+		4U7StQh8bhfUw1dzD5BrsXzEPas=
 		</data>
 		<key>www/assets/img/darksky-logo.png</key>
 		<data>
-		QgmhSXZFsgpGcsZXG6q/oLgxdMM=
+		/DxC3ZDLxdMLJeTqEPZ9GlNAD9E=
 		</data>
 		<key>www/assets/img/favorites-heart.png</key>
 		<data>
 		bs5SynhvMMo4qes2oufXAjmgN2I=
 		</data>
-		<key>www/assets/img/infobubble-arrow.png</key>
+		<key>www/assets/img/hejsan.jpg</key>
 		<data>
-		itaVqoBRnEeuqHhgfOA21oRIYaI=
+		2bJoOjeyRXXHckZTedWxD3ngYik=
 		</data>
 		<key>www/assets/img/pin.png</key>
 		<data>
-		HGX0lI74+xpM07iOY9FQvOnRA3Q=
+		6MLOQahiz4wO3iIFfvhzA6d0ljE=
 		</data>
 		<key>www/assets/img/place-clusters/place1.png</key>
 		<data>
@@ -470,99 +474,59 @@
 		</data>
 		<key>www/assets/img/place.png</key>
 		<data>
-		xNFoCnx7Yz1FvjE9jKkaWekRqrY=
-		</data>
-		<key>www/assets/img/star.png</key>
-		<data>
-		iNvxWCXASJayl8eOU7Z2f8zDlI8=
+		pR4BiZjaLiZX7uR0qeJ96oLZVEw=
 		</data>
 		<key>www/assets/img/sweden.png</key>
 		<data>
 		S8qqqxQ0/PYc/a+OsJgB2Pmp9Pg=
 		</data>
-		<key>www/assets/img/swimming.png</key>
+		<key>www/assets/img/swimming-blue.png</key>
+		<data>
+		zMRxEYPns0lDPYeC7JFmjKOXNvo=
+		</data>
+		<key>www/assets/img/swimming-white.png</key>
 		<data>
 		ca+PJnrvy2H2tOEQevOglGQdLrM=
 		</data>
-		<key>www/assets/img/weather-icons/large/clear-day.png</key>
+		<key>www/assets/img/weather-icons/clear-day.png</key>
 		<data>
 		dFTn3a5J8cG6VLAKM5oEz/J9cOc=
 		</data>
-		<key>www/assets/img/weather-icons/large/clear-night.png</key>
+		<key>www/assets/img/weather-icons/clear-night.png</key>
 		<data>
 		+YnZqdtKAxjddGSa38A+SCvG00Y=
 		</data>
-		<key>www/assets/img/weather-icons/large/cloudy.png</key>
+		<key>www/assets/img/weather-icons/cloudy.png</key>
 		<data>
 		Y/VAhAp7nLDoEO0unG+IWzYxYNk=
 		</data>
-		<key>www/assets/img/weather-icons/large/fog.png</key>
+		<key>www/assets/img/weather-icons/fog.png</key>
 		<data>
 		RbRPgBxnL+Y4y9yCscWPd/pc9pg=
 		</data>
-		<key>www/assets/img/weather-icons/large/partly-cloudy-day.png</key>
+		<key>www/assets/img/weather-icons/partly-cloudy-day.png</key>
 		<data>
 		w9ZnfDNesvxE3yfTFmbjhZrwHm0=
 		</data>
-		<key>www/assets/img/weather-icons/large/partly-cloudy-night.png</key>
+		<key>www/assets/img/weather-icons/partly-cloudy-night.png</key>
 		<data>
 		atTFvqQgx1o3MVT3sdfZCMm3Cd0=
 		</data>
-		<key>www/assets/img/weather-icons/large/rain.png</key>
+		<key>www/assets/img/weather-icons/rain.png</key>
 		<data>
 		WFYBvNh0CSTEHW8S6jBC9+whjGk=
 		</data>
-		<key>www/assets/img/weather-icons/large/sleet.png</key>
+		<key>www/assets/img/weather-icons/sleet.png</key>
 		<data>
 		m716dygtO4qOG8HQe8x67N0seDQ=
 		</data>
-		<key>www/assets/img/weather-icons/large/snow.png</key>
+		<key>www/assets/img/weather-icons/snow.png</key>
 		<data>
 		iJBCmvZli7tvaUhK/HOGGmvSjfo=
 		</data>
-		<key>www/assets/img/weather-icons/large/wind.png</key>
+		<key>www/assets/img/weather-icons/wind.png</key>
 		<data>
 		aV5gAFdP+miHFMEn8M98gGnu7aw=
-		</data>
-		<key>www/assets/img/weather-icons/small/clear-day.png</key>
-		<data>
-		kGAFO/JPLfHbrt6hj3VffjlNNBg=
-		</data>
-		<key>www/assets/img/weather-icons/small/clear-night.png</key>
-		<data>
-		uv+J9weBUDcVVojgISngevIIt58=
-		</data>
-		<key>www/assets/img/weather-icons/small/cloudy.png</key>
-		<data>
-		lGbBvBmt57whPjxygXRm4+oDb6s=
-		</data>
-		<key>www/assets/img/weather-icons/small/fog.png</key>
-		<data>
-		Shpuzn9oqPcshuNQi90S0U9I7LA=
-		</data>
-		<key>www/assets/img/weather-icons/small/partly-cloudy-day.png</key>
-		<data>
-		moB6k83Cqceq1bF56R59MD2xjZg=
-		</data>
-		<key>www/assets/img/weather-icons/small/partly-cloudy-night.png</key>
-		<data>
-		c6r/5zbq0N1H1gz+8gXSFGwkIy8=
-		</data>
-		<key>www/assets/img/weather-icons/small/rain.png</key>
-		<data>
-		NDrp61Eqz3OBs+ZimMEBaBZtMjQ=
-		</data>
-		<key>www/assets/img/weather-icons/small/sleet.png</key>
-		<data>
-		nPQK1lxDwbbkoO0hUXBQUAmMnl8=
-		</data>
-		<key>www/assets/img/weather-icons/small/snow.png</key>
-		<data>
-		Z1MF925ZF2KEpu1bal2z39joe+Q=
-		</data>
-		<key>www/assets/img/weather-icons/small/wind.png</key>
-		<data>
-		JiAa8KY1jaEzNSGc/wa5k+g1dSQ=
 		</data>
 		<key>www/assets/img/weatherBG.png</key>
 		<data>
@@ -582,7 +546,7 @@
 		</data>
 		<key>www/build/main.css</key>
 		<data>
-		YOiouM5uDCbNjKZGvRzmbTeG44M=
+		gFaDTLry3R2tBQ1mw6SctDrVx8M=
 		</data>
 		<key>www/build/main.css.map</key>
 		<data>
@@ -590,11 +554,11 @@
 		</data>
 		<key>www/build/main.js</key>
 		<data>
-		nvkmVgVq+cs3JDd9ki9FOoCRAbU=
+		jWK+iR7dogm0zhPOA0OoyRoSgyg=
 		</data>
 		<key>www/build/main.js.map</key>
 		<data>
-		J3k0JKjLCTY/vZ8hB+0zvAgL04E=
+		7Uj466YEdLPHL1Vt1WOevvi8/eg=
 		</data>
 		<key>www/build/polyfills.js</key>
 		<data>
@@ -911,11 +875,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			o7ghyaOLkbT9H4Neyo1N+j+V6wg=
+			I6yBONdhTZLbrZvpEP3mgkp3cAs=
 			</data>
 			<key>hash2</key>
 			<data>
-			dfmtoHoXYUJ43CaAWQ0PGHzJpJH6NbWlPdAUOQU8UFo=
+			kBLqcoTF1Da9yGWBT7uJi1/IypZ+0Jb8AYovNyCYJqk=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -933,11 +897,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+A6YFUTsXlK1xQGBsdGW69Zq184=
+			YUlSlxpxzT+FCoRCr+k/b72tBdY=
 			</data>
 			<key>hash2</key>
 			<data>
-			YRlIH8pVQb3E0nufBZ64hGM3uVvUSoghCwM9Q5vcqjI=
+			9DRRV6nlGygvWSN6nGjn397rODIR2zLir0o2REU1b5I=
 			</data>
 		</dict>
 		<key>LaunchImage-568h@2x.png</key>
@@ -1098,11 +1062,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YcXW1Xdp7igDuHBIiR1Q1T+3gmQ=
+			kEE464WeUJ4GYecAfSB5WKk3QT0=
 			</data>
 			<key>hash2</key>
 			<data>
-			i6jREFnR2fhN7QBXa6b8ZVaMwdSC9wqmAEY4n6aOns4=
+			anxMz3bSekQTkmP62q8OG2t/KBhDLvuaSeDH+/vNQL8=
 			</data>
 		</dict>
 		<key>archived-expanded-entitlements.xcent</key>
@@ -1435,6 +1399,17 @@
 			ltWAviMvMfBR7AVz2hTa8EkKD/PhOMthbEQ6FJQcEU8=
 			</data>
 		</dict>
+		<key>www/assets/fonts/Montserrat-Black.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UnG8FgnbTvYlftbwQpwrgfrgTOU=
+			</data>
+			<key>hash2</key>
+			<data>
+			k8JNGNGcOpLIskqYy+InhzsCU210Swz0WDSg/amZSiE=
+			</data>
+		</dict>
 		<key>www/assets/fonts/Palanquin-Light.ttf</key>
 		<dict>
 			<key>hash</key>
@@ -1455,17 +1430,6 @@
 			<key>hash2</key>
 			<data>
 			wpRS3P7c2Z9PEBLPwFE2ZMQza0Hdwy20j0IgiDkeG/M=
-			</data>
-		</dict>
-		<key>www/assets/fonts/PermanentMarker.ttf</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			NboykAybf2EUzgdHmeDEguHLLKs=
-			</data>
-			<key>hash2</key>
-			<data>
-			nTGlGYxMpN/JxXYAIue7WzDrIbiReWOyo6LNoZf08hk=
 			</data>
 		</dict>
 		<key>www/assets/fonts/ionicons.eot</key>
@@ -1758,11 +1722,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CszvOiGD3N6b+6BH40hNLnFepKk=
+			YbRU1IgYLvRYVf1n4WA/+md6ESg=
 			</data>
 			<key>hash2</key>
 			<data>
-			geZOrX5Sgj3st2v1ra28Q6wpyjlHb7ZewwBkgK42Lm4=
+			Rj4TsgsASZ4F5asMh16s0eCzSAKrifAZLAs0/DA+zRA=
 			</data>
 		</dict>
 		<key>www/assets/img/buoy-big.png</key>
@@ -1780,66 +1744,77 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/lrG/fl3TCk5kfH3nUYzuq81i0E=
+			31Ig07QbNUy9af1Z+X5pLHdZ9dk=
 			</data>
 			<key>hash2</key>
 			<data>
-			i1w/T0SWuMwKtzdv42nx161eKAKxkSFrTTveYCBzDDM=
+			ughpXDEMLgHeA+W2ICrAp5WRcIZNAIZpRY21MLF0nTY=
 			</data>
 		</dict>
 		<key>www/assets/img/buoy-clusters/buoy2.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/lrG/fl3TCk5kfH3nUYzuq81i0E=
+			31Ig07QbNUy9af1Z+X5pLHdZ9dk=
 			</data>
 			<key>hash2</key>
 			<data>
-			i1w/T0SWuMwKtzdv42nx161eKAKxkSFrTTveYCBzDDM=
+			ughpXDEMLgHeA+W2ICrAp5WRcIZNAIZpRY21MLF0nTY=
 			</data>
 		</dict>
 		<key>www/assets/img/buoy-clusters/buoy3.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/lrG/fl3TCk5kfH3nUYzuq81i0E=
+			31Ig07QbNUy9af1Z+X5pLHdZ9dk=
 			</data>
 			<key>hash2</key>
 			<data>
-			i1w/T0SWuMwKtzdv42nx161eKAKxkSFrTTveYCBzDDM=
+			ughpXDEMLgHeA+W2ICrAp5WRcIZNAIZpRY21MLF0nTY=
 			</data>
 		</dict>
 		<key>www/assets/img/buoy-clusters/buoy4.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/lrG/fl3TCk5kfH3nUYzuq81i0E=
+			31Ig07QbNUy9af1Z+X5pLHdZ9dk=
 			</data>
 			<key>hash2</key>
 			<data>
-			i1w/T0SWuMwKtzdv42nx161eKAKxkSFrTTveYCBzDDM=
+			ughpXDEMLgHeA+W2ICrAp5WRcIZNAIZpRY21MLF0nTY=
+			</data>
+		</dict>
+		<key>www/assets/img/buoy-clusters/buoy5.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			31Ig07QbNUy9af1Z+X5pLHdZ9dk=
+			</data>
+			<key>hash2</key>
+			<data>
+			ughpXDEMLgHeA+W2ICrAp5WRcIZNAIZpRY21MLF0nTY=
 			</data>
 		</dict>
 		<key>www/assets/img/buoy.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			luQYTZehBPxHL4Sl18k4AeSrMfk=
+			4U7StQh8bhfUw1dzD5BrsXzEPas=
 			</data>
 			<key>hash2</key>
 			<data>
-			efQyP0czgP8L6Sf3zswclPVxkOr+nfilpbVQfjBb/Ls=
+			wgOLUsF2jGyh65zrWImr/6GVdB1HmPU22P+talqqqqk=
 			</data>
 		</dict>
 		<key>www/assets/img/darksky-logo.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QgmhSXZFsgpGcsZXG6q/oLgxdMM=
+			/DxC3ZDLxdMLJeTqEPZ9GlNAD9E=
 			</data>
 			<key>hash2</key>
 			<data>
-			pkcnzp8L735VNvnKl0zoP0XSi3IcOlyuIcwKJ8CJink=
+			m1b2d0qkQ33EBsgFvlmLaT5KGXslJvB1NujeiswusHg=
 			</data>
 		</dict>
 		<key>www/assets/img/favorites-heart.png</key>
@@ -1853,26 +1828,26 @@
 			XeOr4V/K8gAMNkKJ6oxmaYiD0xSNeTh+pn56zPmyehw=
 			</data>
 		</dict>
-		<key>www/assets/img/infobubble-arrow.png</key>
+		<key>www/assets/img/hejsan.jpg</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			itaVqoBRnEeuqHhgfOA21oRIYaI=
+			2bJoOjeyRXXHckZTedWxD3ngYik=
 			</data>
 			<key>hash2</key>
 			<data>
-			4kVzguK008bocKfsg+jzhlYwN7Xyh+5xoRuVopMgT6k=
+			K7v0pjwOkBF43SmMkbbWjjFFTDtKBq2TLyfUrnnBiEY=
 			</data>
 		</dict>
 		<key>www/assets/img/pin.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HGX0lI74+xpM07iOY9FQvOnRA3Q=
+			6MLOQahiz4wO3iIFfvhzA6d0ljE=
 			</data>
 			<key>hash2</key>
 			<data>
-			5XWPlfSToHp8kBaGQPOSoCMeEd3hRtQLWRuVnnDdXs0=
+			n2GI63CPXAuLE2Q5RGhM+3+7wpTfD32qKsMfa520Z3w=
 			</data>
 		</dict>
 		<key>www/assets/img/place-clusters/place1.png</key>
@@ -1945,22 +1920,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xNFoCnx7Yz1FvjE9jKkaWekRqrY=
+			pR4BiZjaLiZX7uR0qeJ96oLZVEw=
 			</data>
 			<key>hash2</key>
 			<data>
-			pqLmhtNisQrbIaUY6FiMxXcFNkB5NAmgeldaR5lOzC8=
-			</data>
-		</dict>
-		<key>www/assets/img/star.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			iNvxWCXASJayl8eOU7Z2f8zDlI8=
-			</data>
-			<key>hash2</key>
-			<data>
-			/bO46InWeT7XHG81Iw2jU0VOFgXX3c5+9Q0jeIaucGg=
+			6QAtq32twSdZ6d0bwdTxyQkmdML0L2YQDQ3s7Z1Swuk=
 			</data>
 		</dict>
 		<key>www/assets/img/sweden.png</key>
@@ -1974,7 +1938,18 @@
 			165wpEmD2gXagt93wHJc9c7hrBRhcmqbTKQUbS8345w=
 			</data>
 		</dict>
-		<key>www/assets/img/swimming.png</key>
+		<key>www/assets/img/swimming-blue.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zMRxEYPns0lDPYeC7JFmjKOXNvo=
+			</data>
+			<key>hash2</key>
+			<data>
+			25LSFQereWABchrdo0QXPrAcsAfCTvdYEqvE1+H4+aE=
+			</data>
+		</dict>
+		<key>www/assets/img/swimming-white.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -1985,7 +1960,7 @@
 			y8aoif/DvDYN9g9sb0sBNSE9AFVt6oIlXdRox+5UMjU=
 			</data>
 		</dict>
-		<key>www/assets/img/weather-icons/large/clear-day.png</key>
+		<key>www/assets/img/weather-icons/clear-day.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -1996,7 +1971,7 @@
 			9M61phie/uQZXupUWIwo7Io1i3QT8me5m8mrLEA9W+A=
 			</data>
 		</dict>
-		<key>www/assets/img/weather-icons/large/clear-night.png</key>
+		<key>www/assets/img/weather-icons/clear-night.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -2007,7 +1982,7 @@
 			hGHs/DWLhbuyGNmzqHJ4Iu6+DWPAfyE1Da9Y1t4Hv40=
 			</data>
 		</dict>
-		<key>www/assets/img/weather-icons/large/cloudy.png</key>
+		<key>www/assets/img/weather-icons/cloudy.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -2018,7 +1993,7 @@
 			0V96JyNZFV1dc3AvBeFjgZAhriq7E7UeeRR4bJdJRas=
 			</data>
 		</dict>
-		<key>www/assets/img/weather-icons/large/fog.png</key>
+		<key>www/assets/img/weather-icons/fog.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -2029,7 +2004,7 @@
 			yYu4iiBDLSYSvDNXPg0z4IomDf0Qsh9NIyS9FdgcvWs=
 			</data>
 		</dict>
-		<key>www/assets/img/weather-icons/large/partly-cloudy-day.png</key>
+		<key>www/assets/img/weather-icons/partly-cloudy-day.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -2040,7 +2015,7 @@
 			HKv2W4hMEi7qU8S+/dVEhE7FjHhlOmbdDkxPeNX2DVQ=
 			</data>
 		</dict>
-		<key>www/assets/img/weather-icons/large/partly-cloudy-night.png</key>
+		<key>www/assets/img/weather-icons/partly-cloudy-night.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -2051,7 +2026,7 @@
 			VpGCv24fVy4icNvhGG3JgNMegupoOekDmCTiqCXG2WQ=
 			</data>
 		</dict>
-		<key>www/assets/img/weather-icons/large/rain.png</key>
+		<key>www/assets/img/weather-icons/rain.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -2062,7 +2037,7 @@
 			3xXHdDRWTCdmsyk374mt4IT+FNtTWYRw3B+cQTHT6q8=
 			</data>
 		</dict>
-		<key>www/assets/img/weather-icons/large/sleet.png</key>
+		<key>www/assets/img/weather-icons/sleet.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -2073,7 +2048,7 @@
 			oX5AHTbhE7tHKVn88p3gxe4KG/Golm7UuXit2TCOjwg=
 			</data>
 		</dict>
-		<key>www/assets/img/weather-icons/large/snow.png</key>
+		<key>www/assets/img/weather-icons/snow.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -2084,7 +2059,7 @@
 			MdYJRHIX99wayMmhNdSUMCXhug3nwn0IpFwMEo7h0PY=
 			</data>
 		</dict>
-		<key>www/assets/img/weather-icons/large/wind.png</key>
+		<key>www/assets/img/weather-icons/wind.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -2093,116 +2068,6 @@
 			<key>hash2</key>
 			<data>
 			3NkUe8x/25TMMNjzxh7wkqIHP3fa7qU+Tgfbp7VtzcA=
-			</data>
-		</dict>
-		<key>www/assets/img/weather-icons/small/clear-day.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			kGAFO/JPLfHbrt6hj3VffjlNNBg=
-			</data>
-			<key>hash2</key>
-			<data>
-			RajftPWEt610IusWbbAbmsXy9DmBl/01Jr5hXUPusN0=
-			</data>
-		</dict>
-		<key>www/assets/img/weather-icons/small/clear-night.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			uv+J9weBUDcVVojgISngevIIt58=
-			</data>
-			<key>hash2</key>
-			<data>
-			iZ0m4PRD5C50uzVMWxXMpoqmEKAxyviIIxXLWqLMNQY=
-			</data>
-		</dict>
-		<key>www/assets/img/weather-icons/small/cloudy.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			lGbBvBmt57whPjxygXRm4+oDb6s=
-			</data>
-			<key>hash2</key>
-			<data>
-			996wgs3EV74K1mSsGKckFtc4GFcy0PIfJjuyD/JoFgw=
-			</data>
-		</dict>
-		<key>www/assets/img/weather-icons/small/fog.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Shpuzn9oqPcshuNQi90S0U9I7LA=
-			</data>
-			<key>hash2</key>
-			<data>
-			DnCkoP9LdBPAAyG8ru3Pi+5c0HDVbjA750U50LbDC7Q=
-			</data>
-		</dict>
-		<key>www/assets/img/weather-icons/small/partly-cloudy-day.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			moB6k83Cqceq1bF56R59MD2xjZg=
-			</data>
-			<key>hash2</key>
-			<data>
-			cLFb3eR8jk55LSt3CtlAuSn3QsmjRYqNOVQ+nKOKQ90=
-			</data>
-		</dict>
-		<key>www/assets/img/weather-icons/small/partly-cloudy-night.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			c6r/5zbq0N1H1gz+8gXSFGwkIy8=
-			</data>
-			<key>hash2</key>
-			<data>
-			LydNUXrakRf8dhs9vfF2c5ND88RTOIriE9/NvD6po0c=
-			</data>
-		</dict>
-		<key>www/assets/img/weather-icons/small/rain.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			NDrp61Eqz3OBs+ZimMEBaBZtMjQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			xYxpV2anKRWgq+zLqTWJxHsXNLfeD4HqXxH4zwDa6MY=
-			</data>
-		</dict>
-		<key>www/assets/img/weather-icons/small/sleet.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			nPQK1lxDwbbkoO0hUXBQUAmMnl8=
-			</data>
-			<key>hash2</key>
-			<data>
-			CYcyG/t015yZaV3bsWCFUn8P7i+yyMCo1rB/EpDMhq0=
-			</data>
-		</dict>
-		<key>www/assets/img/weather-icons/small/snow.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Z1MF925ZF2KEpu1bal2z39joe+Q=
-			</data>
-			<key>hash2</key>
-			<data>
-			1eunfbF1Lgoa1nEvfiKaj7jHElhUmP1e3NBb45fMfA8=
-			</data>
-		</dict>
-		<key>www/assets/img/weather-icons/small/wind.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			JiAa8KY1jaEzNSGc/wa5k+g1dSQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			+ra4zzTPp0qRMei/YWR/EKaNrQ+SRjk3NioC4WBIECo=
 			</data>
 		</dict>
 		<key>www/assets/img/weatherBG.png</key>
@@ -2253,11 +2118,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YOiouM5uDCbNjKZGvRzmbTeG44M=
+			gFaDTLry3R2tBQ1mw6SctDrVx8M=
 			</data>
 			<key>hash2</key>
 			<data>
-			s4T+D4psNuFWFbJIuQZQs0qkdXrqh2boF/5N7cQB8zo=
+			0WvBfwdkzOIx1okFSj/oTr+z4kVVSaVfqXrziAuty/0=
 			</data>
 		</dict>
 		<key>www/build/main.css.map</key>
@@ -2275,22 +2140,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nvkmVgVq+cs3JDd9ki9FOoCRAbU=
+			jWK+iR7dogm0zhPOA0OoyRoSgyg=
 			</data>
 			<key>hash2</key>
 			<data>
-			EG+Q6D30idW+mUsPz0BBK7S3spAdgZBVgla7GVrj8DU=
+			trEbjDT1Ya38E6she+sBXX3h2dJbGMlrbzfUId0Bzf0=
 			</data>
 		</dict>
 		<key>www/build/main.js.map</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			J3k0JKjLCTY/vZ8hB+0zvAgL04E=
+			7Uj466YEdLPHL1Vt1WOevvi8/eg=
 			</data>
 			<key>hash2</key>
 			<data>
-			qFmHYwwTVTEh6gAIycrSRd3CmzSiErMj+P7cEnrxgQw=
+			TE52m6gZgdwsF4nW+e4oZwR1Ac17kSWs+awRnKG1Bgs=
 			</data>
 		</dict>
 		<key>www/build/polyfills.js</key>

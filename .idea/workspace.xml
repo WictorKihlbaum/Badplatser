@@ -2,21 +2,93 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0aaff879-e7a7-4ca7-a45c-89a92c88d0d2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/img/buoy-clusters/buoy1.png" afterPath="$PROJECT_DIR$/src/assets/img/buoy-clusters/buoy1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/img/buoy-clusters/buoy2.png" afterPath="$PROJECT_DIR$/src/assets/img/buoy-clusters/buoy2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/img/buoy-clusters/buoy3.png" afterPath="$PROJECT_DIR$/src/assets/img/buoy-clusters/buoy3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/img/buoy-clusters/buoy4.png" afterPath="$PROJECT_DIR$/src/assets/img/buoy-clusters/buoy4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/img/buoy.png" afterPath="$PROJECT_DIR$/src/assets/img/buoy.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/img/place.png" afterPath="$PROJECT_DIR$/src/assets/img/place.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/assets/img/buoy-clusters/buoy1.png" afterPath="$PROJECT_DIR$/www/assets/img/buoy-clusters/buoy1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/assets/img/buoy-clusters/buoy2.png" afterPath="$PROJECT_DIR$/www/assets/img/buoy-clusters/buoy2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/assets/img/buoy-clusters/buoy3.png" afterPath="$PROJECT_DIR$/www/assets/img/buoy-clusters/buoy3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/assets/img/buoy-clusters/buoy4.png" afterPath="$PROJECT_DIR$/www/assets/img/buoy-clusters/buoy4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/assets/img/buoy.png" afterPath="$PROJECT_DIR$/www/assets/img/buoy.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/assets/img/place.png" afterPath="$PROJECT_DIR$/www/assets/img/place.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/fonts/PermanentMarker.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/infobubble-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/star.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/swimming.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/weather-icons/large/clear-day.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/weather-icons/large/clear-night.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/weather-icons/large/cloudy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/weather-icons/large/fog.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/weather-icons/large/partly-cloudy-day.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/weather-icons/large/partly-cloudy-night.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/weather-icons/large/rain.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/weather-icons/large/sleet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/weather-icons/large/snow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/weather-icons/large/wind.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/weather-icons/small/clear-day.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/weather-icons/small/clear-night.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/weather-icons/small/cloudy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/weather-icons/small/fog.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/weather-icons/small/partly-cloudy-day.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/weather-icons/small/partly-cloudy-night.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/weather-icons/small/rain.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/weather-icons/small/sleet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/weather-icons/small/snow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/weather-icons/small/wind.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/fonts/PermanentMarker.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/img/infobubble-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/img/star.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/img/swimming.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/img/weather-icons/large/clear-day.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/img/weather-icons/large/clear-night.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/img/weather-icons/large/cloudy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/img/weather-icons/large/fog.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/img/weather-icons/large/partly-cloudy-day.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/img/weather-icons/large/partly-cloudy-night.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/img/weather-icons/large/rain.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/img/weather-icons/large/sleet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/img/weather-icons/large/snow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/img/weather-icons/large/wind.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/img/weather-icons/small/clear-day.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/img/weather-icons/small/clear-night.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/img/weather-icons/small/cloudy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/img/weather-icons/small/fog.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/img/weather-icons/small/partly-cloudy-day.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/img/weather-icons/small/partly-cloudy-night.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/img/weather-icons/small/rain.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/img/weather-icons/small/sleet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/img/weather-icons/small/snow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/img/weather-icons/small/wind.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/img/swimming.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/assets/img/swimming.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/Badplatser" afterPath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/Badplatser" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib" afterPath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib" afterPath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/MainViewController.nib" afterPath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/MainViewController.nib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/arrow.png" afterPath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/arrow.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/buoy-clusters/buoy1.png" afterPath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/buoy-clusters/buoy1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/buoy-clusters/buoy2.png" afterPath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/buoy-clusters/buoy2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/buoy-clusters/buoy3.png" afterPath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/buoy-clusters/buoy3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/buoy-clusters/buoy4.png" afterPath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/buoy-clusters/buoy4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/buoy.png" afterPath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/buoy.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/darksky-logo.png" afterPath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/darksky-logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/pin.png" afterPath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/pin.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/place.png" afterPath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/www/assets/img/place.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcodeproj/project.xcworkspace/xcuserdata/wictor.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/platforms/ios/Badplatser.xcodeproj/project.xcworkspace/xcuserdata/wictor.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/img/arrow.png" afterPath="$PROJECT_DIR$/platforms/ios/www/assets/img/arrow.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/img/buoy-clusters/buoy1.png" afterPath="$PROJECT_DIR$/platforms/ios/www/assets/img/buoy-clusters/buoy1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/img/buoy-clusters/buoy2.png" afterPath="$PROJECT_DIR$/platforms/ios/www/assets/img/buoy-clusters/buoy2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/img/buoy-clusters/buoy3.png" afterPath="$PROJECT_DIR$/platforms/ios/www/assets/img/buoy-clusters/buoy3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/img/buoy-clusters/buoy4.png" afterPath="$PROJECT_DIR$/platforms/ios/www/assets/img/buoy-clusters/buoy4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/img/buoy.png" afterPath="$PROJECT_DIR$/platforms/ios/www/assets/img/buoy.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/img/darksky-logo.png" afterPath="$PROJECT_DIR$/platforms/ios/www/assets/img/darksky-logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/img/pin.png" afterPath="$PROJECT_DIR$/platforms/ios/www/assets/img/pin.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/assets/img/place.png" afterPath="$PROJECT_DIR$/platforms/ios/www/assets/img/place.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/img/arrow.png" afterPath="$PROJECT_DIR$/src/assets/img/arrow.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/assets/img/arrow.png" afterPath="$PROJECT_DIR$/www/assets/img/arrow.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Info.plist" afterPath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/_CodeSignature/CodeResources" afterPath="$PROJECT_DIR$/platforms/ios/Badplatser.xcarchive/Products/Applications/Badplatser.app/_CodeSignature/CodeResources" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/favorites/favorites.html" afterPath="$PROJECT_DIR$/src/pages/favorites/favorites.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/map/map.scss" afterPath="$PROJECT_DIR$/src/pages/map/map.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/map/map.ts" afterPath="$PROJECT_DIR$/src/pages/map/map.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/station/station.html" afterPath="$PROJECT_DIR$/src/pages/station/station.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/station/station.scss" afterPath="$PROJECT_DIR$/src/pages/station/station.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/station/station.ts" afterPath="$PROJECT_DIR$/src/pages/station/station.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/providers/weather-service.ts" afterPath="$PROJECT_DIR$/src/providers/weather-service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/theme/variables.scss" afterPath="$PROJECT_DIR$/src/theme/variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/main.css" afterPath="$PROJECT_DIR$/www/build/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/main.js" afterPath="$PROJECT_DIR$/www/build/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/main.js.map" afterPath="$PROJECT_DIR$/www/build/main.js.map" />
     </list>
@@ -36,12 +108,32 @@
       <file leaf-file-name="map.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/map/map.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="249" column="27" lean-forward="false" selection-start-line="249" selection-start-column="27" selection-end-line="249" selection-end-column="27" />
+            <state relative-caret-position="339">
+              <caret line="208" column="29" lean-forward="false" selection-start-line="208" selection-start-column="29" selection-end-line="208" selection-end-column="29" />
               <folding>
                 <element signature="e#0#61#0" expanded="true" />
-                <marker date="1498996143000" expanded="true" signature="6590:6607" ph="..." />
+                <marker date="1499085131000" expanded="true" signature="7586:7599" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="weather-service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/providers/weather-service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="map.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/map/map.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="27" column="51" lean-forward="true" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -49,11 +141,29 @@
       <file leaf-file-name="station.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/station/station.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="315">
+              <caret line="22" column="43" lean-forward="false" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="station.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/station/station.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="32" column="31" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="station.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/station/station.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -69,7 +179,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>poi</find>
       <find>notifyUserAboutWarnings</find>
       <find>onShowPlace</find>
       <find>showCurrentLocationOnMap</find>
@@ -99,6 +208,7 @@
       <find>m5</find>
       <find>onzoom</find>
       <find>onLocateUser</find>
+      <find>getInfoBubble</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -108,13 +218,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/pages/place/place.scss" />
-        <option value="$PROJECT_DIR$/src/pages/station/station.html" />
-        <option value="$PROJECT_DIR$/src/pages/station/station.scss" />
         <option value="$PROJECT_DIR$/src/assets/data/seatemp.json" />
         <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/src/pages/search/search.html" />
         <option value="$PROJECT_DIR$/src/pages/favorites/favorites.ts" />
-        <option value="$PROJECT_DIR$/src/pages/favorites/favorites.html" />
         <option value="$PROJECT_DIR$/src/assets/data/counties/0.json" />
         <option value="$PROJECT_DIR$/src/assets/data/counties/1.json" />
         <option value="$PROJECT_DIR$/src/assets/data/counties/18.json" />
@@ -137,14 +244,12 @@
         <option value="$PROJECT_DIR$/src/assets/data/counties/19.json" />
         <option value="$PROJECT_DIR$/src/assets/data/counties/20.json" />
         <option value="$PROJECT_DIR$/src/assets/js/infobubble.js" />
-        <option value="$PROJECT_DIR$/src/providers/weather-service.ts" />
         <option value="$PROJECT_DIR$/src/pages/favorites/favorites.scss" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/assets/js/geolocationmarker-compiled.js" />
         <option value="$PROJECT_DIR$/src/providers/places-service.ts" />
         <option value="$PROJECT_DIR$/src/assets/js/markerclusterer.js" />
         <option value="$PROJECT_DIR$/src/index.html" />
-        <option value="$PROJECT_DIR$/src/theme/variables.scss" />
         <option value="$PROJECT_DIR$/src/app/app.scss" />
         <option value="$PROJECT_DIR$/src/pages/place/place.html" />
         <option value="$PROJECT_DIR$/src/pages/about/about.html" />
@@ -155,8 +260,13 @@
         <option value="$PROJECT_DIR$/src/pages/home/home.html" />
         <option value="$PROJECT_DIR$/src/pages/place/place.ts" />
         <option value="$PROJECT_DIR$/src/pages/map/map.html" />
+        <option value="$PROJECT_DIR$/src/theme/variables.scss" />
+        <option value="$PROJECT_DIR$/src/pages/favorites/favorites.html" />
         <option value="$PROJECT_DIR$/src/pages/map/map.scss" />
+        <option value="$PROJECT_DIR$/src/pages/station/station.html" />
+        <option value="$PROJECT_DIR$/src/pages/station/station.scss" />
         <option value="$PROJECT_DIR$/src/pages/map/map.ts" />
+        <option value="$PROJECT_DIR$/src/providers/weather-service.ts" />
         <option value="$PROJECT_DIR$/src/pages/station/station.ts" />
       </list>
     </option>
@@ -264,6 +374,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Badplatser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Badplatser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="theme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Badplatser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Badplatser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="providers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -452,28 +598,28 @@
       <workItem from="1498639314376" duration="4465000" />
       <workItem from="1498725395236" duration="20319000" />
       <workItem from="1498806082590" duration="6103000" />
-      <workItem from="1498841787170" duration="29705000" />
+      <workItem from="1498841787170" duration="29955000" />
+      <workItem from="1499014765186" duration="7719000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="270505000" />
+    <option name="totallyTimeSpent" value="278474000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="23" width="1318" height="797" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24980725" sideWeight="0.4926004" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.50739956" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2397163" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2397163" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -543,14 +689,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/favorites/favorites.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/js/infobubble-compiled.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -563,14 +701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/providers/weather-service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="26" column="51" lean-forward="false" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
           <folding />
         </state>
       </provider>
@@ -620,15 +750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="75" lean-forward="true" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/theme/variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="34" column="10" lean-forward="false" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -636,7 +757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="59" column="49" lean-forward="false" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -644,7 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -652,7 +771,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -660,7 +778,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="14" lean-forward="false" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -668,7 +785,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="38" column="33" lean-forward="true" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -676,7 +792,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -684,7 +799,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -692,7 +806,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-357">
           <caret line="35" column="1" lean-forward="false" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -700,14 +813,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="155" column="5" lean-forward="true" selection-start-line="155" selection-start-column="5" selection-end-line="155" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/map/map.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -720,40 +825,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/theme/variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="34" column="17" lean-forward="false" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/favorites/favorites.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="33" column="45" lean-forward="false" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/map/map.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="27" column="51" lean-forward="true" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/station/station.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        <state relative-caret-position="322">
+          <caret line="32" column="31" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/station/station.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="173">
+          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/map/map.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="249" column="27" lean-forward="false" selection-start-line="249" selection-start-column="27" selection-end-line="249" selection-end-column="27" />
+        <state relative-caret-position="339">
+          <caret line="208" column="29" lean-forward="false" selection-start-line="208" selection-start-column="29" selection-end-line="208" selection-end-column="29" />
           <folding>
             <element signature="e#0#61#0" expanded="true" />
-            <marker date="1498996143000" expanded="true" signature="6590:6607" ph="..." />
+            <marker date="1499085131000" expanded="true" signature="7586:7599" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/providers/weather-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/station/station.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="315">
+          <caret line="22" column="43" lean-forward="false" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -20,10 +20,20 @@
 
         <img src="assets/img/buoy-big.png" />
 
-        <h1>Station</h1>
-        <h2>{{ name }}</h2>
-        <h3>Havstemperatur</h3>
-        <h4>{{ temperature }}</h4>
+        <div id="temperature-container">
+          <h2>Havstemperatur</h2>
+          <h3>{{ temperature }}</h3>
+        </div>
+
+        <div id="station-name-container">
+          <h4>Station</h4>
+          <h5>{{ name }}</h5>
+        </div>
+
+        <div id="date-container">
+          <h4>Uppmättes</h4>
+          <h5>{{ date }}</h5>
+        </div>
 
       </ion-col>
     </ion-row>
