@@ -33,8 +33,8 @@ export class MapPage implements OnInit {
   private markers: any = [];
   private markerClusterer: any;
 
-  private userCounty: string;
   private counties: any = ['Blekinge', 'Dalarna', 'Gotland', 'Gävleborg', 'Halland', 'Jämtland', 'Jönköping', 'Kalmar', 'Kronoberg', 'Norrbotten', 'Skåne', 'Stockholm', 'Södermanland', 'Uppsala', 'Värmland', 'Västerbotten', 'Västernorrland', 'Västmanland', 'Västra götalands', 'Örebro', 'Östergötland'];
+  private userCounty: string;
   private chosenCounty: string;
 
   constructor(
@@ -54,12 +54,6 @@ export class MapPage implements OnInit {
       await this.setCurrentCoordinates();
       this.initMap();
       this.setLoaderDismiss();
-      this.showCurrentLocationOnMap({ lat: this.currentLat, lng: this.currentLng });
-      await this.getUserCounty();
-      this.markAllPlaces();
-      this.markAllSeaTemperatures();
-      this.setMapEvents();
-      this.setUserWatcher();
     }
     catch (error) {
       this.showToast(error, 'error-toast');
@@ -112,13 +106,13 @@ export class MapPage implements OnInit {
   }
 
   onCountyChange() {
-    this.closeInfoBubble();
+    this.closeActiveInfoBubble();
     this.userCounty = this.chosenCounty;
     this.removeMarkers();
     this.markAllPlaces();
   }
 
-  closeInfoBubble() {
+  closeActiveInfoBubble() {
     if (this.activeInfoBubble) {
       this.activeInfoBubble.close();
     }
@@ -156,7 +150,17 @@ export class MapPage implements OnInit {
   setLoaderDismiss() {
     google.maps.event.addListenerOnce(this.map, 'tilesloaded', () => {
       this.loader.dismiss();
+      this.onLoaderDismiss();
     });
+  }
+
+  async onLoaderDismiss() {
+    this.showCurrentLocationOnMap({ lat: this.currentLat, lng: this.currentLng });
+    await this.getUserCounty();
+    this.markAllPlaces();
+    this.markAllSeaTemperatures();
+    this.setMapEvents();
+    this.setUserWatcher();
   }
 
   showCurrentLocationOnMap(coordinates: any) {
@@ -259,7 +263,7 @@ export class MapPage implements OnInit {
 
   onMarkerClick(marker: any, infoBubble: any) {
     if (!infoBubble.isOpen()) {
-      this.closeInfoBubble();
+      this.closeActiveInfoBubble();
       infoBubble.open(this.map, marker);
       this.activeInfoBubble = infoBubble;
     }
@@ -271,10 +275,10 @@ export class MapPage implements OnInit {
 
   setMapEvents() {
     google.maps.event.addListener(this.map, 'click', () => {
-      this.closeInfoBubble();
+      this.closeActiveInfoBubble();
     });
     google.maps.event.addListener(this.map, 'zoom_changed', () => {
-      this.closeInfoBubble();
+      this.closeActiveInfoBubble();
     });
   }
 

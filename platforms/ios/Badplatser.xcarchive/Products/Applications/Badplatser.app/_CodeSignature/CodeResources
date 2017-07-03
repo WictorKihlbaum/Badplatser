@@ -86,7 +86,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		I6yBONdhTZLbrZvpEP3mgkp3cAs=
+		BQPR5YLKgVKh9dr1tVx9f2Z7268=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		YUlSlxpxzT+FCoRCr+k/b72tBdY=
+		HjMc/Fl76dankJdGT2nUY7HC5ME=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -158,7 +158,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		kEE464WeUJ4GYecAfSB5WKk3QT0=
+		7xxs7FwR7ZjqXsI5QVW22w9FQw4=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -410,23 +410,23 @@
 		</data>
 		<key>www/assets/img/buoy-clusters/buoy1.png</key>
 		<data>
-		31Ig07QbNUy9af1Z+X5pLHdZ9dk=
+		/3sAdn39cqke9uZrstT3seQ+Q4s=
 		</data>
 		<key>www/assets/img/buoy-clusters/buoy2.png</key>
 		<data>
-		31Ig07QbNUy9af1Z+X5pLHdZ9dk=
+		/3sAdn39cqke9uZrstT3seQ+Q4s=
 		</data>
 		<key>www/assets/img/buoy-clusters/buoy3.png</key>
 		<data>
-		31Ig07QbNUy9af1Z+X5pLHdZ9dk=
+		/3sAdn39cqke9uZrstT3seQ+Q4s=
 		</data>
 		<key>www/assets/img/buoy-clusters/buoy4.png</key>
 		<data>
-		31Ig07QbNUy9af1Z+X5pLHdZ9dk=
+		/3sAdn39cqke9uZrstT3seQ+Q4s=
 		</data>
 		<key>www/assets/img/buoy-clusters/buoy5.png</key>
 		<data>
-		31Ig07QbNUy9af1Z+X5pLHdZ9dk=
+		/3sAdn39cqke9uZrstT3seQ+Q4s=
 		</data>
 		<key>www/assets/img/buoy.png</key>
 		<data>
@@ -450,23 +450,23 @@
 		</data>
 		<key>www/assets/img/place-clusters/place1.png</key>
 		<data>
-		fBQ2JXgSe4XwlQdp/KwXmbOHnVk=
+		nQoyoWun+N+xKyh7wMyZPq09co8=
 		</data>
 		<key>www/assets/img/place-clusters/place2.png</key>
 		<data>
-		fBQ2JXgSe4XwlQdp/KwXmbOHnVk=
+		nQoyoWun+N+xKyh7wMyZPq09co8=
 		</data>
 		<key>www/assets/img/place-clusters/place3.png</key>
 		<data>
-		fBQ2JXgSe4XwlQdp/KwXmbOHnVk=
+		nQoyoWun+N+xKyh7wMyZPq09co8=
 		</data>
 		<key>www/assets/img/place-clusters/place4.png</key>
 		<data>
-		fBQ2JXgSe4XwlQdp/KwXmbOHnVk=
+		nQoyoWun+N+xKyh7wMyZPq09co8=
 		</data>
 		<key>www/assets/img/place-clusters/place5.png</key>
 		<data>
-		fBQ2JXgSe4XwlQdp/KwXmbOHnVk=
+		nQoyoWun+N+xKyh7wMyZPq09co8=
 		</data>
 		<key>www/assets/img/place-quality.png</key>
 		<data>
@@ -486,7 +486,11 @@
 		</data>
 		<key>www/assets/img/swimming-white.png</key>
 		<data>
-		ca+PJnrvy2H2tOEQevOglGQdLrM=
+		XUzXLGPXe9ucaz08KjqeOw1+OUE=
+		</data>
+		<key>www/assets/img/water-temperature.png</key>
+		<data>
+		k88LZHjuSMMo7GG0Rv3q82S2U24=
 		</data>
 		<key>www/assets/img/weather-icons/clear-day.png</key>
 		<data>
@@ -546,7 +550,7 @@
 		</data>
 		<key>www/build/main.css</key>
 		<data>
-		gFaDTLry3R2tBQ1mw6SctDrVx8M=
+		4SG/BfRpLGE+g7sXoVHzW4vV100=
 		</data>
 		<key>www/build/main.css.map</key>
 		<data>
@@ -554,11 +558,11 @@
 		</data>
 		<key>www/build/main.js</key>
 		<data>
-		jWK+iR7dogm0zhPOA0OoyRoSgyg=
+		kdzazvd5O2ByBYIbrdWv580O6ZI=
 		</data>
 		<key>www/build/main.js.map</key>
 		<data>
-		7Uj466YEdLPHL1Vt1WOevvi8/eg=
+		UlMXZ16kKLIsACgd5jiVZN0t3QE=
 		</data>
 		<key>www/build/polyfills.js</key>
 		<data>
@@ -875,11 +879,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			I6yBONdhTZLbrZvpEP3mgkp3cAs=
+			BQPR5YLKgVKh9dr1tVx9f2Z7268=
 			</data>
 			<key>hash2</key>
 			<data>
-			kBLqcoTF1Da9yGWBT7uJi1/IypZ+0Jb8AYovNyCYJqk=
+			XV7K3yTtZ/4dYeszTOyrW7a/IRPo4GIf9dGg9JA/dts=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -897,11 +901,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YUlSlxpxzT+FCoRCr+k/b72tBdY=
+			HjMc/Fl76dankJdGT2nUY7HC5ME=
 			</data>
 			<key>hash2</key>
 			<data>
-			9DRRV6nlGygvWSN6nGjn397rODIR2zLir0o2REU1b5I=
+			/sPhnsrpWjJ+JzCLZjm+LgW0H0lZMs+4JU5zg9Q3Yvg=
 			</data>
 		</dict>
 		<key>LaunchImage-568h@2x.png</key>
@@ -1062,11 +1066,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kEE464WeUJ4GYecAfSB5WKk3QT0=
+			7xxs7FwR7ZjqXsI5QVW22w9FQw4=
 			</data>
 			<key>hash2</key>
 			<data>
-			anxMz3bSekQTkmP62q8OG2t/KBhDLvuaSeDH+/vNQL8=
+			CAuQXhC7FbaK4b4x5kaO+BYaAM4wuE6ETuaaUGOo4GM=
 			</data>
 		</dict>
 		<key>archived-expanded-entitlements.xcent</key>
@@ -1744,55 +1748,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			31Ig07QbNUy9af1Z+X5pLHdZ9dk=
+			/3sAdn39cqke9uZrstT3seQ+Q4s=
 			</data>
 			<key>hash2</key>
 			<data>
-			ughpXDEMLgHeA+W2ICrAp5WRcIZNAIZpRY21MLF0nTY=
+			lZYsAA8qMTsNiE5b6c+U9JgUIcVT6DQKdpM5/EV/d9U=
 			</data>
 		</dict>
 		<key>www/assets/img/buoy-clusters/buoy2.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			31Ig07QbNUy9af1Z+X5pLHdZ9dk=
+			/3sAdn39cqke9uZrstT3seQ+Q4s=
 			</data>
 			<key>hash2</key>
 			<data>
-			ughpXDEMLgHeA+W2ICrAp5WRcIZNAIZpRY21MLF0nTY=
+			lZYsAA8qMTsNiE5b6c+U9JgUIcVT6DQKdpM5/EV/d9U=
 			</data>
 		</dict>
 		<key>www/assets/img/buoy-clusters/buoy3.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			31Ig07QbNUy9af1Z+X5pLHdZ9dk=
+			/3sAdn39cqke9uZrstT3seQ+Q4s=
 			</data>
 			<key>hash2</key>
 			<data>
-			ughpXDEMLgHeA+W2ICrAp5WRcIZNAIZpRY21MLF0nTY=
+			lZYsAA8qMTsNiE5b6c+U9JgUIcVT6DQKdpM5/EV/d9U=
 			</data>
 		</dict>
 		<key>www/assets/img/buoy-clusters/buoy4.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			31Ig07QbNUy9af1Z+X5pLHdZ9dk=
+			/3sAdn39cqke9uZrstT3seQ+Q4s=
 			</data>
 			<key>hash2</key>
 			<data>
-			ughpXDEMLgHeA+W2ICrAp5WRcIZNAIZpRY21MLF0nTY=
+			lZYsAA8qMTsNiE5b6c+U9JgUIcVT6DQKdpM5/EV/d9U=
 			</data>
 		</dict>
 		<key>www/assets/img/buoy-clusters/buoy5.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			31Ig07QbNUy9af1Z+X5pLHdZ9dk=
+			/3sAdn39cqke9uZrstT3seQ+Q4s=
 			</data>
 			<key>hash2</key>
 			<data>
-			ughpXDEMLgHeA+W2ICrAp5WRcIZNAIZpRY21MLF0nTY=
+			lZYsAA8qMTsNiE5b6c+U9JgUIcVT6DQKdpM5/EV/d9U=
 			</data>
 		</dict>
 		<key>www/assets/img/buoy.png</key>
@@ -1854,55 +1858,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fBQ2JXgSe4XwlQdp/KwXmbOHnVk=
+			nQoyoWun+N+xKyh7wMyZPq09co8=
 			</data>
 			<key>hash2</key>
 			<data>
-			BJk4RZKEHSE9EymWkyn4y/WNLVLgxmr9xCiC0qc6Wh8=
+			P6WA9NjhJV+1Ymkf4R1jnF/DDmmxS8oZtkFAxalHaC0=
 			</data>
 		</dict>
 		<key>www/assets/img/place-clusters/place2.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fBQ2JXgSe4XwlQdp/KwXmbOHnVk=
+			nQoyoWun+N+xKyh7wMyZPq09co8=
 			</data>
 			<key>hash2</key>
 			<data>
-			BJk4RZKEHSE9EymWkyn4y/WNLVLgxmr9xCiC0qc6Wh8=
+			P6WA9NjhJV+1Ymkf4R1jnF/DDmmxS8oZtkFAxalHaC0=
 			</data>
 		</dict>
 		<key>www/assets/img/place-clusters/place3.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fBQ2JXgSe4XwlQdp/KwXmbOHnVk=
+			nQoyoWun+N+xKyh7wMyZPq09co8=
 			</data>
 			<key>hash2</key>
 			<data>
-			BJk4RZKEHSE9EymWkyn4y/WNLVLgxmr9xCiC0qc6Wh8=
+			P6WA9NjhJV+1Ymkf4R1jnF/DDmmxS8oZtkFAxalHaC0=
 			</data>
 		</dict>
 		<key>www/assets/img/place-clusters/place4.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fBQ2JXgSe4XwlQdp/KwXmbOHnVk=
+			nQoyoWun+N+xKyh7wMyZPq09co8=
 			</data>
 			<key>hash2</key>
 			<data>
-			BJk4RZKEHSE9EymWkyn4y/WNLVLgxmr9xCiC0qc6Wh8=
+			P6WA9NjhJV+1Ymkf4R1jnF/DDmmxS8oZtkFAxalHaC0=
 			</data>
 		</dict>
 		<key>www/assets/img/place-clusters/place5.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fBQ2JXgSe4XwlQdp/KwXmbOHnVk=
+			nQoyoWun+N+xKyh7wMyZPq09co8=
 			</data>
 			<key>hash2</key>
 			<data>
-			BJk4RZKEHSE9EymWkyn4y/WNLVLgxmr9xCiC0qc6Wh8=
+			P6WA9NjhJV+1Ymkf4R1jnF/DDmmxS8oZtkFAxalHaC0=
 			</data>
 		</dict>
 		<key>www/assets/img/place-quality.png</key>
@@ -1953,11 +1957,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ca+PJnrvy2H2tOEQevOglGQdLrM=
+			XUzXLGPXe9ucaz08KjqeOw1+OUE=
 			</data>
 			<key>hash2</key>
 			<data>
-			y8aoif/DvDYN9g9sb0sBNSE9AFVt6oIlXdRox+5UMjU=
+			O+M43eHnO3y7kJ1EvBOPUK5npI+bIfX4cO4oYYgXdII=
+			</data>
+		</dict>
+		<key>www/assets/img/water-temperature.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			k88LZHjuSMMo7GG0Rv3q82S2U24=
+			</data>
+			<key>hash2</key>
+			<data>
+			ESK+rYCt9+cT6BtvJGetFTLPLS/3k10NA9NBL0suAUk=
 			</data>
 		</dict>
 		<key>www/assets/img/weather-icons/clear-day.png</key>
@@ -2118,11 +2133,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gFaDTLry3R2tBQ1mw6SctDrVx8M=
+			4SG/BfRpLGE+g7sXoVHzW4vV100=
 			</data>
 			<key>hash2</key>
 			<data>
-			0WvBfwdkzOIx1okFSj/oTr+z4kVVSaVfqXrziAuty/0=
+			I3BoVABR5C7Ji6XpVZcY9F2JoO+OP+AJYsPgfxf4Peo=
 			</data>
 		</dict>
 		<key>www/build/main.css.map</key>
@@ -2140,22 +2155,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jWK+iR7dogm0zhPOA0OoyRoSgyg=
+			kdzazvd5O2ByBYIbrdWv580O6ZI=
 			</data>
 			<key>hash2</key>
 			<data>
-			trEbjDT1Ya38E6she+sBXX3h2dJbGMlrbzfUId0Bzf0=
+			aUQodDpgSIscFRX+8XM18gKzAkH5ScNUK+PakmuQeVQ=
 			</data>
 		</dict>
 		<key>www/build/main.js.map</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7Uj466YEdLPHL1Vt1WOevvi8/eg=
+			UlMXZ16kKLIsACgd5jiVZN0t3QE=
 			</data>
 			<key>hash2</key>
 			<data>
-			TE52m6gZgdwsF4nW+e4oZwR1Ac17kSWs+awRnKG1Bgs=
+			GYVZHlTRgdCwrGi+C27W7qKnMsBbICdloPIWOm5B2Sc=
 			</data>
 		</dict>
 		<key>www/build/polyfills.js</key>

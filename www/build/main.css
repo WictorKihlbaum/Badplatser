@@ -35567,14 +35567,9 @@ ion-navbar {
 page-about ion-content {
   color: white !important;
   font-family: Palanquin-Light, sans-serif;
-  /*
-    #season-topic {
-      font-size: 5vw;
-    }
-    */
 }
 
-page-about ion-content img {
+page-about ion-content #about-info-icon {
   width: 18vw;
 }
 
