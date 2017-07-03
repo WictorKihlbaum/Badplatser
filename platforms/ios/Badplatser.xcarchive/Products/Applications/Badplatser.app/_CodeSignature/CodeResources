@@ -86,7 +86,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		BQPR5YLKgVKh9dr1tVx9f2Z7268=
+		C9CMsXCLIEo+rgYTCbm3Exu5AFk=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -94,11 +94,11 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		HjMc/Fl76dankJdGT2nUY7HC5ME=
+		9QCDNd5Ftl9cCt6UaoHJy6t6vjE=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		+soNrutONPtrDWB+lzPtSRvxi0s=
+		WyUoBs6nlWxx5jdp6tYeNVLlqh0=
 		</data>
 		<key>LaunchImage-568h@2x.png</key>
 		<data>
@@ -158,7 +158,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		7xxs7FwR7ZjqXsI5QVW22w9FQw4=
+		569TaknaxvQq8Px09YPYayv/VsM=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -170,7 +170,7 @@
 		</data>
 		<key>config.xml</key>
 		<data>
-		6iHsk75GGPioxtXe6u2pfvZNxCk=
+		DVdzsbbZd47AE61ybUtZPMtxoDc=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -476,6 +476,10 @@
 		<data>
 		pR4BiZjaLiZX7uR0qeJ96oLZVEw=
 		</data>
+		<key>www/assets/img/smhi-logo.png</key>
+		<data>
+		bfZ2e/pBtUX4VagKmm/nrCH55TY=
+		</data>
 		<key>www/assets/img/sweden.png</key>
 		<data>
 		S8qqqxQ0/PYc/a+OsJgB2Pmp9Pg=
@@ -550,7 +554,7 @@
 		</data>
 		<key>www/build/main.css</key>
 		<data>
-		4SG/BfRpLGE+g7sXoVHzW4vV100=
+		2Db1bpbcZNQiZFI5mf2kNnz4Zi0=
 		</data>
 		<key>www/build/main.css.map</key>
 		<data>
@@ -558,11 +562,11 @@
 		</data>
 		<key>www/build/main.js</key>
 		<data>
-		kdzazvd5O2ByBYIbrdWv580O6ZI=
+		0m22VMVQ4JVSMtQH2AX1FEdGkbQ=
 		</data>
 		<key>www/build/main.js.map</key>
 		<data>
-		UlMXZ16kKLIsACgd5jiVZN0t3QE=
+		0J6XBZ9oF6ypbpeEuD5tsn2WKww=
 		</data>
 		<key>www/build/polyfills.js</key>
 		<data>
@@ -879,11 +883,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BQPR5YLKgVKh9dr1tVx9f2Z7268=
+			C9CMsXCLIEo+rgYTCbm3Exu5AFk=
 			</data>
 			<key>hash2</key>
 			<data>
-			XV7K3yTtZ/4dYeszTOyrW7a/IRPo4GIf9dGg9JA/dts=
+			Q007ywYkV+iKMbSfByo8XOjjA6snAhHnlg+8KxbPdA4=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -901,11 +905,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HjMc/Fl76dankJdGT2nUY7HC5ME=
+			9QCDNd5Ftl9cCt6UaoHJy6t6vjE=
 			</data>
 			<key>hash2</key>
 			<data>
-			/sPhnsrpWjJ+JzCLZjm+LgW0H0lZMs+4JU5zg9Q3Yvg=
+			AjshEVmLaPQook/5y4/Ntwgy+7p9mpfTBXEZiJDAh6M=
 			</data>
 		</dict>
 		<key>LaunchImage-568h@2x.png</key>
@@ -1066,11 +1070,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7xxs7FwR7ZjqXsI5QVW22w9FQw4=
+			569TaknaxvQq8Px09YPYayv/VsM=
 			</data>
 			<key>hash2</key>
 			<data>
-			CAuQXhC7FbaK4b4x5kaO+BYaAM4wuE6ETuaaUGOo4GM=
+			ImTrpa8xYs+Y5bTQokKYAzFVZ6EPC1Xm3Q+0g0P8KOU=
 			</data>
 		</dict>
 		<key>archived-expanded-entitlements.xcent</key>
@@ -1088,11 +1092,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6iHsk75GGPioxtXe6u2pfvZNxCk=
+			DVdzsbbZd47AE61ybUtZPMtxoDc=
 			</data>
 			<key>hash2</key>
 			<data>
-			HSzpRmKMtLOnnK2UwejRKlpF+y2IDc6bgpVTLEkO/Z4=
+			dg+Jv3c8P8IifzWjzeTp3huktsxwPFOUauobf19W1ls=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>
@@ -1931,6 +1935,17 @@
 			6QAtq32twSdZ6d0bwdTxyQkmdML0L2YQDQ3s7Z1Swuk=
 			</data>
 		</dict>
+		<key>www/assets/img/smhi-logo.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bfZ2e/pBtUX4VagKmm/nrCH55TY=
+			</data>
+			<key>hash2</key>
+			<data>
+			6yEzUTftzQ28MnlDla3YoarfaVtfmh82dLRnKQzOdsI=
+			</data>
+		</dict>
 		<key>www/assets/img/sweden.png</key>
 		<dict>
 			<key>hash</key>
@@ -2133,11 +2148,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4SG/BfRpLGE+g7sXoVHzW4vV100=
+			2Db1bpbcZNQiZFI5mf2kNnz4Zi0=
 			</data>
 			<key>hash2</key>
 			<data>
-			I3BoVABR5C7Ji6XpVZcY9F2JoO+OP+AJYsPgfxf4Peo=
+			peZD9jYm5fNmnspJVkTf8s1Egi66MS+uyplQRoAyuRc=
 			</data>
 		</dict>
 		<key>www/build/main.css.map</key>
@@ -2155,22 +2170,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kdzazvd5O2ByBYIbrdWv580O6ZI=
+			0m22VMVQ4JVSMtQH2AX1FEdGkbQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			aUQodDpgSIscFRX+8XM18gKzAkH5ScNUK+PakmuQeVQ=
+			ad1D51UWmc8G9P5Q2dJzyD9WCoFEy6wRxa2itLeY02Y=
 			</data>
 		</dict>
 		<key>www/build/main.js.map</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UlMXZ16kKLIsACgd5jiVZN0t3QE=
+			0J6XBZ9oF6ypbpeEuD5tsn2WKww=
 			</data>
 			<key>hash2</key>
 			<data>
-			GYVZHlTRgdCwrGi+C27W7qKnMsBbICdloPIWOm5B2Sc=
+			9gG3V2GSgDoEDE6NYsd0mO6sItU2mUDtZvSfgB6RgA4=
 			</data>
 		</dict>
 		<key>www/build/polyfills.js</key>
