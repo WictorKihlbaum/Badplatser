@@ -65,35 +65,35 @@
     },
     "installed_plugins": {
         "cordova-plugin-compat": {
-            "PACKAGE_NAME": "com.ionicframework.badplatser781525"
+            "PACKAGE_NAME": "com.wictorkihlbaum.badplatser"
         },
         "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.ionicframework.badplatser781525"
+            "PACKAGE_NAME": "com.wictorkihlbaum.badplatser"
         },
         "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.ionicframework.badplatser781525"
+            "PACKAGE_NAME": "com.wictorkihlbaum.badplatser"
         },
         "cordova-plugin-geolocation": {
             "GEOLOCATION_USAGE_DESCRIPTION": " ",
-            "PACKAGE_NAME": "com.ionicframework.badplatser781525"
+            "PACKAGE_NAME": "com.wictorkihlbaum.badplatser"
         },
         "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "com.ionicframework.badplatser781525"
+            "PACKAGE_NAME": "com.wictorkihlbaum.badplatser"
         },
         "cordova-plugin-network-information": {
-            "PACKAGE_NAME": "com.ionicframework.badplatser781525"
+            "PACKAGE_NAME": "com.wictorkihlbaum.badplatser"
         },
         "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "com.ionicframework.badplatser781525"
+            "PACKAGE_NAME": "com.wictorkihlbaum.badplatser"
         },
         "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "com.ionicframework.badplatser781525"
+            "PACKAGE_NAME": "com.wictorkihlbaum.badplatser"
         },
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.ionicframework.badplatser781525"
+            "PACKAGE_NAME": "com.wictorkihlbaum.badplatser"
         },
         "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "com.ionicframework.badplatser781525"
+            "PACKAGE_NAME": "com.wictorkihlbaum.badplatser"
         }
     },
     "dependent_plugins": {},

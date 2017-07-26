@@ -21,7 +21,9 @@ export class SearchPage implements OnInit {
   }
 
   ionViewDidEnter() {
-    this.searchbar.setFocus();
+    setTimeout(() => {
+        this.searchbar.setFocus();
+    }, 100);
   }
 
   initializePlaces() {

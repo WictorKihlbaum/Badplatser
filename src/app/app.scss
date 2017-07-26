@@ -27,6 +27,10 @@
 }
 /* Comfortaa */
 @font-face {
+  font-family: Comfortaa-Bold;
+  src: url("../assets/fonts/Comfortaa-Bold.ttf");
+}
+@font-face {
   font-family: Comfortaa-Regular;
   src: url("../assets/fonts/Comfortaa-Regular.ttf");
 }
@@ -48,7 +52,7 @@
 }
 
 ion-navbar {
-  font-family: Comfortaa-Regular, sans-serif;
+  font-family: Comfortaa-Bold, sans-serif;
 }
 
 .gradient-background {

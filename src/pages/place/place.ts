@@ -117,7 +117,6 @@ export class PlacePage implements OnInit {
         this.weatherDataIsFetched = true;
       }
       catch (error) {
-        this.showToast('Vädret för badplatsen kunde inte hämtas', 'error-toast');
         this.showSpinner = false;
       }
     });
@@ -162,7 +161,7 @@ export class PlacePage implements OnInit {
       const key = this.placeName;
       await this.favoritesStore.setItem(key, JSON.stringify(this.navParams));
       this.favoriteIsSaved = true;
-      this.showToast('Badplatsen har lagts till mina favoriter!', 'success-toast');
+      this.showToast('Badplatsen har lagts till mina favoriter', 'success-toast');
     }
     catch (error) {
       this.showToast('Badplatsen kunde inte sparas. Var god försök igen.', 'error-toast');
@@ -173,7 +172,7 @@ export class PlacePage implements OnInit {
     this.statusBar.hide();
     const toast = this.toastCtrl.create({
       message: message,
-      duration: 5000,
+      duration: 3000,
       position: 'top',
       cssClass: css
     });

@@ -27,8 +27,6 @@ export class PlacesService {
       for (let county of this.counties) {
         if (component.long_name.toLowerCase().includes(county)) {
           return county;
-          //const index: number = this.counties.indexOf(county);
-          //return this.fetchJSON(`assets/data/counties/${index}.json`);
         }
       }
     }
@@ -39,7 +37,6 @@ export class PlacesService {
     const base: string = 'https://maps.googleapis.com/maps/api/geocode/json';
     const parameters: string = `?latlng=${latitude},${longitude}&key=${this.googleApiKey}`;
     const url: string = base + parameters;
-    //const url = 'assets/data/address.json';
     return this.fetchJSON(url);
   }
 

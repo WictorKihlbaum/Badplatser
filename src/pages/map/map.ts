@@ -88,21 +88,29 @@ export class MapPage implements OnInit {
       this.currentLng = position.coords.longitude;
     }
     catch (error) {
-      console.log('Din nuvarande plats kunde inte hämtas');
+      console.log('Användarens position kunde inte fastslås');
     }
   }
 
-  async getUserCounty() {
+  async setUserCounty() {
     if (this.userCoordinatesAreSet()) {
       const county = await this.placesService.getUserCounty(this.currentLat, this.currentLng);
-      this.userCounty = county;
-      this.chosenCounty = this.counties.find(c => {
-        return county.toLowerCase().includes(c.toLowerCase())
-      });
+      if (county) {
+        this.userCounty = county;
+        this.chosenCounty = this.counties.find(c => {
+          return county.toLowerCase().includes(c.toLowerCase())
+        });
+      } else {
+        this.onCountyNotFound();
+      }
     } else {
-      this.showToast('Ditt län kunde inte hittas. Var vänlig välj ett i listan.', 'info-toast');
-      this.countySelect.open();
+      this.onCountyNotFound();
     }
+  }
+
+  onCountyNotFound() {
+    this.showToast('Ditt län kunde inte fastslås. Var vänlig välj ett i listan.', 'info-toast');
+    this.countySelect.open();
   }
 
   onCountyChange() {
@@ -120,14 +128,12 @@ export class MapPage implements OnInit {
 
   initMap() {
     try {
-      const latitude: number = this.currentLat || 62;
-      const longitude: number = this.currentLng || 15;
       const mapZoom: number = this.getMapZoom();
-      const point = { lat: latitude, lng: longitude };
+      const mapCenter: any = this.getMapCenter();
       const divMap = (<HTMLInputElement>document.getElementById('map'));
 
       this.map = new google.maps.Map(divMap, {
-        center: point,
+        center: mapCenter,
         zoom: mapZoom,
         styles: this.getMapStyle(),
         disableDefaultUI: true,
@@ -139,6 +145,14 @@ export class MapPage implements OnInit {
     }
     catch (error) {
       throw 'Kartan kunde inte laddas. Du kan fortfarande söka bland badplatser via "Sök".';
+    }
+  }
+
+  getMapCenter() {
+    if (this.userCoordinatesAreSet()) {
+      return { lat: this.currentLat, lng: this.currentLng };
+    } else {
+      return { lat: 62, lng: 15 };
     }
   }
 
@@ -156,7 +170,7 @@ export class MapPage implements OnInit {
 
   async onLoaderDismiss() {
     this.showCurrentLocationOnMap({ lat: this.currentLat, lng: this.currentLng });
-    await this.getUserCounty();
+    await this.setUserCounty();
     this.markAllPlaces();
     this.markAllSeaTemperatures();
     this.setMapEvents();
@@ -178,29 +192,31 @@ export class MapPage implements OnInit {
   }
 
   async markAllPlaces() {
-    for (let place of this.places['Badplatser']) {
-      // Only set markers for the users current county.
-      if (place.C9.toLowerCase().includes(this.userCounty.toLowerCase())) {
-        const latitude: number = parseFloat(place.C8);
-        const longitude: number = parseFloat(place.C10);
-        const imageName: string = 'place';
+    if (this.userCounty) {
+      for (let place of this.places['Badplatser']) {
+        // Only set markers for the users current county.
+        if (place.C9.toLowerCase().includes(this.userCounty.toLowerCase())) {
+          const latitude: number = parseFloat(place.C8);
+          const longitude: number = parseFloat(place.C10);
+          const imageName: string = 'place';
 
-        const marker: any = this.getMarker(latitude, longitude, imageName);
-        const infoBubble = this.getInfoBubble(place.C6, 'place-bubble');
+          const marker: any = this.getMarker(latitude, longitude, imageName);
+          const infoBubble = this.getInfoBubble(place.C6, 'place-bubble');
 
-        infoBubble.e.addEventListener('click', () => {
-          this.onShowPlace(place);
-        });
+          infoBubble.e.addEventListener('click', () => {
+            this.onShowPlace(place);
+          });
 
-        marker.addListener('click', () => {
-          this.onMarkerClick(marker, infoBubble);
-        });
-        this.markers.push(marker);
+          marker.addListener('click', () => {
+            this.onMarkerClick(marker, infoBubble);
+          });
+          this.markers.push(marker);
+        }
       }
+      this.markerClusterer = new MarkerClusterer(
+        this.map, this.markers, { imagePath: 'assets/img/place-clusters/place' }
+      );
     }
-    this.markerClusterer = new MarkerClusterer(
-      this.map, this.markers, { imagePath: 'assets/img/place-clusters/place' }
-    );
   }
 
   async markAllSeaTemperatures() {
@@ -236,10 +252,7 @@ export class MapPage implements OnInit {
     if (this.markerClusterer && this.markers.length > 0) {
       this.markerClusterer.setMap(null);
       this.markerClusterer = null;
-
-      for (let marker of this.markers) {
-        marker.setMap(null);
-      }
+      this.markers.forEach(marker => marker.setMap(null));
       this.markers = [];
     }
   }

@@ -44,6 +44,9 @@
         </div>
 
         <div id="retry-button-div" *ngIf="!showSpinner && !weatherDataIsFetched">
+
+          <p>Vädret för badplatsen kunde inte hämtas</p>
+
           <button ion-button round outline color="light" icon-left (click)="getWeatherData()">
             <ion-icon name="refresh-circle"></ion-icon>
             Försök igen

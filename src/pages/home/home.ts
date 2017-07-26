@@ -31,7 +31,7 @@ export class HomePage implements OnInit {
   setupNetworkWatchers() {
     // Network connection is down.
     this.network.onDisconnect().subscribe(() => {
-      this.showToast('Internetanslutning förlorad. Var god återanslut för att kunna hämta väderdata.', 'error-toast');
+      this.showToast('Internetanslutning förlorad. Var god återanslut för att kunna nyttja appen fullt ut.', 'error-toast');
     });
     // Network connection is up. Dismiss error toast.
     this.network.onConnect().subscribe(() => {
