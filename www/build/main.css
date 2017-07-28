@@ -29668,11 +29668,11 @@ page-about ion-content {
   font-family: Palanquin-Light, sans-serif;
 }
 
-page-about ion-content #about-info-icon {
+page-about ion-content #info-icon {
   width: 18vw;
 }
 
-page-about ion-content .about-text {
+page-about ion-content .text {
   text-align: left;
   line-height: 1.4;
   font-size: 4vw;
@@ -29689,6 +29689,10 @@ page-favorites ion-item {
   border-radius: 8px !important;
   margin-bottom: 6px !important;
   color: white !important;
+}
+
+page-favorites ion-item h2 {
+  font-weight: bold !important;
 }
 
 page-favorites ion-item p {
@@ -29824,6 +29828,16 @@ page-home .wave.-two {
 
 page-map ion-select .select-icon-inner {
   color: white !important;
+}
+
+page-map #choose-county-button {
+  z-index: 1000;
+  position: absolute;
+  top: 12px;
+}
+
+page-map #county-item {
+  display: none;
 }
 
 page-map #map {
