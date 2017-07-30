@@ -29724,7 +29724,7 @@ page-home {
 }
 
 page-home #home-background-gradient {
-  background: linear-gradient(45deg, #00b0ff 0%, #40c4ff 100%);
+  background: linear-gradient(to top, #00b0ff 0%, #40c4ff 100%);
 }
 
 page-home #map-button {
@@ -29828,12 +29828,6 @@ page-home .wave.-two {
 
 page-map ion-select .select-icon-inner {
   color: white !important;
-}
-
-page-map #choose-county-button {
-  z-index: 1000;
-  position: absolute;
-  top: 12px;
 }
 
 page-map #county-item {

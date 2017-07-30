@@ -7,6 +7,7 @@ import { StationPage } from "../station/station";
 import { StatusBar } from "@ionic-native/status-bar";
 import { WeatherService } from "../../providers/weather-service";
 import { PlacesService } from "../../providers/places-service";
+import {findIndex} from "rxjs/operator/findIndex";
 
 declare const google: any;
 declare const MarkerClusterer: any;
@@ -163,12 +164,12 @@ export class MapPage implements OnInit {
 
   setLoaderDismiss() {
     google.maps.event.addListenerOnce(this.map, 'tilesloaded', () => {
-      this.loader.dismiss();
       this.onLoaderDismiss();
     });
   }
 
   async onLoaderDismiss() {
+    this.loader.dismiss();
     this.showCurrentLocationOnMap({ lat: this.currentLat, lng: this.currentLng });
     await this.setUserCounty();
     this.markAllPlaces();
@@ -193,6 +194,9 @@ export class MapPage implements OnInit {
 
   async markAllPlaces() {
     if (this.userCounty) {
+
+      let t0 = performance.now();
+
       for (let place of this.places['Badplatser']) {
         // Only set markers for the users current county.
         if (place.C9.toLowerCase().includes(this.userCounty.toLowerCase())) {
@@ -213,6 +217,10 @@ export class MapPage implements OnInit {
           this.markers.push(marker);
         }
       }
+
+      let t1 = performance.now();
+      console.log("Call took " + (t1 - t0) + " milliseconds.");
+
       this.markerClusterer = new MarkerClusterer(
         this.map, this.markers, { imagePath: 'assets/img/place-clusters/place' }
       );
@@ -231,7 +239,7 @@ export class MapPage implements OnInit {
         const imageName: string = 'buoy';
 
         const marker: any = this.getMarker(latitude, longitude, imageName);
-        const infoBubble = this.getInfoBubble('Havstemperatur', 'station-bubble');
+        const infoBubble: any = this.getInfoBubble('Havstemperatur', 'station-bubble');
 
         infoBubble.e.addEventListener('click', () => {
           this.onShowStation(station);
