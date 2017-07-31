@@ -12,11 +12,13 @@ page-home {
     color: white !important;
     box-shadow: 0 2px 5px rgba(178, 235, 242, 0.3) !important;
     font-weight: bold;
+    animation-delay: 0.5s;
   }
   #favorite-button {
     background: linear-gradient(45deg, #ff80ab 0%, #b388FF 100%) !important;
     box-shadow: 0 2px 5px rgba(248, 187, 208, 0.3) !important;
     color: white;
+    animation-delay: 0.8s;
   }
   #about-button {
     color: #E8F5E9;
@@ -25,6 +27,7 @@ page-home {
     margin-right: 12px;
     margin-bottom: 12px;
     box-shadow: none;
+    animation-delay: 1.1s;
   }
 
   .page-grid, .page-grid ion-row {
@@ -33,12 +36,14 @@ page-home {
       #logo-container {
         #logo-img {
           width: 20vw;
+          animation-delay: 0.5s;
         }
         #logo-text {
           margin: 10px 0 0 0;
           font-family: Montserrat-Black, cursive;
           font-size: 8vw;
           color: #E8F5E9;
+          animation-delay: 0.5s;
         }
       }
       #buttons-container {

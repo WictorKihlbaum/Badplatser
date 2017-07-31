@@ -29683,24 +29683,25 @@ page-favorites ion-content {
   font-family: Palanquin-Light, sans-serif;
 }
 
-page-favorites ion-item {
-  background: linear-gradient(45deg, #039BE5 0%, #03A9F4 100%) !important;
-  box-shadow: 0 2px 5px rgba(3, 155, 229, 0.3) !important;
-  border-radius: 8px !important;
-  margin-bottom: 6px !important;
-  color: white !important;
+page-favorites .favorite {
+  visibility: hidden;
+  background: linear-gradient(45deg, #039BE5 0%, #03A9F4 100%);
+  box-shadow: 0 2px 5px rgba(3, 155, 229, 0.3);
+  border-radius: 8px;
+  margin-bottom: 6px;
+  color: white;
 }
 
-page-favorites ion-item h2 {
-  font-weight: bold !important;
+page-favorites .favorite h2 {
+  font-weight: bold;
 }
 
-page-favorites ion-item p {
-  color: white !important;
+page-favorites .favorite p {
+  color: white;
 }
 
-page-favorites ion-item button {
-  box-shadow: none !important;
+page-favorites .favorite button {
+  box-shadow: none;
 }
 
 page-favorites #no-favorites-container img {
@@ -29732,6 +29733,8 @@ page-home #map-button {
   color: white !important;
   box-shadow: 0 2px 5px rgba(178, 235, 242, 0.3) !important;
   font-weight: bold;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 page-home #map-button ion-icon {
@@ -29742,6 +29745,8 @@ page-home #favorite-button {
   background: linear-gradient(45deg, #ff80ab 0%, #b388FF 100%) !important;
   box-shadow: 0 2px 5px rgba(248, 187, 208, 0.3) !important;
   color: white;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
 }
 
 page-home #about-button {
@@ -29751,6 +29756,8 @@ page-home #about-button {
   margin-right: 12px;
   margin-bottom: 12px;
   box-shadow: none;
+  -webkit-animation-delay: 1.1s;
+  animation-delay: 1.1s;
 }
 
 page-home .page-grid, page-home .page-grid ion-row {
@@ -29759,6 +29766,8 @@ page-home .page-grid, page-home .page-grid ion-row {
 
 page-home .page-grid ion-col #logo-container #logo-img, page-home .page-grid ion-row ion-col #logo-container #logo-img {
   width: 20vw;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 page-home .page-grid ion-col #logo-container #logo-text, page-home .page-grid ion-row ion-col #logo-container #logo-text {
@@ -29766,6 +29775,8 @@ page-home .page-grid ion-col #logo-container #logo-text, page-home .page-grid io
   font-family: Montserrat-Black, cursive;
   font-size: 8vw;
   color: #E8F5E9;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 page-home .page-grid ion-col #buttons-container, page-home .page-grid ion-row ion-col #buttons-container {

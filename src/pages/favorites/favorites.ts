@@ -3,6 +3,7 @@ import { ModalController, ToastController } from 'ionic-angular';
 import * as localforage from "localforage";
 import { PlacePage } from "../place/place";
 import { StatusBar } from "@ionic-native/status-bar";
+import {timeout} from "rxjs/operator/timeout";
 
 @Component({
   selector: 'page-favorites',
@@ -22,6 +23,10 @@ export class FavoritesPage {
 
     this.setFavoritesStore();
     this.listFavorites();
+  }
+
+  ionViewDidEnter() {
+    this.setAnimationDuration();
   }
 
   setFavoritesStore() {
@@ -44,13 +49,14 @@ export class FavoritesPage {
   async onDeleteFavorite(place: any) {
     try {
       this.deleteButtonWasPressed = true;
-      await this.favoritesStore.removeItem(place['data'].C6);
+      this.favoritesStore.removeItem(place['data'].C6);
       const index: number = this.favorites.indexOf(place);
       this.favorites.splice(index, 1);
       this.showToast('Badplatsen togs bort', 'success-toast');
       this.deleteButtonWasPressed = false;
     }
     catch (error) {
+      console.log(error);
       this.showToast('Ett fel uppstod när badplatsen skulle tas bort. Var god försök igen.', 'error-toast');
     }
   }
@@ -67,6 +73,23 @@ export class FavoritesPage {
       this.statusBar.show();
     });
     toast.present();
+  }
+
+  setAnimationDuration() {
+    const favorites: any = document.getElementsByClassName('favorite');
+    let counter: number = 0;
+
+    if (favorites.length > 0) {
+      for (let favorite of favorites) {
+        counter += 1;
+        const delay: string = (0.5 + counter * 0.55).toString();
+        favorite.style.animationDelay = `${delay}s`;
+
+        setTimeout(() => {
+          favorite.style.visibility = 'visible';
+        }, 700); // Animation duration
+      }
+    }
   }
 
 }

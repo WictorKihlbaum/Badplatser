@@ -5,23 +5,24 @@ page-favorites {
     font-family: Palanquin-Light, sans-serif;
   }
 
-  ion-item {
-    background: linear-gradient(45deg, #039BE5 0%, #03A9F4 100%) !important;
-    box-shadow: 0 2px 5px rgba(3, 155, 229, 0.3) !important;
-    border-radius: 8px !important;
-    margin-bottom: 6px !important;
-    color: white !important;
+  .favorite {
+    visibility: hidden;
+    background: linear-gradient(45deg, #039BE5 0%, #03A9F4 100%);
+    box-shadow: 0 2px 5px rgba(3, 155, 229, 0.3);
+    border-radius: 8px;
+    margin-bottom: 6px;
+    color: white;
 
     h2 {
-      font-weight: bold !important;
+      font-weight: bold;
     }
 
     p {
-      color: white !important;
+      color: white;
     }
 
     button {
-      box-shadow: none !important;
+      box-shadow: none;
     }
   }
 

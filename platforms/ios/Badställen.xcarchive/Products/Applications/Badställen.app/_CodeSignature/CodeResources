@@ -86,7 +86,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		AX6zFJQhfin4yu4L6TldZ9MN/tc=
+		SxzDf3v2/swirv07dpG3ZPbT/sY=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		fPYuKdWFGTMETvbR1P1/1VGvpDI=
+		ehgSwORVH9H/7b6OMboeGEunvmo=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -134,7 +134,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		n0yUUVyigy+IaiAUqohHTBgjjcs=
+		l5m8tpds4U/9JCsSXqTJjGSuAk0=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -151,6 +151,10 @@
 		<key>embedded.mobileprovision</key>
 		<data>
 		tsjWQ+iXcMHZVWdZnz1x5HMm3z0=
+		</data>
+		<key>www/assets/css/animate.min.css</key>
+		<data>
+		6WbsKIXXQwa4AlPvBX6ndUaywUk=
 		</data>
 		<key>www/assets/data/address.json</key>
 		<data>
@@ -534,7 +538,7 @@
 		</data>
 		<key>www/build/main.css</key>
 		<data>
-		hm7DjRxJXHd3cQqTS+5mH7mnexo=
+		/ilir8xL0gxQet2pYYLldn6tqTA=
 		</data>
 		<key>www/build/main.css.map</key>
 		<data>
@@ -542,11 +546,11 @@
 		</data>
 		<key>www/build/main.js</key>
 		<data>
-		buvQstJxcnOf6HBO8LP/XQvavtA=
+		8ZaRNW6hbWnDHK0598Qb0vPfla4=
 		</data>
 		<key>www/build/main.js.map</key>
 		<data>
-		xY90pEIp/vKAvVJ49ttLY/Fu4GM=
+		Ig60xc8Mz/EEcGDuiSlDwBuIGEo=
 		</data>
 		<key>www/build/polyfills.js</key>
 		<data>
@@ -574,7 +578,7 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		TgO2CfsaImdCSRlDgQJpHC6/3O4=
+		XeMruRfqnVZnpj5GiiVjO/0sRD8=
 		</data>
 		<key>www/manifest.json</key>
 		<data>
@@ -863,11 +867,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AX6zFJQhfin4yu4L6TldZ9MN/tc=
+			SxzDf3v2/swirv07dpG3ZPbT/sY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Lfk5yyGmmJf/F5oQZB3tWOHgGJqJkykPV/RqXnVLa4U=
+			oT0JtFZi3qvFtd6KN4+Flf0kLowHnfA0ZkiBROB8UkY=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -885,11 +889,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fPYuKdWFGTMETvbR1P1/1VGvpDI=
+			ehgSwORVH9H/7b6OMboeGEunvmo=
 			</data>
 			<key>hash2</key>
 			<data>
-			VTY3QdUR7GwCc6yCLWPX4+ayKw3Dg2CO2u86LDasNck=
+			+YeN8TaDY2+tc52/ccEbwgCpZM7ZfxJQuBCz2RajBNk=
 			</data>
 		</dict>
 		<key>LaunchImage-568h@2x.png</key>
@@ -984,11 +988,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			n0yUUVyigy+IaiAUqohHTBgjjcs=
+			l5m8tpds4U/9JCsSXqTJjGSuAk0=
 			</data>
 			<key>hash2</key>
 			<data>
-			y12yARtiT1RgZWmIoyIX98D0m2+Ktlx8jxt8Ie8Dad4=
+			D8Bl9BVJaVkx7oiegMZDVi6U609VSxcg+NxkQYu9bag=
 			</data>
 		</dict>
 		<key>archived-expanded-entitlements.xcent</key>
@@ -1022,6 +1026,17 @@
 			<key>hash2</key>
 			<data>
 			9TK2KtnNPO7oF4IBUy4Tzus2TmUfTFsFIdfvgVP7sMo=
+			</data>
+		</dict>
+		<key>www/assets/css/animate.min.css</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6WbsKIXXQwa4AlPvBX6ndUaywUk=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ct2Py1pYOxwWI4++nQ3hfGJycmtCvhf9zZtGhu9Sh9E=
 			</data>
 		</dict>
 		<key>www/assets/data/address.json</key>
@@ -2073,11 +2088,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hm7DjRxJXHd3cQqTS+5mH7mnexo=
+			/ilir8xL0gxQet2pYYLldn6tqTA=
 			</data>
 			<key>hash2</key>
 			<data>
-			68YPBmpgCGJ6DXFuTJTEP+GhWXgJKkPQzJMKtLijMuc=
+			mS/4M1h1qD2nFZQZSrXhw0JNR9eCf1zFWTEfrlZgZ+M=
 			</data>
 		</dict>
 		<key>www/build/main.css.map</key>
@@ -2095,22 +2110,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			buvQstJxcnOf6HBO8LP/XQvavtA=
+			8ZaRNW6hbWnDHK0598Qb0vPfla4=
 			</data>
 			<key>hash2</key>
 			<data>
-			P0EAzDT/IDamhnaHR9vdJ+qbPbAWtztOwTNhMkoYolg=
+			9Xyw8A4VNqy+I3BSfLNi9YWujbw4Y/iwQZaZsUW8ZNI=
 			</data>
 		</dict>
 		<key>www/build/main.js.map</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xY90pEIp/vKAvVJ49ttLY/Fu4GM=
+			Ig60xc8Mz/EEcGDuiSlDwBuIGEo=
 			</data>
 			<key>hash2</key>
 			<data>
-			UyC5tJrjARb+pZxiGpL44a+K7UYHLZMYdG4+Ws+T8V8=
+			jwQsEL1vb+L6nl00/ZgOXGCLrPh9jJeCzjI/fvJzQOU=
 			</data>
 		</dict>
 		<key>www/build/polyfills.js</key>
@@ -2183,11 +2198,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TgO2CfsaImdCSRlDgQJpHC6/3O4=
+			XeMruRfqnVZnpj5GiiVjO/0sRD8=
 			</data>
 			<key>hash2</key>
 			<data>
-			2V1GMCG8tSxbUXnnlXPNV+df98lCKZVY2PiAI/cLit8=
+			4wwEu7P3xzO+V5SgmvlcyVBT6P2+AV3swuWgXXtFG48=
 			</data>
 		</dict>
 		<key>www/manifest.json</key>

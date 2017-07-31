@@ -14,8 +14,8 @@ export class PlacePage implements OnInit {
 
   @ViewChild(Content) content: Content;
 
-  public showSpinner: boolean = true;
-  public weatherDataIsFetched: boolean = false;
+  private showSpinner: boolean = true;
+  private weatherDataIsFetched: boolean = false;
   private favoritesStore: any;
   private favoriteIsSaved: boolean = false;
 
@@ -36,10 +36,12 @@ export class PlacePage implements OnInit {
   private summary: string;
   private icon: string;
   private hour: string;
+  private day: string;
 
   // Hourly
   private weatherByHours: any = [];
   private hoursCounter: number = 0;
+  private days: any = ['Söndag', 'Måndag', 'Tisdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lördag'];
 
   // Daily
   private sunsetTime: string;
@@ -79,14 +81,6 @@ export class PlacePage implements OnInit {
     }
   }
 
-  onHourChange() {
-    const hourData: any = this.weatherByHours[this.hoursCounter];
-    this.temperature = hourData.t;
-    this.icon = hourData.i;
-    this.summary = hourData.s;
-    this.hour = hourData.h;
-  }
-
   onScrollToWeather() {
     this.content.scrollToTop();
   }
@@ -122,25 +116,33 @@ export class PlacePage implements OnInit {
     });
   }
 
+  onHourChange() {
+    this.setCurrentlyWeatherData();
+  }
+
   setCurrentlyWeatherData() {
-    const hourData: any = this.weatherByHours[0];
+    const hourData: any = this.weatherByHours[this.hoursCounter];
     this.temperature = hourData.t;
     this.summary = hourData.s;
     this.icon = hourData.i;
     this.hour = hourData.h;
+    this.day = hourData.d;
   }
 
   setHourlyWeatherData(hourly: any) {
     for (let hourData of hourly.data) {
       const milliseconds: number = parseInt(hourData.time + '000');
-      let hour: string = new Date(milliseconds).getHours().toString();
+      const date: any = new Date(milliseconds);
+      const day: string = this.days[date.getDay()];
+
+      let hour: string = date.getHours().toString();
       if (hour.length == 1) hour = '0' + hour;
 
       const temperature: number = parseInt(hourData.temperature);
       const icon: string = hourData.icon;
       const summary: string = hourData.summary;
 
-      const weatherByHour: any = { h: hour, t: temperature, i: icon, s: summary };
+      const weatherByHour: any = { h: hour, t: temperature, i: icon, s: summary, d: day };
       this.weatherByHours.push(weatherByHour);
     }
   }
@@ -148,7 +150,7 @@ export class PlacePage implements OnInit {
   setDailyWeatherData(daily: any) {
     if (daily.sunsetTime) {
       const date: any = new Date(parseFloat(daily.sunsetTime + '000'));
-      const hours: any = date.getHours();
+      const hours: number = date.getHours();
       let minutes: any = date.getMinutes();
       if (minutes.toString().length == 1) minutes = '0' + minutes;
       this.sunsetTime = `${hours}:${minutes}`;

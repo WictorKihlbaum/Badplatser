@@ -15,7 +15,7 @@
     <ion-row align-items-center>
       <ion-col>
 
-        <img src="assets/img/favorites-heart.png" />
+        <img src="assets/img/favorites-heart.png" class="animated infinite pulse" />
 
         <h1>Du har inga favoritbadplatser</h1>
         <p>
@@ -28,7 +28,7 @@
 
   <div *ngIf="favorites.length > 0">
     <ion-list no-lines>
-      <ion-item *ngFor="let favorite of favorites" (click)="onShowPlace(favorite)">
+      <ion-item *ngFor="let favorite of favorites" (click)="onShowPlace(favorite)" class="favorite animated fadeIn">
 
         <ion-avatar item-start>
           <img src="assets/img/swimming-white.png">
@@ -39,12 +39,12 @@
         </h2>
 
         <p>
-          {{ favorite.data['C7'] }}, {{ favorite.data['C9'] }} län
+          {{ favorite.data['C7'] }}, {{ favorite.data['C9'] }}
         </p>
 
-          <button ion-button icon-only clear item-end (click)="onDeleteFavorite(favorite)">
-            <ion-icon name="close-circle" color="clearMain"></ion-icon>
-          </button>
+        <button ion-button icon-only clear item-end (click)="onDeleteFavorite(favorite)">
+          <ion-icon name="close-circle" color="clearMain"></ion-icon>
+        </button>
 
       </ion-item>
     </ion-list>
