@@ -82,7 +82,7 @@ export class FavoritesPage {
     if (favorites.length > 0) {
       for (let favorite of favorites) {
         counter += 1;
-        const delay: string = (0.5 + counter * 0.55).toString();
+        const delay: string = (counter * 0.55).toString();
         favorite.style.animationDelay = `${delay}s`;
         favorite.classList.add('zoomIn');
         favorite.style.visibility = 'visible';

@@ -7,7 +7,6 @@ import { StationPage } from "../station/station";
 import { StatusBar } from "@ionic-native/status-bar";
 import { WeatherService } from "../../providers/weather-service";
 import { PlacesService } from "../../providers/places-service";
-import {findIndex} from "rxjs/operator/findIndex";
 
 declare const google: any;
 declare const MarkerClusterer: any;
