@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0aaff879-e7a7-4ca7-a45c-89a92c88d0d2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/css/animate.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/Badställen" afterPath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/Badställen" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib" afterPath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib" afterPath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib" />
@@ -11,21 +10,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Info.plist" afterPath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Info.plist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/_CodeSignature/CodeResources" afterPath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/_CodeSignature/CodeResources" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/www/index.html" afterPath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/index.html" afterPath="$PROJECT_DIR$/platforms/ios/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/favorites/favorites.html" afterPath="$PROJECT_DIR$/src/pages/favorites/favorites.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/favorites/favorites.scss" afterPath="$PROJECT_DIR$/src/pages/favorites/favorites.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/favorites/favorites.ts" afterPath="$PROJECT_DIR$/src/pages/favorites/favorites.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/home/home.html" afterPath="$PROJECT_DIR$/src/pages/home/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/home/home.scss" afterPath="$PROJECT_DIR$/src/pages/home/home.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/place/place.html" afterPath="$PROJECT_DIR$/src/pages/place/place.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/place/place.ts" afterPath="$PROJECT_DIR$/src/pages/place/place.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/search/search.html" afterPath="$PROJECT_DIR$/src/pages/search/search.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/main.css" afterPath="$PROJECT_DIR$/www/build/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/main.js" afterPath="$PROJECT_DIR$/www/build/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/main.js.map" afterPath="$PROJECT_DIR$/www/build/main.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,11 +27,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="favorites.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="favorites.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/favorites/favorites.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="44" column="86" lean-forward="false" selection-start-line="44" selection-start-column="86" selection-end-line="44" selection-end-column="86" />
+            <state relative-caret-position="112">
+              <caret line="30" column="107" lean-forward="false" selection-start-line="30" selection-start-column="107" selection-end-line="30" selection-end-column="107" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="favorites.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pages/favorites/favorites.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="87" column="46" lean-forward="false" selection-start-line="87" selection-start-column="46" selection-end-line="87" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -431,12 +429,12 @@
       <workItem from="1501259161374" duration="5186000" />
       <workItem from="1501421848251" duration="181000" />
       <workItem from="1501422331476" duration="6426000" />
-      <workItem from="1501506916087" duration="6987000" />
+      <workItem from="1501506916087" duration="8361000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="323053000" />
+    <option name="totallyTimeSpent" value="324427000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="56" y="23" width="1318" height="797" extended-state="0" />
@@ -715,18 +713,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/favorites/favorites.ts">
+    <entry file="file://$PROJECT_DIR$/src/pages/favorites/favorites.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1185">
-          <caret line="84" column="34" lean-forward="false" selection-start-line="84" selection-start-column="34" selection-end-line="84" selection-end-column="34" />
+        <state relative-caret-position="112">
+          <caret line="30" column="107" lean-forward="false" selection-start-line="30" selection-start-column="107" selection-end-line="30" selection-end-column="107" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/favorites/favorites.html">
+    <entry file="file://$PROJECT_DIR$/src/pages/favorites/favorites.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="44" column="86" lean-forward="false" selection-start-line="44" selection-start-column="86" selection-end-line="44" selection-end-column="86" />
+        <state relative-caret-position="250">
+          <caret line="87" column="46" lean-forward="false" selection-start-line="87" selection-start-column="46" selection-end-line="87" selection-end-column="46" />
           <folding />
         </state>
       </provider>
