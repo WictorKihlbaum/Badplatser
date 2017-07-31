@@ -29655,6 +29655,10 @@ ion-navbar {
 }
 
 /* Loading animation */
+.loading-animation .loading-wrapper {
+  background-color: white;
+}
+
 .loading-animation .loading-wrapper .loading-content {
   color: #42A5F5;
 }

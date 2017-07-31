@@ -75,7 +75,7 @@ export class FavoritesPage {
     toast.present();
   }
 
-  async setAnimationDuration() {
+  setAnimationDuration() {
     const favorites: any = document.getElementsByClassName('favorite');
     let counter: number = 0;
 
@@ -84,7 +84,7 @@ export class FavoritesPage {
         counter += 1;
         const delay: string = (0.5 + counter * 0.55).toString();
         favorite.style.animationDelay = `${delay}s`;
-        favorite.classList.add('fadeIn');
+        favorite.classList.add('zoomIn');
         favorite.style.visibility = 'visible';
       }
     }

@@ -328,7 +328,7 @@ export class MapPage implements OnInit {
     this.loader = this.loadingCtrl.create({
       spinner: 'bubbles',
       content: text,
-      cssClass: 'loading-animation'
+      cssClass: 'loading-animation',
     });
     this.loader.present();
   }
