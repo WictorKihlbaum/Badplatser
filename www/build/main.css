@@ -29902,19 +29902,9 @@ page-place ion-content {
   background: linear-gradient(45deg, #00b0ff 0%, #69f0ae 100%) !important;
 }
 
-page-place ion-content .loader-spinner * {
-  fill: white;
-  stroke: white;
-}
-
-page-place ion-content #retry-button-div p {
-  font-size: 5vw;
-  line-height: 1.4;
-}
-
 page-place .page-grid-top {
   height: 55%;
-  background-image: url("../../assets/img/water-white.png");
+  background-image: url("../assets/img/water-white.png");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: contain;
@@ -29934,6 +29924,7 @@ page-place .page-grid-bottom .place-button {
   box-shadow: 0 2px 5px rgba(178, 235, 242, 0.5);
   font-weight: bold;
   margin-bottom: 8px;
+  font-family: Montserrat-Black, cursive;
 }
 
 page-place .page-grid-top ion-row, page-place .page-grid-bottom ion-row {
@@ -29945,10 +29936,20 @@ page-place .page-grid-top ion-row ion-col, page-place .page-grid-bottom ion-row 
 }
 
 page-place #weather-grid {
-  background-image: url("../../assets/img/water-white2.png");
+  background-image: url("../assets/img/water-white2.png");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+page-place #weather-grid .loader-spinner * {
+  fill: white;
+  stroke: white;
+}
+
+page-place #weather-grid #retry-button-div p {
+  font-size: 5vw;
+  line-height: 1.4;
 }
 
 page-place #weather-container {
@@ -30002,18 +30003,19 @@ page-place #quality-grid {
 page-place #quality-grid #quality-icon {
   width: 22vw;
   height: auto;
+  margin-bottom: 12px;
 }
 
 page-place #quality-grid h1, page-place #quality-grid h3, page-place #quality-grid h5 {
   margin: 0;
-  font-size: 6vw;
+  font-size: 5vw;
   font-family: Palanquin-Regular, sans-serif;
 }
 
 page-place #quality-grid h2, page-place #quality-grid h4, page-place #quality-grid h6 {
   font-family: Palanquin-Light, sans-serif;
   margin: 0 0 12px 0;
-  font-size: 5vw;
+  font-size: 6vw;
 }
 
 page-search .place {

@@ -86,7 +86,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		CHEo+MjScWLIysURc6pCHcBfLFo=
+		qsbJtC0krPRVAQYf0X8et6BgU3U=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		OZySGnbbM6mhj/DBLdBFITK+Oak=
+		9C3Grk/JsVEu1CrCBWgHx57fUR4=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -134,7 +134,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		7HG4arzYoO/cL4PscrtgbE2k2uA=
+		WvlUFIx5DEdcSzczce0Sc04e6zs=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -428,6 +428,10 @@
 		<data>
 		2bJoOjeyRXXHckZTedWxD3ngYik=
 		</data>
+		<key>www/assets/img/lake.png</key>
+		<data>
+		gfFNPqbtig/fGLgkKiGx1TcB764=
+		</data>
 		<key>www/assets/img/pin.png</key>
 		<data>
 		6MLOQahiz4wO3iIFfvhzA6d0ljE=
@@ -479,6 +483,14 @@
 		<key>www/assets/img/water-temperature.png</key>
 		<data>
 		k88LZHjuSMMo7GG0Rv3q82S2U24=
+		</data>
+		<key>www/assets/img/water-white.png</key>
+		<data>
+		S5wXqinDF8HDAY60fwbJ5zSUAwA=
+		</data>
+		<key>www/assets/img/water-white2.png</key>
+		<data>
+		YWNNVJmOJRHz3h8qzh//UpGxrjo=
 		</data>
 		<key>www/assets/img/weather-icons/clear-day.png</key>
 		<data>
@@ -542,7 +554,7 @@
 		</data>
 		<key>www/build/main.css</key>
 		<data>
-		RUfueuuFuQMNUoG3Hua8SqGkFZY=
+		r5F7vMMhH3Urmga3ktrMcBFGY0k=
 		</data>
 		<key>www/build/main.css.map</key>
 		<data>
@@ -550,11 +562,11 @@
 		</data>
 		<key>www/build/main.js</key>
 		<data>
-		ySQs3s41+pAUBomX8E6JFuWftu4=
+		LxLWz9uh104+1wd57lMwIc40DCA=
 		</data>
 		<key>www/build/main.js.map</key>
 		<data>
-		UOl89GT1wBEtIZCb7hKFV23ozpw=
+		2kA1kYpZGKlePWtF28Rt94DJpZI=
 		</data>
 		<key>www/build/polyfills.js</key>
 		<data>
@@ -871,11 +883,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CHEo+MjScWLIysURc6pCHcBfLFo=
+			qsbJtC0krPRVAQYf0X8et6BgU3U=
 			</data>
 			<key>hash2</key>
 			<data>
-			F52ehcbHY2HGtTItuNHLmBC531qVrHViT24tDlH6Z0Y=
+			A3Abukbb3t9k4W18uA6qnUq+xSx7cn4twXH7B3o1MNc=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -893,11 +905,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OZySGnbbM6mhj/DBLdBFITK+Oak=
+			9C3Grk/JsVEu1CrCBWgHx57fUR4=
 			</data>
 			<key>hash2</key>
 			<data>
-			8s6bv+qw0edT0X1unyPf1gvmU+Q1HrcfKoT0ADO79Vg=
+			tJ9F+CJt5KK2bysC90n9XmDlQ/JOvSKu7yc3nILrjtU=
 			</data>
 		</dict>
 		<key>LaunchImage-568h@2x.png</key>
@@ -992,11 +1004,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7HG4arzYoO/cL4PscrtgbE2k2uA=
+			WvlUFIx5DEdcSzczce0Sc04e6zs=
 			</data>
 			<key>hash2</key>
 			<data>
-			PXA22vVE3//PSOCYHDGRfnXc8fph7Or+LzoEboQVwUg=
+			J8kxljIOzYzV/Hbv5goaobhaZQv9iEgqLYSeZqmwWLg=
 			</data>
 		</dict>
 		<key>archived-expanded-entitlements.xcent</key>
@@ -1791,6 +1803,17 @@
 			K7v0pjwOkBF43SmMkbbWjjFFTDtKBq2TLyfUrnnBiEY=
 			</data>
 		</dict>
+		<key>www/assets/img/lake.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gfFNPqbtig/fGLgkKiGx1TcB764=
+			</data>
+			<key>hash2</key>
+			<data>
+			Gpu8sSZgZtjyzxo6bxwD2tqSOminM+1ZFSbrZyZEXu4=
+			</data>
+		</dict>
 		<key>www/assets/img/pin.png</key>
 		<dict>
 			<key>hash</key>
@@ -1932,6 +1955,28 @@
 			<key>hash2</key>
 			<data>
 			ESK+rYCt9+cT6BtvJGetFTLPLS/3k10NA9NBL0suAUk=
+			</data>
+		</dict>
+		<key>www/assets/img/water-white.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			S5wXqinDF8HDAY60fwbJ5zSUAwA=
+			</data>
+			<key>hash2</key>
+			<data>
+			s9vfpMye/FGzKvxiFu930R7dyjo337/CcD9DIq3dbdM=
+			</data>
+		</dict>
+		<key>www/assets/img/water-white2.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YWNNVJmOJRHz3h8qzh//UpGxrjo=
+			</data>
+			<key>hash2</key>
+			<data>
+			Fpm5ZSMZPIUmPwPD6wuLINN9Z0tO8i/qxTqc0wTLyz4=
 			</data>
 		</dict>
 		<key>www/assets/img/weather-icons/clear-day.png</key>
@@ -2103,11 +2148,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RUfueuuFuQMNUoG3Hua8SqGkFZY=
+			r5F7vMMhH3Urmga3ktrMcBFGY0k=
 			</data>
 			<key>hash2</key>
 			<data>
-			8kKRjajyppi0bsemIXxPeAqJn1bMkTCU4fZz5ukDt4Q=
+			Qnq5r2MfTjeoT4I6NlwcEFhr0aBBhVAoOvu0F1GoCqU=
 			</data>
 		</dict>
 		<key>www/build/main.css.map</key>
@@ -2125,22 +2170,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ySQs3s41+pAUBomX8E6JFuWftu4=
+			LxLWz9uh104+1wd57lMwIc40DCA=
 			</data>
 			<key>hash2</key>
 			<data>
-			+3+bBm07v+RdvapQpz1oEnxpOz+lYdqCqCpnp5LT43Q=
+			H1dvp0eZ4ib4Hd4fYEMsq1tqrBKJykO0EgqoLfYHBDg=
 			</data>
 		</dict>
 		<key>www/build/main.js.map</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UOl89GT1wBEtIZCb7hKFV23ozpw=
+			2kA1kYpZGKlePWtF28Rt94DJpZI=
 			</data>
 			<key>hash2</key>
 			<data>
-			/fpVJNKHkilxrcVuLqN+fPEL5eQt6mRdaQenwbtnsbI=
+			0+4ijyUbfC3JF17PtmYPfBZu8+hBlKbzfc6JO0FSMGQ=
 			</data>
 		</dict>
 		<key>www/build/polyfills.js</key>
