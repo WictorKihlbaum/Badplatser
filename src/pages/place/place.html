@@ -10,32 +10,54 @@
     <ion-title>{{ placeName }}</ion-title>
 
     <ion-buttons end>
-      <button ion-button icon-only clear (click)="onFindPlace()">
-        <ion-icon name="md-map"></ion-icon>
-      </button>
       <button ion-button icon-only (click)="onSaveFavorite()" [disabled]="favoriteIsSaved">
         <ion-icon name="heart"></ion-icon>
       </button>
     </ion-buttons>
 
   </ion-navbar>
-
-  <ion-toolbar color="header">
-    <ion-grid>
-      <ion-row id="header-row">
-        <ion-col>
-          <button ion-button small color="clearMain" round (click)="onScrollToWeather()">Väder</button>
-          <button ion-button small color="clearMain" round (click)="onScrollToQuality()">Badvattenkvalité</button>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-toolbar>
-
 </ion-header>
 
-<ion-content no-bounce padding class="gradient-background">
+<ion-content no-bounce class="gradient-background" (ionScroll)="onScroll($event)">
 
-  <ion-grid class="page-grid">
+  <ion-fab bottom right class="animated bounceIn" *ngIf="showGoTopButton">
+    <button ion-fab mini (click)="onScrollToTop()" color="clearMain">
+      <ion-icon name="arrow-up"></ion-icon>
+    </button>
+  </ion-fab>
+
+  <ion-grid class="page-grid-top">
+    <ion-row align-items-center>
+      <ion-col>
+        <img src="assets/img/lake.png" class="lake" />
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid class="page-grid-bottom">
+    <ion-row align-items-center>
+      <ion-col padding>
+
+        <button ion-button round block icon-left class="place-button" (click)="onFindPlace()">
+          <ion-icon name="md-open"></ion-icon>
+          Hitta hit
+        </button>
+
+        <button ion-button round block icon-left class="place-button" (click)="onScrollToWeather()">
+          <ion-icon name="sunny"></ion-icon>
+          Väder
+        </button>
+
+        <button ion-button round block icon-left class="place-button" (click)="onScrollToQuality()">
+          <ion-icon name="md-ribbon"></ion-icon>
+          Badvattenkvalité
+        </button>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid class="page-grid" id="weather-grid">
     <ion-row align-items-center>
       <ion-col>
 
@@ -55,10 +77,9 @@
 
         <div id="weather-container" *ngIf="!showSpinner && weatherDataIsFetched">
 
-          <span id="hour">{{ day }}, kl. {{ hour }}</span>
-
           <ion-row>
             <ion-col>
+              <div id="hour">{{ day }}, kl. {{ hour }}</div>
               <span id="temperature">{{ temperature }}°</span>
               <img src="assets/img/weather-icons/{{icon}}.png" id="icon" />
             </ion-col>

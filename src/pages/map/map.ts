@@ -172,7 +172,7 @@ export class MapPage implements OnInit {
     this.showCurrentLocationOnMap({ lat: this.currentLat, lng: this.currentLng });
     await this.setUserCounty();
     this.markAllPlaces();
-    //this.markAllSeaTemperatures();
+    this.markAllSeaTemperatures();
     this.setMapEvents();
     this.setUserWatcher();
   }
@@ -193,9 +193,6 @@ export class MapPage implements OnInit {
 
   async markAllPlaces() {
     if (this.userCounty) {
-
-      let t0 = performance.now();
-
       for (let place of this.places['Badplatser']) {
         // Only set markers for the users current county.
         if (place.C9.toLowerCase().includes(this.userCounty.toLowerCase())) {
@@ -216,9 +213,6 @@ export class MapPage implements OnInit {
           this.markers.push(marker);
         }
       }
-
-      let t1 = performance.now();
-      console.log("Call took " + (t1 - t0) + " milliseconds.");
 
       this.markerClusterer = new MarkerClusterer(
         this.map, this.markers, { imagePath: 'assets/img/place-clusters/place' }

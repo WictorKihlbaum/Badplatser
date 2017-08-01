@@ -14,6 +14,7 @@ export class PlacePage implements OnInit {
 
   @ViewChild(Content) content: Content;
 
+  private showGoTopButton: boolean = false;
   private showSpinner: boolean = true;
   private weatherDataIsFetched: boolean = false;
   private favoritesStore: any;
@@ -81,12 +82,27 @@ export class PlacePage implements OnInit {
     }
   }
 
+  onScroll(event: any) {
+    this.zone.run(() => {
+      if (event.scrollTop > this.content.contentHeight / 2) {
+        this.showGoTopButton = true;
+      } else {
+        this.showGoTopButton = false;
+      }
+    });
+  }
+
   onScrollToWeather() {
-    this.content.scrollToTop();
+    const distance: number = this.content.contentHeight;
+    this.content.scrollTo(0, distance, 500);
   }
 
   onScrollToQuality() {
-    this.content.scrollToBottom();
+    this.content.scrollToBottom(500);
+  }
+
+  onScrollToTop() {
+    this.content.scrollToTop(500);
   }
 
   setFavoritesStore() {

@@ -1,12 +1,5 @@
 page-place {
 
-  #header-row ion-col {
-    text-align: center;
-    button {
-      box-shadow: none;
-    }
-  }
-
   ion-content {
     color: white !important;
     font-family: Palanquin-Light, sans-serif;
@@ -23,18 +16,54 @@ page-place {
     }
   }
 
+  /* First section */
+  .page-grid-top {
+    height: 55%;
+    background-image: url("../../assets/img/water-white.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    .lake {
+      width: 50vw;
+    }
+  }
+  .page-grid-bottom {
+    height: 45%;
+    background-color: white;
+
+    .place-button {
+      background: linear-gradient(45deg, #00b0ff 0%, #69f0ae 100%);
+      box-shadow: 0 2px 5px rgba(178, 235, 242, 0.5);
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+  }
+  .page-grid-top ion-row, .page-grid-bottom ion-row {
+    height: 100%;
+    ion-col {
+      text-align: center;
+    }
+  }
+
+  #weather-grid {
+    background-image: url("../../assets/img/water-white2.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
   #weather-container {
+    font-family: OpenSans-Regular, sans-serif;
     margin-bottom: 16px;
 
     #hour {
-      position: absolute;
-      top: 0;
-      left: 0;
       font-size: 6vw;
+      text-align: left;
     }
 
     #temperature {
-      font-size: 22vw;
+      font-size: 18vw;
       margin-top: 0;
     }
     #icon {
@@ -58,9 +87,15 @@ page-place {
       width: auto;
       height: auto;
     }
+
+    .range-md .range-bar {
+      background: white !important;
+    }
   }
 
   #quality-grid {
+    font-family: OpenSans-Regular, sans-serif;
+
     #quality-icon {
       width: 22vw;
       height: auto;

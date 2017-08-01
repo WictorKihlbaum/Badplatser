@@ -3,7 +3,6 @@ import { ModalController, ToastController } from 'ionic-angular';
 import * as localforage from "localforage";
 import { PlacePage } from "../place/place";
 import { StatusBar } from "@ionic-native/status-bar";
-import {timeout} from "rxjs/operator/timeout";
 
 @Component({
   selector: 'page-favorites',

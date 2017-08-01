@@ -2,10 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0aaff879-e7a7-4ca7-a45c-89a92c88d0d2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/Badställen" afterPath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/Badställen" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib" afterPath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib" afterPath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/Info.plist" afterPath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/MainViewController.nib" afterPath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/MainViewController.nib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badställen.xcodeproj/project.xcworkspace/xcuserdata/wictor.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/platforms/ios/Badställen.xcodeproj/project.xcworkspace/xcuserdata/wictor.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Info.plist" afterPath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/_CodeSignature/CodeResources" afterPath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/_CodeSignature/CodeResources" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/config.xml" afterPath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badställen.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/platforms/ios/Badställen.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badställen/Badställen-Info.plist" afterPath="$PROJECT_DIR$/platforms/ios/Badställen/Badställen-Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badställen/config.xml" afterPath="$PROJECT_DIR$/platforms/ios/Badställen/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.scss" afterPath="$PROJECT_DIR$/src/app/app.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/about/about.scss" afterPath="$PROJECT_DIR$/src/pages/about/about.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/favorites/favorites.scss" afterPath="$PROJECT_DIR$/src/pages/favorites/favorites.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/favorites/favorites.ts" afterPath="$PROJECT_DIR$/src/pages/favorites/favorites.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/home/home.ts" afterPath="$PROJECT_DIR$/src/pages/home/home.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/map/map.ts" afterPath="$PROJECT_DIR$/src/pages/map/map.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/place/place.html" afterPath="$PROJECT_DIR$/src/pages/place/place.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/place/place.scss" afterPath="$PROJECT_DIR$/src/pages/place/place.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/place/place.ts" afterPath="$PROJECT_DIR$/src/pages/place/place.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/search/search.html" afterPath="$PROJECT_DIR$/src/pages/search/search.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/search/search.scss" afterPath="$PROJECT_DIR$/src/pages/search/search.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/search/search.ts" afterPath="$PROJECT_DIR$/src/pages/search/search.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/station/station.html" afterPath="$PROJECT_DIR$/src/pages/station/station.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/station/station.scss" afterPath="$PROJECT_DIR$/src/pages/station/station.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/main.css" afterPath="$PROJECT_DIR$/www/build/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/main.js" afterPath="$PROJECT_DIR$/www/build/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/main.js.map" afterPath="$PROJECT_DIR$/www/build/main.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
@@ -22,11 +46,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="favorites.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pages/favorites/favorites.ts">
+      <file leaf-file-name="place.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pages/place/place.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="84" column="31" lean-forward="false" selection-start-line="84" selection-start-column="31" selection-end-line="84" selection-end-column="31" />
+            <state relative-caret-position="152">
+              <caret line="23" column="67" lean-forward="false" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="place.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/place/place.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="356">
+              <caret line="104" column="34" lean-forward="false" selection-start-line="104" selection-start-column="34" selection-end-line="104" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#69#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="place.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/place/place.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="50" column="24" lean-forward="false" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="variables.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/theme/variables.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="249">
+              <caret line="39" column="17" lean-forward="false" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -81,7 +137,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/assets/data/counties/1.json" />
         <option value="$PROJECT_DIR$/src/assets/data/counties/18.json" />
         <option value="$PROJECT_DIR$/src/assets/data/counties/2.json" />
         <option value="$PROJECT_DIR$/src/assets/data/counties/3.json" />
@@ -104,17 +159,11 @@
         <option value="$PROJECT_DIR$/src/assets/js/infobubble.js" />
         <option value="$PROJECT_DIR$/src/assets/js/geolocationmarker-compiled.js" />
         <option value="$PROJECT_DIR$/src/assets/js/markerclusterer.js" />
-        <option value="$PROJECT_DIR$/src/pages/station/station.html" />
-        <option value="$PROJECT_DIR$/src/pages/station/station.scss" />
         <option value="$PROJECT_DIR$/src/pages/station/station.ts" />
         <option value="$PROJECT_DIR$/src/pages/about/about.ts" />
         <option value="$PROJECT_DIR$/src/providers/weather-service.ts" />
-        <option value="$PROJECT_DIR$/src/pages/place/place.scss" />
         <option value="$PROJECT_DIR$/src/theme/variables.scss" />
-        <option value="$PROJECT_DIR$/src/pages/search/search.ts" />
-        <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/src/pages/about/about.html" />
-        <option value="$PROJECT_DIR$/src/pages/about/about.scss" />
         <option value="$PROJECT_DIR$/src/pages/map/map.html" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/providers/places-service.ts" />
@@ -123,15 +172,22 @@
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/pages/home/home.html" />
         <option value="$PROJECT_DIR$/src/pages/home/home.scss" />
-        <option value="$PROJECT_DIR$/src/pages/place/place.ts" />
-        <option value="$PROJECT_DIR$/src/pages/place/place.html" />
-        <option value="$PROJECT_DIR$/src/pages/search/search.html" />
-        <option value="$PROJECT_DIR$/src/pages/favorites/favorites.scss" />
         <option value="$PROJECT_DIR$/src/pages/favorites/favorites.html" />
-        <option value="$PROJECT_DIR$/src/app/app.scss" />
-        <option value="$PROJECT_DIR$/src/pages/map/map.ts" />
         <option value="$PROJECT_DIR$/src/pages/home/home.ts" />
         <option value="$PROJECT_DIR$/src/pages/favorites/favorites.ts" />
+        <option value="$PROJECT_DIR$/src/pages/station/station.html" />
+        <option value="$PROJECT_DIR$/src/pages/map/map.ts" />
+        <option value="$PROJECT_DIR$/config.xml" />
+        <option value="$PROJECT_DIR$/src/app/app.scss" />
+        <option value="$PROJECT_DIR$/src/pages/about/about.scss" />
+        <option value="$PROJECT_DIR$/src/pages/search/search.html" />
+        <option value="$PROJECT_DIR$/src/pages/search/search.scss" />
+        <option value="$PROJECT_DIR$/src/pages/search/search.ts" />
+        <option value="$PROJECT_DIR$/src/pages/favorites/favorites.scss" />
+        <option value="$PROJECT_DIR$/src/pages/station/station.scss" />
+        <option value="$PROJECT_DIR$/src/pages/place/place.ts" />
+        <option value="$PROJECT_DIR$/src/pages/place/place.scss" />
+        <option value="$PROJECT_DIR$/src/pages/place/place.html" />
       </list>
     </option>
   </component>
@@ -252,14 +308,20 @@
               <item name="Badplatser" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="favorites" type="462c0819:PsiDirectoryNode" />
+              <item name="place" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Badplatser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Badplatser" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="theme" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -414,15 +476,17 @@
       <workItem from="1501259161374" duration="5186000" />
       <workItem from="1501421848251" duration="181000" />
       <workItem from="1501422331476" duration="6426000" />
-      <workItem from="1501506916087" duration="9679000" />
+      <workItem from="1501506916087" duration="10951000" />
+      <workItem from="1501584559986" duration="7200000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="325745000" />
+    <option name="totallyTimeSpent" value="334217000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="56" y="23" width="1318" height="797" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24980725" sideWeight="0.4926004" order="0" side_tool="false" content_ui="combo" />
@@ -432,7 +496,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.50739956" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23931624" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23931624" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -497,13 +561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/place/place.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-400">
@@ -511,67 +568,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/providers/weather-service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/search/search.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/station/station.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/station/station.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="32" column="31" lean-forward="false" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/theme/variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="3" lean-forward="false" selection-start-line="41" selection-start-column="3" selection-end-line="41" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/search/search.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/about/about.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/about/about.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -593,7 +593,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
           <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -601,7 +600,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -613,21 +611,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="26" column="59" lean-forward="false" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/home/home.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/home/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -635,45 +618,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/place/place.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="57" column="36" lean-forward="false" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/place/place.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="123" column="65" lean-forward="true" selection-start-line="123" selection-start-column="65" selection-end-line="123" selection-end-column="65" />
-          <folding>
-            <element signature="e#0#69#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/search/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="39" lean-forward="false" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/favorites/favorites.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/favorites/favorites.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="30" column="107" lean-forward="false" selection-start-line="30" selection-start-column="107" selection-end-line="30" selection-end-column="107" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -681,25 +629,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.scss">
+    <entry file="file://$PROJECT_DIR$/src/pages/favorites/favorites.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="83" column="2" lean-forward="false" selection-start-line="83" selection-start-column="2" selection-end-line="83" selection-end-column="2" />
-          <folding />
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/map/map.ts">
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="26" column="59" lean-forward="false" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/station/station.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
-          </folding>
+          <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -707,14 +660,133 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/map/map.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="214" column="7" lean-forward="false" selection-start-line="214" selection-start-column="7" selection-end-line="214" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#61#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="34" lean-forward="false" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/favorites/favorites.ts">
+    <entry file="file://$PROJECT_DIR$/src/providers/weather-service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="84" column="31" lean-forward="false" selection-start-line="84" selection-start-column="31" selection-end-line="84" selection-end-column="31" />
+        <state relative-caret-position="404">
+          <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#43#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/about/about.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="46" lean-forward="true" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/search/search.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/search/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="104" lean-forward="false" selection-start-line="18" selection-start-column="104" selection-end-line="18" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/search/search.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="74" lean-forward="false" selection-start-line="39" selection-start-column="74" selection-end-line="39" selection-end-column="74" />
+          <folding>
+            <element signature="e#0#61#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/favorites/favorites.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="6" lean-forward="false" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/station/station.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="44" lean-forward="false" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/home/home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="63" column="63" lean-forward="true" selection-start-line="63" selection-start-column="63" selection-end-line="63" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/place/place.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="104" column="34" lean-forward="false" selection-start-line="104" selection-start-column="34" selection-end-line="104" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/place/place.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="50" column="24" lean-forward="false" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/theme/variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="39" column="17" lean-forward="false" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/place/place.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="23" column="67" lean-forward="false" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
           <folding />
         </state>
       </provider>

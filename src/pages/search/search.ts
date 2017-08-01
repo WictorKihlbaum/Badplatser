@@ -37,7 +37,7 @@ export class SearchPage implements OnInit {
     // Set val to the value of the searchbar.
     const val = ev.target.value;
 
-    // If the value is an empty string don't filter the items.
+    // If the value is an empty string or contains less than three letters don't filter the items.
     if (val && val.trim() != '' && val.length >= 3) {
       this.placesToShow = this.places.filter(place => {
         return (place.C6.toLowerCase().indexOf(val.toLowerCase()) > -1);

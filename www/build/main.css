@@ -29613,6 +29613,12 @@ ion-navbar.toolbar {
   src: url("../assets/fonts/Montserrat-Black.ttf");
 }
 
+/* Open Sans */
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url("../assets/fonts/OpenSans-Regular.ttf");
+}
+
 .page-grid, .page-grid ion-row {
   height: 100% !important;
 }
@@ -29669,7 +29675,7 @@ ion-navbar {
 
 page-about ion-content {
   color: white !important;
-  font-family: Palanquin-Light, sans-serif;
+  font-family: OpenSans-Regular, sans-serif;
 }
 
 page-about ion-content #info-icon {
@@ -29689,6 +29695,7 @@ page-favorites ion-content {
 
 page-favorites .favorite {
   visibility: hidden;
+  font-family: OpenSans-Regular, sans-serif;
   background: linear-gradient(45deg, #039BE5 0%, #03A9F4 100%);
   box-shadow: 0 2px 5px rgba(3, 155, 229, 0.3);
   border-radius: 8px;
@@ -29885,12 +29892,8 @@ page-map .station-bubble {
   background-image: url(../assets/img/water-temperature.png), url(../assets/img/arrow.png);
 }
 
-page-place #header-row ion-col {
-  text-align: center;
-}
-
-page-place #header-row ion-col button {
-  box-shadow: none;
+page-place {
+  /* First section */
 }
 
 page-place ion-content {
@@ -29909,19 +29912,57 @@ page-place ion-content #retry-button-div p {
   line-height: 1.4;
 }
 
+page-place .page-grid-top {
+  height: 55%;
+  background-image: url("../../assets/img/water-white.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+page-place .page-grid-top .lake {
+  width: 50vw;
+}
+
+page-place .page-grid-bottom {
+  height: 45%;
+  background-color: white;
+}
+
+page-place .page-grid-bottom .place-button {
+  background: linear-gradient(45deg, #00b0ff 0%, #69f0ae 100%);
+  box-shadow: 0 2px 5px rgba(178, 235, 242, 0.5);
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+page-place .page-grid-top ion-row, page-place .page-grid-bottom ion-row {
+  height: 100%;
+}
+
+page-place .page-grid-top ion-row ion-col, page-place .page-grid-bottom ion-row ion-col {
+  text-align: center;
+}
+
+page-place #weather-grid {
+  background-image: url("../../assets/img/water-white2.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 page-place #weather-container {
+  font-family: OpenSans-Regular, sans-serif;
   margin-bottom: 16px;
 }
 
 page-place #weather-container #hour {
-  position: absolute;
-  top: 0;
-  left: 0;
   font-size: 6vw;
+  text-align: left;
 }
 
 page-place #weather-container #temperature {
-  font-size: 22vw;
+  font-size: 18vw;
   margin-top: 0;
 }
 
@@ -29950,6 +29991,14 @@ page-place #weather-container .darksky-img {
   height: auto;
 }
 
+page-place #weather-container .range-md .range-bar {
+  background: white !important;
+}
+
+page-place #quality-grid {
+  font-family: OpenSans-Regular, sans-serif;
+}
+
 page-place #quality-grid #quality-icon {
   width: 22vw;
   height: auto;
@@ -29965,6 +30014,22 @@ page-place #quality-grid h2, page-place #quality-grid h4, page-place #quality-gr
   font-family: Palanquin-Light, sans-serif;
   margin: 0 0 12px 0;
   font-size: 5vw;
+}
+
+page-search .place {
+  font-family: OpenSans-Regular, sans-serif;
+}
+
+page-station {
+  font-family: OpenSans-Regular, sans-serif;
+}
+
+page-station .station-title {
+  text-transform: lowercase;
+}
+
+page-station .station-title:first-letter {
+  text-transform: uppercase;
 }
 
 page-station ion-content {
