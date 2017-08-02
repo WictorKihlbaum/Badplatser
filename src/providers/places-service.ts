@@ -8,7 +8,7 @@ export class PlacesService {
 
   private googleApiKey: string = 'AIzaSyA6JMwgZ4S9qXMinDYU5oVLgQ3Oss9MfuI';
   private cors: string = 'https://cors-anywhere.herokuapp.com/';
-  private counties: any = ['blekinge', 'dalarna', 'gotland', 'gävleborg', 'halland', 'jämtland', 'jönköping', 'kalmar', 'kronoberg', 'norrbotten', 'skåne', 'stockholm', 'södermanland', 'uppsala', 'värmland', 'västerbotten', 'västernorrland', 'västmanland', 'västra götalands', 'örebro', 'östergötland'];
+  private counties: any = ['blekinge', 'dalarna', 'gotland', 'gävleborg', 'halland', 'jämtland', 'jönköping', 'kalmar', 'kronoberg', 'norrbotten', 'skåne', 'stockholm', 'södermanland', 'uppsala', 'värmland', 'västerbotten', 'västernorrland', 'västmanland', 'västra götaland', 'örebro', 'östergötland'];
 
 
   constructor(public http: Http, private platform: Platform) {

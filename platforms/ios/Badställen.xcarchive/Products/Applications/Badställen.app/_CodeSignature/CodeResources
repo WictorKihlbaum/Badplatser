@@ -86,7 +86,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		96vlfGw2WYNmptEset1SK6cWlSA=
+		44LnGFVbLMPb/8AUhaZ2FfPRshA=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		CBVUmnwpN0CboNB0ygcndVc7AtE=
+		Rv+5IPWUMNuZF1lcN9NeWW04o4o=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -134,7 +134,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		5NGh1hJfsDq0bIK6TEDwYdwPpr8=
+		yIQyewm9uU2y84UuV00DUqKCsLs=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -562,7 +562,7 @@
 		</data>
 		<key>www/build/main.css</key>
 		<data>
-		vH4vYfCsAmV/X82LbPu2Ib4NI4w=
+		VbNo3gqJf1tJidQO1kUgMLbPM3E=
 		</data>
 		<key>www/build/main.css.map</key>
 		<data>
@@ -891,11 +891,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			96vlfGw2WYNmptEset1SK6cWlSA=
+			44LnGFVbLMPb/8AUhaZ2FfPRshA=
 			</data>
 			<key>hash2</key>
 			<data>
-			IQFBF9ozSDy81Kmjh9PWX+hByRSvIqBz/q7VjnSLzI0=
+			pIpMdkUuPjEu3l2gvv6a2ysG9u5giwnwc0+zQeCU6hY=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -913,11 +913,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CBVUmnwpN0CboNB0ygcndVc7AtE=
+			Rv+5IPWUMNuZF1lcN9NeWW04o4o=
 			</data>
 			<key>hash2</key>
 			<data>
-			MgszTJqs4Ifdn3ZX0mPbNKyXoS+VB+an90UjILowHNg=
+			NBkiN8E7snK4YyuDaVfC3jSOPoMEvp2TSgb0Hzxdbik=
 			</data>
 		</dict>
 		<key>LaunchImage-568h@2x.png</key>
@@ -1012,11 +1012,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5NGh1hJfsDq0bIK6TEDwYdwPpr8=
+			yIQyewm9uU2y84UuV00DUqKCsLs=
 			</data>
 			<key>hash2</key>
 			<data>
-			nVMDmZLuRnx72EXcXS0ceFNP9GTykXt+w3ekydThbzw=
+			l1hZSWV4F/UYb7R7BLm/dT8uklfVCA22kpQSMXHBS14=
 			</data>
 		</dict>
 		<key>archived-expanded-entitlements.xcent</key>
@@ -2178,11 +2178,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vH4vYfCsAmV/X82LbPu2Ib4NI4w=
+			VbNo3gqJf1tJidQO1kUgMLbPM3E=
 			</data>
 			<key>hash2</key>
 			<data>
-			4u9O4SKgMrOPJPrPthQgTQJ4qzkTWI4BTFDfB/sH1lc=
+			Q/2KA7u0f0wHjMqmo1NCSY91tvTeNgi5v0qn7lCELXM=
 			</data>
 		</dict>
 		<key>www/build/main.css.map</key>

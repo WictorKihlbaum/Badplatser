@@ -32786,19 +32786,23 @@ page-place #weather-grid #weather-top-row {
 }
 
 page-place #weather-grid #weather-bottom-row {
-  padding: 12px;
   background-color: white;
   color: #40c4ff;
   font-family: OpenSans-Regular, sans-serif;
 }
 
-page-place #weather-grid #weather-bottom-row h4 {
+page-place #weather-grid #weather-bottom-row #todays-summery-container {
+  padding: 12px;
+}
+
+page-place #weather-grid #weather-bottom-row #todays-summery-container h4 {
   font-weight: bold;
 }
 
-page-place #weather-grid #weather-bottom-row p {
+page-place #weather-grid #weather-bottom-row #todays-summery-container p {
   font-size: 5vw;
   line-height: 1.4;
+  text-align: left;
 }
 
 page-place #weather-grid #weather-bottom-row .darksky-img {

@@ -64,15 +64,19 @@ page-place {
       background-size: contain;
     }
     #weather-bottom-row {
-      padding: 12px;
       background-color: white;
       color: #40c4ff;
       font-family: OpenSans-Regular, sans-serif;
 
-      h4 { font-weight: bold; }
-      p {
-        font-size: 5vw;
-        line-height: 1.4;
+      #todays-summery-container {
+        padding: 12px;
+
+        h4 { font-weight: bold; }
+        p {
+          font-size: 5vw;
+          line-height: 1.4;
+          text-align: left;
+        }
       }
 
       .darksky-img {
