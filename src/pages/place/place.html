@@ -26,7 +26,7 @@
     </button>
   </ion-fab>
 
-  <ion-grid class="page-grid-top">
+  <ion-grid class="main-grid-top">
     <ion-row align-items-center>
       <ion-col>
         <img src="assets/img/lake.png" class="lake" />
@@ -34,7 +34,7 @@
     </ion-row>
   </ion-grid>
 
-  <ion-grid class="page-grid-bottom">
+  <ion-grid class="main-grid-bottom">
     <ion-row align-items-center>
       <ion-col padding>
 
@@ -57,45 +57,68 @@
     </ion-row>
   </ion-grid>
 
-  <ion-grid class="page-grid" id="weather-grid">
-    <ion-row align-items-center>
+  <ion-grid class="page-grid" id="weather-grid" no-padding>
+
+    <ion-row align-items-center id="retry-row" *ngIf="!weatherDataIsFetched">
+
+      <!-- Spinner -->
+      <div *ngIf="showSpinner && !weatherDataIsFetched">
+        <ion-spinner name="bubbles" class="loader-spinner"></ion-spinner>
+      </div>
+
+      <!-- Retry text and button -->
+      <div *ngIf="!showSpinner && !weatherDataIsFetched">
+
+        <p>Vädret för badplatsen kunde inte hämtas</p>
+
+        <button ion-button round outline color="light" icon-left (click)="getWeatherData()">
+          <ion-icon name="refresh-circle"></ion-icon>
+          Försök igen
+        </button>
+      </div>
+
+    </ion-row>
+
+    <ion-row align-items-center id="weather-top-row" *ngIf="!showSpinner && weatherDataIsFetched">
       <ion-col>
 
-        <div id="spinner-div" *ngIf="showSpinner && !weatherDataIsFetched">
-          <ion-spinner name="bubbles" class="loader-spinner"></ion-spinner>
-        </div>
-
-        <div id="retry-button-div" *ngIf="!showSpinner && !weatherDataIsFetched">
-
-          <p>Vädret för badplatsen kunde inte hämtas</p>
-
-          <button ion-button round outline color="light" icon-left (click)="getWeatherData()">
-            <ion-icon name="refresh-circle"></ion-icon>
-            Försök igen
-          </button>
-        </div>
-
+        <!-- Weather data presentation -->
         <div id="weather-container" *ngIf="!showSpinner && weatherDataIsFetched">
 
           <ion-row>
             <ion-col>
-              <div id="hour">{{ day }}, kl. {{ hour }}</div>
               <span id="temperature">{{ temperature }}°</span>
               <img src="assets/img/weather-icons/{{icon}}.png" id="icon" />
             </ion-col>
           </ion-row>
 
           <h2 id="summary-topic">{{ summary }}</h2>
-          <p id="summary-text">{{ daySummary }} <span *ngIf="sunsetTime">Solen kommer gå ner Kl. {{ sunsetTime }}</span></p>
 
-          <ion-range min="0" max="47" [(ngModel)]="hoursCounter" color="clearMain" (ionChange)="onHourChange()">
-            <ion-icon small range-left name="time"></ion-icon>
-            <ion-icon range-right name="time"></ion-icon>
-          </ion-range>
-
-          <img src="assets/img/darksky-logo.png" class="darksky-img" (click)="onVisitDarkSky()" />
+          <ion-item color="clearWhite" no-lines>
+            <ion-label>
+              {{ day }}, kl. {{ hour }}
+            </ion-label>
+            <ion-range min="0" max="47" [(ngModel)]="hoursCounter" color="clearMain" (ionChange)="onHourChange()">
+              <ion-icon small range-left name="time"></ion-icon>
+              <ion-icon range-right name="time"></ion-icon>
+            </ion-range>
+          </ion-item>
 
         </div>
+
+      </ion-col>
+    </ion-row>
+
+    <ion-row align-items-center padding id="weather-bottom-row" *ngIf="!showSpinner && weatherDataIsFetched">
+      <ion-col>
+        <div id="todays-summery-container">
+          <h4>Dagens väder</h4>
+          <p id="summary-text">
+            {{ daySummary }} <span *ngIf="sunsetTime">Solen kommer gå ner Kl. {{ sunsetTime }}</span>
+          </p>
+        </div>
+
+        <img src="assets/img/darksky-logo2.png" class="darksky-img" (click)="onVisitDarkSky()" />
 
       </ion-col>
     </ion-row>

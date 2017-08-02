@@ -7,7 +7,7 @@ page-place {
   }
 
   /* First section */
-  .page-grid-top {
+  .main-grid-top {
     height: 55%;
     background-image: url("../assets/img/water-white.png");
     background-position: center bottom;
@@ -18,7 +18,7 @@ page-place {
       width: 50vw;
     }
   }
-  .page-grid-bottom {
+  .main-grid-bottom {
     height: 45%;
     background-color: white;
 
@@ -30,7 +30,7 @@ page-place {
       font-family: Montserrat-Black, cursive;
     }
   }
-  .page-grid-top ion-row, .page-grid-bottom ion-row {
+  .main-grid-top ion-row, .main-grid-bottom ion-row {
     height: 100%;
     ion-col {
       text-align: center;
@@ -47,9 +47,40 @@ page-place {
       fill: white;
       stroke: white;
     }
-    #retry-button-div p {
-      font-size: 5vw;
-      line-height: 1.4;
+
+    #retry-row {
+      text-align: center;
+      margin: 0 auto;
+      p {
+        font-size: 5vw;
+        line-height: 1.4;
+      }
+    }
+
+    #weather-top-row {
+      background-image: url("../assets/img/clouds.png");
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    #weather-bottom-row {
+      padding: 12px;
+      background-color: white;
+      color: #40c4ff;
+      font-family: OpenSans-Regular, sans-serif;
+
+      h4 { font-weight: bold; }
+      p {
+        font-size: 5vw;
+        line-height: 1.4;
+      }
+
+      .darksky-img {
+        margin-top: 24px;
+        max-width: 52vw;
+        width: auto;
+        height: auto;
+      }
     }
   }
 
@@ -57,39 +88,24 @@ page-place {
     font-family: OpenSans-Regular, sans-serif;
     margin-bottom: 16px;
 
-    #hour {
-      font-size: 6vw;
-      text-align: left;
-    }
-
     #temperature {
-      font-size: 18vw;
+      font-size: 14vw;
       margin-top: 0;
     }
     #icon {
       text-align: right;
-      width: 16vw;
+      width: 14vw;
       height: auto !important;
       margin-left: 8px;
       margin-bottom: 16px;
     }
     #summary-topic {
-      font-size: 7vw;
+      font-size: 6vw;
       margin: 0;
     }
     #summary-text {
       font-size: 5vw;
-      text-align: left;
       line-height: 1.4;
-    }
-    .darksky-img {
-      max-width: 45vw;
-      width: auto;
-      height: auto;
-    }
-
-    .range-md .range-bar {
-      background: white !important;
     }
   }
 

@@ -86,7 +86,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		qsbJtC0krPRVAQYf0X8et6BgU3U=
+		96vlfGw2WYNmptEset1SK6cWlSA=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		9C3Grk/JsVEu1CrCBWgHx57fUR4=
+		CBVUmnwpN0CboNB0ygcndVc7AtE=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -134,7 +134,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		WvlUFIx5DEdcSzczce0Sc04e6zs=
+		5NGh1hJfsDq0bIK6TEDwYdwPpr8=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -246,7 +246,7 @@
 		</data>
 		<key>www/assets/data/places.json</key>
 		<data>
-		yseCDamEJHynLLx0I1MEuK/j5tE=
+		Unq5z7gmscyLeG6Gtup5uyHNpak=
 		</data>
 		<key>www/assets/data/warnings.json</key>
 		<data>
@@ -416,9 +416,17 @@
 		<data>
 		4U7StQh8bhfUw1dzD5BrsXzEPas=
 		</data>
+		<key>www/assets/img/clouds.png</key>
+		<data>
+		/h7fM4zH+ccsCHZ/i1rmXpBAJwI=
+		</data>
 		<key>www/assets/img/darksky-logo.png</key>
 		<data>
 		/DxC3ZDLxdMLJeTqEPZ9GlNAD9E=
+		</data>
+		<key>www/assets/img/darksky-logo2.png</key>
+		<data>
+		31ESjxlu77xJ4vbSnc0sCPGC7iY=
 		</data>
 		<key>www/assets/img/favorites-heart.png</key>
 		<data>
@@ -554,7 +562,7 @@
 		</data>
 		<key>www/build/main.css</key>
 		<data>
-		r5F7vMMhH3Urmga3ktrMcBFGY0k=
+		vH4vYfCsAmV/X82LbPu2Ib4NI4w=
 		</data>
 		<key>www/build/main.css.map</key>
 		<data>
@@ -562,11 +570,11 @@
 		</data>
 		<key>www/build/main.js</key>
 		<data>
-		LxLWz9uh104+1wd57lMwIc40DCA=
+		lWkEf0FFPJO7ENhcKsiCDlRLu+0=
 		</data>
 		<key>www/build/main.js.map</key>
 		<data>
-		2kA1kYpZGKlePWtF28Rt94DJpZI=
+		x7IXQ1YLktkQ0FhkrsOx2OJ3XB0=
 		</data>
 		<key>www/build/polyfills.js</key>
 		<data>
@@ -883,11 +891,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qsbJtC0krPRVAQYf0X8et6BgU3U=
+			96vlfGw2WYNmptEset1SK6cWlSA=
 			</data>
 			<key>hash2</key>
 			<data>
-			A3Abukbb3t9k4W18uA6qnUq+xSx7cn4twXH7B3o1MNc=
+			IQFBF9ozSDy81Kmjh9PWX+hByRSvIqBz/q7VjnSLzI0=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -905,11 +913,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9C3Grk/JsVEu1CrCBWgHx57fUR4=
+			CBVUmnwpN0CboNB0ygcndVc7AtE=
 			</data>
 			<key>hash2</key>
 			<data>
-			tJ9F+CJt5KK2bysC90n9XmDlQ/JOvSKu7yc3nILrjtU=
+			MgszTJqs4Ifdn3ZX0mPbNKyXoS+VB+an90UjILowHNg=
 			</data>
 		</dict>
 		<key>LaunchImage-568h@2x.png</key>
@@ -1004,11 +1012,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WvlUFIx5DEdcSzczce0Sc04e6zs=
+			5NGh1hJfsDq0bIK6TEDwYdwPpr8=
 			</data>
 			<key>hash2</key>
 			<data>
-			J8kxljIOzYzV/Hbv5goaobhaZQv9iEgqLYSeZqmwWLg=
+			nVMDmZLuRnx72EXcXS0ceFNP9GTykXt+w3ekydThbzw=
 			</data>
 		</dict>
 		<key>archived-expanded-entitlements.xcent</key>
@@ -1301,11 +1309,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yseCDamEJHynLLx0I1MEuK/j5tE=
+			Unq5z7gmscyLeG6Gtup5uyHNpak=
 			</data>
 			<key>hash2</key>
 			<data>
-			ktD8LcThdM9fHfRis3dOTQME5eTeh1Y966/bZ8+v8WU=
+			pLIzYxPSFZRHMj51AvHBR+ym8xumMSqC3oNCsHTiQzg=
 			</data>
 		</dict>
 		<key>www/assets/data/warnings.json</key>
@@ -1770,6 +1778,17 @@
 			wgOLUsF2jGyh65zrWImr/6GVdB1HmPU22P+talqqqqk=
 			</data>
 		</dict>
+		<key>www/assets/img/clouds.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/h7fM4zH+ccsCHZ/i1rmXpBAJwI=
+			</data>
+			<key>hash2</key>
+			<data>
+			VKn+vQBOsEbhjpaiD2p73vEsxQDYyiPFFN+T81ZNhA0=
+			</data>
+		</dict>
 		<key>www/assets/img/darksky-logo.png</key>
 		<dict>
 			<key>hash</key>
@@ -1779,6 +1798,17 @@
 			<key>hash2</key>
 			<data>
 			m1b2d0qkQ33EBsgFvlmLaT5KGXslJvB1NujeiswusHg=
+			</data>
+		</dict>
+		<key>www/assets/img/darksky-logo2.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			31ESjxlu77xJ4vbSnc0sCPGC7iY=
+			</data>
+			<key>hash2</key>
+			<data>
+			Kovvyzo3svx85GAJ4gFhgxaWsUJLVaxTIchX2gPVK58=
 			</data>
 		</dict>
 		<key>www/assets/img/favorites-heart.png</key>
@@ -2148,11 +2178,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			r5F7vMMhH3Urmga3ktrMcBFGY0k=
+			vH4vYfCsAmV/X82LbPu2Ib4NI4w=
 			</data>
 			<key>hash2</key>
 			<data>
-			Qnq5r2MfTjeoT4I6NlwcEFhr0aBBhVAoOvu0F1GoCqU=
+			4u9O4SKgMrOPJPrPthQgTQJ4qzkTWI4BTFDfB/sH1lc=
 			</data>
 		</dict>
 		<key>www/build/main.css.map</key>
@@ -2170,22 +2200,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LxLWz9uh104+1wd57lMwIc40DCA=
+			lWkEf0FFPJO7ENhcKsiCDlRLu+0=
 			</data>
 			<key>hash2</key>
 			<data>
-			H1dvp0eZ4ib4Hd4fYEMsq1tqrBKJykO0EgqoLfYHBDg=
+			erBY2ixZrsU/ltzWh9lxnYIQdWn44rDbP2w6N/qKHao=
 			</data>
 		</dict>
 		<key>www/build/main.js.map</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2kA1kYpZGKlePWtF28Rt94DJpZI=
+			x7IXQ1YLktkQ0FhkrsOx2OJ3XB0=
 			</data>
 			<key>hash2</key>
 			<data>
-			0+4ijyUbfC3JF17PtmYPfBZu8+hBlKbzfc6JO0FSMGQ=
+			b0hutGoWZsiKBHZn4dcvfUHLVFt9bh1CFb6uVIg/uzs=
 			</data>
 		</dict>
 		<key>www/build/polyfills.js</key>
