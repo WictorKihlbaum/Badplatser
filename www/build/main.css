@@ -35646,22 +35646,32 @@ page-home #home-background-gradient {
 }
 
 page-home #map-button {
+  z-index: 1000;
   margin-top: 18px;
-  font-weight: bold;
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
+  font-family: Comfortaa-Bold;
+}
+
+page-home #map-button ion-icon {
+  color: #8C9EFF;
 }
 
 page-home #favorite-button {
-  font-weight: bold;
+  z-index: 1000;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
+  font-family: Comfortaa-Bold;
+}
+
+page-home #favorite-button ion-icon {
+  color: #FF80AB;
 }
 
 page-home #about-button {
   color: white;
   background: transparent;
-  border: 1px solid #40c4ff;
+  border: 1px solid white;
   margin-right: 12px;
   margin-bottom: 12px;
   box-shadow: none;
