@@ -35519,10 +35519,22 @@ ion-navbar.toolbar {
   src: url("../assets/fonts/Montserrat-Black.ttf");
 }
 
+/* Montserrat-Bold */
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url("../assets/fonts/Montserrat-Bold.ttf");
+}
+
 /* Open Sans */
 @font-face {
   font-family: OpenSans-Regular;
   src: url("../assets/fonts/OpenSans-Regular.ttf");
+}
+
+/* Ubuntu-Bold */
+@font-face {
+  font-family: Ubuntu-Bold;
+  src: url("../assets/fonts/Ubuntu-Bold.ttf");
 }
 
 .page-grid, .page-grid ion-row {
@@ -35645,12 +35657,15 @@ page-home #home-background-gradient {
   background-color: #80D8FF;
 }
 
+page-home #main-buttons-container {
+  margin-top: 15vh;
+}
+
 page-home #map-button {
   z-index: 1000;
-  margin-top: 18px;
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
-  font-family: Comfortaa-Bold;
+  font-family: Montserrat-Black;
 }
 
 page-home #map-button ion-icon {
@@ -35661,7 +35676,7 @@ page-home #favorite-button {
   z-index: 1000;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  font-family: Comfortaa-Bold;
+  font-family: Montserrat-Black;
 }
 
 page-home #favorite-button ion-icon {
@@ -35672,8 +35687,7 @@ page-home #about-button {
   color: white;
   background: transparent;
   border: 1px solid white;
-  margin-right: 12px;
-  margin-bottom: 12px;
+  margin-top: 20px;
   box-shadow: none;
   -webkit-animation-delay: 1.1s;
   animation-delay: 1.1s;
@@ -35705,15 +35719,15 @@ page-home #middle-row #logo-container {
 }
 
 page-home #middle-row #logo-container #logo-img {
-  width: 20vw;
+  width: 24vw;
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
 
 page-home #middle-row #logo-container #logo-text {
   margin: 10px 0 0 0;
-  font-family: Montserrat-Black, cursive;
-  font-size: 8vw;
+  font-family: Ubuntu-Bold;
+  font-size: 10vw;
   color: #E8F5E9;
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
@@ -35850,7 +35864,7 @@ page-place .main-grid-bottom .place-button {
   box-shadow: 0 2px 5px rgba(178, 235, 242, 0.5);
   font-weight: bold;
   margin-bottom: 8px;
-  font-family: Montserrat-Black, cursive;
+  font-family: Montserrat-Black;
 }
 
 page-place .main-grid-top ion-row, page-place .main-grid-bottom ion-row {
@@ -35862,8 +35876,8 @@ page-place .main-grid-top ion-row ion-col, page-place .main-grid-bottom ion-row 
 }
 
 page-place #weather-grid {
-  background-image: url("../assets/img/water-white2.png");
-  background-position: center top;
+  background-image: url("../assets/img/water-white2.png"), url("../assets/img/clouds.png");
+  background-position: center top, center bottom;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -35871,6 +35885,10 @@ page-place #weather-grid {
 page-place #weather-grid .loader-spinner * {
   fill: white;
   stroke: white;
+}
+
+page-place #weather-grid .hour-label, page-place #weather-grid #temperature, page-place #weather-grid #summary-topic, page-place #weather-grid #summary-text {
+  font-family: Comfortaa-Regular;
 }
 
 page-place #weather-grid #retry-row {
@@ -35893,7 +35911,7 @@ page-place #weather-grid #weather-top-row {
 page-place #weather-grid #weather-bottom-row {
   background-color: white;
   color: #40c4ff;
-  font-family: OpenSans-Regular, sans-serif;
+  font-family: OpenSans-Regular;
 }
 
 page-place #weather-grid #weather-bottom-row #todays-summery-container {
@@ -35918,7 +35936,7 @@ page-place #weather-grid #weather-bottom-row .darksky-img {
 }
 
 page-place #weather-container {
-  font-family: OpenSans-Regular, sans-serif;
+  font-family: OpenSans-Regular;
   margin-bottom: 16px;
 }
 
@@ -35946,7 +35964,11 @@ page-place #weather-container #summary-text {
 }
 
 page-place #quality-grid {
-  font-family: OpenSans-Regular, sans-serif;
+  font-family: OpenSans-Regular;
+  background-image: url("../assets/img/clouds2.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 page-place #quality-grid #quality-icon {
@@ -35958,11 +35980,11 @@ page-place #quality-grid #quality-icon {
 page-place #quality-grid h1, page-place #quality-grid h3, page-place #quality-grid h5 {
   margin: 0;
   font-size: 5vw;
-  font-family: Palanquin-Regular, sans-serif;
+  font-family: Palanquin-Regular;
 }
 
 page-place #quality-grid h2, page-place #quality-grid h4, page-place #quality-grid h6 {
-  font-family: Palanquin-Light, sans-serif;
+  font-family: Palanquin-Light;
   margin: 0 0 12px 0;
   font-size: 6vw;
 }
@@ -35973,14 +35995,6 @@ page-search .place {
 
 page-station {
   font-family: OpenSans-Regular, sans-serif;
-}
-
-page-station .station-title {
-  text-transform: lowercase;
-}
-
-page-station .station-title:first-letter {
-  text-transform: uppercase;
 }
 
 page-station ion-content {

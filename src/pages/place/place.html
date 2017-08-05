@@ -95,7 +95,7 @@
           <h2 id="summary-topic">{{ summary }}</h2>
 
           <ion-item color="clearWhite" no-lines>
-            <ion-label>
+            <ion-label class="hour-label">
               {{ day }}, kl. {{ hour }}
             </ion-label>
             <ion-range min="0" max="47" [(ngModel)]="hoursCounter" color="clearMain" (ionChange)="onHourChange()">

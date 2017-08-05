@@ -1,13 +1,6 @@
 page-station {
   font-family: OpenSans-Regular, sans-serif;
 
-  .station-title {
-    text-transform: lowercase;
-  }
-  .station-title:first-letter {
-    text-transform: uppercase;
-  }
-
   ion-content {
     color: white !important;
   }

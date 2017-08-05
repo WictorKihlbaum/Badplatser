@@ -86,7 +86,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		AV10hJYJdqT6BKS5gEbeZRxynYc=
+		y7YH3RCxGtlFzu1H0O1w6Mg18D4=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		OQmxNKwo4D/0doOT2yq2MZh5UZk=
+		QqLl1GiHsqPNQb3Wn+r1wMAE4FI=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -134,7 +134,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		WIK7TYjRTx9Fze0j3xbr+9VFg98=
+		MhH8uM2GZqgsi7E11IDtecwjTno=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -268,6 +268,14 @@
 		<data>
 		UnG8FgnbTvYlftbwQpwrgfrgTOU=
 		</data>
+		<key>www/assets/fonts/Montserrat-Bold.ttf</key>
+		<data>
+		jyPaz30vSqm+U8lX9IAJ9hCWW+U=
+		</data>
+		<key>www/assets/fonts/Montserrat-Regular.ttf</key>
+		<data>
+		IerUkGSZkvcgD8Hzg5ufwI6IKv4=
+		</data>
 		<key>www/assets/fonts/OpenSans-Regular.ttf</key>
 		<data>
 		UTlm4mC7dhDUeyMp26GUFDgxiT4=
@@ -279,6 +287,10 @@
 		<key>www/assets/fonts/Palanquin-Regular.ttf</key>
 		<data>
 		TI+nmf2HGpEyWbb+4nYIPcRICm0=
+		</data>
+		<key>www/assets/fonts/Ubuntu-Bold.ttf</key>
+		<data>
+		yF8zvEoUFqiQnY/eS9KP2MvTDYY=
 		</data>
 		<key>www/assets/fonts/ionicons.eot</key>
 		<data>
@@ -419,6 +431,10 @@
 		<key>www/assets/img/clouds.png</key>
 		<data>
 		/h7fM4zH+ccsCHZ/i1rmXpBAJwI=
+		</data>
+		<key>www/assets/img/clouds2.png</key>
+		<data>
+		KmGIddx78i0+rvKwSn6rMdIeUng=
 		</data>
 		<key>www/assets/img/darksky-logo.png</key>
 		<data>
@@ -562,7 +578,7 @@
 		</data>
 		<key>www/build/main.css</key>
 		<data>
-		SJdsqKax2snco/tU6h0nP3hR4Xo=
+		sgDyM2HaIe29JRfptTMUXTWFxvo=
 		</data>
 		<key>www/build/main.css.map</key>
 		<data>
@@ -570,11 +586,11 @@
 		</data>
 		<key>www/build/main.js</key>
 		<data>
-		kyaHNcZayq9/vMVpnaTxiTx7914=
+		0slYAEesTiyzZZDJaXn6zkrLW7w=
 		</data>
 		<key>www/build/main.js.map</key>
 		<data>
-		IfHQUZ0+b5/mi5RPsocwtYd2BU4=
+		h67Jpg8j5EgjfBLh2tHrCx6aiuk=
 		</data>
 		<key>www/build/polyfills.js</key>
 		<data>
@@ -891,11 +907,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AV10hJYJdqT6BKS5gEbeZRxynYc=
+			y7YH3RCxGtlFzu1H0O1w6Mg18D4=
 			</data>
 			<key>hash2</key>
 			<data>
-			gvw1vqxhpoSH9HkXQHYolIo70uUWaOC+crrRWpJli2I=
+			6CXYH5QV7w4Wx2MXlLI96r24DRp8tbn02NhbbqorOXs=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -913,11 +929,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OQmxNKwo4D/0doOT2yq2MZh5UZk=
+			QqLl1GiHsqPNQb3Wn+r1wMAE4FI=
 			</data>
 			<key>hash2</key>
 			<data>
-			kzC1rjFlmzEX6I2wS62iQW4aifxOFM6uxx+hR2K9TYs=
+			XaHLWDpMwzwph3+OL1pjRqwstm7E0uzea1aiV8LoG/8=
 			</data>
 		</dict>
 		<key>LaunchImage-568h@2x.png</key>
@@ -1012,11 +1028,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WIK7TYjRTx9Fze0j3xbr+9VFg98=
+			MhH8uM2GZqgsi7E11IDtecwjTno=
 			</data>
 			<key>hash2</key>
 			<data>
-			tFfBCO0Hjh/psYvo9KjYGiwmxTImhBIq76YlH1kNqiI=
+			UHS4yhUpmUZDjhcQ5hZXrVGz2QppIw7pTEXLzxbyYpU=
 			</data>
 		</dict>
 		<key>archived-expanded-entitlements.xcent</key>
@@ -1371,6 +1387,28 @@
 			k8JNGNGcOpLIskqYy+InhzsCU210Swz0WDSg/amZSiE=
 			</data>
 		</dict>
+		<key>www/assets/fonts/Montserrat-Bold.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jyPaz30vSqm+U8lX9IAJ9hCWW+U=
+			</data>
+			<key>hash2</key>
+			<data>
+			RHuEgmm9ri6OMPOFqV8k3MVKgDBLAEUhWc3T9ofWz8M=
+			</data>
+		</dict>
+		<key>www/assets/fonts/Montserrat-Regular.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IerUkGSZkvcgD8Hzg5ufwI6IKv4=
+			</data>
+			<key>hash2</key>
+			<data>
+			0QTePNK8q0STxp8EVsXkI+FD+obd0TQ58YOXQOH0ed0=
+			</data>
+		</dict>
 		<key>www/assets/fonts/OpenSans-Regular.ttf</key>
 		<dict>
 			<key>hash</key>
@@ -1402,6 +1440,17 @@
 			<key>hash2</key>
 			<data>
 			wpRS3P7c2Z9PEBLPwFE2ZMQza0Hdwy20j0IgiDkeG/M=
+			</data>
+		</dict>
+		<key>www/assets/fonts/Ubuntu-Bold.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yF8zvEoUFqiQnY/eS9KP2MvTDYY=
+			</data>
+			<key>hash2</key>
+			<data>
+			Z5tcHgnKsxVruO9SlzX5OCvzHKesc3OCq5WSl/jYKtQ=
 			</data>
 		</dict>
 		<key>www/assets/fonts/ionicons.eot</key>
@@ -1787,6 +1836,17 @@
 			<key>hash2</key>
 			<data>
 			VKn+vQBOsEbhjpaiD2p73vEsxQDYyiPFFN+T81ZNhA0=
+			</data>
+		</dict>
+		<key>www/assets/img/clouds2.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KmGIddx78i0+rvKwSn6rMdIeUng=
+			</data>
+			<key>hash2</key>
+			<data>
+			N06/m1QPvjA+oJ9u6pD99Gfxxm8md0WniAjL28C9e6c=
 			</data>
 		</dict>
 		<key>www/assets/img/darksky-logo.png</key>
@@ -2178,11 +2238,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SJdsqKax2snco/tU6h0nP3hR4Xo=
+			sgDyM2HaIe29JRfptTMUXTWFxvo=
 			</data>
 			<key>hash2</key>
 			<data>
-			gJOcQVBqp6oBLimiiW5gGOAi2pNgEU82eSyzGzynIig=
+			hY1MUYh5ygUO2tUgYPkC8LAg9vhW7zRUOAvS1dBnxcc=
 			</data>
 		</dict>
 		<key>www/build/main.css.map</key>
@@ -2200,22 +2260,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kyaHNcZayq9/vMVpnaTxiTx7914=
+			0slYAEesTiyzZZDJaXn6zkrLW7w=
 			</data>
 			<key>hash2</key>
 			<data>
-			cBb55WszzZwO7iiPFerLLgYWSgBEf6gZD/QM3q+Za/0=
+			eEc1yplxz2UNowcTUbD5i2+ry1IzObtHgPfQNUF5hXk=
 			</data>
 		</dict>
 		<key>www/build/main.js.map</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IfHQUZ0+b5/mi5RPsocwtYd2BU4=
+			h67Jpg8j5EgjfBLh2tHrCx6aiuk=
 			</data>
 			<key>hash2</key>
 			<data>
-			pq2H7akbzan2XIfMnpLdK70c9jzQIvyyDoEPo+nbfpM=
+			/Nq2W+EUKi8NoE6IRHlVTm/eu+ALjp+oDpjG/hb2o+Y=
 			</data>
 		</dict>
 		<key>www/build/polyfills.js</key>

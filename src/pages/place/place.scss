@@ -3,7 +3,7 @@ page-place {
   ion-content {
     color: white !important;
     font-family: Palanquin-Light, sans-serif;
-    background: linear-gradient(45deg, #00b0ff 0%,#69f0ae 100%) !important;
+    background: linear-gradient(45deg, #00b0ff 0%, #69f0ae 100%) !important;
   }
 
   /* First section */
@@ -27,7 +27,7 @@ page-place {
       box-shadow: 0 2px 5px rgba(178, 235, 242, 0.5);
       font-weight: bold;
       margin-bottom: 8px;
-      font-family: Montserrat-Black, cursive;
+      font-family: Montserrat-Black;
     }
   }
   .main-grid-top ion-row, .main-grid-bottom ion-row {
@@ -38,8 +38,8 @@ page-place {
   }
 
   #weather-grid {
-    background-image: url("../assets/img/water-white2.png");
-    background-position: center top;
+    background-image: url("../assets/img/water-white2.png"), url("../assets/img/clouds.png");
+    background-position: center top, center bottom;
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -48,9 +48,14 @@ page-place {
       stroke: white;
     }
 
+    .hour-label, #temperature, #summary-topic, #summary-text {
+      font-family: Comfortaa-Regular;
+    }
+
     #retry-row {
       text-align: center;
       margin: 0 auto;
+
       p {
         font-size: 5vw;
         line-height: 1.4;
@@ -66,7 +71,7 @@ page-place {
     #weather-bottom-row {
       background-color: white;
       color: #40c4ff;
-      font-family: OpenSans-Regular, sans-serif;
+      font-family: OpenSans-Regular;
 
       #todays-summery-container {
         padding: 12px;
@@ -89,7 +94,7 @@ page-place {
   }
 
   #weather-container {
-    font-family: OpenSans-Regular, sans-serif;
+    font-family: OpenSans-Regular;
     margin-bottom: 16px;
 
     #temperature {
@@ -114,7 +119,12 @@ page-place {
   }
 
   #quality-grid {
-    font-family: OpenSans-Regular, sans-serif;
+    font-family: OpenSans-Regular;
+
+    background-image: url("../assets/img/clouds2.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
 
     #quality-icon {
       width: 22vw;
@@ -124,10 +134,10 @@ page-place {
     h1, h3, h5 {
       margin: 0;
       font-size: 5vw;
-      font-family: Palanquin-Regular, sans-serif;
+      font-family: Palanquin-Regular;
     }
     h2, h4, h6 {
-      font-family: Palanquin-Light, sans-serif;
+      font-family: Palanquin-Light;
       margin: 0 0 12px 0;
       font-size: 6vw;
     }

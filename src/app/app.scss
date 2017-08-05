@@ -43,10 +43,20 @@
   font-family: Montserrat-Black;
   src: url("../assets/fonts/Montserrat-Black.ttf");
 }
+/* Montserrat-Bold */
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url("../assets/fonts/Montserrat-Bold.ttf");
+}
 /* Open Sans */
 @font-face {
   font-family: OpenSans-Regular;
   src: url("../assets/fonts/OpenSans-Regular.ttf");
+}
+/* Ubuntu-Bold */
+@font-face {
+  font-family: Ubuntu-Bold;
+  src: url("../assets/fonts/Ubuntu-Bold.ttf");
 }
 
 .page-grid, .page-grid ion-row {
