@@ -1,8 +1,7 @@
 page-home {
 
-  #home-background-gradient {
+  ion-content {
     background-color: #80D8FF;
-  //background: linear-gradient(to top, #00b0ff 0%, #40c4ff 100%);
   }
 
   #main-buttons-container {
@@ -12,21 +11,12 @@ page-home {
   #map-button {
     ion-icon { color: #8C9EFF; }
     z-index: 1000;
-    //margin-top: 18px;
-    //background: linear-gradient(45deg, #1de9b6 0%, #00e5ff 100%) !important;
-    //color: white !important;
-    //box-shadow: 0 2px 5px rgba(178, 235, 242, 0.5) !important;
-    //font-weight: bold;
     animation-delay: 0.5s;
     font-family: Montserrat-Black;
   }
   #favorite-button {
     ion-icon { color: #FF80AB; }
     z-index: 1000;
-    //background: linear-gradient(45deg, #ff80ab 0%, #b388FF 100%) !important;
-    //box-shadow: 0 2px 5px rgba(248, 187, 208, 0.5) !important;
-    //color: white;
-    //font-weight: bold;
     animation-delay: 0.8s;
     font-family: Montserrat-Black;
   }
@@ -49,7 +39,7 @@ page-home {
   .page-grid-home {
     background-color: #80D8FF;
     height: 100%;
-    #middle-row, #bottom-row {
+    #top-row, #bottom-row {
       z-index: 1000;
       text-align: center;
       height: 100%;
@@ -62,30 +52,25 @@ page-home {
     background: linear-gradient(to top, #00b0ff 0%, #40c4ff 100%);
   }
 
-  #middle-row {
-    //background: linear-gradient(to top, #69f0ae 0%, #00E676 100%);
-    //background: linear-gradient(to top, #80D8FF 0%, #40C4FF 100%);
+  #top-row {
     background: linear-gradient(to top, #69F0AE  0%, #80D8FF 100%);
+
     #logo-container {
       margin-top: 54px;
 
       #logo-img {
-        //width: 20vw;
         width: 24vw;
         animation-delay: 0.5s;
       }
       #logo-text {
         margin: 10px 0 0 0;
-        //font-family: Montserrat-Black, cursive;
         font-family: Ubuntu-Bold;
-        //font-size: 8vw;
         font-size: 10vw;
         color: #E8F5E9;
         animation-delay: 0.5s;
       }
     }
   }
-
 
   #bottom-row ion-col #buttons-container {
     button {

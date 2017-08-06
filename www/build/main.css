@@ -35653,7 +35653,7 @@ page-home {
   /* Wave animations */
 }
 
-page-home #home-background-gradient {
+page-home ion-content {
   background-color: #80D8FF;
 }
 
@@ -35707,7 +35707,7 @@ page-home .page-grid-home {
   height: 100%;
 }
 
-page-home .page-grid-home #middle-row, page-home .page-grid-home #bottom-row {
+page-home .page-grid-home #top-row, page-home .page-grid-home #bottom-row {
   z-index: 1000;
   text-align: center;
   height: 100%;
@@ -35719,21 +35719,21 @@ page-home #bottom-row {
   background: linear-gradient(to top, #00b0ff 0%, #40c4ff 100%);
 }
 
-page-home #middle-row {
+page-home #top-row {
   background: linear-gradient(to top, #69F0AE 0%, #80D8FF 100%);
 }
 
-page-home #middle-row #logo-container {
+page-home #top-row #logo-container {
   margin-top: 54px;
 }
 
-page-home #middle-row #logo-container #logo-img {
+page-home #top-row #logo-container #logo-img {
   width: 24vw;
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
 
-page-home #middle-row #logo-container #logo-text {
+page-home #top-row #logo-container #logo-text {
   margin: 10px 0 0 0;
   font-family: Ubuntu-Bold;
   font-size: 10vw;

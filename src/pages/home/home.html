@@ -1,28 +1,13 @@
-<ion-content no-bounce id="home-background-gradient">
+<ion-content no-bounce>
 
   <ion-grid no-padding class="page-grid-home">
 
-    <ion-row align-items-end id="middle-row">
+    <ion-row align-items-end id="top-row">
       <ion-col>
+        <!-- Logo and name -->
         <div id="logo-container">
           <img src="assets/img/sweden.png" id="logo-img" class="animated fadeIn" />
           <h1 id="logo-text" class="animated fadeIn">Badställen</h1>
-
-          <!--
-          <div>
-            <button ion-button round icon-left color="whiteBlue" id="map-button" [navPush]="mapPage" class="animated bounceIn">
-              <ion-icon name="md-search"></ion-icon>
-              Hitta badplats
-            </button>
-          </div>
-          <div>
-            <button ion-button round icon-left color="whiteBlue" id="favorite-button" [navPush]="favoritesPage" class="animated bounceIn">
-              <ion-icon name="md-heart"></ion-icon>
-              Favoriter
-            </button>
-          </div>
-          -->
-
         </div>
       </ion-col>
     </ion-row>
@@ -36,12 +21,14 @@
 
       <ion-col>
 
+        <!-- Find button -->
         <div id="main-buttons-container">
           <button ion-button round icon-left color="whiteBlue" id="map-button" [navPush]="mapPage" class="animated bounceIn">
             <ion-icon name="md-search"></ion-icon>
             Hitta
           </button>
 
+          <!-- Favorites button -->
           <button ion-button round icon-left color="whiteBlue" id="favorite-button" [navPush]="favoritesPage" class="animated bounceIn">
             <ion-icon name="md-heart"></ion-icon>
             Favoriter
@@ -49,37 +36,17 @@
         </div>
 
       </ion-col>
-
-
-
-      <!--
-      <ion-col>
-        <div id="buttons-container">
-
-
-            <button ion-button large icon-left color="light" id="map-button" [navPush]="mapPage" class="animated bounceIn">
-              <ion-icon name="search"></ion-icon>
-              Hitta
-            </button>
-
-            <button ion-button large icon-left id="favorite-button" [navPush]="favoritesPage" class="animated bounceIn">
-              <ion-icon name="heart"></ion-icon>
-              Favoriter
-            </button>
-
-        </div>
-      </ion-col>
-      -->
     </ion-row>
-
   </ion-grid>
 
+  <!-- Rating button -->
   <ion-fab top left>
     <button ion-fab mini id="rate-button" class="animated bounceIn" (click)="onRating()">
       <ion-icon name="md-star"></ion-icon>
     </button>
   </ion-fab>
 
+  <!-- About button -->
   <ion-fab top right [navPush]="aboutPage">
     <button ion-fab mini id="about-button" class="animated bounceIn">
       <ion-icon name="md-information-circle"></ion-icon>
