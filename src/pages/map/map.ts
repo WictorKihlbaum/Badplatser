@@ -11,6 +11,7 @@ import { PlacesService } from "../../providers/places-service";
 declare const google: any;
 declare const MarkerClusterer: any;
 declare const InfoBubble: any;
+declare const RichMarker: any;
 
 @Component({
   selector: 'page-map',
@@ -169,7 +170,7 @@ export class MapPage implements OnInit {
 
   async onLoaderDismiss() {
     this.loader.dismiss();
-    this.showCurrentLocationOnMap({ lat: this.currentLat, lng: this.currentLng });
+    this.showCurrentLocationOnMap(this.currentLat, this.currentLng);
     await this.setUserCounty();
     this.markAllPlaces();
     //this.markAllSeaTemperatures();
@@ -177,16 +178,16 @@ export class MapPage implements OnInit {
     this.setUserWatcher();
   }
 
-  showCurrentLocationOnMap(coordinates: any) {
+  showCurrentLocationOnMap(latitude: number, longitude: number) {
     if (this.userCoordinatesAreSet()) {
-      this.userMarker = new google.maps.Marker({
-        map: this.map,
-        animation: google.maps.Animation.DROP,
+      const coordinates: any = new google.maps.LatLng(latitude, longitude);
+      const html: string = '<div class="user-marker marker-animation"><div>';
+
+      this.userMarker = new RichMarker({
         position: coordinates,
-        icon: {
-          url: 'assets/img/pin.png',
-          scaledSize: new google.maps.Size(38, 38)
-        }
+        map: this.map,
+        flat: true,
+        content: html
       });
     }
   }

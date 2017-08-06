@@ -34,6 +34,9 @@
         },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "com.wictorkihlbaum.badplatser"
+        },
+        "cordova-launch-review": {
+            "PACKAGE_NAME": "com.wictorkihlbaum.badplatser"
         }
     },
     "dependent_plugins": {

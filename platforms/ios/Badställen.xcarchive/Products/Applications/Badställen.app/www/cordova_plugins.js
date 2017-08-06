@@ -106,6 +106,14 @@ module.exports = [
             "cordova.plugins.Keyboard"
         ],
         "runs": true
+    },
+    {
+        "id": "cordova-launch-review.LaunchReview",
+        "file": "plugins/cordova-launch-review/www/launchreview.js",
+        "pluginId": "cordova-launch-review",
+        "clobbers": [
+            "LaunchReview"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -120,7 +128,8 @@ module.exports.metadata =
     "cordova-plugin-splashscreen": "4.0.3",
     "cordova-plugin-statusbar": "2.2.2",
     "cordova-plugin-whitelist": "1.3.1",
-    "ionic-plugin-keyboard": "2.2.1"
+    "ionic-plugin-keyboard": "2.2.1",
+    "cordova-launch-review": "2.0.0"
 };
 // BOTTOM OF METADATA
 });

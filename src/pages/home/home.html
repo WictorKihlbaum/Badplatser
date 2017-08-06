@@ -74,6 +74,12 @@
 
   </ion-grid>
 
+  <ion-fab top left>
+    <button ion-fab mini id="rate-button" class="animated bounceIn" (click)="onRating()">
+      <ion-icon name="md-star"></ion-icon>
+    </button>
+  </ion-fab>
+
   <ion-fab top right [navPush]="aboutPage">
     <button ion-fab mini id="about-button" class="animated bounceIn">
       <ion-icon name="md-information-circle"></ion-icon>

@@ -26,6 +26,8 @@
 		CC1BEE449252473392346764 /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 008E34C52B21428AA4348C63 /* CDVLogger.m */; };
 		D1E14DBA20074A43B4D1CF67 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 961FF59745F448CDB2D6F47E /* CDVStatusBar.m */; };
 		D6135DBD4649434AB279A81C /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EDA4DBF614DBBAC4D070E /* CDVViewController+SplashScreen.m */; };
+		CF3CF6B30BFA4E60856429FA /* LaunchReview.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A100B73D9E4DE69B55D035 /* LaunchReview.m */; };
+		F0FCCE2040964DBB873D7414 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2EAEB39141340DF88C0FFB9 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +98,9 @@
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "Badställen/config.xml"; sourceTree = "<group>"; };
 		F852A89DBD2143F79D236571 /* CDVDevice.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVDevice.h; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; };
 		FCEFC304025A4AEE8BCF909C /* CDVConnection.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVConnection.m; path = "cordova-plugin-network-information/CDVConnection.m"; sourceTree = "<group>"; };
+		91A100B73D9E4DE69B55D035 /* LaunchReview.m */ = {isa = PBXFileReference; name = "LaunchReview.m"; path = "cordova-launch-review/LaunchReview.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		395E29623146459B9EA20F99 /* LaunchReview.h */ = {isa = PBXFileReference; name = "LaunchReview.h"; path = "cordova-launch-review/LaunchReview.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B2EAEB39141340DF88C0FFB9 /* StoreKit.framework */ = {isa = PBXFileReference; name = "StoreKit.framework"; path = "System/Library/Frameworks/StoreKit.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +112,7 @@
 				6A58341662ED4C1B95C8B443 /* CoreLocation.framework in Frameworks */,
 				BBE5C3ECF91048EF83B614FD /* SystemConfiguration.framework in Frameworks */,
 				28842BFAC4784F92AF785AF6 /* CoreTelephony.framework in Frameworks */,
+				F0FCCE2040964DBB873D7414 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +186,7 @@
 				08F344EF02BE4B22B47FFCFA /* CoreLocation.framework */,
 				4B98E2ACB3AE434883A7DB65 /* SystemConfiguration.framework */,
 				67EF4789F9554660AED95E8D /* CoreTelephony.framework */,
+				B2EAEB39141340DF88C0FFB9 /* StoreKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -226,6 +233,8 @@
 				3E26D97466DF4696B4001C2D /* CDVStatusBar.h */,
 				6BEF2C52CA9A49318E03A424 /* IonicKeyboard.m */,
 				5B7790CB62E24967A3D70A91 /* IonicKeyboard.h */,
+				91A100B73D9E4DE69B55D035 /* LaunchReview.m */,
+				395E29623146459B9EA20F99 /* LaunchReview.h */,
 			);
 			name = Plugins;
 			path = "Badställen/Plugins";
@@ -364,6 +373,7 @@
 				D6135DBD4649434AB279A81C /* CDVViewController+SplashScreen.m in Sources */,
 				D1E14DBA20074A43B4D1CF67 /* CDVStatusBar.m in Sources */,
 				27E3506C411B45A3A542C37C /* IonicKeyboard.m in Sources */,
+				CF3CF6B30BFA4E60856429FA /* LaunchReview.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
