@@ -2,46 +2,37 @@ page-favorites {
 
   ion-content {
     color: white !important;
-    font-family: Palanquin-Light, sans-serif;
   }
 
   .favorite {
     visibility: hidden;
-    font-family: OpenSans-Regular, sans-serif;
     background: linear-gradient(45deg, #039BE5 0%, #03A9F4 100%);
     box-shadow: 0 2px 5px rgba(3, 155, 229, 0.3);
     border-radius: 8px;
     margin-bottom: 6px;
     color: white;
 
-    h2 {
-      font-weight: bold;
-    }
-
+    h2 { font-family: Montserrat-Medium; }
     p {
       color: white;
+      font-family: Montserrat-Regular;
     }
-
-    button {
-      box-shadow: none;
-    }
+    button { box-shadow: none; }
   }
 
   #no-favorites-container {
-    img {
-      width: 18vw;
-    }
+    img { width: 18vw; }
 
     h1 {
       font-size: 6vw;
-      font-family: Palanquin-Regular, sans-serif;
+      font-family: Palanquin-Regular;
     }
 
     p {
       text-align: left;
       line-height: 1.4;
       font-size: 5vw;
-      font-family: Palanquin-Light, sans-serif;
+      font-family: Palanquin-Light;
     }
   }
 

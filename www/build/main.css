@@ -35525,6 +35525,18 @@ ion-navbar.toolbar {
   src: url("../assets/fonts/Montserrat-Bold.ttf");
 }
 
+/* Montserrat-Regular */
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url("../assets/fonts/Montserrat-Regular.ttf");
+}
+
+/* Montserrat-Medium */
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url("../assets/fonts/Montserrat-Medium.ttf");
+}
+
 /* Open Sans */
 @font-face {
   font-family: OpenSans-Regular;
@@ -35546,7 +35558,7 @@ ion-navbar.toolbar {
 }
 
 ion-navbar {
-  font-family: Comfortaa-Bold, sans-serif;
+  font-family: Montserrat-Bold;
 }
 
 .gradient-background {
@@ -35608,12 +35620,10 @@ page-about ion-content .text {
 
 page-favorites ion-content {
   color: white !important;
-  font-family: Palanquin-Light, sans-serif;
 }
 
 page-favorites .favorite {
   visibility: hidden;
-  font-family: OpenSans-Regular, sans-serif;
   background: linear-gradient(45deg, #039BE5 0%, #03A9F4 100%);
   box-shadow: 0 2px 5px rgba(3, 155, 229, 0.3);
   border-radius: 8px;
@@ -35622,11 +35632,12 @@ page-favorites .favorite {
 }
 
 page-favorites .favorite h2 {
-  font-weight: bold;
+  font-family: Montserrat-Medium;
 }
 
 page-favorites .favorite p {
   color: white;
+  font-family: Montserrat-Regular;
 }
 
 page-favorites .favorite button {
@@ -35639,26 +35650,26 @@ page-favorites #no-favorites-container img {
 
 page-favorites #no-favorites-container h1 {
   font-size: 6vw;
-  font-family: Palanquin-Regular, sans-serif;
+  font-family: Palanquin-Regular;
 }
 
 page-favorites #no-favorites-container p {
   text-align: left;
   line-height: 1.4;
   font-size: 5vw;
-  font-family: Palanquin-Light, sans-serif;
+  font-family: Palanquin-Light;
 }
 
 page-home {
   /* Wave animations */
 }
 
-page-home ion-content {
+page-home #home-content {
   background-color: #80D8FF;
 }
 
 page-home #main-buttons-container {
-  margin-top: 15vh;
+  margin-top: 18vh;
 }
 
 page-home #map-button {
@@ -35797,6 +35808,14 @@ page-home .wave.-two {
   }
 }
 
+page-map {
+  /*
+  ion-select .select-icon-inner {
+    color: white !important; // Set arrow color
+  }
+  */
+}
+
 page-map .user-marker {
   background: #42A5F5;
   border: 5px solid white;
@@ -35827,8 +35846,14 @@ page-map .marker-animation {
   }
 }
 
-page-map ion-select .select-icon-inner {
-  color: white !important;
+page-map #fab-grid {
+  position: absolute;
+  z-index: 1000;
+}
+
+page-map #fab-grid #help-col button {
+  position: absolute;
+  right: 0;
 }
 
 page-map #county-item {
@@ -35855,7 +35880,7 @@ page-map .infobubble-content {
   overflow: hidden;
   text-overflow: ellipsis;
   color: gray;
-  font-family: Comfortaa-Regular, sans-serif;
+  font-family: Montserrat-Medium;
   font-size: 16px;
   padding: 4px 18px 4px 32px;
   background-position: left center, right center;
@@ -35864,11 +35889,11 @@ page-map .infobubble-content {
 }
 
 page-map .place-bubble {
-  background-image: url(../assets/img/swimming-blue.png), url(../assets/img/arrow.png);
+  background-image: url(../assets/img/swimming-blue.png), url(../assets/img/arrow-right.png);
 }
 
 page-map .station-bubble {
-  background-image: url(../assets/img/water-temperature.png), url(../assets/img/arrow.png);
+  background-image: url(../assets/img/water-temperature.png), url(../assets/img/arrow-right.png);
 }
 
 page-place {

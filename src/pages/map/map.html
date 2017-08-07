@@ -5,7 +5,7 @@
         <ion-icon name="arrow-back"></ion-icon>
       </button>
     </ion-buttons>
-    <ion-title>Badplatser</ion-title>
+    <ion-title>Badkarta</ion-title>
     <ion-buttons end>
       <button ion-button icon-right [navPush]="searchPage" [navParams]="places">
         Sök
@@ -14,6 +14,7 @@
     </ion-buttons>
   </ion-navbar>
 
+  <!--
   <ion-toolbar color="header">
     <ion-item no-lines color="header">
       <ion-label color="light">Län</ion-label>
@@ -22,10 +23,26 @@
       </ion-select>
     </ion-item>
   </ion-toolbar>
+  -->
 
 </ion-header>
 
 <ion-content no-bounce>
+
+  <ion-grid id="fab-grid">
+    <ion-row justify-content-center>
+      <ion-col id="help-col">
+        <button ion-fab mini color="header">
+          <ion-icon name="md-help"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col id="settings-col">
+        <button ion-fab mini color="header">
+          <ion-icon name="md-settings"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
   <!-- Google Map -->
   <div id="map"></div>

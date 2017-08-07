@@ -48,6 +48,16 @@
   font-family: Montserrat-Bold;
   src: url("../assets/fonts/Montserrat-Bold.ttf");
 }
+/* Montserrat-Regular */
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url("../assets/fonts/Montserrat-Regular.ttf");
+}
+/* Montserrat-Medium */
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url("../assets/fonts/Montserrat-Medium.ttf");
+}
 /* Open Sans */
 @font-face {
   font-family: OpenSans-Regular;
@@ -67,7 +77,7 @@
 }
 
 ion-navbar {
-  font-family: Comfortaa-Bold, sans-serif;
+  font-family: Montserrat-Bold;
 }
 
 .gradient-background {

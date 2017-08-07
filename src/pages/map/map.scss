@@ -27,8 +27,20 @@ page-map {
     }
   }
 
+  /*
   ion-select .select-icon-inner {
     color: white !important; // Set arrow color
+  }
+  */
+
+  #fab-grid {
+    position: absolute;
+    z-index: 1000;
+
+    #help-col button {
+      position: absolute;
+      right: 0;
+    }
   }
 
   #county-item {
@@ -53,7 +65,7 @@ page-map {
     overflow: hidden;
     text-overflow: ellipsis;
     color: gray;
-    font-family: Comfortaa-Regular, sans-serif;
+    font-family: Montserrat-Medium;
     font-size: 16px;
     padding: 4px 18px 4px 32px;
     background-position: left center, right center;
@@ -61,10 +73,10 @@ page-map {
     background-size: 28px, 12px;
   }
   .place-bubble {
-    background-image: url(../assets/img/swimming-blue.png), url(../assets/img/arrow.png);
+    background-image: url(../assets/img/swimming-blue.png), url(../assets/img/arrow-right.png);
   }
   .station-bubble {
-    background-image: url(../assets/img/water-temperature.png), url(../assets/img/arrow.png);
+    background-image: url(../assets/img/water-temperature.png), url(../assets/img/arrow-right.png);
   }
 
 }
