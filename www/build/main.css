@@ -35972,6 +35972,7 @@ page-place #weather-grid .hour-label, page-place #weather-grid #temperature, pag
 page-place #weather-grid #retry-row {
   text-align: center;
   margin: 0 auto;
+  font-family: OpenSans-Regular;
 }
 
 page-place #weather-grid #retry-row p {
@@ -35989,7 +35990,6 @@ page-place #weather-grid #weather-top-row {
 page-place #weather-grid #weather-bottom-row {
   background-color: white;
   color: #40c4ff;
-  font-family: OpenSans-Regular;
 }
 
 page-place #weather-grid #weather-bottom-row #todays-summery-container {
@@ -35998,6 +35998,7 @@ page-place #weather-grid #weather-bottom-row #todays-summery-container {
 
 page-place #weather-grid #weather-bottom-row #todays-summery-container h4 {
   font-weight: bold;
+  font-family: Comfortaa-Regular;
 }
 
 page-place #weather-grid #weather-bottom-row #todays-summery-container p {
@@ -36014,7 +36015,6 @@ page-place #weather-grid #weather-bottom-row .darksky-img {
 }
 
 page-place #weather-container {
-  font-family: OpenSans-Regular;
   margin-bottom: 16px;
 }
 

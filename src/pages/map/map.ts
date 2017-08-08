@@ -175,7 +175,7 @@ export class MapPage implements OnInit {
     this.showCurrentLocationOnMap(this.currentLat, this.currentLng);
     await this.setUserCounty();
     this.markAllPlaces();
-    //this.markAllSeaTemperatures();
+    this.markAllSeaTemperatures();
     this.setMapEvents();
     this.setUserWatcher();
   }

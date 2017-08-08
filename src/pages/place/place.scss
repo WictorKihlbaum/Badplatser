@@ -55,6 +55,7 @@ page-place {
     #retry-row {
       text-align: center;
       margin: 0 auto;
+      font-family: OpenSans-Regular;
 
       p {
         font-size: 5vw;
@@ -71,12 +72,14 @@ page-place {
     #weather-bottom-row {
       background-color: white;
       color: #40c4ff;
-      font-family: OpenSans-Regular;
 
       #todays-summery-container {
         padding: 12px;
 
-        h4 { font-weight: bold; }
+        h4 {
+          font-weight: bold;
+          font-family: Comfortaa-Regular;
+        }
         p {
           font-size: 5vw;
           line-height: 1.4;
@@ -94,7 +97,6 @@ page-place {
   }
 
   #weather-container {
-    font-family: OpenSans-Regular;
     margin-bottom: 16px;
 
     #temperature {
