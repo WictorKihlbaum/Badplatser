@@ -27,12 +27,6 @@ page-map {
     }
   }
 
-  /*
-  ion-select .select-icon-inner {
-    color: white !important; // Set arrow color
-  }
-  */
-
   #fab-grid {
     position: absolute;
     z-index: 1000;
@@ -40,6 +34,9 @@ page-map {
     #help-col button {
       position: absolute;
       right: 0;
+    }
+    #county-select {
+      display: none;
     }
   }
 

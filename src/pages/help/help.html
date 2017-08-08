@@ -1,0 +1,54 @@
+<ion-header no-border>
+  <ion-navbar [hideBackButton]="true" color="header">
+    <ion-buttons start>
+      <button ion-button icon-only navPop>
+        <ion-icon name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Hjälp</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card>
+    <ion-item class="help-item">
+      <ion-avatar item-start>
+        <img src="assets/img/place.png">
+      </ion-avatar>
+      <h2>Badplats</h2>
+    </ion-item>
+
+    <ion-card-content>
+      <p>Ljusblåa markörer motsvarar samtliga badplatser.</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-item class="help-item">
+      <ion-avatar item-start>
+        <img src="assets/img/buoy.png">
+      </ion-avatar>
+      <h2>Havstemperatur</h2>
+    </ion-item>
+
+    <ion-card-content>
+      <p>Mörkblåa markörer motsvarar samtliga mätstationer för havstemperaturer.</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-item class="help-item">
+      <h2>Kluster</h2>
+    </ion-item>
+
+    <ion-card-content>
+      <p>
+        När kartan är utzoomad slår markörerna ihop sig till så kallade klustermarkörer
+        för att skapa en översiktligare kartvy. Varje klustermarkör har ett nummer
+        som motsvarar antal badplatser/mätstationer för havstemperaturer.
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

@@ -13,18 +13,6 @@
       </button>
     </ion-buttons>
   </ion-navbar>
-
-  <!--
-  <ion-toolbar color="header">
-    <ion-item no-lines color="header">
-      <ion-label color="light">Län</ion-label>
-      <ion-select [(ngModel)]="chosenCounty" okText="Välj" cancelText="Stäng" #countySelect (ionChange)="onCountyChange()" [disabled]="!map">
-        <ion-option *ngFor="let county of counties" value="{{county}}">{{ county }}</ion-option>
-      </ion-select>
-    </ion-item>
-  </ion-toolbar>
-  -->
-
 </ion-header>
 
 <ion-content no-bounce>
@@ -32,13 +20,22 @@
   <ion-grid id="fab-grid">
     <ion-row justify-content-center>
       <ion-col id="help-col">
-        <button ion-fab mini color="header">
+        <!-- Help button -->
+        <button ion-fab mini color="header" [navPush]="helpPage">
           <ion-icon name="md-help"></ion-icon>
         </button>
       </ion-col>
       <ion-col id="settings-col">
-        <button ion-fab mini color="header">
+        <!-- Settings button (choose county) -->
+        <button ion-fab mini color="header" [disabled]="!map" (click)="onChooseCounty()">
           <ion-icon name="md-settings"></ion-icon>
+          <!-- Select item (Display hidden in CSS) -->
+          <ion-item id="county-select">
+            <ion-label>Välj Län</ion-label>
+            <ion-select [(ngModel)]="chosenCounty" okText="Välj" cancelText="Stäng" #countySelect (ionChange)="onCountyChange()" [disabled]="!map">
+              <ion-option *ngFor="let county of counties" value="{{county}}">{{ county }}</ion-option>
+            </ion-select>
+          </ion-item>
         </button>
       </ion-col>
     </ion-row>

@@ -35660,6 +35660,14 @@ page-favorites #no-favorites-container p {
   font-family: Palanquin-Light;
 }
 
+page-help .help-item h2 {
+  font-family: Montserrat-Medium;
+}
+
+page-help .help-item p {
+  font-family: Montserrat-Regular;
+}
+
 page-home {
   /* Wave animations */
 }
@@ -35808,14 +35816,6 @@ page-home .wave.-two {
   }
 }
 
-page-map {
-  /*
-  ion-select .select-icon-inner {
-    color: white !important; // Set arrow color
-  }
-  */
-}
-
 page-map .user-marker {
   background: #42A5F5;
   border: 5px solid white;
@@ -35854,6 +35854,10 @@ page-map #fab-grid {
 page-map #fab-grid #help-col button {
   position: absolute;
   right: 0;
+}
+
+page-map #fab-grid #county-select {
+  display: none;
 }
 
 page-map #county-item {

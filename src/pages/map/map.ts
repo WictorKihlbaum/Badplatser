@@ -7,6 +7,7 @@ import { StationPage } from "../station/station";
 import { StatusBar } from "@ionic-native/status-bar";
 import { WeatherService } from "../../providers/weather-service";
 import { PlacesService } from "../../providers/places-service";
+import { HelpPage } from "../help/help";
 
 declare const google: any;
 declare const MarkerClusterer: any;
@@ -23,6 +24,7 @@ export class MapPage implements OnInit {
   @ViewChild('countySelect') countySelect: Select;
 
   private searchPage: any = SearchPage;
+  private helpPage: any = HelpPage;
   private currentLat: number;
   private currentLng: number;
   private loader: any;
@@ -214,7 +216,6 @@ export class MapPage implements OnInit {
           this.markers.push(marker);
         }
       }
-
       this.markerClusterer = new MarkerClusterer(
         this.map, this.markers, { imagePath: 'assets/img/place-clusters/place' }
       );
