@@ -5,19 +5,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/Badställen" afterPath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/Badställen" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib" afterPath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib" afterPath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/Info.plist" afterPath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/Info.plist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/MainViewController.nib" afterPath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/MainViewController.nib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badställen.xcodeproj/project.xcworkspace/xcuserdata/wictor.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/platforms/ios/Badställen.xcodeproj/project.xcworkspace/xcuserdata/wictor.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Info.plist" afterPath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Info.plist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/_CodeSignature/CodeResources" afterPath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/_CodeSignature/CodeResources" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/config.xml" afterPath="$PROJECT_DIR$/platforms/ios/Badställen.xcarchive/Products/Applications/Badställen.app/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badställen/Badställen-Info.plist" afterPath="$PROJECT_DIR$/platforms/ios/Badställen/Badställen-Info.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Badställen/config.xml" afterPath="$PROJECT_DIR$/platforms/ios/Badställen/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.module.ts" afterPath="$PROJECT_DIR$/src/app/app.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/map/map.html" afterPath="$PROJECT_DIR$/src/pages/map/map.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/map/map.scss" afterPath="$PROJECT_DIR$/src/pages/map/map.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/map/map.ts" afterPath="$PROJECT_DIR$/src/pages/map/map.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.scss" afterPath="$PROJECT_DIR$/src/app/app.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/help/help.html" afterPath="$PROJECT_DIR$/src/pages/help/help.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/main.css" afterPath="$PROJECT_DIR$/www/build/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/main.js" afterPath="$PROJECT_DIR$/www/build/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/main.js.map" afterPath="$PROJECT_DIR$/www/build/main.js.map" />
@@ -37,18 +31,18 @@
       <file leaf-file-name="help.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/help/help.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="48" column="8" lean-forward="false" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+            <state relative-caret-position="165">
+              <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="help.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pages/help/help.scss">
+      <file leaf-file-name="app.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="353">
+              <caret line="114" column="34" lean-forward="false" selection-start-line="114" selection-start-column="34" selection-end-line="114" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -142,7 +136,6 @@
         <option value="$PROJECT_DIR$/src/pages/about/about.html" />
         <option value="$PROJECT_DIR$/src/pages/home/home.scss" />
         <option value="$PROJECT_DIR$/src/pages/station/station.html" />
-        <option value="$PROJECT_DIR$/src/app/app.scss" />
         <option value="$PROJECT_DIR$/src/pages/favorites/favorites.scss" />
         <option value="$PROJECT_DIR$/src/pages/place/place.html" />
         <option value="$PROJECT_DIR$/src/pages/place/place.ts" />
@@ -152,8 +145,9 @@
         <option value="$PROJECT_DIR$/src/pages/map/map.html" />
         <option value="$PROJECT_DIR$/src/pages/map/map.scss" />
         <option value="$PROJECT_DIR$/src/pages/map/map.ts" />
-        <option value="$PROJECT_DIR$/src/pages/help/help.html" />
         <option value="$PROJECT_DIR$/src/pages/help/help.scss" />
+        <option value="$PROJECT_DIR$/src/pages/help/help.html" />
+        <option value="$PROJECT_DIR$/src/app/app.scss" />
       </list>
     </option>
   </component>
@@ -262,6 +256,12 @@
               <item name="Badplatser" type="b2602c69:ProjectViewProjectNode" />
               <item name="Badplatser" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Badplatser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Badplatser" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Badplatser" type="b2602c69:ProjectViewProjectNode" />
@@ -455,12 +455,12 @@
       <workItem from="1502012625820" duration="5759000" />
       <workItem from="1502115586330" duration="1065000" />
       <workItem from="1502140277168" duration="2788000" />
-      <workItem from="1502181323915" duration="3585000" />
+      <workItem from="1502181323915" duration="4009000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="370853000" />
+    <option name="totallyTimeSpent" value="371277000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="61" y="23" width="1318" height="797" extended-state="0" />
@@ -668,14 +668,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="751">
-          <caret line="58" column="45" lean-forward="false" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/place/place.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
@@ -766,18 +758,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/help/help.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="8" lean-forward="false" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/help/help.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/help/help.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="114" column="34" lean-forward="false" selection-start-line="114" selection-start-column="34" selection-end-line="114" selection-end-column="34" />
           <folding />
         </state>
       </provider>

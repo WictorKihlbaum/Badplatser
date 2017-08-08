@@ -89,18 +89,21 @@ ion-navbar {
   background-color: #FFEBEE;
   .toast-message, .toast-button {
     color: #F44336 !important;
+    font-family: Montserrat-Medium !important;
   }
 }
 .success-toast .toast-wrapper {
   background-color: #E8F5E9;
   .toast-message, .toast-button {
     color: #4CAF50 !important;
+    font-family: Montserrat-Medium !important;
   }
 }
 .info-toast .toast-wrapper {
   background-color: #E1F5FE;
   .toast-message, .toast-button {
     color: #039BE5 !important;
+    font-family: Montserrat-Medium !important;
   }
 }
 
@@ -109,6 +112,7 @@ ion-navbar {
   background-color: white;
   .loading-content {
     color: #42A5F5;
+    font-family: Montserrat-Medium;
   }
   ion-spinner * {
     fill: #42A5F5;

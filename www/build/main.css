@@ -35572,6 +35572,7 @@ ion-navbar {
 
 .error-toast .toast-wrapper .toast-message, .error-toast .toast-wrapper .toast-button {
   color: #F44336 !important;
+  font-family: Montserrat-Medium !important;
 }
 
 .success-toast .toast-wrapper {
@@ -35580,6 +35581,7 @@ ion-navbar {
 
 .success-toast .toast-wrapper .toast-message, .success-toast .toast-wrapper .toast-button {
   color: #4CAF50 !important;
+  font-family: Montserrat-Medium !important;
 }
 
 .info-toast .toast-wrapper {
@@ -35588,6 +35590,7 @@ ion-navbar {
 
 .info-toast .toast-wrapper .toast-message, .info-toast .toast-wrapper .toast-button {
   color: #039BE5 !important;
+  font-family: Montserrat-Medium !important;
 }
 
 /* Loading animation */
@@ -35597,6 +35600,7 @@ ion-navbar {
 
 .loading-animation .loading-wrapper .loading-content {
   color: #42A5F5;
+  font-family: Montserrat-Medium;
 }
 
 .loading-animation .loading-wrapper ion-spinner * {
