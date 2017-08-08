@@ -35571,8 +35571,8 @@ ion-navbar {
 }
 
 .error-toast .toast-wrapper .toast-message, .error-toast .toast-wrapper .toast-button {
-  color: #F44336 !important;
-  font-family: Montserrat-Medium !important;
+  color: #F44336;
+  font-family: Montserrat-Medium;
 }
 
 .success-toast .toast-wrapper {
@@ -35580,8 +35580,8 @@ ion-navbar {
 }
 
 .success-toast .toast-wrapper .toast-message, .success-toast .toast-wrapper .toast-button {
-  color: #4CAF50 !important;
-  font-family: Montserrat-Medium !important;
+  color: #4CAF50;
+  font-family: Montserrat-Medium;
 }
 
 .info-toast .toast-wrapper {
@@ -35589,8 +35589,8 @@ ion-navbar {
 }
 
 .info-toast .toast-wrapper .toast-message, .info-toast .toast-wrapper .toast-button {
-  color: #039BE5 !important;
-  font-family: Montserrat-Medium !important;
+  color: #039BE5;
+  font-family: Montserrat-Medium;
 }
 
 /* Loading animation */
@@ -35664,12 +35664,18 @@ page-favorites #no-favorites-container p {
   font-family: Palanquin-Light;
 }
 
+page-help .top-text {
+  font-family: Montserrat-Medium;
+  padding: 0 14px;
+}
+
 page-help .help-item h2 {
   font-family: Montserrat-Medium;
 }
 
 page-help .help-item p {
-  font-family: Montserrat-Regular;
+  font-family: Montserrat-Medium;
+  font-size: 4vw;
 }
 
 page-home {
@@ -36061,8 +36067,12 @@ page-place #quality-grid h2, page-place #quality-grid h4, page-place #quality-gr
   font-size: 6vw;
 }
 
-page-search .place {
-  font-family: OpenSans-Regular, sans-serif;
+page-search .place h2 {
+  font-family: Montserrat-Medium;
+}
+
+page-search .place p {
+  font-family: Montserrat-Regular;
 }
 
 page-station {

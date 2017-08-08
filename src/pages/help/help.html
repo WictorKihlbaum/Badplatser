@@ -9,7 +9,14 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content no-bounce>
+
+  <p class="top-text">
+    Nedan följer kortfattad information som förklarar kartvyn och dess markörer.
+    För att gå in på en badplats eller mätstation för havstemperatur
+    trycker du först på önskad markör och därefter igen på den bubbla som
+    dyker upp ovanför markören.
+  </p>
 
   <ion-card>
     <ion-item class="help-item">
@@ -20,7 +27,7 @@
     </ion-item>
 
     <ion-card-content>
-      <p>Ljusblåa markörer motsvarar samtliga badplatser.</p>
+      <p>Ljusblåa markörer motsvarar badplatser.</p>
     </ion-card-content>
   </ion-card>
 
@@ -33,7 +40,7 @@
     </ion-item>
 
     <ion-card-content>
-      <p>Mörkblåa markörer motsvarar samtliga mätstationer för havstemperaturer.</p>
+      <p>Mörkblåa markörer motsvarar mätstationer för havstemperaturer.</p>
     </ion-card-content>
   </ion-card>
 
@@ -46,7 +53,8 @@
       <p>
         När kartan är utzoomad slår markörerna ihop sig till så kallade klustermarkörer
         för att skapa en översiktligare kartvy. Varje klustermarkör har ett nummer
-        som motsvarar antal badplatser/mätstationer för havstemperaturer.
+        som motsvarar antalet badplatser eller mätstationer för havstemperaturer för dess
+        geografiska område.
       </p>
     </ion-card-content>
   </ion-card>

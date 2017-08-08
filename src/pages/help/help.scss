@@ -1,8 +1,16 @@
 page-help {
 
+  .top-text {
+    font-family: Montserrat-Medium;
+    padding: 0 14px;
+  }
+
   .help-item {
     h2 { font-family: Montserrat-Medium; }
-    p { font-family: Montserrat-Regular; }
+    p {
+      font-family: Montserrat-Medium;
+      font-size: 4vw;
+    }
   }
 
 }
