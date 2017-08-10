@@ -74,7 +74,7 @@ page-place {
       color: #40c4ff;
 
       #todays-summery-container {
-        padding: 12px;
+        padding: 0 12px;
 
         h4 {
           font-weight: bold;
@@ -85,6 +85,14 @@ page-place {
           line-height: 1.4;
           text-align: left;
         }
+      }
+
+      #weather-details-button {
+        background: linear-gradient(45deg, #00b0ff 0%, #69f0ae 100%);
+        box-shadow: 0 2px 5px rgba(178, 235, 242, 0.5);
+        font-weight: bold;
+        margin-bottom: 8px;
+        font-family: Montserrat-Black;
       }
 
       .darksky-img {

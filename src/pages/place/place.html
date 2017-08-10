@@ -118,6 +118,11 @@
           </p>
         </div>
 
+        <button ion-button round icon-right id="weather-details-button" [navPush]="weatherDetailsPage" [navParams]="dailyWeatherData">
+          Se väderdetaljer
+          <ion-icon name="arrow-forward"></ion-icon>
+        </button>
+
         <img src="assets/img/darksky-logo.png" class="darksky-img" (click)="onVisitDarkSky()" />
 
       </ion-col>

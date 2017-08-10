@@ -16,6 +16,7 @@ import { AboutPage } from "../pages/about/about";
 import { FavoritesPage } from "../pages/favorites/favorites";
 import { StationPage } from "../pages/station/station";
 import { HelpPage } from "../pages/help/help";
+import { WeatherDetailsPage } from "../pages/weather-details/weather-details";
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { HelpPage } from "../pages/help/help";
     AboutPage,
     FavoritesPage,
     StationPage,
-    HelpPage
+    HelpPage,
+    WeatherDetailsPage
   ],
   imports: [
     BrowserModule,
@@ -44,7 +46,8 @@ import { HelpPage } from "../pages/help/help";
     AboutPage,
     FavoritesPage,
     StationPage,
-    HelpPage
+    HelpPage,
+    WeatherDetailsPage
   ],
   providers: [
     StatusBar,

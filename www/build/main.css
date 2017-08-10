@@ -35993,7 +35993,7 @@ page-place #weather-grid #weather-bottom-row {
 }
 
 page-place #weather-grid #weather-bottom-row #todays-summery-container {
-  padding: 12px;
+  padding: 0 12px;
 }
 
 page-place #weather-grid #weather-bottom-row #todays-summery-container h4 {
@@ -36005,6 +36005,14 @@ page-place #weather-grid #weather-bottom-row #todays-summery-container p {
   font-size: 5vw;
   line-height: 1.4;
   text-align: left;
+}
+
+page-place #weather-grid #weather-bottom-row #weather-details-button {
+  background: linear-gradient(45deg, #00b0ff 0%, #69f0ae 100%);
+  box-shadow: 0 2px 5px rgba(178, 235, 242, 0.5);
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-family: Montserrat-Black;
 }
 
 page-place #weather-grid #weather-bottom-row .darksky-img {

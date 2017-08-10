@@ -4,6 +4,7 @@ import { WeatherService } from "../../providers/weather-service";
 import * as localforage from "localforage";
 import { StatusBar } from "@ionic-native/status-bar";
 import { InAppBrowser } from "@ionic-native/in-app-browser";
+import { WeatherDetailsPage } from "../weather-details/weather-details";
 
 @Component({
   selector: 'page-place',
@@ -13,6 +14,7 @@ import { InAppBrowser } from "@ionic-native/in-app-browser";
 export class PlacePage implements OnInit {
 
   @ViewChild(Content) content: Content;
+  private weatherDetailsPage: any = WeatherDetailsPage;
 
   private showGoTopButton: boolean = false;
   private showSpinner: boolean = true;
@@ -45,6 +47,7 @@ export class PlacePage implements OnInit {
   private days: any = ['Söndag', 'Måndag', 'Tisdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lördag'];
 
   // Daily
+  private dailyWeatherData: any;
   private sunsetTime: string;
   private daySummary: string;
 
@@ -164,6 +167,7 @@ export class PlacePage implements OnInit {
   }
 
   setDailyWeatherData(daily: any) {
+    this.dailyWeatherData = daily;
     if (daily.sunsetTime) {
       const date: any = new Date(parseFloat(daily.sunsetTime + '000'));
       const hours: number = date.getHours();

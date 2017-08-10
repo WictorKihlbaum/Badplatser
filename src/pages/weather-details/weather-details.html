@@ -1,0 +1,90 @@
+<ion-header no-border>
+  <ion-navbar color="header" [hideBackButton]="true">
+    <ion-buttons start>
+      <button ion-button icon-only color="lightFab" navPop>
+        <ion-icon name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Väderdetaljer</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <!-- Temperatures list -->
+  <ion-list>
+    <ion-list-header>
+      <ion-icon name="thermometer" item-start></ion-icon>
+      Temperaturer
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Maxtemperatur</ion-label>
+      <span item-end>{{ temperatureMax }}°</span>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Mintemperatur</ion-label>
+      <span item-end>{{ temperatureMin }}°</span>
+    </ion-item>
+
+  </ion-list>
+
+  <!-- Precipitation list -->
+  <ion-list>
+    <ion-list-header>
+      <ion-icon name="rainy" item-start></ion-icon>
+      Nederbörd
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Typ</ion-label>
+      <span item-end>{{ precipType }}</span>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Risk</ion-label>
+      <span item-end>{{ precipProbability }} %</span>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Intensitet</ion-label>
+      <span item-end>{{ precipIntensity }} mm/t</span>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Maxintensitet</ion-label>
+      <span item-end>{{ precipIntensityMax }} mm/t</span>
+    </ion-item>
+
+  </ion-list>
+
+  <!-- Other list -->
+  <ion-list>
+    <ion-list-header>
+      Övrigt
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Molntäcke</ion-label>
+      <span item-end>{{ cloudCover }} %</span>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Fuktighet</ion-label>
+      <span item-end>{{ humidity }} %</span>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Lufttryck</ion-label>
+      <span item-end>{{ pressure }} hPa</span>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Vindhastighet</ion-label>
+      <span item-end>{{ windSpeed }} m/s</span>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>
