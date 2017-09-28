@@ -1,4 +1,4 @@
-// http://ionicframework.com/docs/v2/theming/
+// http://ionicframework.com/docs/theming/
 
 
 // App Global Sass
@@ -15,106 +15,105 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
-
 /* Palanquin */
 @font-face {
-  font-family: Palanquin-Light;
-  src: url("../assets/fonts/Palanquin-Light.ttf");
-}
-@font-face {
-  font-family: Palanquin-Regular;
-  src: url("../assets/fonts/Palanquin-Regular.ttf");
-}
-/* Comfortaa */
-@font-face {
-  font-family: Comfortaa-Bold;
-  src: url("../assets/fonts/Comfortaa-Bold.ttf");
-}
-@font-face {
-  font-family: Comfortaa-Regular;
-  src: url("../assets/fonts/Comfortaa-Regular.ttf");
-}
-@font-face {
-  font-family: Comfortaa-Light;
-  src: url("../assets/fonts/Comfortaa-Light.ttf");
-}
-/* Montserrat-Black */
-@font-face {
-  font-family: Montserrat-Black;
-  src: url("../assets/fonts/Montserrat-Black.ttf");
-}
-/* Montserrat-Bold */
-@font-face {
-  font-family: Montserrat-Bold;
-  src: url("../assets/fonts/Montserrat-Bold.ttf");
-}
-/* Montserrat-Regular */
-@font-face {
-  font-family: Montserrat-Regular;
-  src: url("../assets/fonts/Montserrat-Regular.ttf");
-}
-/* Montserrat-Medium */
-@font-face {
-  font-family: Montserrat-Medium;
-  src: url("../assets/fonts/Montserrat-Medium.ttf");
-}
-/* Open Sans */
-@font-face {
-  font-family: OpenSans-Regular;
-  src: url("../assets/fonts/OpenSans-Regular.ttf");
-}
-/* Ubuntu-Bold */
-@font-face {
-  font-family: Ubuntu-Bold;
-  src: url("../assets/fonts/Ubuntu-Bold.ttf");
-}
-
-.page-grid, .page-grid ion-row {
-  height: 100% !important;
-  ion-col {
-    text-align: center;
+    font-family: Palanquin-Light;
+    src: url("../assets/fonts/Palanquin-Light.ttf");
   }
-}
-
-ion-navbar {
-  font-family: Montserrat-Bold;
-}
-
-.gradient-background {
-  background: linear-gradient(45deg, #00b0ff 0%, #69f0ae 100%);
-}
-
-/* Toasts */
-.error-toast .toast-wrapper {
-  background-color: #FFEBEE;
-  .toast-message, .toast-button {
-    color: #F44336;
+  @font-face {
+    font-family: Palanquin-Regular;
+    src: url("../assets/fonts/Palanquin-Regular.ttf");
+  }
+  /* Comfortaa */
+  @font-face {
+    font-family: Comfortaa-Bold;
+    src: url("../assets/fonts/Comfortaa-Bold.ttf");
+  }
+  @font-face {
+    font-family: Comfortaa-Regular;
+    src: url("../assets/fonts/Comfortaa-Regular.ttf");
+  }
+  @font-face {
+    font-family: Comfortaa-Light;
+    src: url("../assets/fonts/Comfortaa-Light.ttf");
+  }
+  /* Montserrat-Black */
+  @font-face {
+    font-family: Montserrat-Black;
+    src: url("../assets/fonts/Montserrat-Black.ttf");
+  }
+  /* Montserrat-Bold */
+  @font-face {
+    font-family: Montserrat-Bold;
+    src: url("../assets/fonts/Montserrat-Bold.ttf");
+  }
+  /* Montserrat-Regular */
+  @font-face {
+    font-family: Montserrat-Regular;
+    src: url("../assets/fonts/Montserrat-Regular.ttf");
+  }
+  /* Montserrat-Medium */
+  @font-face {
     font-family: Montserrat-Medium;
+    src: url("../assets/fonts/Montserrat-Medium.ttf");
   }
-}
-.success-toast .toast-wrapper {
-  background-color: #E8F5E9;
-  .toast-message, .toast-button {
-    color: #4CAF50;
-    font-family: Montserrat-Medium;
+  /* Open Sans */
+  @font-face {
+    font-family: OpenSans-Regular;
+    src: url("../assets/fonts/OpenSans-Regular.ttf");
   }
-}
-.info-toast .toast-wrapper {
-  background-color: #E1F5FE;
-  .toast-message, .toast-button {
-    color: #039BE5;
-    font-family: Montserrat-Medium;
+  /* Ubuntu-Bold */
+  @font-face {
+    font-family: Ubuntu-Bold;
+    src: url("../assets/fonts/Ubuntu-Bold.ttf");
   }
-}
-
-/* Loading animation */
-.loading-animation .loading-wrapper {
-  background-color: white;
-  .loading-content {
-    color: #42A5F5;
-    font-family: Montserrat-Medium;
+  
+  .page-grid, .page-grid ion-row {
+    height: 100% !important;
+    ion-col {
+      text-align: center;
+    }
   }
-  ion-spinner * {
-    fill: #42A5F5;
+  
+  ion-navbar {
+    font-family: Montserrat-Bold;
   }
-}
+  
+  .gradient-background {
+    background: linear-gradient(45deg, #00b0ff 0%, #69f0ae 100%);
+  }
+  
+  /* Toasts */
+  .error-toast .toast-wrapper {
+    background-color: #FFEBEE;
+    .toast-message, .toast-button {
+      color: #F44336;
+      font-family: Montserrat-Medium;
+    }
+  }
+  .success-toast .toast-wrapper {
+    background-color: #E8F5E9;
+    .toast-message, .toast-button {
+      color: #4CAF50;
+      font-family: Montserrat-Medium;
+    }
+  }
+  .info-toast .toast-wrapper {
+    background-color: #E1F5FE;
+    .toast-message, .toast-button {
+      color: #039BE5;
+      font-family: Montserrat-Medium;
+    }
+  }
+  
+  /* Loading animation */
+  .loading-animation .loading-wrapper {
+    background-color: white;
+    .loading-content {
+      color: #42A5F5;
+      font-family: Montserrat-Medium;
+    }
+    ion-spinner * {
+      fill: #42A5F5;
+    }
+  }

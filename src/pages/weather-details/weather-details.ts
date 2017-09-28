@@ -28,20 +28,40 @@ export class WeatherDetailsPage {
 
   constructor(private navParams: NavParams) {
     // Temperatures
-    this.temperatureMax = navParams.get('temperatureMax');
-    this.temperatureMin = navParams.get('temperatureMin');
-    this.apparentTemperatureMax = navParams.get('apparentTemperatureMax');
-    this.apparentTemperatureMin = navParams.get('apparentTemperatureMin');
+    this.temperatureMax = navParams.get('temperatureMax').toFixed();
+    this.temperatureMin = navParams.get('temperatureMin').toFixed();
+    this.apparentTemperatureMax = navParams.get('apparentTemperatureMax').toFixed();
+    this.apparentTemperatureMin = navParams.get('apparentTemperatureMin').toFixed();
     // Precipitation
-    this.precipType = navParams.get('precipType');
-    this.precipProbability = navParams.get('precipProbability');
-    this.precipIntensity = navParams.get('precipIntensity');
-    this.precipIntensityMax = navParams.get('precipIntensityMax');
+    this.precipType = this.translatePrecipTypeToSwedish(navParams.get('precipType'));
+    this.precipProbability = this.correctPercentage(navParams.get('precipProbability'));
+    this.precipIntensity = navParams.get('precipIntensity').toFixed();
+    this.precipIntensityMax = navParams.get('precipIntensityMax').toFixed();
     // Other
-    this.cloudCover = navParams.get('cloudCover');
-    this.humidity = navParams.get('humidity');
-    this.pressure = navParams.get('pressure');
-    this.windSpeed = navParams.get('windSpeed');
+    this.cloudCover = this.correctPercentage(navParams.get('cloudCover'));
+    this.humidity = this.correctPercentage(navParams.get('humidity'));
+    this.pressure = navParams.get('pressure').toFixed();
+    this.windSpeed = navParams.get('windSpeed').toFixed();
+  }
+
+  /*
+   * Return correct percentage.
+   */
+  correctPercentage(data: any) {
+    switch (data) {
+      case 0: return 0; // Do nothing
+      case 1: return 100; // If 1 return 100 (%)
+      default: return data.toString().substr(2, 2); // If 0.46, return 46 (%)
+    }
+  }
+
+  translatePrecipTypeToSwedish(precipType: any) {
+    switch (precipType) {
+      case 'rain': return 'Regn';
+      case 'snow': return 'Snö';
+      case 'sleet': return 'Snöblandat regn';
+      default: return 'Ingen nederbörd';
+    }
   }
 
 }

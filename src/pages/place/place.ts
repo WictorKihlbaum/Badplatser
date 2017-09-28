@@ -1,5 +1,5 @@
 import { Component, NgZone, OnInit, ViewChild } from '@angular/core';
-import { Content, NavParams, ToastController } from 'ionic-angular';
+import { Content, NavParams, ModalController, ToastController } from 'ionic-angular';
 import { WeatherService } from "../../providers/weather-service";
 import * as localforage from "localforage";
 import { StatusBar } from "@ionic-native/status-bar";
@@ -58,7 +58,8 @@ export class PlacePage implements OnInit {
     private statusBar: StatusBar,
     private toastCtrl: ToastController,
     private iab: InAppBrowser,
-    private zone: NgZone) {
+    private zone: NgZone,
+    private modalCtrl: ModalController) {
 
     this.placeName = navParams.get('C6');
     this.latitude = navParams.get('C8');
@@ -210,6 +211,11 @@ export class PlacePage implements OnInit {
 
   onFindPlace() {
     this.iab.create(`https://www.google.se/maps/place/${this.latitude}+${this.longitude}`, '_system');
+  }
+
+  onShowWeatherDetails() {
+    const weatherDetailsModal = this.modalCtrl.create(WeatherDetailsPage, this.dailyWeatherData);
+    weatherDetailsModal.present();
   }
 
 }

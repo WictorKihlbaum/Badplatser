@@ -118,7 +118,7 @@
           </p>
         </div>
 
-        <button ion-button round icon-right id="weather-details-button" [navPush]="weatherDetailsPage" [navParams]="dailyWeatherData">
+        <button ion-button round icon-right id="weather-details-button" (click)="onShowWeatherDetails()">
           Se väderdetaljer
           <ion-icon name="arrow-forward"></ion-icon>
         </button>

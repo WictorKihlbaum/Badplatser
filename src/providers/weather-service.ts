@@ -7,7 +7,7 @@ import { Platform } from 'ionic-angular';
 export class WeatherService {
 
   private cors: string = 'https://cors-anywhere.herokuapp.com/';
-  private apiUrl: string = 'https://api.darksky.net/forecast/2735c64ddcc4acfb0c869faf3adfad18';
+  private apiUrl: string = 'https://api.darksky.net/forecast/InsertAPIkey';
 
 
   constructor(private http: Http, private platform: Platform) {

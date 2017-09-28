@@ -22,12 +22,19 @@ Cordova Launch Review plugin [![Latest Stable Version](https://img.shields.io/np
 
 This Cordova/Phonegap plugin for iOS and Android launches the native store app in order for the user to leave a review.
 
-On Android, the plugin opens the the app's storepage in the Play Store where the user can leave a review by pressing the stars to give a rating.
-
-On iOS, the plugin opens the app's storepage in the App Store, focuses the Review tab, and automatically opens the dialog for the user to leave a rating or review.
-On iOS 10.3 and above, there is also support for the in-app ratings dialog which allows a user to rate your app without needing to open the App Store.
+- On Android, the plugin opens the the app's storepage in the Play Store where the user can leave a review by pressing the stars to give a rating.
+- On iOS, the plugin opens the app's storepage in the App Store and automatically opens the dialog for the user to leave a rating or review.
+- On iOS 10.3 and above, the plugin supports the [native in-app rating dialog](https://developer.apple.com/documentation/storekit/skstorereviewcontroller/2851536-requestreview) which allows a user to rate your app without needing to open the App Store.
 
 The plugin is registered on [npm](https://www.npmjs.com/package/cordova-launch-review) (requires Cordova CLI 5.0.0+) as `cordova-launch-review`
+
+<!-- DONATE -->
+[![donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG_global.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZRD3W47HQ3EMJ)
+
+I dedicate a considerable amount of my free time to developing and maintaining this Cordova plugin, along with my other Open Source software.
+To help ensure this plugin is kept updated, new features are added and bugfixes are implemented quickly, please donate a couple of dollars (or a little more if you can stretch) as this will help me to afford to dedicate time to its maintenance. Please consider donating if you're using this plugin in an app that makes you money, if you're being paid to make the app, if you're asking for new features or priority bug fixes.
+<!-- END DONATE -->
+
 
 # Installation
 

@@ -14,19 +14,19 @@
     ]
   ],
   "_from": "cordova-launch-review@latest",
-  "_id": "cordova-launch-review@2.0.0",
+  "_id": "cordova-launch-review@2.0.2",
   "_inCache": true,
   "_location": "/cordova-launch-review",
-  "_nodeVersion": "7.3.0",
+  "_nodeVersion": "7.10.0",
   "_npmOperationalInternal": {
-    "host": "packages-18-east.internal.npmjs.com",
-    "tmp": "tmp/cordova-launch-review-2.0.0.tgz_1489957477171_0.1344361281953752"
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/cordova-launch-review-2.0.2.tgz_1505981841248_0.005543228005990386"
   },
   "_npmUser": {
     "name": "davealden",
     "email": "dave@workingedge.co.uk"
   },
-  "_npmVersion": "3.10.10",
+  "_npmVersion": "4.2.0",
   "_phantomChildren": {},
   "_requested": {
     "raw": "cordova-launch-review",
@@ -41,8 +41,8 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/cordova-launch-review/-/cordova-launch-review-2.0.0.tgz",
-  "_shasum": "b9338acd65e9c34f23325e064544f59214352bed",
+  "_resolved": "https://registry.npmjs.org/cordova-launch-review/-/cordova-launch-review-2.0.2.tgz",
+  "_shasum": "fa1e6c92e42bea0673ff8620933fac57bb300440",
   "_shrinkwrap": null,
   "_spec": "cordova-launch-review",
   "_where": "/Users/wictor/Documents/Badplatser/node_modules",
@@ -65,10 +65,10 @@
   "devDependencies": {},
   "directories": {},
   "dist": {
-    "shasum": "b9338acd65e9c34f23325e064544f59214352bed",
-    "tarball": "https://registry.npmjs.org/cordova-launch-review/-/cordova-launch-review-2.0.0.tgz"
+    "shasum": "fa1e6c92e42bea0673ff8620933fac57bb300440",
+    "tarball": "https://registry.npmjs.org/cordova-launch-review/-/cordova-launch-review-2.0.2.tgz"
   },
-  "gitHead": "6b9a18461f2c91b6226645f4ea425f7504b9083f",
+  "gitHead": "fdb1b76ef1966f8bc2826a144190b159eb5e56b8",
   "homepage": "https://github.com/dpa99c/cordova-launch-review#readme",
   "issue": "https://github.com/dpa99c/cordova-launch-review/issues",
   "keywords": [
@@ -96,5 +96,5 @@
     "url": "git+https://github.com/dpa99c/cordova-launch-review.git"
   },
   "scripts": {},
-  "version": "2.0.0"
+  "version": "2.0.2"
 }

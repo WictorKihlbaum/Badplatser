@@ -9,7 +9,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
 
   <!-- Temperatures list -->
   <ion-list>
@@ -27,7 +27,6 @@
       <ion-label>Mintemperatur</ion-label>
       <span item-end>{{ temperatureMin }}°</span>
     </ion-item>
-
   </ion-list>
 
   <!-- Precipitation list -->
@@ -56,12 +55,12 @@
       <ion-label>Maxintensitet</ion-label>
       <span item-end>{{ precipIntensityMax }} mm/t</span>
     </ion-item>
-
   </ion-list>
 
   <!-- Other list -->
   <ion-list>
     <ion-list-header>
+      <ion-icon name="information-circle" item-start></ion-icon>
       Övrigt
     </ion-list-header>
 
@@ -71,7 +70,7 @@
     </ion-item>
 
     <ion-item>
-      <ion-label>Fuktighet</ion-label>
+      <ion-label>Luftfuktighet</ion-label>
       <span item-end>{{ humidity }} %</span>
     </ion-item>
 
@@ -84,7 +83,6 @@
       <ion-label>Vindhastighet</ion-label>
       <span item-end>{{ windSpeed }} m/s</span>
     </ion-item>
-
   </ion-list>
 
 </ion-content>

@@ -7,10 +7,7 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.wictorkihlbaum.badplatser"
-        },
-        "cordova-plugin-device": {
+        "cordova-launch-review": {
             "PACKAGE_NAME": "com.wictorkihlbaum.badplatser"
         },
         "cordova-plugin-geolocation": {
@@ -34,12 +31,12 @@
         },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "com.wictorkihlbaum.badplatser"
-        },
-        "cordova-launch-review": {
-            "PACKAGE_NAME": "com.wictorkihlbaum.badplatser"
         }
     },
     "dependent_plugins": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.wictorkihlbaum.badplatser"
+        },
         "cordova-plugin-compat": {
             "PACKAGE_NAME": "com.wictorkihlbaum.badplatser"
         }

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Ionic App</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
   <meta name="msapplication-tap-highlight" content="no">
 
@@ -24,9 +24,10 @@
   </script>-->
 
   <link href="build/main.css" rel="stylesheet">
+
   <link rel="stylesheet" href="assets/css/animate.min.css">
   <script src="assets/js/markerclusterer.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyA6JMwgZ4S9qXMinDYU5oVLgQ3Oss9MfuI"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3&key=InsertAPIkey"></script>
   <script src="assets/js/infobubble.min.js"></script>
   <script src="assets/js/richmarker.min.js"></script>
 
@@ -39,7 +40,11 @@
   <!-- The polyfills js is generated during the build process -->
   <script src="build/polyfills.js"></script>
 
-  <!-- The bundle js is generated during the build process -->
+  <!-- The vendor js is generated during the build process
+       It contains all of the dependencies in node_modules -->
+  <script src="build/vendor.js"></script>
+
+  <!-- The main bundle js is generated during the build process -->
   <script src="build/main.js"></script>
 
 </body>

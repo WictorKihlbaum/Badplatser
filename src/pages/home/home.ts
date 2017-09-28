@@ -14,7 +14,6 @@ export class HomePage {
   private mapPage: any = MapPage;
   private aboutPage: any = AboutPage;
   private favoritesPage: any = FavoritesPage;
-  private toast: any;
 
 
   constructor(private launchReview: LaunchReview) {}

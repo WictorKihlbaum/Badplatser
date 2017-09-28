@@ -6,7 +6,7 @@ import { Platform } from "ionic-angular";
 @Injectable()
 export class PlacesService {
 
-  private googleApiKey: string = 'AIzaSyA6JMwgZ4S9qXMinDYU5oVLgQ3Oss9MfuI';
+  private googleApiKey: string = 'APIkey';
   private cors: string = 'https://cors-anywhere.herokuapp.com/';
   private counties: any = ['blekinge', 'dalarna', 'gotland', 'gävleborg', 'halland', 'jämtland', 'jönköping', 'kalmar', 'kronoberg', 'norrbotten', 'skåne', 'stockholm', 'södermanland', 'uppsala', 'värmland', 'västerbotten', 'västernorrland', 'västmanland', 'västra götaland', 'örebro', 'östergötland'];
 
